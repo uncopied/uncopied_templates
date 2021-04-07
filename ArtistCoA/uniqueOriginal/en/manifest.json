@@ -1,0 +1,41 @@
+{
+  "name": "uniqueOriginal",
+  "description": "Basic Template for Unique Original Art (oil painting, statue, ...)",
+  "author":"UNCOPIED",
+  "version": "1.0",
+  "manifest_version": 1,
+  "sourceTypes":["png","jpg"],
+  "roles":["artist"],
+  "countries":["*"],
+  "language":"en",
+  "assetProperties": {
+        "height": {
+                   "type": "string",
+                   "optional": false
+            },
+        "width": {
+                   "type": "string",
+                   "optional": false
+         },
+         "artMedium": {
+                   "type": "string",
+                   "optional": true
+         },
+         "artworkSurface": {
+                   "type": "string",
+                   "optional": true
+         },
+		 "dateCreated": {
+                   "type": "date",
+                   "optional": false
+		 }
+     },
+    "certificateTemplate": "legal_document.tmpl",
+    "certificateLabelTemplate" : "certificate_label.txt",
+    "assetLabelTemplate" : "asset_label.txt",
+    "metadataTemplate" : "metadata.json",
+    "editionMin":1,
+    "editionMax":1,
+    "licenseTermsURL":"someURL",
+    "privacyTermsURL":"someOtherURL"    
+}

@@ -1,0 +1,39 @@
+{{ template "header.tmpl" .}}
+<div>
+<h1>
+    {{ .asset.CertificateLabel }}
+</h1>
+<h2>Certificate of Authenticity for a Unique Original</h2>
+    <p>
+        This document certifies that {{ .source.Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art
+        of the author's own creative efforts.
+    </p>
+    <p>
+        The high definition digital source of the work (or a high definition digital copy issued by the author) has been released by the author
+        under licence {{ .source.SourceLicense }} and it will be stored forever (with exceptions if for Illegal, Harmful, or Offensive Content) with
+        cryptographic hash {{ .source.IPFSHash }}.
+    </p>
+    <p>
+        The thumbnail below is a lower definition copy of the digital source which has been released under licence UNCOPIED v1.0 and it will be stored
+        forever (with exceptions if for Illegal, Harmful, or Offensive Content) with cryptographic hash {{ .source.IPFSHashThumbnail }}.
+
+        The artwork's metadata (information such as : title, author etc.) has been released under licence UNCOPIED v1.0 and it will be stored
+        forever (with exceptions if for Illegal, Harmful, or Offensive Content).
+
+        The use of the thumbnail and the metadata is limited to the use listed in provisions of UNCOPIED v1.0 license.
+    </p>
+    <p>
+        The digital source corresponds to exactly ONE original and unique physical object.
+    </p>
+    <p>
+        Of the digital source were produced ONE original and unique cryptographic token constituting the Origial NFT.
+        The unique physical object is tied to its unique digital token. Transferring ownership of one instantly transfers the ownership of the other, with the
+        exception of : fraud, spoliation, cybercrime or any for of abuse.
+    </p>
+    <p>
+
+    </p>
+    <img src="/ipfs/{{ .source.IPFSHashThumbnail }}"/>
+
+</div>
+{{ template "footer.tmpl" .}}
