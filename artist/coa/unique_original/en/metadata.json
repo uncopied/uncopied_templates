@@ -1,28 +1,28 @@
 {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      "name": "{{.AssetName}}",
-      "image": "{{.ThumbnailURL}}",
-      "description": "{{.CertificateLabel}}",
-      "creator": [
-        {
-          "@type": "Person",
-          "name": "{{.IssuerName}}"
-        }
-      ],
-      "width": [
-        {
-          "@type": "Distance",
-          "name": "{{.AssetProperties.Width}}"
-        }
-      ],
-      "height": [
-        {
-          "@type": "Distance",
-          "name": "{{.AssetProperties.Height}}"
-        }
-      ],
-      "artMedium": "{{.AssetProperties.ArtMedium}}",
-      "artworkSurface": "{{.AssetProperties.ArtworkSurface}}",
-	  "dateCreated": "{{.AssetProperties.DateCreated}}"
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "{{.AssetName}}",
+  "image": "{{.ThumbnailURL}}",
+  "description": "{{.CertificateLabel}}",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "{{.IssuerName}}"
+    }
+  ],
+  "width": [
+    {
+      "@type": "Distance",
+      "name": "{{.AssetProperties.Width}}"
+    }
+  ],
+  "height": [
+    {
+      "@type": "Distance",
+      "name": "{{.AssetProperties.Height}}"
+    }
+  ],
+  "art_medium": "{{.AssetProperties.ArtMedium}}",
+  "artwork_surface": "{{.AssetProperties.ArtworkSurface}}",
+  "date_created": "{{.AssetProperties.DateCreated}}"
 }

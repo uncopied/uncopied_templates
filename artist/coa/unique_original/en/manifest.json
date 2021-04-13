@@ -1,41 +1,49 @@
 {
+  "id": "80b33228-463e-4bd8-a03c-77864e046ffb",
   "name": "uniqueOriginal",
   "description": "Basic Template for Unique Original Art (oil painting, statue, ...)",
-  "author":"UNCOPIED",
+  "author": "UNCOPIED",
   "version": "1.0",
   "manifest_version": 1,
-  "sourceTypes":["png","jpg"],
-  "roles":["artist"],
-  "countries":["*"],
-  "language":"en",
-  "assetProperties": {
-        "height": {
-                   "type": "string",
-                   "optional": false
-            },
-        "width": {
-                   "type": "string",
-                   "optional": false
-         },
-         "artMedium": {
-                   "type": "string",
-                   "optional": true
-         },
-         "artworkSurface": {
-                   "type": "string",
-                   "optional": true
-         },
-		 "dateCreated": {
-                   "type": "date",
-                   "optional": false
-		 }
-     },
-    "certificateTemplate": "legal_document.tmpl",
-    "certificateLabelTemplate" : "certificate_label.txt",
-    "assetLabelTemplate" : "asset_label.txt",
-    "metadataTemplate" : "metadata.json",
-    "editionMin":1,
-    "editionMax":1,
-    "licenseTermsURL":"someURL",
-    "privacyTermsURL":"someOtherURL"    
+  "source_types": [
+    "png",
+    "jpg"
+  ],
+  "roles": [
+    "artist"
+  ],
+  "countries": [
+    "*"
+  ],
+  "language": "en",
+  "asset_properties": {
+    "height": {
+      "type": "string",
+      "optional": false
+    },
+    "width": {
+      "type": "string",
+      "optional": false
+    },
+    "art_medium": {
+      "type": "string",
+      "optional": true
+    },
+    "artwork_surface": {
+      "type": "string",
+      "optional": true
+    },
+    "date_created": {
+      "type": "date",
+      "optional": false
+    }
+  },
+  "certificate_template": "legal_document.tmpl",
+  "certificate_label_template": "certificate_label.txt",
+  "assetLabel_template": "asset_label.txt",
+  "metadata_template": "metadata.json",
+  "edition_min": 1,
+  "edition_max": 1,
+  "license_terms_url": "someURL",
+  "privacy_terms_url": "someOtherURL"
 }

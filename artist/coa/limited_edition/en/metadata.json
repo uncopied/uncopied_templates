@@ -1,29 +1,29 @@
- {
-      "@context": "https://schema.org",
-      "@type": "VisualArtwork",
-      "name": "{{.AssetName}}",
-      "image": "{{.ThumbnailURL}}",
-      "description": "{{.CertificateLabel}}",
-      "creator": [
-        {
-          "@type": "Person",
-          "name": "{{.IssuerName}}"
-        }
-      ],
-      "width": [
-        {
-          "@type": "Distance",
-          "name": "{{.AssetProperties.Width}}"
-        }
-      ],
-      "height": [
-        {
-          "@type": "Distance",
-          "name": "{{.AssetProperties.Height}}"
-        }
-      ],
-      "artEdition": "{{.EditionTotal}}",
-      "position": "{{.EditionNumber}}",
-      "artMedium": "{{.AssetProperties.ArtMedium}}",
-      "artworkSurface": "{{.AssetProperties.ArtworkSurface}}"
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "{{.AssetName}}",
+  "image": "{{.ThumbnailURL}}",
+  "description": "{{.CertificateLabel}}",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "{{.IssuerName}}"
+    }
+  ],
+  "width": [
+    {
+      "@type": "Distance",
+      "name": "{{.AssetProperties.Width}}"
+    }
+  ],
+  "height": [
+    {
+      "@type": "Distance",
+      "name": "{{.AssetProperties.Height}}"
+    }
+  ],
+  "art_edition": "{{.EditionTotal}}",
+  "position": "{{.EditionNumber}}",
+  "art_medium": "{{.AssetProperties.ArtMedium}}",
+  "artwork_surface": "{{.AssetProperties.ArtworkSurface}}"
 }
