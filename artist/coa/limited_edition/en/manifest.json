@@ -1,6 +1,6 @@
 {
-  "id": "80d00714-baf5-4703-bbec-509e240e7f95",
-  "name": "limitedEdition",
+  "name": "limited edition",
+  "type": "CoA",
   "description": "Basic Template for Limited Edition Artworks (photographic prints, ...)",
   "author": "UNCOPIED",
   "version": "1.0",
