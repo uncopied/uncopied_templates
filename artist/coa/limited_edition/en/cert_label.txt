@@ -1,1 +1,1 @@
-{{.AssetName}} by {{.IssuerName}}, {{.CurrentYear}} ({{.EditionNumber}} / {{.EditionTotal}})
+{{.Asset.Name}} by {{.Issuer.Username}}, {{.CurrentYear}} ({{.Asset.EditionNumber}} / {{.Asset.EditionTotal}})

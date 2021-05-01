@@ -1,13 +1,13 @@
 {
   "@context": "https://schema.org",
   "@type": "VisualArtwork",
-  "name": "{{.AssetName}}",
-  "image": "{{.ThumbnailURL}}",
-  "description": "{{.CertificateLabel}}",
+  "name": "{{.Asset.Name}}",
+  "image": "{{.DigitalAsset.ThumbnailURL}}",
+  "description": "{{.Asset.CertificateLabel}}",
   "creator": [
     {
       "@type": "Person",
-      "name": "{{.IssuerName}}"
+      "name": "{{.Issuer.Username}}"
     }
   ],
   "width": [
@@ -22,8 +22,8 @@
       "name": "{{.AssetProperties.Height}}"
     }
   ],
-  "art_edition": "{{.EditionTotal}}",
-  "position": "{{.EditionNumber}}",
+  "art_edition": "{{.Asset.EditionTotal}}",
+  "position": "{{.Asset.EditionNumber}}",
   "art_medium": "{{.AssetProperties.ArtMedium}}",
   "artwork_surface": "{{.AssetProperties.ArtworkSurface}}"
 }

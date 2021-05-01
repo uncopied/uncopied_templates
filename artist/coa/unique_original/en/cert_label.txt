@@ -1,1 +1,1 @@
-{{.AssetName}} by {{.IssuerName}}, {{.CurrentYear}} (Unique Original)
+{{.Asset.Name}} by {{.Issuer.Username}}, {{.CurrentYear}} (Unique Original)

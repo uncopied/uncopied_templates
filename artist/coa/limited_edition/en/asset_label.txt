@@ -1,1 +1,1 @@
-{{.AssetName}} {{.EditionNumber}}/{{.EditionTotal}}
+{{.Asset.Name}} {{.Asset.EditionNumber}}/{{.Asset.EditionTotal}}

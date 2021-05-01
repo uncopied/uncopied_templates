@@ -1,21 +1,21 @@
 {{ template "header.tmpl" .}}
 <div>
 <h1>
-    {{ .asset.CertificateLabel }}
+    {{ .Asset.CertificateLabel }}
 </h1>
 <h2>Certificate of Authenticity for a Unique Original</h2>
     <p>
-        This document certifies that {{ .source.Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art
+        This document certifies that {{ .Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art
         of the author's own creative efforts.
     </p>
     <p>
         The high definition digital source of the work (or a high definition digital copy issued by the author) has been released by the author
-        under licence {{ .source.SourceLicense }} and it will be stored forever (with exceptions if for Illegal, Harmful, or Offensive Content) with
-        cryptographic hash {{ .source.IPFSHash }}.
+        under licence {{ .Asset.SourceLicense }} and it will be stored forever (with exceptions if for Illegal, Harmful, or Offensive Content) with
+        cryptographic hash {{ .DigitalAsset.SourceIPFSHash }}.
     </p>
     <p>
         The thumbnail below is a lower definition copy of the digital source which has been released under licence UNCOPIED v1.0 and it will be stored
-        forever (with exceptions if for Illegal, Harmful, or Offensive Content) with cryptographic hash {{ .source.IPFSHashThumbnail }}.
+        forever (with exceptions if for Illegal, Harmful, or Offensive Content) with cryptographic hash {{ .DigitalAsset.ThumbnailIPFSHash }}.
 
         The artwork's metadata (information such as : title, author etc.) has been released under licence UNCOPIED v1.0 and it will be stored
         forever (with exceptions if for Illegal, Harmful, or Offensive Content).
@@ -33,7 +33,7 @@
     <p>
 
     </p>
-     <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .source.IPFSHashThumbnail }}"/>
+     <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAsset.ThumbnailIPFSHash }}"/>
 
 </div>
 {{ template "footer.tmpl" .}}
