@@ -3,6 +3,7 @@
   "@type": "VisualArtwork",
   "name": "{{ .Asset.Name }}",
   "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAsset.ThumbnailIPFSHash }}",
+  "certificate": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
   "description": "{{ .Asset.CertificateLabel }}",
   "creator": [
     {
