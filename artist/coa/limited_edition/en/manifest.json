@@ -45,6 +45,6 @@
   "metadata_template": "metadata.json",
   "edition_min": 2,
   "edition_max": 10000,
-  "license_terms_url": "someURL",
-  "privacy_terms_url": "someOtherURL"
+  "license_terms_url": "someURL2",
+  "privacy_terms_url": "someOtherURL2"
 }
