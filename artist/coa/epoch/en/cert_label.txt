@@ -1,1 +1,8 @@
-{{.Asset.Name}} by {{.Issuer.Username}}, {{.CurrentYear}} ({{.Asset.EditionNumber}} / {{.Asset.EditionTotal}})
+{{.Asset.Name}} by {{.Issuer.Username}}, {{.CurrentYear}}
+{{ $EditionNumberLessFive := add .Asset.EditionNumber -5 }}
+{{ $EditionTotalLessFive := add .Asset.EditionTotal -5 }}
+{{if (lt .Asset.EditionNumber 25) }}
+{{ $EditionNumberLessFive }}/5
+{{- else}}
+{{ $EditionNumberLessFive }}/{{ $EditionTotalLessFive}} AP
+{{- end}}
