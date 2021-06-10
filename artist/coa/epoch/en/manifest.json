@@ -18,16 +18,24 @@
   ],
   "language": "en",
   "asset_properties": {
-    "long_name": {
+    "height": {
+      "type": "string",
+      "optional": false
+    },
+    "width": {
       "type": "string",
       "optional": false
     },
     "art_medium": {
       "type": "string",
-      "optional": false
+      "optional": true
     },
-    "year_created": {
+    "artwork_surface": {
       "type": "string",
+      "optional": true
+    },
+    "date_created": {
+      "type": "date",
       "optional": false
     }
   },
