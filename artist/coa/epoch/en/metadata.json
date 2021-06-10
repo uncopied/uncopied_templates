@@ -11,7 +11,20 @@
       "name": "{{ .Issuer.Username }}"
     }
   ],
+  "width": [
+    {
+      "@type": "Distance",
+      "name": "{{ .AssetProperties.Width }}"
+    }
+  ],
+  "height": [
+    {
+      "@type": "Distance",
+      "name": "{{ .AssetProperties.Height }}"
+    }
+  ],
   "art_edition": "{{ .Asset.EditionTotal }}",
   "position": "{{ .Asset.EditionNumber }}",
-  "art_medium": "{{ .AssetProperties.ArtMedium }}"
+  "art_medium": "{{ .AssetProperties.ArtMedium }}",
+  "artwork_surface": "{{ .AssetProperties.ArtworkSurface }}"
 }
