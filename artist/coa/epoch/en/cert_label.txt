@@ -1,7 +1,1 @@
-{{.Asset.Name}} by {{.Issuer.Username}}, {{.CurrentYear}}
-edition
-{{if .Asset.EditionNumber<=5 }}
-    {{.Asset.EditionNumber}}/5
-{{else}}
-    {{.Asset.EditionNumber-5}}/8
-{{end}}
+{{.Asset.Name}} by {{.Issuer.Username}}, {{.CurrentYear}} ({{.Asset.EditionNumber}} / {{.Asset.EditionTotal}})
