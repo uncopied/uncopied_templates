@@ -1,30 +1,74 @@
-{
+{ 
   "@context": "https://schema.org",
   "@type": "VisualArtwork",
   "name": "{{ .Asset.Name }}",
   "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAsset.ThumbnailIPFSHash }}",
-  "certificate": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
+  "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
   "description": "{{ .Asset.CertificateLabel }}",
+  "copyrightHolder":[
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}"
+    }
+  ],
   "creator": [
     {
       "@type": "Person",
-      "name": "{{ .Issuer.Username }}"
-    }
-  ],
-  "width": [
+      "name": "{{ .Issuer.DisplayName }}"
+    },
     {
-      "@type": "Distance",
-      "name": "{{ .AssetProperties.Width }}"
-    }
-  ],
-  "height": [
+      "@type": "Person",
+      "name": "Neil Beloufa"
+    },
     {
-      "@type": "Distance",
-      "name": "{{ .AssetProperties.Height }}"
+      "@type": "Person",
+      "name": "Sarah Rosalena Brady"
+    },
+    {
+      "@type": "Person",
+      "name": "Alice Bucknell"
+    },
+    {
+      "@type": "Person",
+      "name": "Juan Covelli"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexandra Koumantaki"
+    },
+    {
+      "@type": "Person",
+      "name": "Amanda Ross-Ho"
+    },
+    {
+      "@type": "Person",
+      "name": "Hirad Sab"
     }
   ],
   "art_edition": "{{ .Asset.EditionTotal }}",
   "position": "{{ .Asset.EditionNumber }}",
   "art_medium": "{{ .AssetProperties.ArtMedium }}",
-  "artwork_surface": "{{ .AssetProperties.ArtworkSurface }}"
+  "contentSize":"6gb", //put exact size in bytes
+  "contentUrl":"{{ .ServerAddr }}/asset/legal-document/ipfs-hash/QmeUkVbadwBoivHGWKxDD8EMSgLNGVa593fD1iEAxhoxiA",
+  "alternateName":"{{.Asset.Name}} - featuring Neïl Beloufa, Sarah Rosalena Brady, Alice Bucknell, Juan Covelli, Alexandra Koumantaki, Amanda Ross-Ho, Hirad Sab",
+
+
+  "url":"https://epoch.gallery/freeport/",
+  "subjectOf": {
+	  // describe the exhibition using https://schema.org/ExhibitionEvent ?
+	  "@context": "https://schema.org",
+	  "@type": "ExhibitionEvent",
+	  "location": "Victoria and Albert Museum",
+	  "url": "http://www.vam.ac.uk/whatson/event/5150/shoes-pleasure-and-pain-696789408/",
+	  "name": "Shoes: Pleasure and Pain",
+	  "startDate": "2015-06-13",
+	  "endDate": "2016-01-31",
+	  "description": "Explore the transformative power of footwear from around the world as we present over 200 pairs of the most extreme shoes from the last 2000 years.",
+	   "offers": [
+			   {"@type": "Offer",
+			   "@id": "http://www.vam.ac.uk/whatson/event/5150/date/20151007/"
+		   }
+	  ]
+    }
 }
+
