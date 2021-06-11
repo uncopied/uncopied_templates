@@ -62,7 +62,7 @@
         "@type": "VisualArtwork",
         "description": "Swamp City is excited to ...",
         "name": "Swamp City Promo, 2021",
-        "author": {
+        "artist": {
           "@type": "Person",
           "name": "Alice Bucknell"
         }
@@ -72,7 +72,7 @@
         "@type": "VisualArtwork",
         "description": "Swamp City is excited to ...",
         "name": "Swamp City Promo, 2021",
-        "author": {
+        "artist": {
           "@type": "Person",
           "name": "Alice Bucknell"
         }
