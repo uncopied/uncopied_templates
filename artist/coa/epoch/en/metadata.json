@@ -48,27 +48,47 @@
   "art_edition": "{{ .Asset.EditionTotal }}",
   "position": "{{ .Asset.EditionNumber }}",
   "art_medium": "{{ .AssetProperties.ArtMedium }}",
-  "contentSize":"6gb", //put exact size in bytes
-  "contentUrl":"{{ .ServerAddr }}/asset/legal-document/ipfs-hash/QmeUkVbadwBoivHGWKxDD8EMSgLNGVa593fD1iEAxhoxiA",
+  "associatedMedia":
+  {
+    "@context": "https://schema.org",
+    "@type": "DataDownload",
+    "contentSize": "6405766745",
+    "contentUrl":"{{ .ServerAddr }}/asset/legal-document/ipfs-hash/QmeUkVbadwBoivHGWKxDD8EMSgLNGVa593fD1iEAxhoxiA",
+    "description": "FREEPORT",
+    "name": "QmeUkVbadwBoivHGWKxDD8EMSgLNGVa593fD1iEAxhoxiA.zip",
+    "hasPart": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "description": "Swamp City is excited to ...",
+        "name": "Swamp City Promo, 2021",
+        "author": {
+          "@type": "Person",
+          "name": "Alice Bucknell"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "description": "Swamp City is excited to ...",
+        "name": "Swamp City Promo, 2021",
+        "author": {
+          "@type": "Person",
+          "name": "Alice Bucknell"
+        }
+      }
+    ]
+  },
   "alternateName":"{{.Asset.Name}} - featuring Neïl Beloufa, Sarah Rosalena Brady, Alice Bucknell, Juan Covelli, Alexandra Koumantaki, Amanda Ross-Ho, Hirad Sab",
-
-
   "url":"https://epoch.gallery/freeport/",
   "subjectOf": {
-	  // describe the exhibition using https://schema.org/ExhibitionEvent ?
 	  "@context": "https://schema.org",
 	  "@type": "ExhibitionEvent",
-	  "location": "Victoria and Albert Museum",
-	  "url": "http://www.vam.ac.uk/whatson/event/5150/shoes-pleasure-and-pain-696789408/",
-	  "name": "Shoes: Pleasure and Pain",
-	  "startDate": "2015-06-13",
-	  "endDate": "2016-01-31",
-	  "description": "Explore the transformative power of footwear from around the world as we present over 200 pairs of the most extreme shoes from the last 2000 years.",
-	   "offers": [
-			   {"@type": "Offer",
-			   "@id": "http://www.vam.ac.uk/whatson/event/5150/date/20151007/"
-		   }
-	  ]
+	  "url": "https://epoch.gallery/freeport/",
+	  "name": "FREEPORT",
+	  "startDate": "2021-06-12",
+	  "endDate": "2021-10-01",
+	  "description": "FREEPORT is inspired by and modeled after the Luxembourg Freeport.Freeports are unregulated, ultra-secure storage facilities that exist outside of the territorial tax jurisdictions of any country — they’re often used by the uber-rich to hoard significant works of art. Because of their inherent lack of transparency, freeports are nefarious breeding grounds for fraud, money laundering, and tax evasion.There are many similarities that can be made between freeports and non-fungible tokens (NFTs). Both exist in unregulated territories, are constructs of capitalism, and can elicit unsavory practices. With a touch of irony, EPOCH seeks to circumvent these similarities by offering a unique concept for an NFT built upon an ecological, equitable, and sustainable model."
     }
 }
 
