@@ -48,7 +48,7 @@
     <p>
         This particular Certificate of Authenticity is attached to the unique pair of cryptographic tokens (UNCOPIED, EPOCH) with label :
         <strong>
-            {{.Issuer.DisplayName}}, "{{.Asset.Name}}," {{.CurrentYear}}; {{ $EditionNumberLessFive := add .Asset.EditionNumber -5 }}{{ $EditionTotalLessFive := add .Asset.EditionTotal -5 }}{{if (le .Asset.EditionNumber 5) }}{{ .Asset.EditionNumber }}/5{{- else}}{{ $EditionNumberLessFive }}/{{ $EditionTotalLessFive}} AP{{- end}}
+            {{ .Asset.AssetLabel }}
         </strong>
     </p>
 </div>
