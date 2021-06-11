@@ -1,7 +1,7 @@
 {{ template "header.tmpl" .}}
 <div>
 <h2>
-    {{.Issuer.DisplayName}}, "{{.Asset.Name}}," {{.CurrentYear}}; edition {{ $EditionNumberLessFive := add .Asset.EditionNumber -5 }}{{ $EditionTotalLessFive := add .Asset.EditionTotal -5 }}{{if (le .Asset.EditionNumber 5) }}{{ .Asset.EditionNumber }}/5{{- else}}{{ $EditionNumberLessFive }}/{{ $EditionTotalLessFive}} AP{{- end}}
+    {{.Asset.CertificateLabel}}
 </h2>
 <h3>"{{.Asset.Name}}," - featuring Neïl Beloufa, Sarah Rosalena Brady, Alice Bucknell, Juan Covelli, Alexandra Koumantaki, Amanda Ross-Ho, Hirad Sab</H2>
     <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAsset.ThumbnailIPFSHash}}"/>
