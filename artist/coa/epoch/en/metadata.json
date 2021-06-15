@@ -12,57 +12,111 @@
     "@type": "VideoObject",
     "name": "FREEPORT_videointro_final_s.mp4",
     "contentSize":"13354892",
-    "contentUrl": "{{ .ServerAddr }}/digital-asset/ipfs-hash/QmT4HZa91AbThuG8n9XvBceBXyMx2VLX5v2MBCfukTbVGo"
+    "contentUrl": "http://ipfs.io/ipfs/QmT4HZa91AbThuG8n9XvBceBXyMx2VLX5v2MBCfukTbVGo"
   },
   "copyrightHolder":[
     {
       "@type": "Person",
-      "name": "{{ .Issuer.DisplayName }}"
+      "name": "{{ .Issuer.DisplayName }}",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+      },
+      "sameAs": "https://algoexplorer.io/address/VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
     }
   ],
   "creator": [
     {
       "@type": "Person",
-      "name": "{{ .Issuer.DisplayName }}"
+      "name": "{{ .Issuer.DisplayName }}",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+      },
+      "sameAs": "https://algoexplorer.io/address/VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
     },
     {
       "@type": "Person",
-      "name": "Neil Beloufa"
+      "name": "Neil Beloufa",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "YGCKHAG4H3WDUQSAY5J4MK5ZIWLGIF7W6ZYO5EZY3OGZJB5FWGDNBX7BUA"
+      },
+      "sameAs": "https://algoexplorer.io/address/YGCKHAG4H3WDUQSAY5J4MK5ZIWLGIF7W6ZYO5EZY3OGZJB5FWGDNBX7BUA"
     },
     {
       "@type": "Person",
-      "name": "Sarah Rosalena Brady"
+      "name": "Sarah Rosalena Brady",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "IKEPBSW7RSPN4TXYC3AV6FOOGZ6PJLTJKEB2PVCTPSRFNB3CANZ5JJRZPY"
+      },
+      "sameAs": "https://algoexplorer.io/address/IKEPBSW7RSPN4TXYC3AV6FOOGZ6PJLTJKEB2PVCTPSRFNB3CANZ5JJRZPY"
     },
     {
       "@type": "Person",
-      "name": "Alice Bucknell"
+      "name": "Alice Bucknell",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "2FSBHE3XAXJHBFFUABPPBBU3ZL4PQAHI6BB3KTHJKL5IZCC7BG4LR6GRT4"
+      },
+      "sameAs": "https://algoexplorer.io/address/2FSBHE3XAXJHBFFUABPPBBU3ZL4PQAHI6BB3KTHJKL5IZCC7BG4LR6GRT4"
     },
     {
       "@type": "Person",
-      "name": "Juan Covelli"
+      "name": "Juan Covelli",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "UONII5HLZPHGDCBCETVTFGX42I5MJWEYKM5NUIFQW3A47CSDIHZN74AYUA"
+      },
+      "sameAs": "https://algoexplorer.io/address/UONII5HLZPHGDCBCETVTFGX42I5MJWEYKM5NUIFQW3A47CSDIHZN74AYUA"
     },
     {
       "@type": "Person",
-      "name": "Alexandra Koumantaki"
+      "name": "Alexandra Koumantaki",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "EMMEIOWLZPMUCXSLGB5QOR33HCQZAQT6KSRGCXHBO54W7LNLQCJXSGJ4IQ"
+      },
+      "sameAs": "https://algoexplorer.io/address/EMMEIOWLZPMUCXSLGB5QOR33HCQZAQT6KSRGCXHBO54W7LNLQCJXSGJ4IQ"
     },
     {
       "@type": "Person",
-      "name": "Amanda Ross-Ho"
+      "name": "Amanda Ross-Ho",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "UNH443RNFL4NWFCP5AI3N34C6IK6SWDEPZRLFKXGWYTXBZ5BTLJJLGWLRQ"
+      },
+      "sameAs": "https://algoexplorer.io/address/UNH443RNFL4NWFCP5AI3N34C6IK6SWDEPZRLFKXGWYTXBZ5BTLJJLGWLRQ"
     },
     {
       "@type": "Person",
-      "name": "Hirad Sab"
+      "name": "Hirad Sab",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "QPNWTRS3FLRUICYYLVPQV7QZIJPBNM2EV6S5BF6JOFQL7DGCLU5HKQSUK4"
+      },
+      "sameAs": "https://algoexplorer.io/address/QPNWTRS3FLRUICYYLVPQV7QZIJPBNM2EV6S5BF6JOFQL7DGCLU5HKQSUK4"
     }
   ],
   "artEdition": "{{ .Asset.EditionTotal }}",
   "position": "{{ .Asset.EditionNumber }}",
-  "artMedium": "{{ .AssetProperties.ArtMedium }}",
+  "artMedium": "8K virtual exhibition featuring a compilation of artworks by participating artists (playable stand-alone Windows/Mac compatible file, viewable on VR headsets)",
   "associatedMedia":
   {
     "@context": "https://schema.org",
     "@type": "DataDownload",
     "contentSize": "6405766745",
-    "contentUrl":"{{ .ServerAddr }}/asset/legal-document/ipfs-hash/QmeUkVbadwBoivHGWKxDD8EMSgLNGVa593fD1iEAxhoxiA",
+    "contentUrl":"http://ipfs.io/ipfs/QmeUkVbadwBoivHGWKxDD8EMSgLNGVa593fD1iEAxhoxiA",
     "description": "FREEPORT",
     "name": "QmeUkVbadwBoivHGWKxDD8EMSgLNGVa593fD1iEAxhoxiA.zip",
     "hasPart": [
@@ -99,7 +153,7 @@
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "description": "Alice Bucknell is an artist and writer based in London. Using tactics of speculative fiction and working primarily through game engines and worldbuilding strategies, her current work explores interconnections of architecture, ecology, magic, and non-human and machine intelligences. Inspired by feminist science fiction authors such as Octavia E. Butler and Ursula K. Le Guin, she is interested in using emerging technologies including machine learning and artificial intelligence as well as video game design software to speculate on alternative interspecies survival strategies and envisioning more-than-human futures for our planet. ",
+        "description": "Swamp City imagines the Florida Everglades as a luxury eco-tourism retreat in a near-future reality of severe climate disruption. Featuring both human and non-human protagonists, including an anthropomorphic alligator refusing to migrate, an opportunistic celebrity architect, and a 3,500-year-old bald cypress tree resurrected with artificial intelligence, it explores the tensions between architecture, lifestyle capitalism, sentient technology, entangled ecologies, and a dying swamp.\nAlice Bucknell is an artist and writer based in London. Using tactics of speculative fiction and working primarily through game engines and worldbuilding strategies, her current work explores interconnections of architecture, ecology, magic, and non-human and machine intelligences. Inspired by feminist science fiction authors such as Octavia E. Butler and Ursula K. Le Guin, she is interested in using emerging technologies including machine learning and artificial intelligence as well as video game design software to speculate on alternative interspecies survival strategies and envisioning more-than-human futures for our planet. ",
         "name": "“Swamp City,” 2021",
         "artist": {
           "@type": "Person",
@@ -168,6 +222,11 @@
 	  "startDate": "2021-06-12",
 	  "endDate": "2021-10-01",
 	  "description": "FREEPORT is inspired by and modeled after the Luxembourg Freeport.Freeports are unregulated, ultra-secure storage facilities that exist outside of the territorial tax jurisdictions of any country — they’re often used by the uber-rich to hoard significant works of art. Because of their inherent lack of transparency, freeports are nefarious breeding grounds for fraud, money laundering, and tax evasion.There are many similarities that can be made between freeports and non-fungible tokens (NFTs). Both exist in unregulated territories, are constructs of capitalism, and can elicit unsavory practices. With a touch of irony, EPOCH seeks to circumvent these similarities by offering a unique concept for an NFT built upon an ecological, equitable, and sustainable model."
-    }
+    },
+  "offers": {
+    "@type": "Offer",
+    "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating artists and EPOCH. Differentiating this system from most traditional gallery\nsystems, 70% will be split evenly amongst all the participating artists and 30% will remain with EPOCH. 20% royalties for secondary market sales will be evenly\ndistributed amongst all the artists and EPOCH. Each participant will receive one NFT representing an Artist Proof (AP) edition. These AP editions are not part of the 5\npublicly-offered editions for sale, but should they be sold by an artist, will carry the same secondary market terms as the 5 NFTs in the publicly-offered edition. The Smart Contract is released on Github with an Apache 2.0 license.",
+    "url": "https://github.com/uncopied/epoch_smart_contract"
+  }
 }
 
