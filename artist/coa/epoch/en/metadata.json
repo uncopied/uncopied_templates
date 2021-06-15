@@ -10,9 +10,9 @@
   "video": {
     "@context": "https://schema.org/",
     "@type": "VideoObject",
-    "name": "FREEPORT_videointro_final_s.mp4",
-    "contentSize":"13354892",
-    "contentUrl": "http://ipfs.io/ipfs/QmT4HZa91AbThuG8n9XvBceBXyMx2VLX5v2MBCfukTbVGo"
+    "name": "FREEPORT_videointro_titles.mp4",
+    "contentSize":"73754079",
+    "contentUrl": "http://ipfs.io/ipfs/QmR12KTvabW7qohCiJysCqBUNtAzbU94NPnirsYGkj2kAL"
   },
   "copyrightHolder":[
     {
