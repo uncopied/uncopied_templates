@@ -1,8 +1,8 @@
 {
-  "id": "50099735-fccf-47bd-ba5d-cc036da50150",
-  "name": "unique original",
-  "type": "CoA",
-  "description": "Basic Template for Unique Original Art (oil painting, statue, ...)",
+  "id": "50099735-fccf-47bd-ba5d-cc036da50153",
+  "name": "inventory",
+  "type": "CoI",
+  "description": "Basic Template for Museum Inventory",
   "author": "UNCOPIED",
   "version": "1.0",
   "manifest_version": 1,
@@ -11,7 +11,7 @@
     "jpg"
   ],
   "roles": [
-    "artist"
+    "museum"
   ],
   "countries": [
     "*"
