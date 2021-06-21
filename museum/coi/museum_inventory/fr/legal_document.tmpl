@@ -3,10 +3,14 @@
 <h1>
     {{ .Asset.CertificateLabel }}
 </h1>
-<h2>Certificate of Inventory - Object n° {{ .AssetProperties.InventoryID }}</h2>
+<h2>Certificat de récolement - Inventaire n° {{ .AssetProperties.InventoryID }}</h2>
     <p>
-        This document certifies that {{ .Issuer.DisplayName }} declares the piece of artwork mentioned below,
-        to be part of the Museum's inventory.
+        Ce document certifie que l'objet n° {{ .AssetProperties.InventoryID }}
+        fait partie de l'inventaire du Musée {{ .Issuer.DisplayName }}.
+    </p>
+    <p>
+        Titre ou description :
+
     </p>
     <p>
         The high definition digital source of the work (or a high definition digital copy issued by the author) has been released by the author
