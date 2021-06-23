@@ -3,11 +3,11 @@
 <h1>
     {{ .Asset.CertificateLabel }}
 </h1>
-<h2>Certificat de récolement - Inventaire n° {{ .AssetProperties.InventoryID }} - {{ .Asset.Name }} </h2>
+<h2>Certificat de récolement - Inventaire n° {{ .AssetProperties.InventoryId }} - {{ .Asset.Name }} </h2>
     <p>
         Ce document certifie que l'objet
         <strong> “{{.Asset.Name}}" <strong>
-        numéroté {{ .AssetProperties.InventoryID }} à l'inventaire fait partie de la collection permanente du {{ .Issuer.DisplayName }} en date du {{ .AssetProperties.InventoryDate }}.
+        numéroté {{ .AssetProperties.InventoryId }} à l'inventaire fait partie de la collection permanente du {{ .Issuer.DisplayName }} en date du {{ .AssetProperties.InventoryDate }}.
     </p>
         <div>
         <table>
@@ -24,7 +24,7 @@
           </tr>
           <tr>
             <td>Numéro d'inventaire</td>
-            <td>{{ .AssetProperties.InventoryID }}</td>
+            <td>{{ .AssetProperties.InventoryId }}</td>
           </tr>
           <tr>
             <td>Type d'objet</td>
