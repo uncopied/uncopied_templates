@@ -18,11 +18,11 @@
   ],
   "language": "fr",
   "asset_properties": {
-    "objectType": {
+    "object_type": {
       "type": "string",
       "optional": false
     },
-    "inventoryId": {
+    "inventory_id": {
       "type": "string",
       "optional": false
     },

@@ -3,39 +3,70 @@
 <h1>
     {{ .Asset.CertificateLabel }}
 </h1>
-<h2>Certificat de récolement - Inventaire n° {{ .AssetProperties.InventoryID }}</h2>
+<h2>Certificat de récolement - Inventaire n° {{ .AssetProperties.InventoryID }} - {{ .Asset.Name }} </h2>
     <p>
-        Ce document certifie que l'objet n° {{ .AssetProperties.InventoryID }}
-        fait partie de l'inventaire du Musée {{ .Issuer.DisplayName }}.
+        Ce document certifie que l'objet
+        <strong> “{{.Asset.Name}}" <strong>
+        numéroté {{ .AssetProperties.InventoryID }} à l'inventaire fait partie de la collection permanente du {{ .Issuer.DisplayName }} en date du {{ .AssetProperties.InventoryDate }}.
+    </p>
+        <div>
+        <table>
+        <thead>
+          <tr>
+            <th>Clé</th>
+            <th>Valeur</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Organisme certificateur (OC)</td>
+            <td>{{ .Issuer.DisplayName }}</td>
+          </tr>
+          <tr>
+            <td>Numéro d'inventaire</td>
+            <td>{{ .AssetProperties.InventoryID }}</td>
+          </tr>
+          <tr>
+            <td>Type d'objet</td>
+            <td>{{ .AssetProperties.ObjectType }}</td>
+          </tr>
+          <tr>
+            <td>Nom ou titre</td>
+            <td>{{ .Asset.Name }}</td>
+          </tr>
+          <tr>
+            <td>Description</td>
+            <td>{{ .AssetProperties.Description }}</td>
+          </tr>
+          <tr>
+            <td>Dimensions</td>
+            <td>{{ .AssetProperties.Height }} x {{ .AssetProperties.Width }} x {{ .AssetProperties.Depth }}</td>
+          </tr>
+          <tr>
+            <td>Matériaux</td>
+            <td>{{ .AssetProperties.Material }}</td>
+          </tr>
+          <tr>
+            <td>Bibliographie</td>
+            <td>{{ .AssetProperties.Bibliography }}</td>
+          </tr>
+          <tr>
+            <td>Provenance</td>
+            <td>{{ .AssetProperties.Provenance }}</td>
+          </tr>
+        </tbody>
+        </table>
+    </div>
+    <p>
+        Une image en haute définition représentant l'objet “{{.Asset.Name}}" a été publiée par le {{ .Issuer.DisplayName }} avec la clé cryptographique {{ .DigitalAsset.SourceIPFSHash }} pour un stockage permanent sous licence :
+        <strong>Tous droits réservés</strong>.
     </p>
     <p>
-        Titre ou description :
+        Une image en basse définition représentant l'objet “{{.Asset.Name}}" a été publiée par le {{ .Issuer.DisplayName }} avec la clé cryptographique {{ .DigitalAsset.ThumbnailIPFSHash }} pour un stockage permanent sous licence :
+        <strong>Creative Commons License (CC BY-NC-ND)</strong>.
 
-    </p>
-    <p>
-        The high definition digital source of the work (or a high definition digital copy issued by the author) has been released by the author
-        under licence {{ .Asset.SourceLicense }} and it will be stored forever (with exceptions if for Illegal, Harmful, or Offensive Content) with
-        cryptographic hash {{ .DigitalAsset.SourceIPFSHash }}.
-    </p>
-    <p>
-        The thumbnail below is a lower definition copy of the digital source which has been released under licence UNCOPIED v1.0 and it will be stored
-        forever (with exceptions if for Illegal, Harmful, or Offensive Content) with cryptographic hash {{ .DigitalAsset.ThumbnailIPFSHash }}.
-
-        The artwork's metadata (information such as : title, author etc.) has been released under licence UNCOPIED v1.0 and it will be stored
-        forever (with exceptions if for Illegal, Harmful, or Offensive Content).
-
-        The use of the thumbnail and the metadata is limited to the use listed in provisions of UNCOPIED v1.0 license.
-    </p>
-    <p>
-        The digital source corresponds to exactly ONE original and unique physical object.
-    </p>
-    <p>
-        Of the digital source were produced ONE original and unique cryptographic token constituting the Origial NFT.
-        The unique physical object is tied to its unique digital token. Transferring ownership of one instantly transfers the ownership of the other, with the
-        exception of : fraud, spoliation, cybercrime or any for of abuse.
-    </p>
-    <p>
-
+        Les métadonnées décrivant l'objet “{{.Asset.Name}}" ont été publiées par le {{ .Issuer.DisplayName }} pour un stockage permanent sous licence :
+        <strong>Creative Commons Public Domain (CC0)</strong>.
     </p>
     <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAsset.ThumbnailIPFSHash}}"/>
 

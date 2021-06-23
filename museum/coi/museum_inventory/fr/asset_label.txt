@@ -1,1 +1,1 @@
-{{ .AssetProperties.InventoryID }}
+{{ .AssetProperties.InventoryID }} - {{ .AssetProperties.InventoryDate }}
