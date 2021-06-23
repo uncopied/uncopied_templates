@@ -2,7 +2,7 @@
   "id": "50099735-fccf-47bd-ba5d-cc036da50151",
   "name": "inventaire",
   "type": "CoI",
-  "description": "Modèle de certificat pour récolement muséal",
+  "description": "Modèle de certificat d'inventaire pour le récolement muséal",
   "author": "UNCOPIED",
   "version": "1.0",
   "manifest_version": 1,
@@ -18,6 +18,26 @@
   ],
   "language": "fr",
   "asset_properties": {
+    "objectType": {
+      "type": "string",
+      "optional": false
+    },
+    "inventoryId": {
+      "type": "string",
+      "optional": false
+    },
+    "description": {
+      "type": "string",
+      "optional": false
+    },
+    "bibliography": {
+      "type": "string",
+      "optional": false
+    },
+    "provenance": {
+      "type": "string",
+      "optional": false
+    },
     "height": {
       "type": "string",
       "optional": false
@@ -26,15 +46,15 @@
       "type": "string",
       "optional": false
     },
-    "art_medium": {
+    "depth": {
       "type": "string",
       "optional": true
     },
-    "artwork_surface": {
+    "material": {
       "type": "string",
       "optional": true
     },
-    "date_created": {
+    "inventory_date": {
       "type": "date",
       "optional": false
     }

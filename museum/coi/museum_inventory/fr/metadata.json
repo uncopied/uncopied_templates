@@ -1,28 +1,125 @@
 {
-  "@context": "https://schema.org",
-  "@type": "VisualArtwork",
-  "name": "{{ .Asset.Name }}",
-  "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAsset.ThumbnailIPFSHash}}",
-  "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
-  "description": "{{ .Asset.CertificateLabel }}",
-  "width": [
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "{{ .AssetProperties.InventoryId }}",
+  "type": "HumanMadeObject",
+  "classified_as": [
     {
-      "@type": "Distance",
-      "name": "{{ .AssetProperties.Width }}"
+      "type": "Type",
+      "_label": "{{ .AssetProperties.ObjectType }}"
     }
   ],
-  "height": [
+  "identified_by": [
     {
-      "@type": "Distance",
-      "name": "{{ .AssetProperties.Height }}"
+      "id": "http://lod.example.org/museum/Identifier/40",
+      "type": "Identifier",
+      "content": "{{ .AssetProperties.InventoryId }}",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404621",
+          "type": "Type",
+          "_label": "Local Number"
+        }
+      ]
     }
   ],
-  "art_medium": "{{ .AssetProperties.ArtMedium }}",
-  "artwork_surface": "{{ .AssetProperties.ArtworkSurface }}",
-  "date_created": "{{ .AssetProperties.DateCreated }}",
-  "identifier": {
-    "@type": "PropertyValue",
-    "propertyID": "InventoryID",
-    "value":  "{{ .AssetProperties.InventoryID }}"
-  }
+  "referred_to_by": [
+    {
+      "id": "http://lod.example.org/museum/LinguisticObject/168",
+      "type": "LinguisticObject",
+      "content": "{{ .AssetProperties.Material }}",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300010358",
+          "type": "Type",
+          "_label": "Material Statement"
+        },
+        {
+          "id": "http://vocab.getty.edu/aat/300418049",
+          "type": "Type",
+          "_label": "Brief Text"
+        }
+      ]
+    },
+    {
+      "id": "http://lod.example.org/museum/LinguisticObject/169",
+      "type": "LinguisticObject",
+      "content": "{{ .AssetProperties.Height }} x {{ .AssetProperties.Width }} x {{ .AssetProperties.Depth }}",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300266036",
+          "type": "Type",
+          "_label": "Dimension Statement"
+        },
+        {
+          "id": "http://vocab.getty.edu/aat/300418049",
+          "type": "Type",
+          "_label": "Brief Text"
+        }
+      ]
+    },
+    {
+      "id": "http://lod.example.org/museum/LinguisticObject/171",
+      "type": "LinguisticObject",
+      "content": "{{ .AssetProperties.Description }}",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300080091",
+          "type": "Type",
+          "_label": "Description"
+        },
+        {
+          "id": "http://vocab.getty.edu/aat/300418049",
+          "type": "Type",
+          "_label": "Brief Text"
+        }
+      ]
+    },
+    {
+      "id": "http://lod.example.org/museum/LinguisticObject/172",
+      "type": "LinguisticObject",
+      "content": "{{ .AssetProperties.Provenance }}",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300055863",
+          "type": "Type",
+          "_label": "Provenance Statement"
+        },
+        {
+          "id": "http://vocab.getty.edu/aat/300418049",
+          "type": "Type",
+          "_label": "Brief Text"
+        }
+      ]
+    },
+    {
+      "id": "http://lod.example.org/museum/LinguisticObject/174",
+      "type": "LinguisticObject",
+      "content": "{{ .AssetProperties.Bibliography }}",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300026497",
+          "type": "Type",
+          "_label": "Bibliography Statement"
+        },
+        {
+          "id": "http://vocab.getty.edu/aat/300418049",
+          "type": "Type",
+          "_label": "Brief Text"
+        }
+      ]
+    }
+  ],
+  "representation": [
+    {
+      "id": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAsset.ThumbnailIPFSHash}}",
+      "type": "VisualItem",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300215302",
+          "type": "Type",
+          "_label": "Digital Image"
+        }
+      ]
+    }
+  ]
 }
