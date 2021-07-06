@@ -22,6 +22,14 @@
       "type": "string",
       "optional": false
     },
+    "artist": {
+      "type": "string",
+      "optional": false
+    },
+    "production_technique": {
+      "type": "string",
+      "optional": true
+    },
     "inventory_id": {
       "type": "string",
       "optional": false

@@ -9,6 +9,21 @@
       "_label": "{{ .AssetProperties.ObjectType }}"
     }
   ],
+  "produced_by": {
+    "type": "Production",
+    "technique": [
+      {
+        "type": "Type",
+        "_label": "{{ .AssetProperties.ProductionTechnique }}"
+      }
+    ],
+    "carried_out_by": [
+      {
+        "type": "Person",
+        "_label": "{{ .AssetProperties.Artist }}"
+      }
+    ]
+  },
   "dimension": [
     {
       "type": "Dimension",

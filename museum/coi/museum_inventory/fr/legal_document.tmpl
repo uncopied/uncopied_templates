@@ -35,16 +35,28 @@
             <td>{{ .Asset.Name }}</td>
           </tr>
           <tr>
+            <td>Artist</td>
+            <td>{{ .AssetProperties.Artist }}</td>
+          </tr>
+          <tr>
             <td>Description</td>
             <td>{{ .AssetProperties.Description }}</td>
           </tr>
           <tr>
             <td>Dimensions</td>
-            <td>{{ .AssetProperties.Height }} x {{ .AssetProperties.Width }} x {{ .AssetProperties.Depth }}</td>
+            <td>{{ .AssetProperties.Height }} x {{ .AssetProperties.Width }} x {{ .AssetProperties.Depth }} cm</td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td>{{ .AssetProperties.Weight }} grammes </td>
           </tr>
           <tr>
             <td>Matériaux</td>
             <td>{{ .AssetProperties.Material }}</td>
+          </tr>
+          <tr>
+            <td>Technique de production</td>
+            <td>{{ .AssetProperties.ProductionTechnique }}</td>
           </tr>
           <tr>
             <td>Bibliographie</td>
