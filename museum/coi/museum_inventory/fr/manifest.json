@@ -50,6 +50,10 @@
       "type": "string",
       "optional": true
     },
+    "weight": {
+      "type": "string",
+      "optional": true
+    },
     "material": {
       "type": "string",
       "optional": true

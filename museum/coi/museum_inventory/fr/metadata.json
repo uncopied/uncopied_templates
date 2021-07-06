@@ -2,10 +2,77 @@
   "@context": "https://linked.art/ns/v1/linked-art.json",
   "id": "{{ .AssetProperties.InventoryId }}",
   "type": "HumanMadeObject",
+  "_label": "{{ .Asset.Name }}",
   "classified_as": [
     {
       "type": "Type",
       "_label": "{{ .AssetProperties.ObjectType }}"
+    }
+  ],
+  "dimension": [
+    {
+      "type": "Dimension",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300055647",
+          "type": "Type",
+          "_label": "Width"
+        }
+      ],
+      "value": "{{ .AssetProperties.Width }}",
+      "unit": {
+        "id": "http://vocab.getty.edu/aat/300379098",
+        "type": "MeasurementUnit",
+        "_label": "centimeters"
+      }
+    },
+    {
+      "type": "Dimension",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300055644",
+          "type": "Type",
+          "_label": "Height"
+        }
+      ],
+      "value": "{{ .AssetProperties.Height }}",
+      "unit": {
+        "id": "http://vocab.getty.edu/aat/300379098",
+        "type": "MeasurementUnit",
+        "_label": "centimeters"
+      }
+    },
+    {
+      "type": "Dimension",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300072633",
+          "type": "Type",
+          "_label": "Depth"
+        }
+      ],
+      "value": "{{ .AssetProperties.Depth }}",
+    "unit": {
+      "id": "http://vocab.getty.edu/aat/300379098",
+      "type": "MeasurementUnit",
+      "_label": "centimeters"
+    }
+    },
+    {
+      "type": "Dimension",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300056240",
+          "type": "Type",
+          "_label": "Weight"
+        }
+      ],
+      "value": "{{ .AssetProperties.Weight }}",
+      "unit": {
+        "id": "http://vocab.getty.edu/aat/300379225",
+        "type": "MeasurementUnit",
+        "_label": "grams"
+      }
     }
   ],
   "identified_by": [
@@ -32,23 +99,6 @@
           "id": "http://vocab.getty.edu/aat/300010358",
           "type": "Type",
           "_label": "Material Statement"
-        },
-        {
-          "id": "http://vocab.getty.edu/aat/300418049",
-          "type": "Type",
-          "_label": "Brief Text"
-        }
-      ]
-    },
-    {
-      "id": "http://lod.example.org/museum/LinguisticObject/169",
-      "type": "LinguisticObject",
-      "content": "{{ .AssetProperties.Height }} x {{ .AssetProperties.Width }} x {{ .AssetProperties.Depth }}",
-      "classified_as": [
-        {
-          "id": "http://vocab.getty.edu/aat/300266036",
-          "type": "Type",
-          "_label": "Dimension Statement"
         },
         {
           "id": "http://vocab.getty.edu/aat/300418049",
