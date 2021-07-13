@@ -1,0 +1,50 @@
+{
+  "id": "50099735-fccf-47bd-ba5d-cc036da50150",
+  "name": "unique original",
+  "type": "CoA",
+  "description": "Modèle de certificat pour les oeuvres physiques originales uniques (peinture, sculpture...)",
+  "author": "UNCOPIED",
+  "version": "1.0",
+  "manifest_version": 1,
+  "source_types": [
+    "png",
+    "jpg"
+  ],
+  "roles": [
+    "artist"
+  ],
+  "countries": [
+    "*"
+  ],
+  "language": "fr",
+  "asset_properties": {
+    "height": {
+      "type": "string",
+      "optional": false
+    },
+    "width": {
+      "type": "string",
+      "optional": false
+    },
+    "art_medium": {
+      "type": "string",
+      "optional": true
+    },
+    "artwork_surface": {
+      "type": "string",
+      "optional": true
+    },
+    "date_created": {
+      "type": "date",
+      "optional": false
+    }
+  },
+  "certificate_template": "legal_document.tmpl",
+  "certificate_label_template": "certificate_label.txt",
+  "assetLabel_template": "asset_label.txt",
+  "metadata_template": "metadata.json",
+  "edition_min": 1,
+  "edition_max": 1,
+  "license_terms_url": "someURL",
+  "privacy_terms_url": "someOtherURL"
+}

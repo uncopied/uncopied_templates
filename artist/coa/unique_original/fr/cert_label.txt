@@ -1,0 +1,1 @@
+{{.Asset.Name}} par {{.Issuer.Username}}, {{.CurrentYear}} (Original Unique)
