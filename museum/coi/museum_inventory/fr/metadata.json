@@ -11,6 +11,11 @@
   ],
   "produced_by": {
     "type": "Production",
+    "timespan": {
+      "type": "TimeSpan",
+      "begin_of_the_begin": "{{ .AssetProperties.TimespanBegin }}T00:00:00Z",
+      "end_of_the_end": "{{ .AssetProperties.TimespanEnd }}T00:00:00Z"
+    },
     "technique": [
       {
         "type": "Type",
