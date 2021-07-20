@@ -28,7 +28,7 @@
       "optional": false,
       "ordering": 2
     },
-    "production_technique": {
+    "technique": {
       "type": "string",
       "optional": true,
       "ordering": 3

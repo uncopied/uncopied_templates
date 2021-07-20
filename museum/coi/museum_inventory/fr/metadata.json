@@ -19,7 +19,7 @@
     "technique": [
       {
         "type": "Type",
-        "_label": "{{ .AssetProperties.ProductionTechnique }}"
+        "_label": "{{ .AssetProperties.Technique }}"
       }
     ],
     "carried_out_by": [
