@@ -28,7 +28,7 @@
       "optional": false,
       "ordering": 2
     },
-    "production_technique": {
+    "technique": {
       "type": "string",
       "optional": true,
       "ordering": 3
@@ -78,10 +78,20 @@
       "optional": true,
       "ordering": 12
     },
+    "timespan_begin": {
+      "type": "date",
+      "optional": true,
+      "ordering": 13
+    },
+    "timespan_end": {
+      "type": "date",
+      "optional": true,
+      "ordering": 14
+    },
     "inventory_date": {
       "type": "date",
       "optional": false,
-      "ordering": 13
+      "ordering": 15
     }
   },
   "certificate_template": "legal_document.tmpl",
