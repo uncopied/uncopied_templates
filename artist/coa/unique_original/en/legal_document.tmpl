@@ -11,11 +11,11 @@
     <p>
         The high definition digital source of the work (or a high definition digital copy issued by the author) has been released by the author
         under licence {{ .Asset.SourceLicense }} and it will be stored forever (with exceptions if for Illegal, Harmful, or Offensive Content) with
-        cryptographic hash {{ .DigitalAsset.SourceIPFSHash }}.
+        cryptographic hash {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}.
     </p>
     <p>
         The thumbnail below is a lower definition copy of the digital source which has been released under licence UNCOPIED v1.0 and it will be stored
-        forever (with exceptions if for Illegal, Harmful, or Offensive Content) with cryptographic hash {{ .DigitalAsset.ThumbnailIPFSHash }}.
+        forever (with exceptions if for Illegal, Harmful, or Offensive Content) with cryptographic hash {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
 
         The artwork's metadata (information such as : title, author etc.) has been released under licence UNCOPIED v1.0 and it will be stored
         forever (with exceptions if for Illegal, Harmful, or Offensive Content).
@@ -33,7 +33,7 @@
     <p>
 
     </p>
-    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAsset.ThumbnailIPFSHash}}"/>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
 
 </div>
 {{ template "footer.tmpl" .}}

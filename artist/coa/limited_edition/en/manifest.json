@@ -19,28 +19,18 @@
   "language": "en",
   "asset_properties": {
     "height": {
-      "type": "string",
-      "optional": false,
       "ordering": 1
     },
     "width": {
-      "type": "string",
-      "optional": false,
       "ordering": 2
     },
     "art_medium": {
-      "type": "string",
-      "optional": true,
       "ordering": 3
     },
     "artwork_surface": {
-      "type": "string",
-      "optional": true,
       "ordering": 4
     },
     "date_created": {
-      "type": "date",
-      "optional": false,
       "ordering": 5
     }
   },
