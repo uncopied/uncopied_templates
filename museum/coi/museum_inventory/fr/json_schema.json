@@ -95,18 +95,12 @@
   "required": [
     "object_type",
     "artist",
-    "technique",
     "inventory_id",
     "description",
     "bibliography",
     "provenance",
     "height",
     "width",
-    "depth",
-    "weight",
-    "material",
-    "timespan_begin",
-    "timespan_end",
     "inventory_date",
     "digital_assets"
   ]
