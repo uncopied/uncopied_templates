@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoI museum inventory json schema fields description",
+  "description": "CoI museum inventory json schema fields description. French version",
+  "type": "object",
+  "properties": {
+    "object_type": {
+      "description": "Some description about object_type field",
+      "type": "string"
+    },
+    "artist": {
+      "description": "Some description about artist field",
+      "type": "string"
+    },
+    "technique": {
+      "description": "Some description about technique field",
+      "type": "string"
+    },
+    "inventory_id": {
+      "description": "Some description about inventory_id field",
+      "type": "string"
+    },
+    "description": {
+      "description": "Some description about description field",
+      "type": "string"
+    },
+    "bibliography": {
+      "description": "Some description about bibliography field",
+      "type": "string"
+    },
+    "provenance": {
+      "description": "Some description about provenance field",
+      "type": "string"
+    },
+    "height": {
+      "description": "Some description about height field",
+      "type": "string"
+    },
+    "width": {
+      "description": "Some description about width field",
+      "type": "string"
+    },
+    "depth": {
+      "description": "Some description about depth field",
+      "type": "string"
+    },
+    "weight": {
+      "description": "Some description about weight field",
+      "type": "string"
+    },
+    "material": {
+      "description": "Some description about material field",
+      "type": "string"
+    },
+    "timespan_begin": {
+      "description": "Some description about timespan_begin field",
+      "type": "string",
+      "format": "date"
+    },
+    "timespan_end": {
+      "description": "Some description about timespan_end field",
+      "type": "string",
+      "format": "date"
+    },
+    "inventory_date": {
+      "description": "Some description about inventory_date field",
+      "type": "string",
+      "format": "date"
+    },
+    "digital_assets": {
+      "description": "Some description about digital_assets field",
+      "type": "object",
+      "properties": {
+        "primary_image": {
+          "description": "Some description about primary_image field",
+          "type": "string",
+          "format": "uuid"
+        },
+        "picture_back": {
+          "description": "Some description about picture_back field",
+          "type": "string",
+          "format": "uuid"
+        },
+        "picture_front_without_frame": {
+          "description": "Some description about picture_front_without_frame field",
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [
+        "primary_image"
+      ]
+    }
+  },
+  "required": [
+    "object_type",
+    "artist",
+    "technique",
+    "inventory_id",
+    "description",
+    "bibliography",
+    "provenance",
+    "height",
+    "width",
+    "depth",
+    "weight",
+    "material",
+    "timespan_begin",
+    "timespan_end",
+    "inventory_date",
+    "digital_assets"
+  ]
+}
