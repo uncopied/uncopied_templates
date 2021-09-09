@@ -74,17 +74,17 @@
         </table>
     </div>
     <p>
-        Une image en haute définition représentant l'objet “{{.Asset.Name}}" a été publiée par le {{ .Issuer.DisplayName }} avec la clé cryptographique {{ .DigitalAsset.SourceIPFSHash }} pour un stockage permanent sous licence :
+        Une image en haute définition représentant l'objet “{{.Asset.Name}}" a été publiée par le {{ .Issuer.DisplayName }} avec la clé cryptographique {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }} pour un stockage permanent sous licence :
         <strong>Tous droits réservés</strong>.
     </p>
     <p>
-        Une image en basse définition représentant l'objet “{{.Asset.Name}}" a été publiée par le {{ .Issuer.DisplayName }} avec la clé cryptographique {{ .DigitalAsset.ThumbnailIPFSHash }} pour un stockage permanent sous licence :
+        Une image en basse définition représentant l'objet “{{.Asset.Name}}" a été publiée par le {{ .Issuer.DisplayName }} avec la clé cryptographique {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }} pour un stockage permanent sous licence :
         <strong>Creative Commons License (CC BY-NC-ND)</strong>.
 
         Les métadonnées décrivant l'objet “{{.Asset.Name}}" ont été publiées par le {{ .Issuer.DisplayName }} pour un stockage permanent sous licence :
         <strong>Creative Commons Public Domain (CC0)</strong>.
     </p>
-    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAsset.ThumbnailIPFSHash}}"/>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
 
 </div>
 {{ template "footer.tmpl" .}}

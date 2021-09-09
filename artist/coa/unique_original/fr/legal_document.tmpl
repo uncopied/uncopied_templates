@@ -11,12 +11,12 @@
     <p>
         Une image en haute définition qui représente l'oeuvre est distribuée sous la license <strong>TOUS DROITS RESERVES</strong> et
         elle sera disponible pour l'éternité (sauf exceptions pour le contenu illégal et répréhensible)
-        avec la clé de hachage cryptographique {{ .DigitalAsset.SourceIPFSHash }}.
+        avec la clé de hachage cryptographique {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}.
     </p>
     <p>
         L'image ci-dessous est une représentation en basse définition marquée par stéganographie et distribuée sous licence Creative Commons CC-BY-ND-4
         et elle sera disponible pour l'éternité (sauf exceptions pour le contenu illégal et répréhensible)
-        avec la clé de hachage cryptographique {{ .DigitalAsset.ThumbnailIPFSHash }}.
+        avec la clé de hachage cryptographique {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
 
         Les méta-données de l'oeuvre (les informations comme : title, nom de l'auteur etc.) sont distribuées sous licence Public Domain CC0
         et elles seront disponibles pour l'éternité (sauf exceptions pour le contenu illégal et répréhensible).
@@ -27,7 +27,7 @@
     <p>
 
     </p>
-    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAsset.ThumbnailIPFSHash}}"/>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
 
 </div>
 {{ template "footer.tmpl" .}}

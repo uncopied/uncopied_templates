@@ -181,7 +181,7 @@
   ],
   "representation": [
     {
-      "id": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAsset.ThumbnailIPFSHash}}",
+      "id": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}",
       "type": "VisualItem",
       "classified_as": [
         {
