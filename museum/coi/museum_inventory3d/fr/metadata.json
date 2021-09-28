@@ -1,0 +1,195 @@
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "{{ .AssetProperties.InventoryId }}",
+  "type": "HumanMadeObject",
+  "_label": "{{ .Asset.Name }}",
+  "classified_as": [
+    {
+      "type": "Type",
+      "_label": "{{ .AssetProperties.ObjectType }}"
+    }
+  ],
+  "produced_by": {
+    "type": "Production",
+    "timespan": {
+      "type": "TimeSpan",
+      "begin_of_the_begin": "{{ .AssetProperties.TimespanBegin }}T00:00:00Z",
+      "end_of_the_end": "{{ .AssetProperties.TimespanEnd }}T00:00:00Z"
+    },
+    "technique": [
+      {
+        "type": "Type",
+        "_label": "{{ .AssetProperties.Technique }}"
+      }
+    ],
+    "carried_out_by": [
+      {
+        "type": "Person",
+        "_label": "{{ .AssetProperties.Artist }}"
+      }
+    ]
+  },
+  "dimension": [
+    {
+      "type": "Dimension",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300055647",
+          "type": "Type",
+          "_label": "Width"
+        }
+      ],
+      "value": "{{ .AssetProperties.Width }}",
+      "unit": {
+        "id": "http://vocab.getty.edu/aat/300379098",
+        "type": "MeasurementUnit",
+        "_label": "centimeters"
+      }
+    },
+    {
+      "type": "Dimension",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300055644",
+          "type": "Type",
+          "_label": "Height"
+        }
+      ],
+      "value": "{{ .AssetProperties.Height }}",
+      "unit": {
+        "id": "http://vocab.getty.edu/aat/300379098",
+        "type": "MeasurementUnit",
+        "_label": "centimeters"
+      }
+    },
+    {
+      "type": "Dimension",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300072633",
+          "type": "Type",
+          "_label": "Depth"
+        }
+      ],
+      "value": "{{ .AssetProperties.Depth }}",
+    "unit": {
+      "id": "http://vocab.getty.edu/aat/300379098",
+      "type": "MeasurementUnit",
+      "_label": "centimeters"
+    }
+    },
+    {
+      "type": "Dimension",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300056240",
+          "type": "Type",
+          "_label": "Weight"
+        }
+      ],
+      "value": "{{ .AssetProperties.Weight }}",
+      "unit": {
+        "id": "http://vocab.getty.edu/aat/300379225",
+        "type": "MeasurementUnit",
+        "_label": "grams"
+      }
+    }
+  ],
+  "identified_by": [
+    {
+      "id": "http://lod.example.org/museum/Identifier/40",
+      "type": "Identifier",
+      "content": "{{ .AssetProperties.InventoryId }}",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404621",
+          "type": "Type",
+          "_label": "Local Number"
+        }
+      ]
+    }
+  ],
+  "referred_to_by": [
+    {
+      "id": "http://lod.example.org/museum/LinguisticObject/168",
+      "type": "LinguisticObject",
+      "content": "{{ .AssetProperties.Material }}",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300010358",
+          "type": "Type",
+          "_label": "Material Statement"
+        },
+        {
+          "id": "http://vocab.getty.edu/aat/300418049",
+          "type": "Type",
+          "_label": "Brief Text"
+        }
+      ]
+    },
+    {
+      "id": "http://lod.example.org/museum/LinguisticObject/171",
+      "type": "LinguisticObject",
+      "content": "{{ .AssetProperties.Description }}",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300080091",
+          "type": "Type",
+          "_label": "Description"
+        },
+        {
+          "id": "http://vocab.getty.edu/aat/300418049",
+          "type": "Type",
+          "_label": "Brief Text"
+        }
+      ]
+    },
+    {
+      "id": "http://lod.example.org/museum/LinguisticObject/172",
+      "type": "LinguisticObject",
+      "content": "{{ .AssetProperties.Provenance }}",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300055863",
+          "type": "Type",
+          "_label": "Provenance Statement"
+        },
+        {
+          "id": "http://vocab.getty.edu/aat/300418049",
+          "type": "Type",
+          "_label": "Brief Text"
+        }
+      ]
+    },
+    {
+      "id": "http://lod.example.org/museum/LinguisticObject/174",
+      "type": "LinguisticObject",
+      "content": "{{ .AssetProperties.Bibliography }}",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300026497",
+          "type": "Type",
+          "_label": "Bibliography Statement"
+        },
+        {
+          "id": "http://vocab.getty.edu/aat/300418049",
+          "type": "Type",
+          "_label": "Brief Text"
+        }
+      ]
+    }
+  ],
+  "representation": [
+    {
+      "id": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}",
+      "type": "VisualItem",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300215302",
+          "type": "Type",
+          "_label": "Digital Image"
+        }
+      ]
+    }
+  ]
+}

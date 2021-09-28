@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "CoI museum inventory 2D json schema fields description",
+  "title": "CoI museum inventory 3D json schema fields description",
   "description": "CoI museum inventory json schema fields description. French version",
   "type": "object",
   "properties": {
@@ -76,13 +76,33 @@
           "type": "string",
           "format": "uuid"
         },
+        "picture_front": {
+          "description": "Some description about picture_front field",
+          "type": "string",
+          "format": "uuid"
+        },
         "picture_back": {
           "description": "Some description about picture_back field",
           "type": "string",
           "format": "uuid"
         },
-        "picture_front_without_frame": {
-          "description": "Some description about picture_front_without_frame field",
+        "picture_left": {
+          "description": "Some description about picture_left field",
+          "type": "string",
+          "format": "uuid"
+        },
+        "picture_right": {
+          "description": "Some description about picture_right field",
+          "type": "string",
+          "format": "uuid"
+        },
+        "picture_top": {
+          "description": "Some description about picture_top field",
+          "type": "string",
+          "format": "uuid"
+        },
+        "picture_below": {
+          "description": "Some description about picture_below field",
           "type": "string",
           "format": "uuid"
         }
