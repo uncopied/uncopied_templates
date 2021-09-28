@@ -190,6 +190,72 @@
           "_label": "Digital Image"
         }
       ]
+    },
+    {
+      "id": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureLeft.ThumbnailIPFSHash}}",
+      "type": "VisualItem",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300215302",
+          "type": "Type",
+          "_label": "Picture Left"
+        }
+      ]
+    },
+    {
+      "id": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureRight.ThumbnailIPFSHash}}",
+      "type": "VisualItem",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300215302",
+          "type": "Type",
+          "_label": "Picture Right"
+        }
+      ]
+    },
+    {
+      "id": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureTop.ThumbnailIPFSHash}}",
+      "type": "VisualItem",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300215302",
+          "type": "Type",
+          "_label": "Picture Top"
+        }
+      ]
+    },
+    {
+      "id": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureBelow.ThumbnailIPFSHash}}",
+      "type": "VisualItem",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300215302",
+          "type": "Type",
+          "_label": "Picture Below"
+        }
+      ]
+    },
+    {
+      "id": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureFront.ThumbnailIPFSHash}}",
+      "type": "VisualItem",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300215302",
+          "type": "Type",
+          "_label": "Picture Front"
+        }
+      ]
+    },
+    {
+      "id": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureBack.ThumbnailIPFSHash}}",
+      "type": "VisualItem",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300215302",
+          "type": "Type",
+          "_label": "Picture Back"
+        }
+      ]
     }
   ]
 }

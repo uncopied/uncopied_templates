@@ -190,6 +190,28 @@
           "_label": "Digital Image"
         }
       ]
+    },
+    {
+      "id": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureBack.ThumbnailIPFSHash}}",
+      "type": "VisualItem",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300215302",
+          "type": "Type",
+          "_label": "Picture Back"
+        }
+      ]
+    },
+    {
+      "id": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureFrontWithoutFrame.ThumbnailIPFSHash}}",
+      "type": "VisualItem",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300215302",
+          "type": "Type",
+          "_label": "Picture Front Without Frame"
+        }
+      ]
     }
   ]
 }
