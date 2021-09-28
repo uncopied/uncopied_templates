@@ -88,5 +88,11 @@
     <p>
         Ce certificat est valide pour une durée de 10 ans. La présence d'un chirographe -marqué, signé ou non par l'éméteur- a valeur de signature physique et de signature cryptographique.
     </p>
+    <h3>Autres images</h3>
+    <p>
+        Si d'autres images en basse définition représentant l'objet “{{.Asset.Name}}" ont été publiées pour un stockage permanent sous licence <strong>Creative Commons License (CC BY-NC-ND)</strong>, elles sont référencées ci-après:
+    </p>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureBack.ThumbnailIPFSHash}}"/>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureFrontWithoutFrame.ThumbnailIPFSHash}}"/>
 </div>
 {{ template "footer.tmpl" .}}
