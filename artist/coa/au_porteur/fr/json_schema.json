@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "CoA unique original json schema fields description",
-  "description": "CoA unique original json schema fields. French version",
+  "title": "CoA unique original au porteur json schema fields description",
+  "description": "CoA unique original au porteur json schema fields. French version",
   "type": "object",
   "properties": {
     "description": {
