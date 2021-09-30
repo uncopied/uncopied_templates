@@ -1,0 +1,1 @@
+{{.Asset.Name}} par {{ .Issuer.DisplayName }}, {{ .AssetProperties.DateCreated }} (Original Unique)

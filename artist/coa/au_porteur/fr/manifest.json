@@ -1,0 +1,54 @@
+{
+  "id": "a3b21ef4-e320-4433-be1a-2bbd9455f441",
+  "name": "Certificat au porteur conférant propriété exclusive sur une œuvre protégée et sur ses droits d’exploitation",
+  "type": "CoA",
+  "description": "L’ŒUVRE, ASSOCIÉE À SES DROITS, MOBILISÉE : En collaboration avec Antoine Gitton Avocats, UNCOPIED a conçu un modèle de « certificat au porteur conférant propriété exclusive sur une œuvre protégée et sur ses droits d’exploitation » qui a pour effet de conférer au propriétaire d’une œuvre, porteur de ce certificat, d’une part la facilité d’utilisation de celui-ci comme titre de propriété sur l’œuvre et sur ses droits d’exploitation et, d’autre part, la rigueur de l’authentification NFT.\n\nGrâce à son certificat, UNCOPIED confère à la fois authenticité et valeur à l’œuvre et à ses droits d’exploitation et à la fois valeur au certificat possédé par le propriétaire titulaire de droits.\n\nDès lors qu’un certificat UNCOPIED est associé à l’œuvre, celle-ci ne peut plus exister sans son certificat de la même façon que le certificat lui est indissolublement associé. Œuvre et certificat sont les deux pendants d’une seule et même réalité, l’œuvre authentique et ses droits d’exploitation.\n\nLa transmission des œuvres et des droits peut se réaliser par la simple cession du certificat au porteur. Cette dématérialisation ouvre pour les collections publiques ou privées la perspective d’échanges sécurisés et valorisés.\n\nJamais, avant l’avènement du certificat UNCOPIED, les œuvres n’avaient circulé en même temps que les droits intellectuels qui y sont associés, avec la valeur qu’ils lui confèrent et avec toute garantie d’authenticité. C’est désormais chose faite, l’œuvre liée à son certificat UNCOPIED est authentifiée, valorisée et mobilisable par simple transmission de certificat, physique et/ou NFT.",
+  "author": "Antoine Gitton Avocats",
+  "version": "1.0",
+  "manifest_version": 1,
+  "source_types": [
+    "png",
+    "jpg"
+  ],
+  "roles": [
+    "artist"
+  ],
+  "countries": [
+    "*"
+  ],
+  "language": "fr",
+  "asset_properties": {
+    "description": {
+      "ordering": 1
+    },
+    "height": {
+      "ordering": 2
+    },
+    "width": {
+      "ordering": 3
+    },
+    "art_medium": {
+      "ordering": 4
+    },
+    "artwork_surface": {
+      "ordering": 5
+    },
+    "date_created": {
+      "ordering": 6
+    },
+    "artist_birth_date": {
+      "ordering": 7
+    },
+    "artist_birth_place": {
+      "ordering": 8
+    }
+  },
+  "certificate_template": "legal_document.tmpl",
+  "certificate_label_template": "certificate_label.txt",
+  "assetLabel_template": "asset_label.txt",
+  "metadata_template": "metadata.json",
+  "edition_min": 1,
+  "edition_max": 1,
+  "license_terms_url": "someURL",
+  "privacy_terms_url": "someOtherURL"
+}
