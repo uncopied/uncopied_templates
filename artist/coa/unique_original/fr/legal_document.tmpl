@@ -3,23 +3,23 @@
 <h1>
     {{ .Asset.CertificateLabel }}
 </h1>
-<h2>Certificat d'authenticité pour une oeuvre originale unique</h2>
+<h2>Certificat d'authenticité pour une oeuvre physique originale unique</h2>
     <p>
         Ce document certifie que {{ .Issuer.DisplayName }} déclare <strong>{{ .Asset.CertificateLabel }}</strong>
-        comme étant une oeuvre unique, authentique et le résultat du processus de création de son auteur.
+        comme étant une oeuvre physique unique, authentique et le résultat du processus de création de son auteur.
     </p>
     <p>
-        Une image en haute définition qui représente l'oeuvre est distribuée sous la license <strong>TOUS DROITS RESERVES</strong> et
-        elle sera disponible pour l'éternité (sauf exceptions pour le contenu illégal et répréhensible)
+        Une image en haute définition qui représente l'oeuvre est distribuée sous la license <strong>Tous droits réservés</strong> et
+        elle sera disponible pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible)
         avec la clé de hachage cryptographique {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}.
     </p>
     <p>
         L'image ci-dessous est une représentation en basse définition marquée par stéganographie et distribuée sous licence Creative Commons CC-BY-ND-4
-        et elle sera disponible pour l'éternité (sauf exceptions pour le contenu illégal et répréhensible)
+        et elle sera disponible pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible)
         avec la clé de hachage cryptographique {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
 
-        Les méta-données de l'oeuvre (les informations comme : title, nom de l'auteur etc.) sont distribuées sous licence Public Domain CC0
-        et elles seront disponibles pour l'éternité (sauf exceptions pour le contenu illégal et répréhensible).
+        Les méta-données de l'oeuvre (les informations comme : titre, nom de l'auteur etc.) sont distribuées sous licence Public Domain CC0
+        et elles seront disponibles pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible).
     </p>
     <p>
         Le label chirographique et le jeton cryptographique correspondent exactement à UN object physique original et unique.
@@ -28,6 +28,8 @@
 
     </p>
     <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
-
+    <p>
+        Ce certificat est valide pour une durée de 10 ans. La présence d'un chirographe -marqué, signé ou non par l'émetteur- a valeur de signature physique et de signature cryptographique.
+    </p>
 </div>
 {{ template "footer.tmpl" .}}

@@ -2,7 +2,7 @@
   "id": "a3b21ef4-e320-4433-be1a-2bbd9455f441",
   "name": "unique original",
   "type": "CoA",
-  "description": "Modèle de certificat pour les oeuvres physiques originales uniques (peinture, sculpture...)",
+  "description": "Modèle de certificat d'authenticité pour les oeuvres physiques originales uniques en 2D (peinture, sculpture...)",
   "author": "UNCOPIED",
   "version": "1.0",
   "manifest_version": 1,
@@ -18,20 +18,23 @@
   ],
   "language": "fr",
   "asset_properties": {
-    "height": {
+    "description": {
       "ordering": 1
     },
-    "width": {
+    "height": {
       "ordering": 2
     },
-    "art_medium": {
+    "width": {
       "ordering": 3
     },
-    "artwork_surface": {
+    "art_medium": {
       "ordering": 4
     },
-    "date_created": {
+    "artwork_surface": {
       "ordering": 5
+    },
+    "date_created": {
+      "ordering": 6
     }
   },
   "certificate_template": "legal_document.tmpl",

@@ -1,1 +1,1 @@
-{{.Asset.Name}} par {{.Issuer.Username}}, {{.CurrentYear}} (Original Unique)
+{{.Asset.Name}} par {{.Issuer.Username}}, {{ .AssetProperties.DateCreated }} (Original Unique)
