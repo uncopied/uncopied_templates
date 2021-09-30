@@ -1,8 +1,8 @@
 {
-  "id": "3e85f9d1-42ad-4a1a-90a6-7f443ced4d39",
-  "name": "inventaire (2D)",
+  "id": "3e85f9d1-42ad-4a1a-90a6-7f443dfd4d39",
+  "name": "inventaire (3D)",
   "type": "CoI",
-  "description": "Modèle de certificat d'inventaire pour le récolement muséal d'objets physiques 2D (peintures, dessins, photographies, etc.) ",
+  "description": "Modèle de certificat d'inventaire pour le récolement muséal d'objets physiques 3D (sculptures, etc.) ",
   "author": "UNCOPIED",
   "version": "1.0",
   "manifest_version": 1,

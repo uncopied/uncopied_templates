@@ -1,0 +1,185 @@
+{{ template "header.tmpl" .}}
+<div>
+<h1>
+    {{ .Asset.CertificateLabel }}
+</h1>
+<h2>Certificat au porteur conférant propriété exclusive sur une œuvre protégée et sur ses droits d’exploitation</h2>
+    <div id="identity">
+            <table>
+            <thead>
+              <tr>
+                <th>Clé</th>
+                <th>Valeur</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nom : </td>
+                <td>{{ .Issuer.DisplayName }}</td>
+              </tr>
+              <tr>
+                <td>Date et lieu de naissance :</td>
+                <td>{{ .AssetProperties.ArtistBirthDate }} {{ .AssetProperties.ArtistBirthPlace }}</td>
+              </tr>
+              <tr>
+                <td>Statut :</td>
+                <td>ARTISTE AUTEUR</td>
+              </tr>
+            </tbody>
+            </table>
+    </div>
+
+    <p>
+        Garantit au porteur (ci-après désigné « LE PORTEUR ») du présent certificat physique et numérique l’authenticité et l’intégrité de l’œuvre associée intitulée :
+    <p>
+    <p>
+         <strong>{{.Asset.Name}}</strong>
+    </p>
+    <p>
+        décrite en <strong>Annexe I</strong>. Ci-après désignée « l’ŒUVRE »
+    </p>
+    <h3>1- Association des droits d’exploitation aux jetons non fongibles NFT’s</h3>
+    <p>
+        L’ARTISTE AUTEUR en souscrivant à UNCOPIED a associé un couple de jetons NFT (Non fongible token – Jeton non fongible) aux droits d’exploitation sur son ŒUVRE dont il confère propriété au PORTEUR dans les termes du présent contrat.
+        Le couple de jetons NFT, d’une part identifie et authentifie l’ŒUVRE dans son intégralité, et, d’autre part, représente les droits d’exploitation conférés en propriété par L’ARTISTE AUTEUR au PORTEUR du présent certificat.
+        Le jeton NFT associé à l’ŒUVRE et à ses droits d’exploitation conférés en propriété n’est pas fongible et demeure intangible en ce sens que l’ŒUVRE qu’il authentifie et dont il représente les droits d’exploitation est unique.
+    </p>
+    <h3>2- Objet du contrat : licence exclusive de possession, reproduction, de représentation et d’adaptation</h3>
+    <p>
+        L’ARTISTE AUTEUR, qui se dépossède de l’ŒUVRE et des droits d’exploitation stipulés aux termes du présent contrat, confère au PORTEUR, à titre exclusif, la possession de tout support de son ŒUVRE et l’autorise à reproduire à représenter et à adapter l’ŒUVRE sur les supports numériques et/ou physiques et aux formats déterminés en Annexe II
+        Le PORTEUR exploitera à son gré l’ŒUVRE sur ses supports de reproduction autorisés, sous réserve du droit moral de l’ARTISTE AUTEUR.
+    </p>
+    <h3>3- Certificat d’authenticité et d’intégrité et déclaration de l’ARTISTE - AUTEUR</h3>
+    <p>
+        L’ARTISTE AUTEUR déclare que l’ŒUVRE est libre de toutes servitudes et garantit le PORTEUR contre tous troubles, revendications et évictions quelconques.
+        L’ARTISTE AUTEUR déclare que l’ŒUVRE est originale et ne porte atteinte ni à aucun droit de propriété intellectuel préexistant, ni à aucun droit personnel.
+        L’ARTISTE AUTEUR déclare que l’ŒUVRE ne fait l’objet ni d’un autre contrat d’exploitation ni d’un droit de préférence, ni d’un apport de droit exclusif à une société de gestion collective.
+        L’ŒUVRE est identifiée par le certificat de type NFT (non-fungible token) assurant son authentification.
+    </p>
+    <h3>4- Prix</h3>
+    <p>
+        Le prix et les modalités de paiement sont fixés librement par accord entre le vendeur et l’acheteur.
+    </p>
+    <h3>5- Libre cessibilité du certificat au porteur</h3>
+    <p>
+        Le présent certificat associé au NFT est librement cessible. La cession du certificat emporte cession de l’ŒUVRE et des droits d’exploitation y afférents tels que définis aux termes du présent contrat.
+
+        Le PORTEUR est soit celui qui détient le présent certificat physique sécurisé par le chirographe, soit celui qui détient en son porte-monnaie électronique le jeton NFT. Priorité est donnée à la détention du certificat physique. En cas de vente électronique du jeton NFT, le cédant s’engage à transmettre à l’acquéreur le présent certificat physique sous 15 jours.  En cas de vente physique, le cédant s’engage à transférer immédiatement à l’acquéreur le NFT en même temps que le présent certificat physique.
+    </p>
+    <h3>6- Durée</h3>
+    <p>
+        Le présent contrat est perpétuel. Toutefois, les droits d’exploitation conférés en propriété aux termes du présent contrat sont susceptibles d’entrer dans le domaine public après un délai postérieurement au décès de l’ARTISTE AUTEUR fixé par la loi applicable. La loi française, conformément à la Directive 2006/116/CE relative à la durée de protection du droit d’auteur et de certains droits voisins, fixe cette durée à 70 ans post mortem auctoris.
+        Le certification technique du contrat par Uncopied est renouvelable tous les dix ans, ainsi que dans les cas suivants :
+        <ul>
+            <li> perte ou de détérioration du certificat physique original ;</li>
+            <li> perte irrémédiable de l’accès au porte-monnaie électronique détenant le jeton NFT ;</li>
+            <li> autre cas imprévisibles d’obsolescence technique.</li>
+        </ul>
+        Le renouvellement technique de la certification du contrat ne modifie en rien le contrat.
+    </p>
+    <h3>7- Territoire</h3>
+    <p>
+        Le présent certificat est valable dans le monde entier en tous lieux physiques ou espaces numériques.
+    </p>
+    <h3>8- Exploitation du fichier numérique</h3>
+    <p>
+        L’ARTISTE AUTEUR garantit au PORTEUR la bonne exploitation du fichier numérique permettant la reproduction et la représentation de l’ŒUVRE dans son intégrité et dans son intégralité.
+    </p>
+    <h3>9- Interprétation stricte des autorisations</h3>
+    <p>
+        Tout droit non expressément cédé aux termes du présent certificat ne pourra être exploité par le PORTEUR, sauf accord formel aux termes d’un contrat complémentaire.
+    </p>
+    <h3>10- Droit moral </h3>
+    <p>
+        LE PORTEUR doit exercer les droits qui lui ont été cédés par l’ARTISTE AUTEUR dans le strict respect du droit moral de celui-ci, notamment quant à l’intégrité de l’ŒUVRE et quant à sa paternité.
+    </p>
+    <h3>11- Droit applicable</h3>
+    <p>
+        Le présent certificat est soumis à la loi française.
+        Tout différend entre l’ARTISTE AUTEUR et un PORTEUR sera porté devant les juridictions compétentes sur le territoire de la République Française pour connaître des litiges en matière de propriété littéraire et artistique.
+    </p>
+    <h2>Annexe I</h2>
+        <div>
+            <table>
+            <thead>
+              <tr>
+                <th>Clé</th>
+                <th>Valeur</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Organisme émetteur (OE)</td>
+                <td>{{ .Issuer.DisplayName }}</td>
+              </tr>
+              <tr>
+                <td>Nom ou titre de l'oeuvre</td>
+                <td>{{ .Asset.Name }}</td>
+              </tr>
+              <tr>
+                <td>Description</td>
+                <td>{{ .AssetProperties.Description }}</td>
+              </tr>
+              <tr>
+                <td>Dimensions</td>
+                <td>{{ .AssetProperties.Height }} x {{ .AssetProperties.Width }} cm</td>
+              </tr>
+              <tr>
+                <td>Matériaux ou Surface</td>
+                <td>{{ .AssetProperties.ArtworkSurface }}</td>
+              </tr>
+              <tr>
+                <td>Technique de production ou Médium</td>
+                <td>{{ .AssetProperties.ArtMedium }}</td>
+              </tr>
+            </tbody>
+            </table>
+        </div>
+    <p>
+        Une image en haute définition qui représente l'oeuvre est distribuée sous la license <strong>Tous droits réservés</strong> et
+        elle sera disponible pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible)
+        avec la clé de hachage cryptographique {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}.
+    </p>
+    <p>
+        L'image ci-dessous est une représentation en basse définition marquée par stéganographie et distribuée sous licence Creative Commons CC-BY-ND-4
+        et elle sera disponible pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible)
+        avec la clé de hachage cryptographique {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
+    </p>
+    <p>
+
+    </p>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
+    <p>
+        Les méta-données de l'oeuvre (les informations comme : titre, nom de l'auteur etc.) sont distribuées sous licence Public Domain CC0
+        et elles seront disponibles pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible).
+    </p>
+    <p>
+        Le label chirographique et le jeton cryptographique correspondent exactement à UN object physique original et unique.
+    </p>
+    <p>
+        Ce certificat est valide pour une durée de 10 ans. La présence d'un chirographe -marqué, signé ou non par l'émetteur- a valeur de signature physique et de signature cryptographique.
+    </p>
+    <h3>Autres images</h3>
+        <p>
+            Si d'autres images en basse définition représentant l'objet “{{.Asset.Name}}" ont été publiées pour un stockage permanent sous licence <strong>Creative Commons License (CC BY-NC-ND)</strong>, elles sont référencées ci-après:
+        </p>
+        <section id="photos">
+            <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureBack.ThumbnailIPFSHash}}"/>
+            <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureFrontWithoutFrame.ThumbnailIPFSHash}}"/>
+        </section>
+    <h2>Annexe II</h2>
+    <p>
+    Supports : Tous supports
+    </p>
+    <p>
+    Formats : Tous formats
+    </p>
+    <h2>Signature physique et numérique</h2>
+    <p>
+       Le label chirographique et le jeton cryptographique correspondent exactement à UN object physique original et unique.
+    </p>
+    <p>
+      Ce certificat est valide pour une durée de 10 ans. La présence d'un chirographe -marqué, signé ou non par l'émetteur- a valeur de signature physique et de signature cryptographique.
+   </p>
+</div>
+{{ template "footer.tmpl" .}}

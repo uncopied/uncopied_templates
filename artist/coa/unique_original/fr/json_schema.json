@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoA unique original json schema fields description",
+  "description": "CoA unique original json schema fields. French version",
+  "type": "object",
+  "properties": {
+    "description": {
+      "description": "Some description about description field",
+      "type": "string"
+    },
+    "height": {
+      "description": "Some description about height field",
+      "type": "string"
+    },
+    "width": {
+      "description": "Some description about width field",
+      "type": "string"
+    },
+    "art_medium": {
+      "description": "Some description about art_medium field",
+      "type": "string"
+    },
+    "artwork_surface": {
+      "description": "Some description about artwork_surface field",
+      "type": "string"
+    },
+    "date_created": {
+      "description": "Some description about date_created field",
+      "type": "string",
+      "format": "date"
+    },
+    "digital_assets": {
+      "description": "Some description about digital_assets field",
+      "type": "object",
+      "properties": {
+        "primary_image": {
+          "description": "Some description about primary_image field",
+          "type": "string",
+          "format": "uuid"
+        },
+        "picture_back": {
+          "description": "Some description about picture_back field",
+          "type": "string",
+          "format": "uuid"
+        },
+        "picture_front_without_frame": {
+          "description": "Some description about picture_front_without_frame field",
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [
+        "primary_image"
+      ]
+    }
+  },
+  "required": [
+    "description",
+    "height",
+    "width",
+    "date_created",
+    "digital_assets"
+  ]
+}
