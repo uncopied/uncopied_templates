@@ -1,8 +1,8 @@
 {
   "id": "a3b21ef4-e320-4433-be1a-2bbd9455f441",
-  "name": "unique original",
+  "name": "oeuvre originale unique (2D)",
   "type": "CoA",
-  "description": "Modèle de certificat d'authenticité pour les oeuvres physiques originales uniques en 2D (peinture, sculpture...)",
+  "description": "Modèle de certificat d'authenticité pour les oeuvres physiques originales uniques en 2D (peinture, dessin, street art, ...)",
   "author": "UNCOPIED",
   "version": "1.0",
   "manifest_version": 1,

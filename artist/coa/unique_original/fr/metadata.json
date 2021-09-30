@@ -9,7 +9,7 @@
   "creator": [
     {
       "@type": "Person",
-      "name": "{{ .Issuer.Username }}"
+      "name": "{{ .Issuer.DisplayName }}"
     }
   ],
   "width": [

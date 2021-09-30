@@ -5,9 +5,45 @@
 </h1>
 <h2>Certificat d'authenticité pour une oeuvre physique originale unique</h2>
     <p>
-        Ce document certifie que {{ .Issuer.DisplayName }} déclare <strong>{{ .Asset.CertificateLabel }}</strong>
+        Ce document certifie que {{ .Issuer.DisplayName }} déclare <strong>{{.Asset.Name}}</strong>
         comme étant une oeuvre physique unique, authentique et le résultat du processus de création de son auteur.
     </p>
+        <div>
+            <table>
+            <thead>
+              <tr>
+                <th>Clé</th>
+                <th>Valeur</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Organisme émetteur (OE)</td>
+                <td>{{ .Issuer.DisplayName }}</td>
+              </tr>
+              <tr>
+                <td>Nom ou titre de l'oeuvre</td>
+                <td>{{ .Asset.Name }}</td>
+              </tr>
+              <tr>
+                <td>Description</td>
+                <td>{{ .AssetProperties.Description }}</td>
+              </tr>
+              <tr>
+                <td>Dimensions</td>
+                <td>{{ .AssetProperties.Height }} x {{ .AssetProperties.Width }} cm</td>
+              </tr>
+              <tr>
+                <td>Matériaux ou Surface</td>
+                <td>{{ .AssetProperties.ArtworkSurface }}</td>
+              </tr>
+              <tr>
+                <td>Technique de production ou Médium</td>
+                <td>{{ .AssetProperties.ArtMedium }}</td>
+              </tr>
+            </tbody>
+            </table>
+        </div>
     <p>
         Une image en haute définition qui représente l'oeuvre est distribuée sous la license <strong>Tous droits réservés</strong> et
         elle sera disponible pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible)
@@ -17,7 +53,12 @@
         L'image ci-dessous est une représentation en basse définition marquée par stéganographie et distribuée sous licence Creative Commons CC-BY-ND-4
         et elle sera disponible pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible)
         avec la clé de hachage cryptographique {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
+    </p>
+    <p>
 
+    </p>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
+    <p>
         Les méta-données de l'oeuvre (les informations comme : titre, nom de l'auteur etc.) sont distribuées sous licence Public Domain CC0
         et elles seront disponibles pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible).
     </p>
@@ -25,11 +66,15 @@
         Le label chirographique et le jeton cryptographique correspondent exactement à UN object physique original et unique.
     </p>
     <p>
-
-    </p>
-    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
-    <p>
         Ce certificat est valide pour une durée de 10 ans. La présence d'un chirographe -marqué, signé ou non par l'émetteur- a valeur de signature physique et de signature cryptographique.
     </p>
+    <h3>Autres images</h3>
+        <p>
+            Si d'autres images en basse définition représentant l'objet “{{.Asset.Name}}" ont été publiées pour un stockage permanent sous licence <strong>Creative Commons License (CC BY-NC-ND)</strong>, elles sont référencées ci-après:
+        </p>
+        <section id="photos">
+            <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureBack.ThumbnailIPFSHash}}"/>
+            <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureFrontWithoutFrame.ThumbnailIPFSHash}}"/>
+        </section>
 </div>
 {{ template "footer.tmpl" .}}
