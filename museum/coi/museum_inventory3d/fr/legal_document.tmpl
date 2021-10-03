@@ -93,12 +93,24 @@
         Si d'autres images en basse définition représentant l'objet “{{.Asset.Name}}" ont été publiées pour un stockage permanent sous licence <strong>Creative Commons License (CC BY-NC-ND)</strong>, elles sont référencées ci-après:
     </p>
     <section id="photos">
+ {{ if .DigitalAssets.PictureLeft.ThumbnailIPFSHash }}
         <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureLeft.ThumbnailIPFSHash}}"/>
+ {{ end }}
+ {{ if .DigitalAssets.PictureRight.ThumbnailIPFSHash }}
         <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureRight.ThumbnailIPFSHash}}"/>
+ {{ end }}
+ {{ if .DigitalAssets.PictureTop.ThumbnailIPFSHash }}
         <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureTop.ThumbnailIPFSHash}}"/>
+ {{ end }}
+ {{ if .DigitalAssets.PictureBelow.ThumbnailIPFSHash }}
         <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureBelow.ThumbnailIPFSHash}}"/>
+ {{ end }}
+ {{ if .DigitalAssets.PictureFront.ThumbnailIPFSHash }}
         <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureFront.ThumbnailIPFSHash}}"/>
+ {{ end }}
+ {{ if .DigitalAssets.PictureBack.ThumbnailIPFSHash }}
         <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureBack.ThumbnailIPFSHash}}"/>
+ {{ end }}
     </section>
 </div>
 {{ template "footer.tmpl" .}}
