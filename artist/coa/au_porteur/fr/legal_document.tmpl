@@ -4,30 +4,6 @@
     {{ .Asset.CertificateLabel }}
 </h1>
 <h2>Certificat au porteur conférant propriété exclusive sur une œuvre protégée et sur ses droits d’exploitation</h2>
-    <div id="identity">
-            <table>
-            <thead>
-              <tr>
-                <th>Clé</th>
-                <th>Valeur</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Nom : </td>
-                <td>{{ .Issuer.DisplayName }}</td>
-              </tr>
-              <tr>
-                <td>Date et lieu de naissance :</td>
-                <td>{{ .AssetProperties.ArtistBirthDate }} {{ .AssetProperties.ArtistBirthPlace }}</td>
-              </tr>
-              <tr>
-                <td>Statut :</td>
-                <td>ARTISTE AUTEUR</td>
-              </tr>
-            </tbody>
-            </table>
-    </div>
 
     <p>
         Garantit au porteur (ci-après désigné « LE PORTEUR ») du présent certificat physique et numérique l’authenticité et l’intégrité de l’œuvre associée intitulée :
