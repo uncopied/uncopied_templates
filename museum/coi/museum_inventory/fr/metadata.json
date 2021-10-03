@@ -9,6 +9,26 @@
       "_label": "{{ .AssetProperties.ObjectType }}"
     }
   ],
+  "subject_of": [
+    {
+      "type": "DigitalObject",
+      "_label": "PDF Certificate / Legal Document",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300264578",
+          "type": "Type",
+          "_label": "PDF Certificate / Legal Document"
+        }
+      ],
+      "format": "application/pdf",
+      "access_point": [
+        {
+          "id": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
+          "type": "DigitalObject"
+        }
+      ]
+    }
+  ],
   "produced_by": {
     "type": "Production",
     "timespan": {
