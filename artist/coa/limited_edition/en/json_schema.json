@@ -5,42 +5,42 @@
   "type": "object",
   "properties": {
     "height": {
-      "description": "Some description about height field",
+      "description": "Height",
       "type": "string"
     },
     "width": {
-      "description": "Some description about width field",
+      "description": "Width",
       "type": "string"
     },
     "art_medium": {
-      "description": "Some description about art_medium field",
+      "description": "Art Medium",
       "type": "string"
     },
     "artwork_surface": {
-      "description": "Some description about artwork_surface field",
+      "description": "Artwork Surface",
       "type": "string"
     },
     "date_created": {
-      "description": "Some description about date_created field",
+      "description": "Date Created",
       "type": "string",
       "format": "date"
     },
     "digital_assets": {
-      "description": "Some description about digital_assets field",
+      "description": "Digital Assets",
       "type": "object",
       "properties": {
         "primary_image": {
-          "description": "Some description about primary_image field",
+          "description": "Primary Image",
           "type": "string",
           "format": "uuid"
         },
         "picture_back": {
-          "description": "Some description about picture_back field",
+          "description": "Picture Back",
           "type": "string",
           "format": "uuid"
         },
         "picture_front_without_frame": {
-          "description": "Some description about picture_front_without_frame field",
+          "description": "Picture Front Without Frame",
           "type": "string",
           "format": "uuid"
         }
@@ -56,4 +56,4 @@
     "date_created",
     "digital_assets"
   ]
-}
+}s

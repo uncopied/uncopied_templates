@@ -1,50 +1,50 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "CoA unique original json schema fields description",
-  "description": "CoA unique original json schema fields. French version",
+  "title": "CoA unique original json schema",
+  "description": "CoA original unique json schema. Version française",
   "type": "object",
   "properties": {
     "description": {
-      "description": "Some description about description field",
+      "description": "Description",
       "type": "string"
     },
     "height": {
-      "description": "Some description about height field",
+      "description": "Hauteur",
       "type": "string"
     },
     "width": {
-      "description": "Some description about width field",
+      "description": "Largeur",
       "type": "string"
     },
     "art_medium": {
-      "description": "Some description about art_medium field",
+      "description": "Médium",
       "type": "string"
     },
     "artwork_surface": {
-      "description": "Some description about artwork_surface field",
+      "description": "Surface",
       "type": "string"
     },
     "date_created": {
-      "description": "Some description about date_created field",
+      "description": "Date de création",
       "type": "string",
       "format": "date"
     },
     "digital_assets": {
-      "description": "Some description about digital_assets field",
+      "description": "Actifs digitaux",
       "type": "object",
       "properties": {
         "primary_image": {
-          "description": "Some description about primary_image field",
+          "description": "Image principale",
           "type": "string",
           "format": "uuid"
         },
         "picture_back": {
-          "description": "Some description about picture_back field",
+          "description": "Image de dos",
           "type": "string",
           "format": "uuid"
         },
         "picture_front_without_frame": {
-          "description": "Some description about picture_front_without_frame field",
+          "description": "Image excluant l'encadrement",
           "type": "string",
           "format": "uuid"
         }
