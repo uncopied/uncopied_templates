@@ -51,6 +51,6 @@
   "edition_max": 1,
   "license_terms_url": "someURL",
   "privacy_terms_url": "someOtherURL",
-  "logo" : "AGALogoNB_grey.svg",
-  "certificate_sample": "example_legal_documents.pdf"
+  "logo_url" : "https://github.com/uncopied/uncopied_templates/blob/dev/artist/coa/au_porteur/fr/AGALogoNB_grey.svg",
+  "certificate_sample_url": "https://github.com/uncopied/uncopied_templates/blob/dev/artist/coa/au_porteur/fr/example_legal_documents.pdf"
 }
