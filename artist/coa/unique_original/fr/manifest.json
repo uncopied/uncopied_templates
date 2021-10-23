@@ -1,8 +1,8 @@
 {
   "id": "a3b21ef4-e320-4433-be1a-2bbd9455f441",
-  "name": "oeuvre originale unique (2D)",
+  "name": "Authenticité d'oeuvre physique originale unique en 2D (schema.org)",
   "type": "CoA",
-  "description": "Modèle de certificat d'authenticité pour les oeuvres physiques originales uniques en 2D (peinture, dessin, street art, ...)",
+  "description": "Modèle de certificat d'authenticité pour les oeuvres physiques originales uniques en deux dimensions (2D) telles que: peinture, dessin, street art, ... Le format de métadonnées utlisé est schema.org/VisualArtwork.",
   "author": "UNCOPIED",
   "version": "1.0",
   "manifest_version": 1,

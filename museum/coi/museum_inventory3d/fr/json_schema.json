@@ -63,12 +63,12 @@
       "format": "date"
     },
     "inventory_date": {
-      "description": "Some description about inventory_date field",
+      "description": "Date d'inventaire",
       "type": "string",
       "format": "date"
     },
     "digital_assets": {
-      "description": "Date d'inventaire",
+      "description": "Actifs digitaux",
       "type": "object",
       "properties": {
         "primary_image": {
