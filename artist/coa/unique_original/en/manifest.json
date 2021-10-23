@@ -1,8 +1,8 @@
 {
   "id": "50099735-fccf-47bd-ba5d-cc036da50150",
-  "name": "unique original",
+  "name": "Unique original physical 2D visual artwork (schema.org)",
   "type": "CoA",
-  "description": "Basic Template for Unique Original Art (oil painting, statue, ...)",
+  "description": "Certificate of Authenticity by the artist for a unique original physical 2D visual artwork, such as : oil painting, drawing, ... The model for metadata is schema.org/VisualArtwork.",
   "author": "UNCOPIED",
   "version": "1.0",
   "manifest_version": 1,
