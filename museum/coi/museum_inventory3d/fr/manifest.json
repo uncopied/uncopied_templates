@@ -1,8 +1,8 @@
 {
   "id": "3e85f9d1-42ad-4a1a-90a6-7f443dfd4d39",
-  "name": "inventaire (3D)",
+  "name": "Inventaire d'objet physique en 3D (linked.art)",
   "type": "CoI",
-  "description": "Modèle de certificat d'inventaire pour le récolement muséal d'objets physiques 3D (sculptures, etc.) ",
+  "description": "Modèle de certificat d'inventaire pour le récolement muséal d'objets physiques en trois dimensions (3D) tels que: sculptures, mobilier, etc. Le format de métadonnées est linked.art",
   "author": "UNCOPIED",
   "version": "1.0",
   "manifest_version": 1,
