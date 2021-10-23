@@ -4,6 +4,10 @@
   "description": "CoA limited edition json schema fields. Version française",
   "type": "object",
   "properties": {
+    "description": {
+      "description": "Description",
+      "type": "string"
+    },
     "height": {
       "description": "Hauteur (mm)",
       "type": "string"
@@ -51,6 +55,7 @@
     }
   },
   "required": [
+    "description",
     "height",
     "width",
     "date_created",
