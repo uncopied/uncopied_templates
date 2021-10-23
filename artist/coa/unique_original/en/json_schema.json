@@ -4,6 +4,10 @@
   "description": "CoA unique original json schema fields. English version",
   "type": "object",
   "properties": {
+    "description": {
+      "description": "Description",
+      "type": "string"
+    },
     "height": {
       "description": "Height",
       "type": "string"
@@ -51,6 +55,7 @@
     }
   },
   "required": [
+    "description",
     "height",
     "width",
     "date_created",

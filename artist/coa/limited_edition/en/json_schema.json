@@ -4,12 +4,16 @@
   "description": "CoA limited edition json schema fields. English version",
   "type": "object",
   "properties": {
+    "description": {
+      "description": "Description",
+      "type": "string"
+    },
     "height": {
-      "description": "Height",
+      "description": "Height (mm)",
       "type": "string"
     },
     "width": {
-      "description": "Width",
+      "description": "Width (mm)",
       "type": "string"
     },
     "art_medium": {
@@ -51,6 +55,7 @@
     }
   },
   "required": [
+    "description",
     "height",
     "width",
     "date_created",
