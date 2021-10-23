@@ -1,0 +1,47 @@
+{
+  "id": "6e480d42-d112-43e2-89f1-b4131c0e8d13",
+  "name": "limited edition",
+  "type": "CoA",
+  "description": "Basic Template for Limited Edition Artworks (photographic prints, ...)",
+  "author": "UNCOPIED",
+  "version": "1.0",
+  "manifest_version": 1,
+  "source_types": [
+    "png",
+    "jpg"
+  ],
+  "roles": [
+    "artist"
+  ],
+  "countries": [
+    "*"
+  ],
+  "language": "en",
+  "asset_properties": {
+    "height": {
+      "ordering": 1
+    },
+    "width": {
+      "ordering": 2
+    },
+    "art_medium": {
+      "ordering": 3
+    },
+    "artwork_surface": {
+      "ordering": 4
+    },
+    "date_created": {
+      "ordering": 5
+    }
+  },
+  "certificate_template": "legal_document.tmpl",
+  "certificate_label_template": "certificate_label.txt",
+  "asset_label_template": "asset_label.txt",
+  "metadata_template": "metadata.json",
+  "edition_min": 2,
+  "edition_max": 10000,
+  "license_terms_url": "someURL2",
+  "privacy_terms_url": "someOtherURL2",
+  "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/artist/coa/limited_edition/en/uncopied_tampon.svg"
+
+}
