@@ -9,7 +9,7 @@
   "creator": [
     {
       "@type": "Person",
-      "name": "{{ .Issuer.Username }}"
+      "name": "{{ .Issuer.DisplayName }}"
     }
   ],
   "width": [
@@ -27,5 +27,6 @@
   "art_edition": "{{ .Asset.EditionTotal }}",
   "position": "{{ .Asset.EditionNumber }}",
   "art_medium": "{{ .AssetProperties.ArtMedium }}",
-  "artwork_surface": "{{ .AssetProperties.ArtworkSurface }}"
+  "artwork_surface": "{{ .AssetProperties.ArtworkSurface }}",
+  "date_created": "{{ .AssetProperties.DateCreated }}"
 }
