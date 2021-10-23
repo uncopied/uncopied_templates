@@ -33,19 +33,19 @@
       "type": "string"
     },
     "height": {
-      "description": "Hauteur",
+      "description": "Hauteur (mm)",
       "type": "string"
     },
     "width": {
-      "description": "Largeur",
+      "description": "Largeur (mm)",
       "type": "string"
     },
     "depth": {
-      "description": "Profondeur",
+      "description": "Profondeur (mm)",
       "type": "string"
     },
     "weight": {
-      "description": "Poids",
+      "description": "Poids (g)",
       "type": "string"
     },
     "material": {
