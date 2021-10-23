@@ -44,5 +44,6 @@
   "edition_min": 1,
   "edition_max": 1,
   "license_terms_url": "someURL",
-  "privacy_terms_url": "someOtherURL"
+  "privacy_terms_url": "someOtherURL",
+  "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/artist/coa/unique_original/fr/uncopied_tampon.svg"
 }
