@@ -3,7 +3,7 @@
   "@type": "VisualArtwork",
   "name": "{{ .Asset.Name }}",
   "dateCreated": "{{ .AssetProperties.DateCreated }}",
-  "datePublished": "2021-06-12",
+  "datePublished": "2021-10-09",
   "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
   "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
   "description": "{{ .Asset.CertificateLabel }} - REPLICANTS borrows its title from the fictional bioengineered beings introduced within the 1982\nscience fiction film Blade Runner. The exhibition’s framing environment, modeled after Queen’s Road\nCentral in Hong Kong, extends a virtual reproduction of the street and surrounding buildings of Woaw\nGallery where REPLICANTS will be featured. This digital inversion of physical space and materiality,\nwhile mirroring the malleability of the replica, more broadly considers the limitations and possibilities\nfor techno-reproductions.\nThe entirety of the REPLICANTS exhibition will be offered as a singular NFT containing a compilation\nof artworks by participating artists featured therein. The REPLICANTS NFT will be released on\nOctober 29th, 2021 in tandem with its inclusion in, and the opening of, the group exhibition\nTEKNOLUST: OBJECTOPHILIC FUTURES at Woaw Gallery, Hong Kong.",
