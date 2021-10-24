@@ -82,16 +82,6 @@
     },
     {
       "@type": "Person",
-      "name": "Amanda Ross-Ho",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "AlgorandAddress",
-        "value":  "UNH443RNFL4NWFCP5AI3N34C6IK6SWDEPZRLFKXGWYTXBZ5BTLJJLGWLRQ"
-      },
-      "sameAs": "https://algoexplorer.io/address/UNH443RNFL4NWFCP5AI3N34C6IK6SWDEPZRLFKXGWYTXBZ5BTLJJLGWLRQ"
-    },
-    {
-      "@type": "Person",
       "name": "Jennifer West",
       "identifier": {
         "@type": "PropertyValue",
