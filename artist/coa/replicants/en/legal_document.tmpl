@@ -4,7 +4,7 @@
     {{.Asset.CertificateLabel}}
 </h2>
 <h3>"{{.Asset.Name}}," - featuring Gordon Cheung, Galath3a, Hung Yu Hao, Keiken, Katja Novitskova, Jennifer West, Dr. Woo, Qianqian Ye + Tiare Ribeaux. Original Music by Konrad Black.</H2>
-    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}"/>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
 <h3>Certificate of Authenticity</h2>
     <p>
         This document certifies that {{ .Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art by EPOCH and the participating artists' creative efforts.
@@ -16,7 +16,7 @@
         The medium of the piece is: <strong> 8K virtual exhibition featuring a compilation of artworks by participating artists (playable stand-alone Windows/Mac compatible file, viewable on VR headsets) </strong>.
     </p>
     <p>
-        A high definition digital image representing the work “{{.Asset.Name}}" has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}
+        A high definition digital image representing the work “{{.Asset.Name}}" has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}.
     </p>
     <p>
         The thumbnail is a lower definition copy of the digital image representing the work “{{.Asset.Name}}". It has been released under licence Creative Commons License (CC BY-NC-ND) and it will be stored 'forever' with cryptographic hash {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
@@ -24,10 +24,5 @@
         Metadata describing the work “{{.Asset.Name}}" has been released under licence Creative Commons License (CC BY-NC-ND) and it will be stored 'forever'.
     </p>
 
-<div title="footer"><p style="margin-top: 0.46in; margin-bottom: 0in; line-height: 100%">
-	<br/>
-
-	</p>
 </div>
-
 {{ template "footer.tmpl" .}}
