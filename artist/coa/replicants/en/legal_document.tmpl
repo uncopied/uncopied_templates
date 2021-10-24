@@ -1,11 +1,44 @@
 {{ template "header.tmpl" .}}
 <div>
-<h2>
-    {{.Asset.CertificateLabel}}
-</h2>
-<h3>"{{.Asset.Name}}," - featuring Gordon Cheung, Galath3a, Hung Yu Hao, Keiken, Katja Novitskova, Jennifer West, Dr. Woo, Qianqian Ye + Tiare Ribeaux. Original Music by Konrad Black.</H2>
+<h1>
+    {{ .Asset.CertificateLabel }}
+</h1>
+<h2>Certificate of Authenticity for a Limited Edition</h2>
+    <p>
+        This document certifies that {{ .Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art
+        of the author's own creative efforts.
+    </p>
+    <p>
+        The high definition digital source of the work (or a high definition digital copy issued by the author) has been released by the author
+        under licence {{ .Asset.SourceLicense }} and it will be stored forever (with exceptions if for Illegal, Harmful, or Offensive Content) with
+        cryptographic hash {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}
+    </p>
+    <p>
+        The thumbnail below is a lower definition copy of the digital source which has been released under licence UNCOPIED v1.0 and it will be stored
+        forever (with exceptions if for Illegal, Harmful, or Offensive Content) with cryptographic hash {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
+
+        The artwork's metadata (information such as : title, author etc.) has been released under licence UNCOPIED v1.0 and it will be stored
+        forever (with exceptions if for Illegal, Harmful, or Offensive Content).
+
+        The use of the thumbnail and the metadata is limited to the use listed in provisions of UNCOPIED v1.0 license.
+    </p>
+    <p>
+        Of the digital source were produced {{ .Asset.EditionTotal }} original and unique prints constituting the limited physical edition.
+        Prints are numbered from 1 to {{ .Asset.EditionTotal }} of {{ .Asset.EditionTotal }} original prints. Original prints have a tally stick permanently glued
+        to the back, corresponding to the tally stick below, physically signed or marked by the artist. The art work number {{ .Asset.EditionNumber }} of
+        {{ .Asset.EditionTotal }} is an original edition.
+
+		The physical prints are are printed on {{.AssetProperties.ArtMedium}} with size {{.AssetProperties.Height}} x {{.AssetProperties.Width}}.
+    </p>
+    <p>
+        Of the digital source were produced {{ .Asset.EditionTotal }} original and unique cryptographic tokens constituting the limited digital edition.
+        Each unique physical print is tied to its unique digital token. Transferring ownership of one instantly transfers the ownership of the other, with the
+        exception of : fraud, spoliation, cybercrime or any for of abuse. Transportation cost for physical artwork and inssurance will be beared by  buyers.
+    </p>
+    <p>
+
+    </p>
     <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
-<h3>Certificate of Authenticity</h2>
 
 </div>
 {{ template "footer.tmpl" .}}
