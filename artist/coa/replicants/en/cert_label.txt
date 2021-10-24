@@ -1,0 +1,1 @@
+e{{.Issuer.DisplayName}}, "{{.Asset.Name}}," {{.CurrentYear}}; edition {{ $EditionNumberLessX := add .Asset.EditionNumber -20 }}{{ $EditionTotalLessX := add .Asset.EditionTotal -20 }}{{if (le .Asset.EditionNumber 20) }}{{ .Asset.EditionNumber }}/20{{- else}}{{ $EditionNumberLessX }}/{{ $EditionTotalLessX}} AP{{- end}}

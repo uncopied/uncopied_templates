@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoA limited edition json schema fields description",
+  "description": "CoA limited edition json schema fields. English version",
+  "type": "object",
+  "properties": {
+    "date_created": {
+      "description": "Date Created",
+      "type": "string",
+      "format": "date"
+    },
+    "digital_assets": {
+      "description": "Digital Assets",
+      "type": "object",
+      "properties": {
+        "primary_image": {
+          "description": "Primary Image",
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [
+        "primary_image"
+      ]
+    }
+  },
+  "required": [
+    "date_created",
+    "digital_assets"
+  ]
+}
