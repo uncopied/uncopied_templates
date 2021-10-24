@@ -2,18 +2,11 @@
   "@context": "https://schema.org",
   "@type": "VisualArtwork",
   "name": "{{ .Asset.Name }}",
-  "dateCreated": "2021-06-05",
+  "dateCreated": "{{ .AssetProperties.DateCreated }}",
   "datePublished": "2021-06-12",
   "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAsset.ThumbnailIPFSHash }}",
   "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
-  "description": "{{ .Asset.CertificateLabel }} - REPLICANTS is inspired by and modeled after the Luxembourg REPLICANTS.REPLICANTSs are unregulated, ultra-secure storage facilities that exist outside of the territorial tax jurisdictions of any country — they’re often used by the uber-rich to hoard significant works of art. Because of their inherent lack of transparency, REPLICANTSs are nefarious breeding grounds for fraud, money laundering, and tax evasion.There are many similarities that can be made between REPLICANTSs and non-fungible tokens (NFTs). Both exist in unregulated territories, are constructs of capitalism, and can elicit unsavory practices. With a touch of irony, EPOCH seeks to circumvent these similarities by offering a unique concept for an NFT built upon an ecological, equitable, and sustainable model.",
-  "video": {
-    "@context": "https://schema.org/",
-    "@type": "VideoObject",
-    "name": "REPLICANTS_videointro_titles.mp4",
-    "contentSize":"73754079",
-    "contentUrl": "http://ipfs.io/ipfs/QmR12KTvabW7qohCiJysCqBUNtAzbU94NPnirsYGkj2kAL"
-  },
+  "description": "{{ .Asset.CertificateLabel }} - REPLICANTS borrows its title from the fictional bioengineered beings introduced within the 1982 science fiction film Blade Runner. The exhibition’s framing environment, modeled after Queen’s Road Central in Hong Kong, extends a virtual reproduction of the street and surrounding buildings of Woaw Gallery where REPLICANTS will be featured. This digital inversion of physical space and materiality, while mirroring the malleability of the replica, more broadly considers the limitations and possibilities for techno-reproductions.",
   "copyrightHolder":[
     {
       "@type": "Person",
@@ -39,53 +32,53 @@
     },
     {
       "@type": "Person",
-      "name": "Neil Beloufa",
+      "name": "Gordon Cheung",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "YGCKHAG4H3WDUQSAY5J4MK5ZIWLGIF7W6ZYO5EZY3OGZJB5FWGDNBX7BUA"
+        "value":  "M2WNUPEYKJTIQBYG2IUGXE3FWHN6EBEA6S7AF63O7OPBMUUEMB2UBYLI5Q"
       },
-      "sameAs": "https://algoexplorer.io/address/YGCKHAG4H3WDUQSAY5J4MK5ZIWLGIF7W6ZYO5EZY3OGZJB5FWGDNBX7BUA"
+      "sameAs": "https://algoexplorer.io/address/M2WNUPEYKJTIQBYG2IUGXE3FWHN6EBEA6S7AF63O7OPBMUUEMB2UBYLI5Q"
     },
     {
       "@type": "Person",
-      "name": "Sarah Rosalena Brady",
+      "name": "Galath3a",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "IKEPBSW7RSPN4TXYC3AV6FOOGZ6PJLTJKEB2PVCTPSRFNB3CANZ5JJRZPY"
+        "value":  "NL2YCOBKWPI35PYSU4LGNM2II4PW7C766GJCRLFSDNVS47AV2MRHZ7A7FI"
       },
-      "sameAs": "https://algoexplorer.io/address/IKEPBSW7RSPN4TXYC3AV6FOOGZ6PJLTJKEB2PVCTPSRFNB3CANZ5JJRZPY"
+      "sameAs": "https://algoexplorer.io/address/NL2YCOBKWPI35PYSU4LGNM2II4PW7C766GJCRLFSDNVS47AV2MRHZ7A7FI"
     },
     {
       "@type": "Person",
-      "name": "Alice Bucknell",
+      "name": "Hung Yu Hao",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "2FSBHE3XAXJHBFFUABPPBBU3ZL4PQAHI6BB3KTHJKL5IZCC7BG4LR6GRT4"
+        "value":  "FUZIWXSI2RTPW65MG475T7XKFC4O6LFPNG6J33RN4U2O4VZZQWMGFU6M24"
       },
-      "sameAs": "https://algoexplorer.io/address/2FSBHE3XAXJHBFFUABPPBBU3ZL4PQAHI6BB3KTHJKL5IZCC7BG4LR6GRT4"
+      "sameAs": "https://algoexplorer.io/address/FUZIWXSI2RTPW65MG475T7XKFC4O6LFPNG6J33RN4U2O4VZZQWMGFU6M24"
     },
     {
       "@type": "Person",
-      "name": "Juan Covelli",
+      "name": "Keiken",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "UONII5HLZPHGDCBCETVTFGX42I5MJWEYKM5NUIFQW3A47CSDIHZN74AYUA"
+        "value":  "LJX5SYXKAIXZ5PXBHJA4KBVHRHV5DWJ2MUBC2CWDAQIYFYOQVENLC4CYO4"
       },
-      "sameAs": "https://algoexplorer.io/address/UONII5HLZPHGDCBCETVTFGX42I5MJWEYKM5NUIFQW3A47CSDIHZN74AYUA"
+      "sameAs": "https://algoexplorer.io/address/LJX5SYXKAIXZ5PXBHJA4KBVHRHV5DWJ2MUBC2CWDAQIYFYOQVENLC4CYO4"
     },
     {
       "@type": "Person",
-      "name": "Alexandra Koumantaki",
+      "name": "Katja Novitskova",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "EMMEIOWLZPMUCXSLGB5QOR33HCQZAQT6KSRGCXHBO54W7LNLQCJXSGJ4IQ"
+        "value":  "2A7KDBW3BJMGNNKF563QOVYC466POE5MTFXUVODNPTZRMDFZTHFYC7ZJFM"
       },
-      "sameAs": "https://algoexplorer.io/address/EMMEIOWLZPMUCXSLGB5QOR33HCQZAQT6KSRGCXHBO54W7LNLQCJXSGJ4IQ"
+      "sameAs": "https://algoexplorer.io/address/2A7KDBW3BJMGNNKF563QOVYC466POE5MTFXUVODNPTZRMDFZTHFYC7ZJFM"
     },
     {
       "@type": "Person",
@@ -99,13 +92,43 @@
     },
     {
       "@type": "Person",
-      "name": "Hirad Sab",
+      "name": "Jennifer West",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "QPNWTRS3FLRUICYYLVPQV7QZIJPBNM2EV6S5BF6JOFQL7DGCLU5HKQSUK4"
+        "value":  "3FT4J6OASHOTMXUVNJO5NC4WBQ75WUCBZFLFFL5BJPE6SRXFXOJ2RYYP7E"
       },
-      "sameAs": "https://algoexplorer.io/address/QPNWTRS3FLRUICYYLVPQV7QZIJPBNM2EV6S5BF6JOFQL7DGCLU5HKQSUK4"
+      "sameAs": "https://algoexplorer.io/address/3FT4J6OASHOTMXUVNJO5NC4WBQ75WUCBZFLFFL5BJPE6SRXFXOJ2RYYP7E"
+    },
+    {
+      "@type": "Person",
+      "name": "Dr. Woo",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "YH3UYXKH6RDLDKNVVZCLXJI3HPNLXYKT5I7UPDV33UQCFO7CYIU6KJN6BE"
+      },
+      "sameAs": "https://algoexplorer.io/address/YH3UYXKH6RDLDKNVVZCLXJI3HPNLXYKT5I7UPDV33UQCFO7CYIU6KJN6BE"
+    },
+    {
+      "@type": "Person",
+      "name": "Qianqian Ye + Tiare Ribeaux",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "SDLB42ELW7ZDAYLSANL5AWLM7CKJPAW5FVNYE3PBCMVC7JMWHEZ7NKPPOE"
+      },
+      "sameAs": "https://algoexplorer.io/address/SDLB42ELW7ZDAYLSANL5AWLM7CKJPAW5FVNYE3PBCMVC7JMWHEZ7NKPPOE"
+    },
+    {
+      "@type": "Person",
+      "name": "Konrad Black",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "SEUECQKE4P7UEPBRA4GNXHVCGAIRRACDZHOONP6Q4HKT3YRYA3LKS62E7I"
+      },
+      "sameAs": "https://algoexplorer.io/address/SEUECQKE4P7UEPBRA4GNXHVCGAIRRACDZHOONP6Q4HKT3YRYA3LKS62E7I"
     }
   ],
   "artEdition": "{{ .Asset.EditionTotal }}",
@@ -115,10 +138,10 @@
   {
     "@context": "https://schema.org",
     "@type": "DataDownload",
-    "contentSize": "6405766745",
-    "contentUrl":"http://ipfs.io/ipfs/QmeUkVbadwBoivHGWKxDD8EMSgLNGVa593fD1iEAxhoxiA",
+    "contentSize": "1944918347",
+    "contentUrl":"https://ipfs.io/ipfs/QmP94VDyfbcjiVR6n1o6XAXaANk5vJ3EWcCtt8kF4db89y?filename=EPOCH_Replicants_2021.zip",
     "description": "REPLICANTS",
-    "name": "QmeUkVbadwBoivHGWKxDD8EMSgLNGVa593fD1iEAxhoxiA.zip",
+    "name": "EPOCH_Replicants_2021.zip",
     "hasPart": [
       {
         "@context": "https://schema.org",
@@ -212,20 +235,20 @@
       }
     ]
   },
-  "alternateName":"{{.Asset.Name}} - featuring Neïl Beloufa, Sarah Rosalena Brady, Alice Bucknell, Juan Covelli, Alexandra Koumantaki, Amanda Ross-Ho, Hirad Sab",
-  "url":"https://epoch.gallery/REPLICANTS/",
+  "alternateName":"{{ .Asset.CertificateLabel }}",
+  "url":"https://epoch.gallery/Replicants/",
   "subjectOf": {
 	  "@context": "https://schema.org",
 	  "@type": "ExhibitionEvent",
-	  "url": "https://epoch.gallery/REPLICANTS/",
+	  "url": "https://epoch.gallery/Replicants/",
 	  "name": "REPLICANTS",
-	  "startDate": "2021-06-12",
-	  "endDate": "2021-10-01",
+	  "startDate": "2021-10-09",
+	  "endDate": "2022-01-14",
 	  "description": "REPLICANTS is inspired by and modeled after the Luxembourg REPLICANTS.REPLICANTSs are unregulated, ultra-secure storage facilities that exist outside of the territorial tax jurisdictions of any country — they’re often used by the uber-rich to hoard significant works of art. Because of their inherent lack of transparency, REPLICANTSs are nefarious breeding grounds for fraud, money laundering, and tax evasion.There are many similarities that can be made between REPLICANTSs and non-fungible tokens (NFTs). Both exist in unregulated territories, are constructs of capitalism, and can elicit unsavory practices. With a touch of irony, EPOCH seeks to circumvent these similarities by offering a unique concept for an NFT built upon an ecological, equitable, and sustainable model."
     },
   "offers": {
     "@type": "Offer",
-    "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating artists and EPOCH. Differentiating this system from most traditional gallery\nsystems, 70% will be split evenly amongst all the participating artists and 30% will remain with EPOCH. 20% royalties for secondary market sales will be evenly\ndistributed amongst all the artists and EPOCH. Each participant will receive one NFT representing an Artist Proof (AP) edition. These AP editions are not part of the 5\npublicly-offered editions for sale, but should they be sold by an artist, will carry the same secondary market terms as the 5 NFTs in the publicly-offered edition. The Smart Contract is released on Github with an Apache 2.0 license.",
+    "description": "REPLICANTS borrows its title from the fictional bioengineered beings introduced within the 1982 science fiction film Blade Runner. The exhibition’s framing environment, modeled after Queen’s Road Central in Hong Kong, extends a virtual reproduction of the street and surrounding buildings of Woaw Gallery where REPLICANTS will be featured. This digital inversion of physical space and materiality, while mirroring the malleability of the replica, more broadly considers the limitations and possibilities for techno-reproductions.\n\nThe entirety of the REPLICANTS exhibition will be offered as a singular NFT containing a compilation of artworks by participating artists featured therein. The REPLICANTS NFT will be released on October 29th, 2021 in tandem with its inclusion in, and the opening of, the group exhibition TEKNOLUST: OBJECTOPHILIC FUTURES at Woaw Gallery, Hong Kong. The NFT Smart Contract is released on Github with an Apache 2.0 license.",
     "url": "https://github.com/uncopied/epoch_smart_contract"
   }
 }

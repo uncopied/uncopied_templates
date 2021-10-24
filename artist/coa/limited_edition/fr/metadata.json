@@ -24,9 +24,9 @@
       "name": "{{ .AssetProperties.Height }}"
     }
   ],
-  "art_edition": "{{ .Asset.EditionTotal }}",
+  "artEdition": "{{ .Asset.EditionTotal }}",
   "position": "{{ .Asset.EditionNumber }}",
-  "art_medium": "{{ .AssetProperties.ArtMedium }}",
-  "artwork_surface": "{{ .AssetProperties.ArtworkSurface }}",
-  "date_created": "{{ .AssetProperties.DateCreated }}"
+  "artMedium": "{{ .AssetProperties.ArtMedium }}",
+  "artworkSurface": "{{ .AssetProperties.ArtworkSurface }}",
+  "dateCreated": "{{ .AssetProperties.DateCreated }}"
 }
