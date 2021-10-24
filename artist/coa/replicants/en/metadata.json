@@ -123,7 +123,7 @@
   ],
   "artEdition": "{{ .Asset.EditionTotal }}",
   "position": "{{ .Asset.EditionNumber }}",
-  "artMedium": "8K virtual exhibition featuring a compilation of artworks by participating artists (playable stand-alone Windows/Mac compatible file, viewable on VR headsets)",
+  "artMedium": "8K virtual exhibition featuring a compilation of artworks by participating artists (playable stand-alone Windows/Mac compatible file with hi-res audio, viewable in VR on Oculus, Vive, or Gear VR headsets)",
   "associatedMedia":
   {
     "@context": "https://schema.org",
@@ -289,7 +289,7 @@
     },
   "offers": {
     "@type": "Offer",
-    "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating\nartists and EPOCH. Differentiating this system from most traditional gallery systems, 70% will besplit evenly amongst all the participating artists and 30% will remain with EPOCH. 20% royalties for\nsecondary market sales will be evenly distributed amongst all the artists and EPOCH. Each\nparticipant will receive one NFT representing an Artist Proof (AP) edition. These AP editions are not\npart of the 20 publicly-offered editions for sale, but should they be sold by an artist, will carry the\nsame secondary market terms as the 20 NFTs in the publicly-offered edition.. The NFT Smart Contract is released on Github with an Apache 2.0 license.",
+    "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating\nartists and EPOCH. Differentiating this system from most traditional gallery systems, 70% will besplit evenly amongst all the participating artists and 30% will remain with EPOCH. 20% royalties for\nsecondary market sales will be evenly distributed amongst all the artists and EPOCH. Each\nparticipant will receive one NFT representing an Artist Proof (AP) edition. These AP editions are not\npart of the 20 publicly-offered editions for sale, but should they be sold by an artist, will carry the\nsame secondary market terms as the 20 NFTs in the publicly-offered edition. Upon resale, an additional 1% of the gross resale price will be reserved for secondary marketplace fees. The NFT Smart Contract is released on Github with an Apache 2.0 license.",
     "url": "https://github.com/uncopied/epoch_smart_contract"
   }
 }
