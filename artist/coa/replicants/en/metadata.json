@@ -146,91 +146,142 @@
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "description": "“The REPLICANTS Song” consists of a set of six existing works singing about their life in a storage facility and about their status as digital objects. Neïl Beloufa is a multimedia artist primarily working in sculpture and film to explore themes of utopia and dystopia; assumption and fantasy as they play into narratives.",
-        "name": "“The REPLICANTS Song,” 2021",
+        "artMedium": "3D recreations, unique pieces of Financial Times newspaper, bamboo and adhesive\nVirtual installation, dimensions variable",
+        "description": "Made from financial newspaper and bamboo, Gordon Cheung’s window installation “Home” refers to homes in China with traditional window lattice designs that were demolished for rapid urbanisation. The sculpture hovers between states of being, suggesting a ghost architecture that would have supported the windows. The windows act as a demarcation between the landscape of progress, and the framework of identity, history and culture that define the individual. In the shadow of China’s monumental One Belt One Road endeavour, the work also speculates as to the varied aesthetic origins of the lattice designs, pointing towards the cultural transmission that occurred in the era of the great Silk Road.\n\nThe word “home” evokes the place where one lives, especially as a member of a family or household. It also carries the meaning of returning by instinct to one’s territory after leaving it. Being both Chinese and British, Cheung witnessed the 1997 British to China handover of the then colonised Hong Kong. His fluctuating identity prompts him to think about the definition of home, where and what it is, and the narratives of conquest. What is the meaning of home in an age where the world order is changing at accelerated speed? How can a domestic domicile be powerlessly torn down and replaced with a shopping mall or a skyscraper, all in the name of progress?\n\nHong Kong is often used as a backdrop in science fiction to explore the intersections of old and new architecture. The compressed futuristic city is composed of layered expressions of humanity, history and civilisation, forming a feedback loop that we collectively define but also simultaneously defines our identities. The existential questions of ‘who, why and what am I?’ are universal questions of consciousness, and also the germinating seeds of transformation that Cheung layers into his work. \n",
+        "name": "“Home,” 2019-2020",
         "artist": {
           "@type": "Person",
-          "name": "Neïl Beloufa"
+          "name": "Gordon Cheung"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "description": "“Viral Letter” examines the virality of language in a state of pandemic rupture, informed by our transformed sense of time and computational devices, mediated by programmed code languages. A single 3D letterform hosts six other forms, existing as a version and mutation of itself recontextualized in virtual space, inviting us to reexamine coded language as evolution and its consequences. The original forms were created in 2017 with a recurrent neural network fed with 50,000 world written languages to train the computer to remember to write languages other than Roman English over one million times, with intelligence to generate new letterforms. The new form operates as a memorial and preserved artifact of what the computer fails to remember, learn, and know under its bias architecture.",
-        "name": "“Viral Letter,” 2021",
+        "artMedium": "Video animation\nTRT: 3 min loop",
+        "name": "“Power, Corruption and Lies,” 2021",
         "artist": {
           "@type": "Person",
-          "name": "Sarah Rosalena Brady"
+          "name": "Gordon Cheung"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "description": "Swamp City is excited to announce an exclusive partnership with the Evergreen Group, LA’s foremost luxury real estate brokerage. As rising tides and rampant wildfires render North America uninhabitable, Swamp City invites you down to the Everglades for an enhanced relationship with nature. Our algae biofuel-powered personal jets leave Los Angeles and New York times a day, 7 days a week. Slots are going fast, so call one of our licensed travel agents today! Swamp City: New Nature Begins Now. Swamp City imagines the Florida Everglades as a luxury eco-tourism retreat in a near-future reality of severe climate disruption. Featuring both human and non-human protagonists, including an anthropomorphic alligator refusing to migrate, an opportunistic celebrity architect, and a 3,500-year-old bald cypress tree resurrected with artificial intelligence, it explores the tensions between architecture, lifestyle capitalism, sentient technology, entangled ecologies, and a dying swamp.",
-        "name": "Swamp City Promo, 2021",
+        "artMedium": "Video animation\nTRT: 3 min loop",
+        "name": "“Jan van Huysum (New Order),” 2014",
         "artist": {
           "@type": "Person",
-          "name": "Alice Bucknell"
+          "name": "Gordon Cheung"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "description": "Swamp City imagines the Florida Everglades as a luxury eco-tourism retreat in a near-future reality of severe climate disruption. Featuring both human and non-human protagonists, including an anthropomorphic alligator refusing to migrate, an opportunistic celebrity architect, and a 3,500-year-old bald cypress tree resurrected with artificial intelligence, it explores the tensions between architecture, lifestyle capitalism, sentient technology, entangled ecologies, and a dying swamp.\nAlice Bucknell is an artist and writer based in London. Using tactics of speculative fiction and working primarily through game engines and worldbuilding strategies, her current work explores interconnections of architecture, ecology, magic, and non-human and machine intelligences. Inspired by feminist science fiction authors such as Octavia E. Butler and Ursula K. Le Guin, she is interested in using emerging technologies including machine learning and artificial intelligence as well as video game design software to speculate on alternative interspecies survival strategies and envisioning more-than-human futures for our planet. ",
-        "name": "“Swamp City,” 2021",
+        "artMedium": "Video animation\nTRT: 3 min loop",
+        "name": "“Eelke Jelles Eelkema (New Order),” 2014",
+        "description": "A sorting algorithm is used to non-destructively reorder pixels of photographs for distinct bodies of works that Gordon Cheung creates. Theoretically the images can be reassembled as if a hyper complex jigsaw to metaphorically suggest not repetitions but how history rhymes.\n\n“New Order” series was partly inspired by the British band of the same name and from their album cover of ‘Power, Corruption and Lies’ where Henri Fantin-Latour’s still life was used by the designer Peter Saville. He said that the flowers \"suggested the means by which power, corruption and lies infiltrate our lives. They're seductive.” The title of the album was chosen from a 1981 conceptual art exhibition in Cologne, Germany when on the opening night the artist Gerhard Richter vandalised the exterior of the Kunsthalle by spray painting the text, ‘Power, Corruption and Lies’. Cheung’s “New Order” series was a reaction to the 2008 global financial crisis that led him to researching about the 1st recorded economic bubble and crash over the surreal speculation of tulip bulbs during the Dutch Golden Age over 370 years ago that at its peak individual bulbs sold for the price of a house. By using an algorithm that re-orders pixels of high resolution Rijksmuseum photographs of Dutch Golden Age still life, often featuring a tulip, they weave the romantic language of fragile mortality and futile materialism, the narratives of the birth of Modern Capitalism with the rise of the Dutch East India Trade company, Tulipmania and the repetition of history as it moves beyond the 2008 Financial crisis in the digital age. Visualised as dissolving digital sands of time, they echo Richter’s signature blurred paintings.\n\nThe algorithmic blur in the “New Order” series is a metaphor of our existence in a data-saturated era, an Ozymandian corrosion wrought with degraded memories and histories written by victors.\n",
         "artist": {
           "@type": "Person",
-          "name": "Alice Bucknell"
+          "name": "Gordon Cheung"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "description": "In the 15th century, European countries embarked on expeditions to foreign territories in the search of new resources and wealth (including Christopher Columbus’ accidental arrival to America in 1492). These expeditions facilitated the establishment of Western European culture in other regions by exporting wealth, knowledge, and cultural goods, including the flora and fauna, from these ‘new worlds’. The objects, living organisms, and archives brought to these countries were used as the foundation to develop knowledge in Western Europe by displaying them as a symbols of imperial power. Contained within new public spaces such as botanical gardens, zoos, and natural history museums, these items served the public by reframing them as educational-recreational amusement. Since their inception, these venues have acted as a key factor to spread the notion of exoticism and otherness into the European subconscious. The cultural influence of these places remains relevant for science and society to this day. Since then, the use of new technologies have played a key role in facilitating the import of culture and living organisms from new territories. And as new technologies develop, expeditions are back in vogue. We are seeing an increasing rise in interest from European countries and the U.S.A. in researching and exploring new territories. Terra Incognita interrogates how these new worlds will be colonised in the 21st century.  \n\nCompacting visual glimpses of everything from Dr Robotnik’s hybridised techno-animals, to Amazon delivery crates unloading like buildings from Command & Conquer and literary references such as ‘Lord of the Flies’, ‘Animal Farm’ and Margaret Atwood’s ‘Oryx & Crake’, Juan Covelli’s Terra Incognita is a visual manifestation of colonial experimentation in the new world.",
-        "name": "“Terra incognita,” 2019",
+        "artMedium": "Single channel video with audio (TRT: 2 min 34 sec), 3D installation\nDimensions variable\nSong credit: Zoe Polanski and Ori Itzhaki (Summer from the album ‘Gravity’)",
+        "name": "“Galath3a Salon,” 2021",
+        "description": "Project Galath3a speculate on the relationship between humanity and technology. The duo design Human Robot Interactions (HRI) using digital design and fabrication tools. The project’s aim is to promote trust between humans and machines via communication, gesture and touch. Galath3as installations challenge humans to trust robotic touch. \n \n“Galath3a Salon” is a design for the near future, where humans and robots coexist, cohabit and co-create. The work proposes an alternative to the dystopian world of “Blade Runner” (1982), promoting kinship with machines. The artwork includes a promo-video showing Galath3a’s research in (HRI) and a 3D space, the salon. The promo video is presented as a part of the salon, addressing consensual touch in a posthuman world. It shows a robotic arm mimicking human gestures, painting the researcher’s face. In the 3D salon, women and robots engage in touch and care. The intimate setting hosts bold scenes, showing faces painted and touched by robotic arms. The space’s soft and warm atmosphere supports trust and its modularity and dimension fit with a robotic range of movement. Applying makeup is at focus, as it requires putting one's face (and trust) in another's hands (and robotic arms). A robotic arm mirroring human gestures prompts questions about the nature of these behaviours: are they necessary? Should it be passed on? If so, how could we enhance it to empower women? Inspired by the writings of Donna Haraway (“Cyborg Manifesto”, 1985; “Staying with the Trouble: Making Kin in the Chthulucene”, 2016), the work raises questions about sexuality, gender biases and human-machine kinship. \n\nThe design effort includes 3D scans, robotic path-planning and simulation, 3D printing, spatial and installation design.\n\nGalath3a are designers Gili Ron and Irina Bogdan in collaboration with UR5 Robotic arm, named \"Gala\". The research in woman-machine collaboration is performed at the Berlin Open Lab, Universität der Künste, Berlin.",
         "artist": {
           "@type": "Person",
-          "name": "Juan Covelli"
+          "name": "Galath3a"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "description": "With América Salvaje HD, Juan Covelli presents his ongoing research on the animal, the alien, and the monstrous by utilizing new technologies, heritage, and the copy. Modern science continues to exhibit the non-human as something alien by presenting nature as a spectacle by eroticizing it through scientific software and CT scans. For América Salvaje HD, Covelli dissects and mutates 3D models found on databases such as MorphoSource.org to reflect on digital colonialism, the Anthropocene, and the spectacle.\n",
-        "name": "“América Salvaje HD,” 2020",
+        "artMedium": "Single-channel video with audio (TRT: 2 min loop) \n3000 x 1000 pixels",
+        "name": "“Digital Spread – Infect,” 2021",
+        "description": "“Digital Spread – Infect” draws on the recent expansion of digital communication technologies in the wake of global COVID-19 closures and quarantines. With in-person engagements greatly reduced, interrupted, and/or halted entirely, the urgency for devising alternative modes of engagement has resulted in a rapidly expanding virtual world. This acceleration has prompted the rise of a variety of carefully constructed, and happenstance, digital spaces and personas. Ruminating on the nascency of the internet in contradistinction with its recent expansion, “Digital Spread – Infect” visualizes the ways that everyday interactions and sites of gathering have shifted through virtual and physical engagements. Using 3D scans of Taiwanese public housing units, point clouds scattered throughout the work prompt viewers to explore the nascent idealisms and present realities of Taiwan’s public housing communities.\n\nSurveying the early allures and contemporary perils of self-sustained housing units, public housing in Taiwan has become increasingly precarious amidst the rise of the luxury apartment complex. With rapidly developing modern apartments mirroring many of the same utopianisms initiated within early housing structures and, coincidentally, the internet alike, “Digital Spread –Infect” considers the dissemination of digital data and socio-material change as parallel and interchangeable forces. Formally rendered to invoke a 1990s horizontal video game, this visual rumination on spheres of (dis)connectivity prompts the user to reconsider shared spaces, places of inhabitance, and the power dynamics that substantiate and frame them.",
         "artist": {
           "@type": "Person",
-          "name": "Juan Covelli"
+          "name": "Hung Yu Hao"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "description": "This megalithic stone is excavated / broken off Pentelikon mountain in ancient times for unknown purposes. The excavated stone contained errors and thus it was discarded onsite due to its enormous weight. The stone is repurposed and the element of light is added; a neo-mythology resurfaces.\n\nThis is a mountain area close to Athens shrouded by mystic stories, an area conquered and reconquered by many different forces throughout the eons. The marbles that created the Parthenon temple were quarried here. Temples, statues and engraved stones dedicated to dead heroes were carved here. What you see in front of you is a vision of an altered yesterday projected into the future.\n\nHumans create gods to believe in themselves. \nThey make order so chaos can exist.\nThey seek darkness to find the light.\nThey force authority and awake resistance.",
-        "name": "“The World is Nothing without Chaos,” 2021",
+        "artMedium": "Digital Sculpture\nDimensions variable",
+        "name": "“Okapi,” 2021",
+        "description": "“Okapi” is a gentle and tender creature native to Keiken’s Metaverse. Found in the sprawling plateau, “Okapi” wears a vibrant armour which offers protection of their center point, their axis of existence, but also has the ability to absorb new experiences and readily calculate new points to position and adapt their axis. “Okapi“ is shy and reserved by nature but with perky, upright ears they can discern a vast range of frequencies allowing them to communicate with many different species. With four sensory arms “Okapi” uses these limbs to gather bio-data of the environments they encounter, storing it in their genetic make up for future generations to uncover and learn from. They are curious and love to traverse the Metaverse.\n\nKeiken are a collaborative practice, co-founded by artists Tanya Cruz, Hana Omori and Isabel Ramos in 2015, who frequently work with multiple collaborators. Based between London and Berlin, they come from mixed diasporic backgrounds (Mexican/Japanese/European/Jewish). They are building a collective shared space of virtual worlds, a Metaverse. Keiken, the Japanese word for experience, create speculative worlds, using moving-image, CGI, gaming software, installation, virtual and augmented reality, programming and performance to merge the physical and digital. Their work simulates new structures and ways of existing, exploring how societal introjection governs the way we feel, think and perceive.\n",
         "artist": {
           "@type": "Person",
-          "name": "Alexandra Koumantaki"
+          "name": "Keiken"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "description": "To make her virtual installation for EPOCH, Amanda Ross-Ho assembled a selection of ‘readymade’ objects offered for sale within the stock 3D online marketplace and installed them in various rooms within the Ground Floor Warehouse of the REPLICANTS. Designed for licensed use in gaming or design platforms, the objects are inert props awaiting activation through merger with context and environment. \n \nThe conditions of the virtual REPLICANTS provide a generative shelter for artistic forms, liberating them from the burdens of corporeality, logistics, and limitations of conventional platforms to find agency in perpetuity. Ross-Ho approaches artistic production for the constructed logic of EPOCH as activity housed within this closed system, recontextualizing non-artisanal stock forms as existing instruments of currency to further circulate between these distinct platforms of virtual display and exchange.\n \nFor Untitled Syndrome (REPLICANTS), seven found iterations of the mask are presented at large scale, facing down, obscuring their identities and presenting their interior cavities. Now contextualized in space but remaining uncoupled with their intended subjects, this panoply of disguises maintain their vacancies in a permanent holding pattern. Within the logic of virtual simulation, the function of the mask is both evacuated and multiplied, effectively doubling down on artifice and the nested cloaking of identities in an endless moebius.",
-        "name": "“Untitled Syndrome (REPLICANTS),” 2021",
+        "artMedium": "3D sculpture\nDimensions variable\n",
+        "name": "“Approximation (Tyrell owl),” 2021",
+        "description": "“Approximation (Tyrell owl)” is a recreation of an iconic still from the film “Blade Runner” (1982) wherein a replicant owl surveys the Tyrell Corporation building with an artificial eye. Composed as a 3D sculpture, this rendering of the owl functions as a digital approximation of the film’s synthetically created replicant owl; a bio-technological approximation of an actual animal species long lost to extinction within the film’s universe. The sculpture’s formal composition, a large head severed at roughly the same spot within its framing in the film, features a singular glaring eye that reiterates its foremost function as a surveillance mechanism. \n\nThe work’s accompanying physical artwork series “Approximations” expands on these sentiments through myriad photographic cutout sculptures of partially composed animals. These animal amalgamations visualize Novitskova’s ongoing interest in the replication of organic bodies and reconstruction of meaning through the medium, fiction, and cultural landscapes. Alongside “Approximation’s” digital rendering, REPLICANTS features components of an earlier digital collage work composed by Novitskova. This previous work included sculptural digital collage prints of truncated animal bodies surrounded by economic growth arrows. \n“These arrows” (2013) have been included within REPLICANTS as a neon sign on Queen’s Road Central. \n",
         "artist": {
           "@type": "Person",
-          "name": "Amanda Ross-Ho"
+          "name": "Katja Novitskova"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "description": "SOFT: Optics is the third in a series of sculptures depicting hyper-aestheticized pseudo-objects subverting their formal tendencies to complicate their functional purpose. In opposition to the circumventive amenities of free economic zones and their facilities, the installation aims to reinforce the provision of power and control that is absent from such spaces. As such, SOFT: Optics undermines the ideas of plutocratic self-determination and capital-as-power through its administration of dominance and submission on its possessor, subjecting them to stasis and immobility while forcing a compulsory gaze at their concealed possessions. In doing so, the sculpture objectifies its owner to a mere item of viewership stored in the confines of inaccessible spaces of wealth.",
-        "name": "“SOFT: Optics,” 2021",
+        "artMedium": "HD video (scanned from 16mm film painted with inks, dyes and piss), 1920 x 6480\n1 minute (looping)",
+        "name": "“Skyscraper Painted Hacker Cats,” 2020/2021",
+        "description": "“Skyscraper Painted Hacker Cats” is a nod to the ongoing phenomenon of the people’s fascination with cats on the Internet.  The projected grid of cats onto the defunct skyscraper advertising apparatuses of this virtual city, allow them to “hack” the spaces of consumer capitalism. At architectural scale, the looming, painted cats occupy the space of the gods, high above the abandoned city below. West first compiled 16mm clips of cats against a green screen. Manipulating the celluloid in her signature style, West applied brightly colored dye infused with urine to the filmstrip before transferring it to high-definition video. First presented across more than 75 billboards as part of Times Square Arts’ Midnight Moment series (the world's “largest, longest-running digital art exhibition”), it pays homage to the feline’s role across many moving image genres, from viral videos to experimental films. \n\n“Skyscraper Painted Hacker Cats”  - cat performances by Munchkin and original 16mm shot by Peter West.",
         "artist": {
           "@type": "Person",
-          "name": "Hirad Sab"
+          "name": "Jennifer West"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "5-channel flatscreen television installation, 3D objects (scanned and modeled) and high-definition video (transferred from 16mm film shot on Arriflex S1 by Peter West)\nEach video: 1 minute (looping)",
+        "name": "“Archaeology of Smashed Flatscreen Televisions Thrown off Bridges,” 2020/2021",
+        "description": "The cinematic, apocalyptic image of L.A.’s barren river littered with cast-off electronics inspired West to preserve the evidence of these futile acts of violence against disposable technology.  The grid of flatscreen monitors facing upward floating in water in an abandoned parking garage are a taxonomic display, like an archeological case study of physical evidence–artifacts of our moment seen from some future time when our ecologically inevitable fate has already taken place. Placed on top of each monitor is a piece of broken personal technology or object collected by West from the Los Angeles River  - a cell phone with a broken screen, the shell of a boom box, corroded CD’s, remnants of broken television screens, a broken arrow and golf club. West arranged the random sampling of scavenged debris by type and filmed it in 16mm on green screen backgrounds. The filming’s irreverent style echoes the miscellany of the dredged collection. The artist’s cat is glimpsed walking in and out of frame, occasionally settling in the center, indifferent to the film production in process. During the film’s telecine transfer, a loose electrical cable caused the background screen to flash from green to magenta. West includes this glitching footage in a further embrace of indeterminacy and accident.",
+        "artist": {
+          "@type": "Person",
+          "name": "Jennifer West"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "Digital rendering / tattoo\nVirtual installation, dimensions variable",
+        "name": "“Nothing the God of biomechanics wouldn't let you into heaven for: 1-7”, 2021",
+        "description": "Dr. Woo has created seven unique masks which will appear jointly in REPLICANTS and TEKNOLUST: OBJECTOPHILIC FUTURES. Digitally rendered, each artwork calls upon various movements in which disguises have maneuvered throughout history, functionally, allegorically, and ritually, from Inuit ceremony, to Kabuki theater, to contemporary digital avatars on Twitter and Reddit. Within the digital replicant, the masks are indelibly marked on frozen and hanging cadavers/replacement body parts, perhaps as an oracle of what is to come for collectors who choose to have their bodies inked.\n\nTEKNOLUST: OBJECTOPHILIC FUTURES envisions a post-singularity utopia/distopia in which humans interact with intelligences of their own creation on level footing. The exhibition manifests multiple realms of existence: a fungible, physical space in WOAW Gallery on Queen’s Road, Hong Kong; EPOCH’s RELICANTS, which digitally recreates the architecture of WOAW’s Queen’s Road location and its surrounding buildings with an EPOCH-selected alternate roster of artists; and a series of IRL WOAW-situated portals that provide networks between tangible, spiritual, and virtual universes.",
+        "artist": {
+          "@type": "Person",
+          "name": "Dr. Woo"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "Digital Sculpture, audio, text\nDimensions variable",
+        "name": "“A.A.G.,” 2021 ",
+        "description": "“A.A.G.” is a transpacific deity born from submarine fiber optic cables, and the desire for human connection across the Pacific Ocean. Manifested as a goddexx, “A.A.G.” is a hybrid of the organic and the inorganic, brought forth from the interconnection of geographies, machines, physical undersea infrastructure, and the deep sea creatures that grow on it’s metal piping. Representing non-linear pathways of communication streams across the ocean, of both histories and future destinations, they can appear in many places and times at once, enabling the flow of the internet across the world. Here we see them surfaced at a cable landing in Hong Kong. In the dialogue playing in the background, “A.A.G.” has brought together two oceanic deities across the Pacific ocean: Mazu 媽祖  (a Chinese sea goddess, spoken by Qianqian Ye) and Hina opuhala ko’a (a Hawaiian goddess of coral reefs, spoken by Tiare Ribeaux). We hear all three in conversation as they confer about the state of humanity and the growth of technology over the past 1000 years. \n\n“A.A.G.” stands for the Asia-America Gateway submarine cable system that has landing points in California, Keawaula, Hawai’i, Lantau Island, Hong Kong, as well as Guam, Malaysia, Brunei, the Philippines, Singapore, and Thailand. The acronym as an utterance brings to mind a primordial state of being.\n\n“A.A.G.” is part of Kai 海 Hai (a hybrid of ‘Ocean’ in ʻŌlelo Hawai'i and Chinese), a series of virtual and augmented reality installations utilize transpacific stories, oral histories, myth and folklore from Polynesia to Asia - to explore environmental issues, indigenous and immigrant stories, migratory paths, and diaspora across the Pacific Ocean. Kai 海 Hai is a collaboration between Kānaka Maoli artist and filmmaker Tiare Ribeaux (from Honolulu based in the Bay Area) and Chinese artist and technologist Qianqian Ye (from Wenzhou based in LA). Mapping the ocean surface between Wenzhou, Honolulu, the Bay Area, and Los Angeles, this project remixes the ancestral, personal, and speculative stories about the Pacific Ocean.",
+        "artist": {
+          "@type": "Person",
+          "name": "Qianqian Ye + Tiare Ribeaux"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "Stereo musical composition\nTRT: 7 min 49 sec",
+        "name": "“Human Era (Coda),” 2021",
+        "description": "The idea of emulation vs. replication, a theme that runs throughout the film “Blade Runner” (1982), was the starting point for creating a soundscape for the virtual space of the exhibition, REPLICANTS. The work, Human Era (Coda), addresses the problem of creating a new musical composition from a classic and ubiquitous piece of pop culture history by way of the composer taking on the characteristics of a replicant in order to create the work. (Maybe I am not human after all?) If one looks back to the mechanical reproductions first produced by the Gutenberg printing-press, its human operated mechanisms were susceptible to flaws in the end result. These flaws, these imperfections are what we now define as hallmarks of humanity – errors in execution. With that \"tell\" in mind, the approach Konrad Black took was one of replication through blind emulation – to become \"More human than human\" by drawing upon the implanted memory of Ridley Scott's film. Black subjected himself to the fallible nature of memory and how recall works. An attempt to achieve accuracy in the reproduction of the leitmotifs – that are so iconic in the original Vangelis soundtrack – resulted in human errors from memory distortion, thereby producing the musical mutations of Human Era (Coda).\n\nIn this sense, blind emulation becomes the point of identification with the replicants of Scott's film: they know their memories are implanted, but they need them artificially as part of their mechanical nature in order to live out their beautifully flawed lives.",
+        "artist": {
+          "@type": "Person",
+          "name": "Konrad Black"
         }
       }
     ]
