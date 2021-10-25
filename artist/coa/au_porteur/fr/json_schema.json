@@ -9,11 +9,11 @@
       "type": "string"
     },
     "height": {
-      "description": "Hauteur",
+      "description": "Hauteur (mm)",
       "type": "string"
     },
     "width": {
-      "description": "Largeur",
+      "description": "Largeur (mm)",
       "type": "string"
     },
     "art_medium": {
