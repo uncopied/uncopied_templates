@@ -1,8 +1,8 @@
 {
   "id": "3e85f9d1-42ad-4a1a-90a6-7f443ced4d39",
-  "name": "inventaire (2D)",
+  "name": "Inventaire d'objet physique en 2D (linked.art)",
   "type": "CoI",
-  "description": "Modèle de certificat d'inventaire pour le récolement muséal d'objets physiques 2D (peintures, dessins, photographies, etc.) ",
+  "description": "Modèle de certificat d'inventaire pour le récolement muséal d'objets physiques en deux dimensions (2D) tels que : peintures, dessins, photographies, etc. Le format de métadonnées est linked.art",
   "author": "UNCOPIED",
   "version": "1.0",
   "manifest_version": 1,
@@ -66,10 +66,11 @@
   },
   "certificate_template": "legal_document.tmpl",
   "certificate_label_template": "certificate_label.txt",
-  "assetLabel_template": "asset_label.txt",
+  "asset_label_template": "asset_label.txt",
   "metadata_template": "metadata.json",
   "edition_min": 1,
   "edition_max": 1,
   "license_terms_url": "someURL",
-  "privacy_terms_url": "someOtherURL"
+  "privacy_terms_url": "someOtherURL",
+  "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/museum/coi/museum_inventory/fr/uncopied_tampon.svg"
 }

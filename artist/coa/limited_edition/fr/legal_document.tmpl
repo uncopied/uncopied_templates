@@ -3,10 +3,10 @@
 <h1>
     {{ .Asset.CertificateLabel }}
 </h1>
-<h2>Certificat d'authenticité pour une œuvre physique originale unique</h2>
+<h2>Certificat d'authenticité pour une œuvre physique en édition limitée</h2>
     <p>
         Ce document certifie que {{ .Issuer.DisplayName }} déclare <strong>{{.Asset.Name}}</strong>
-        comme étant une œuvre physique unique, authentique et le résultat du processus de création de son auteur.
+        comme étant une œuvre physique en édition limitée, authentique et le résultat du processus de création de son auteur.
     </p>
         <div>
             <table>
@@ -41,6 +41,10 @@
                 <td>Technique de production ou Médium</td>
                 <td>{{ .AssetProperties.ArtMedium }}</td>
               </tr>
+              <tr>
+                <td>Nombre total d'exemplaires</td>
+                <td>{{ .Asset.EditionTotal }}</td>
+              </tr>
             </tbody>
             </table>
         </div>
@@ -63,7 +67,15 @@
         et elles seront disponibles pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible).
     </p>
     <p>
-        Le label chirographique et le jeton cryptographique correspondent exactement à UN object physique original et unique.
+        De cette image numérique ont été produits {{ .Asset.EditionTotal }} exemplaires originaux et uniques qui constituent l'édition physique limitée.
+        Les exemplaires sont numérotés de 1 à {{ .Asset.EditionTotal }} de {{ .Asset.EditionTotal }} originaux au total.
+        Ces exemplaires originaux sont les seuls à être étiquetés par un chirographe, physiquement marqué ou signé par l'artiste.
+        L'exemplaire numéroté {{ .Asset.EditionNumber }} / {{ .Asset.EditionTotal }} est un exemplaire original de l'édition limitée.
+
+		Les impressions physiques sont réalisées sur support {{.AssetProperties.ArtMedium}} avec la taille {{.AssetProperties.Height}} x {{.AssetProperties.Width}}.
+    </p>
+    <p>
+        Chaque label chirographique et jeton cryptographique correspondent exactement à UN object physique de l'édition limitée.
     </p>
     <p>
         Ce certificat est valide pour une durée de 10 ans. La présence d'un chirographe -marqué, signé ou non par l'émetteur- a valeur de signature physique et de signature cryptographique.

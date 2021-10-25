@@ -1,108 +1,108 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "CoI museum inventory 3D json schema fields description",
-  "description": "CoI museum inventory json schema fields description. French version",
+  "title": "Certificat d'inventaire muséal 3D json schema",
+  "description": "Certificat d'inventaire muséal 3D json schema. Version française",
   "type": "object",
   "properties": {
     "object_type": {
-      "description": "Some description about object_type field",
+      "description": "Type d'objet",
       "type": "string"
     },
     "artist": {
-      "description": "Some description about artist field",
+      "description": "Artiste",
       "type": "string"
     },
     "technique": {
-      "description": "Some description about technique field",
+      "description": "Technique",
       "type": "string"
     },
     "inventory_id": {
-      "description": "Some description about inventory_id field",
+      "description": "Numéro d'inventaire",
       "type": "string"
     },
     "description": {
-      "description": "Some description about description field",
+      "description": "Description",
       "type": "string"
     },
     "bibliography": {
-      "description": "Some description about bibliography field",
+      "description": "Bibliographie",
       "type": "string"
     },
     "provenance": {
-      "description": "Some description about provenance field",
+      "description": "Provenance",
       "type": "string"
     },
     "height": {
-      "description": "Some description about height field",
+      "description": "Hauteur (mm)",
       "type": "string"
     },
     "width": {
-      "description": "Some description about width field",
+      "description": "Largeur (mm)",
       "type": "string"
     },
     "depth": {
-      "description": "Some description about depth field",
+      "description": "Profondeur (mm)",
       "type": "string"
     },
     "weight": {
-      "description": "Some description about weight field",
+      "description": "Poids (g)",
       "type": "string"
     },
     "material": {
-      "description": "Some description about material field",
+      "description": "Matériel",
       "type": "string"
     },
     "timespan_begin": {
-      "description": "Some description about timespan_begin field",
+      "description": "Date de création (estimation basse)",
       "type": "string",
       "format": "date"
     },
     "timespan_end": {
-      "description": "Some description about timespan_end field",
+      "description": "Date de création (estimation haute)",
       "type": "string",
       "format": "date"
     },
     "inventory_date": {
-      "description": "Some description about inventory_date field",
+      "description": "Date d'inventaire",
       "type": "string",
       "format": "date"
     },
     "digital_assets": {
-      "description": "Some description about digital_assets field",
+      "description": "Actifs digitaux",
       "type": "object",
       "properties": {
         "primary_image": {
-          "description": "Some description about primary_image field",
+          "description": "Image principale",
           "type": "string",
           "format": "uuid"
         },
         "picture_front": {
-          "description": "Some description about picture_front field",
+          "description": "Image de face",
           "type": "string",
           "format": "uuid"
         },
         "picture_back": {
-          "description": "Some description about picture_back field",
+          "description": "Image de dos",
           "type": "string",
           "format": "uuid"
         },
         "picture_left": {
-          "description": "Some description about picture_left field",
+          "description": "Image latérale gauche",
           "type": "string",
           "format": "uuid"
         },
         "picture_right": {
-          "description": "Some description about picture_right field",
+          "description": "Image latérale droite",
           "type": "string",
           "format": "uuid"
         },
         "picture_top": {
-          "description": "Some description about picture_top field",
+          "description": "Image du haut",
           "type": "string",
           "format": "uuid"
         },
         "picture_below": {
-          "description": "Some description about picture_below field",
+          "description": "Image du dessous",
           "type": "string",
           "format": "uuid"
         }

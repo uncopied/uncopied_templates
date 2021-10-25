@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "CoA unique original json schema fields description",
-  "description": "CoA unique original json schema fields. English version",
+  "title": "CoA limited edition json schema fields description",
+  "description": "CoA limited edition json schema fields. Version française",
   "type": "object",
   "properties": {
     "description": {
@@ -9,42 +9,42 @@
       "type": "string"
     },
     "height": {
-      "description": "Height (mm)",
+      "description": "Hauteur (mm)",
       "type": "string"
     },
     "width": {
-      "description": "Width (mm)",
+      "description": "Largeur (mm)",
       "type": "string"
     },
     "art_medium": {
-      "description": "Art Medium",
+      "description": "Médium",
       "type": "string"
     },
     "artwork_surface": {
-      "description": "Artwork Surface",
+      "description": "Surface",
       "type": "string"
     },
     "date_created": {
-      "description": "Date Created",
+      "description": "Date de création",
       "type": "string",
       "format": "date"
     },
     "digital_assets": {
-      "description": "Digital Assets",
+      "description": "Actifs digitaux",
       "type": "object",
       "properties": {
         "primary_image": {
-          "description": "Primary Image",
+          "description": "Image principale",
           "type": "string",
           "format": "uuid"
         },
         "picture_back": {
-          "description": "Picture Back",
+          "description": "Image de dos",
           "type": "string",
           "format": "uuid"
         },
         "picture_front_without_frame": {
-          "description": "Picture Front Without Frame",
+          "description": "Image excluant l'encadrement",
           "type": "string",
           "format": "uuid"
         }
