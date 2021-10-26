@@ -149,6 +149,7 @@
         "@type": "VisualArtwork",
         "artMedium": "Video animation\nTRT: 3 min loop",
         "name": "“Power, Corruption and Lies,” 2021",
+        "description": "“Power, Corruption and Lies,” 2021",
         "artist": {
           "@type": "Person",
           "name": "Gordon Cheung"
@@ -159,6 +160,7 @@
         "@type": "VisualArtwork",
         "artMedium": "Video animation\nTRT: 3 min loop",
         "name": "“Jan van Huysum (New Order),” 2014",
+        "description": "“Jan van Huysum (New Order),” 2014",
         "artist": {
           "@type": "Person",
           "name": "Gordon Cheung"
