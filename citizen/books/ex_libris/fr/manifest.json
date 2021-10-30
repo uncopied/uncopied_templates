@@ -1,8 +1,8 @@
 {
   "id": "a3b21ef4-e320-4433-be1a-1bbd7455f441",
-  "name": "Authenticité d'une oeuvre physique originale unique en 2D (schema.org)",
-  "type": "CoA",
-  "description": "Modèle de certificat d'authenticité par l'artiste pour les oeuvres physiques originales uniques en deux dimensions (2D) telles que: peinture, dessin, street art, ... Le format de métadonnées utlisé est schema.org/VisualArtwork.",
+  "name": "ex-libris",
+  "type": "books",
+  "description": "Un ex-libris ou exlibris (du latin ex libris meis, « faisant partie de mes livres ») est une inscription ou une vignette ajoutée à l'intérieur d'un livre, par laquelle le propriétaire marque nommément sa possession. Version française",
   "author": "UNCOPIED",
   "version": "1.0",
   "manifest_version": 1,

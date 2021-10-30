@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "ex-libris",
-  "description": "Ex-libris. Version française",
+  "description": "Un ex-libris ou exlibris (du latin ex libris meis, « faisant partie de mes livres ») est une inscription ou une vignette ajoutée à l'intérieur d'un livre, par laquelle le propriétaire marque nommément sa possession. Version française",
   "type": "object",
   "properties": {
     "description": {
