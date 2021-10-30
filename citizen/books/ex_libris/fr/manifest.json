@@ -1,8 +1,8 @@
 {
-  "id": "50059715-fccf-47bd-ba5d-cc036da50150",
-  "name": "Unique original physical 2D visual artwork (schema.org)",
+  "id": "a3b21ef4-e320-4433-be1a-1bbd7455f441",
+  "name": "Authenticité d'une oeuvre physique originale unique en 2D (schema.org)",
   "type": "CoA",
-  "description": "Certificate of Authenticity by the artist for a unique original physical 2D visual artwork, such as : oil painting, drawing, ... The model for metadata is schema.org/VisualArtwork.",
+  "description": "Modèle de certificat d'authenticité par l'artiste pour les oeuvres physiques originales uniques en deux dimensions (2D) telles que: peinture, dessin, street art, ... Le format de métadonnées utlisé est schema.org/VisualArtwork.",
   "author": "UNCOPIED",
   "version": "1.0",
   "manifest_version": 1,
@@ -16,7 +16,7 @@
   "countries": [
     "*"
   ],
-  "language": "en",
+  "language": "fr",
   "asset_properties": {
     "description": {
       "ordering": 1
@@ -39,11 +39,11 @@
   },
   "certificate_template": "legal_document.tmpl",
   "certificate_label_template": "certificate_label.txt",
-  "assetLabel_template": "asset_label.txt",
+  "asset_label_template": "asset_label.txt",
   "metadata_template": "metadata.json",
   "edition_min": 1,
   "edition_max": 1,
   "license_terms_url": "someURL",
   "privacy_terms_url": "someOtherURL",
-  "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/artist/coa/unique_original/en/uncopied_tampon.svg"
+  "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/citizen/books/ex_libris/fr/uncopied_tampon.svg"
 }
