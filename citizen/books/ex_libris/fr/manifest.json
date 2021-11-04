@@ -18,10 +18,10 @@
   ],
   "language": "fr",
   "asset_properties": {
-    "description": {
+    "author_name": {
       "ordering": 1
     },
-    "author_name": {
+    "description": {
       "ordering": 2
     },
     "edition": {
