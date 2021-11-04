@@ -4,12 +4,12 @@
   "description": "Un ex-libris ou exlibris (du latin ex libris meis, « faisant partie de mes livres ») est une inscription ou une vignette ajoutée à l'intérieur d'un livre, par laquelle le propriétaire marque nommément sa possession. Version française",
   "type": "object",
   "properties": {
-    "description": {
-      "description": "Description",
-      "type": "string"
-    },
     "author_name": {
       "description": "Auteur",
+      "type": "string"
+    },
+    "description": {
+      "description": "Description",
       "type": "string"
     },
     "edition": {
@@ -18,7 +18,7 @@
     },
     "number_of_pages": {
       "description": "Nombre de pages",
-      "type": "integer"
+      "type": "string"
     },
     "isbn": {
       "description": "ISBN",

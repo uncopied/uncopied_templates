@@ -1,1 +1,2 @@
-ex-libris\n{ .Issuer.DisplayName }}
+ex-libris
+{{ .Issuer.DisplayName }}
