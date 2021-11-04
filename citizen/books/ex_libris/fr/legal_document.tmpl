@@ -1,12 +1,12 @@
 {{ template "header.tmpl" .}}
 <div>
 <h1>
-    {{ .Asset.CertificateLabel }}
+    "{{.Asset.Name}}", {{ .AssetProperties.AuthorName }}
 </h1>
-<h2>Certificat d'authenticité pour une œuvre physique originale unique</h2>
+<h2>Ex-libris</h2>
     <p>
-        Ce document certifie que {{ .Issuer.DisplayName }} déclare <strong>{{.Asset.Name}}</strong>
-        comme étant une œuvre physique unique, authentique et le résultat du processus de création de son auteur.
+        Ce document certifie que {{ .Issuer.DisplayName }} déclare <strong>"{{.Asset.Name}}", {{ .AssetProperties.AuthorName }}</strong>
+        comme faisant partie de sa bibliothèque personnelle.
     </p>
         <div>
             <table>
@@ -18,34 +18,38 @@
             </thead>
             <tbody>
               <tr>
-                <td>Organisme émetteur (OE)</td>
+                <td>Propriétaire</td>
                 <td>{{ .Issuer.DisplayName }}</td>
               </tr>
               <tr>
-                <td>Nom ou titre de l'œuvre</td>
+                <td>Nom ou titre de l'ouvrage</td>
                 <td>{{ .Asset.Name }}</td>
+              </tr>
+              <tr>
+                <td>Auteur</td>
+                <td>{{ .AssetProperties.AuthorName }}</td>
               </tr>
               <tr>
                 <td>Description</td>
                 <td>{{ .AssetProperties.Description }}</td>
               </tr>
               <tr>
-                <td>Dimensions</td>
-                <td>{{ .AssetProperties.Height }} mm x {{ .AssetProperties.Width }} mm</td>
+                <td>Edition</td>
+                <td>{{ .AssetProperties.Edition }}</td>
               </tr>
               <tr>
-                <td>Matériaux ou Surface</td>
-                <td>{{ .AssetProperties.ArtworkSurface }}</td>
+                <td>Nombre de pages</td>
+                <td>{{ .AssetProperties.NumberOfPages }}</td>
               </tr>
               <tr>
-                <td>Technique de production ou Médium</td>
-                <td>{{ .AssetProperties.ArtMedium }}</td>
+                <td>ISBN</td>
+                <td>{{ .AssetProperties.Isbn }}</td>
               </tr>
             </tbody>
             </table>
         </div>
     <p>
-        Une image en haute définition qui représente l'œuvre est distribuée sous la license <strong>Tous droits réservés</strong> et
+        Une image en haute définition qui représente l'ouvrage est distribuée sous la license <strong>Tous droits réservés</strong> et
         elle sera disponible pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible)
         avec la clé de hachage cryptographique {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}.
     </p>
@@ -55,11 +59,10 @@
         avec la clé de hachage cryptographique {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
     </p>
     <p>
-
     </p>
     <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
     <p>
-        Les méta-données de l'œuvre (les informations comme : titre, nom de l'auteur etc.) sont distribuées sous licence Public Domain CC0
+        Les méta-données de l'ouvrage (les informations comme : titre, nom de l'auteur etc.) sont distribuées sous licence Public Domain CC0
         et elles seront disponibles pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible).
     </p>
     <p>
@@ -73,11 +76,8 @@
             Si d'autres images en basse définition représentant l'objet “{{.Asset.Name}}" ont été publiées pour un stockage permanent sous licence <strong>Creative Commons License (CC BY-NC-ND)</strong>, elles sont référencées ci-après:
         </p>
         <section id="photos">
- {{ if .DigitalAssets.PictureBack.ThumbnailIPFSHash }}
-            <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureBack.ThumbnailIPFSHash}}"/>
- {{ end }}
- {{ if .DigitalAssets.PictureFrontWithoutFrame.ThumbnailIPFSHash }}
-            <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureFrontWithoutFrame.ThumbnailIPFSHash}}"/>
+ {{ if .DigitalAssets.SecondaryImage.ThumbnailIPFSHash }}
+            <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.SecondaryImage.ThumbnailIPFSHash}}"/>
  {{ end }}
         </section>
 </div>

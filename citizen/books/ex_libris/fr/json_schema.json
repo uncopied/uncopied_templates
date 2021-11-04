@@ -8,20 +8,20 @@
       "description": "Description",
       "type": "string"
     },
-    "height": {
-      "description": "Hauteur (mm)",
+    "author_name": {
+      "description": "Auteur",
       "type": "string"
     },
-    "width": {
-      "description": "Largeur (mm)",
+    "edition": {
+      "description": "Édition",
       "type": "string"
     },
-    "art_medium": {
-      "description": "Médium",
-      "type": "string"
+    "number_of_pages": {
+      "description": "Nombre de pages",
+      "type": "integer"
     },
-    "artwork_surface": {
-      "description": "Surface",
+    "isbn": {
+      "description": "ISBN",
       "type": "string"
     },
     "date_created": {
@@ -34,17 +34,12 @@
       "type": "object",
       "properties": {
         "primary_image": {
-          "description": "Image principale",
+          "description": "Photo de la première de couverture",
           "type": "string",
           "format": "uuid"
         },
-        "picture_back": {
-          "description": "Image de dos",
-          "type": "string",
-          "format": "uuid"
-        },
-        "picture_front_without_frame": {
-          "description": "Image excluant l'encadrement",
+        "secondary_image": {
+          "description": "Image unique (dédicasse ou marquage)",
           "type": "string",
           "format": "uuid"
         }
@@ -55,9 +50,7 @@
     }
   },
   "required": [
-    "description",
-    "height",
-    "width",
+    "author_name",
     "date_created",
     "digital_assets"
   ]

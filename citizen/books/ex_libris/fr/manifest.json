@@ -11,7 +11,7 @@
     "jpg"
   ],
   "roles": [
-    "citizen"
+    "citizen","collector"
   ],
   "countries": [
     "*"
@@ -21,16 +21,16 @@
     "description": {
       "ordering": 1
     },
-    "height": {
+    "author_name": {
       "ordering": 2
     },
-    "width": {
+    "edition": {
       "ordering": 3
     },
-    "art_medium": {
+    "number_of_pages": {
       "ordering": 4
     },
-    "artwork_surface": {
+    "isbn": {
       "ordering": 5
     },
     "date_created": {

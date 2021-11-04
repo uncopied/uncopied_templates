@@ -1,1 +1,1 @@
-ex-libris - { .Issuer.DisplayName }}
+ex-libris\n{ .Issuer.DisplayName }}
