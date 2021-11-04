@@ -15,14 +15,11 @@
     {
       "@type": "Book",
       "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
-{{ if .DigitalAssets.SecondaryImage.ThumbnailIPFSHash }}
       "thumbnailUrl": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.SecondaryImage.ThumbnailIPFSHash }}",
-{{ end }}
-{{ if .AssetProperties.Edition }}
       "bookEdition": "{{ .AssetProperties.Edition }}",
-{{ end }}
       "numberOfPages":"{{ .AssetProperties.NumberOfPages }}",
       "isbn": "{{ .AssetProperties.Isbn }}"
     },
+  ],
   "dateCreated": "{{ .AssetProperties.DateCreated }}"
 }
