@@ -1,2 +1,2 @@
-ex-libris
+Ex-libris
 {{ .Issuer.DisplayName }}
