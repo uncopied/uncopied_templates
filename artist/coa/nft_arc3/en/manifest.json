@@ -29,6 +29,7 @@
   "certificate_label_template": "certificate_label.txt",
   "assetLabel_template": "asset_label.txt",
   "metadata_template": "metadata.json",
+  "nft_metadata_template": "nft_metadata.json",
   "edition_min": 1,
   "edition_max": 1,
   "license_terms_url": "someURL",
