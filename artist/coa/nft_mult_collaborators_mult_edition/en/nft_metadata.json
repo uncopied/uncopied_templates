@@ -1,0 +1,9 @@
+{
+  "name": "{{ .Asset.Name }}",
+  "description": "{{ .AssetProperties.Description }}",
+  "image": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "external_url": "{{ .AssetProperties.ExternalUrl }}",
+  "properties": {
+    "license_url": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}"
+  }
+}
