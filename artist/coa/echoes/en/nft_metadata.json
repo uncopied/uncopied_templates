@@ -1,0 +1,8 @@
+{
+  "name": "{{ .Asset.Name }}",
+  "description": "{{ .Asset.CertificateLabel }} - {{ .AssetProperties.Description }}",
+  "image": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "external_url": "https://api.uncopied.art/c/v/V",
+  "properties": {
+  }
+}
