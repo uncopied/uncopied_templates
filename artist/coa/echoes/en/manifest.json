@@ -1,0 +1,35 @@
+{
+  "id": "be3f2d42-f904-4136-adfc-f0e75b812bd4",
+  "name": "REPLICANTS",
+  "type": "CoA",
+  "description": "EPOCH custom template for REPLICANTS exhibition. NB: this template is reserved for EPOCH.",
+  "author": "EPOCH",
+  "version": "1.0",
+  "manifest_version": 1,
+  "source_types": [
+    "png",
+    "jpg"
+  ],
+  "roles": [
+    "artist"
+  ],
+  "countries": [
+    "*"
+  ],
+  "language": "en",
+  "asset_properties": {
+    "date_created": {
+      "type": "date",
+      "optional": false
+    }
+  },
+  "certificate_template": "legal_document.tmpl",
+  "certificate_label_template": "certificate_label.txt",
+  "asset_label_template": "asset_label.txt",
+  "metadata_template": "metadata.json",
+  "edition_min": 30,
+  "edition_max": 30,
+  "license_terms_url": "https://epoch.gallery/terms-of-use/",
+  "privacy_terms_url": "https://epoch.gallery/privacy-policy/",
+  "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/artist/coa/replicants/en/EPOCH_logo_f.svg"
+}

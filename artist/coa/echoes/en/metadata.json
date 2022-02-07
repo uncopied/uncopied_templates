@@ -1,0 +1,298 @@
+{ 
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "{{ .Asset.Name }}",
+  "dateCreated": "{{ .AssetProperties.DateCreated }}",
+  "datePublished": "2021-10-09",
+  "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
+  "description": "{{ .Asset.CertificateLabel }} - REPLICANTS borrows its title from the fictional bioengineered beings introduced within the 1982\nscience fiction film Blade Runner. The exhibition’s framing environment, modeled after Queen’s Road\nCentral in Hong Kong, extends a virtual reproduction of the street and surrounding buildings of Woaw\nGallery where REPLICANTS will be featured. This digital inversion of physical space and materiality,\nwhile mirroring the malleability of the replica, more broadly considers the limitations and possibilities\nfor techno-reproductions.\nThe entirety of the REPLICANTS exhibition will be offered as a singular NFT containing a compilation\nof artworks by participating artists featured therein. The REPLICANTS NFT will be released on\nOctober 29th, 2021 in tandem with its inclusion in, and the opening of, the group exhibition\nTEKNOLUST: OBJECTOPHILIC FUTURES at Woaw Gallery, Hong Kong.",
+  "copyrightHolder":[
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+      },
+      "sameAs": "https://algoexplorer.io/address/VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+    }
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+      },
+      "sameAs": "https://algoexplorer.io/address/VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+    },
+    {
+      "@type": "Person",
+      "name": "Gordon Cheung",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "M2WNUPEYKJTIQBYG2IUGXE3FWHN6EBEA6S7AF63O7OPBMUUEMB2UBYLI5Q"
+      },
+      "sameAs": "https://algoexplorer.io/address/M2WNUPEYKJTIQBYG2IUGXE3FWHN6EBEA6S7AF63O7OPBMUUEMB2UBYLI5Q"
+    },
+    {
+      "@type": "Person",
+      "name": "Galath3a",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "NL2YCOBKWPI35PYSU4LGNM2II4PW7C766GJCRLFSDNVS47AV2MRHZ7A7FI"
+      },
+      "sameAs": "https://algoexplorer.io/address/NL2YCOBKWPI35PYSU4LGNM2II4PW7C766GJCRLFSDNVS47AV2MRHZ7A7FI"
+    },
+    {
+      "@type": "Person",
+      "name": "Hung Yu Hao",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "FUZIWXSI2RTPW65MG475T7XKFC4O6LFPNG6J33RN4U2O4VZZQWMGFU6M24"
+      },
+      "sameAs": "https://algoexplorer.io/address/FUZIWXSI2RTPW65MG475T7XKFC4O6LFPNG6J33RN4U2O4VZZQWMGFU6M24"
+    },
+    {
+      "@type": "Person",
+      "name": "Keiken",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "LJX5SYXKAIXZ5PXBHJA4KBVHRHV5DWJ2MUBC2CWDAQIYFYOQVENLC4CYO4"
+      },
+      "sameAs": "https://algoexplorer.io/address/LJX5SYXKAIXZ5PXBHJA4KBVHRHV5DWJ2MUBC2CWDAQIYFYOQVENLC4CYO4"
+    },
+    {
+      "@type": "Person",
+      "name": "Katja Novitskova",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "2A7KDBW3BJMGNNKF563QOVYC466POE5MTFXUVODNPTZRMDFZTHFYC7ZJFM"
+      },
+      "sameAs": "https://algoexplorer.io/address/2A7KDBW3BJMGNNKF563QOVYC466POE5MTFXUVODNPTZRMDFZTHFYC7ZJFM"
+    },
+    {
+      "@type": "Person",
+      "name": "Jennifer West",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "3FT4J6OASHOTMXUVNJO5NC4WBQ75WUCBZFLFFL5BJPE6SRXFXOJ2RYYP7E"
+      },
+      "sameAs": "https://algoexplorer.io/address/3FT4J6OASHOTMXUVNJO5NC4WBQ75WUCBZFLFFL5BJPE6SRXFXOJ2RYYP7E"
+    },
+    {
+      "@type": "Person",
+      "name": "Dr. Woo",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "YH3UYXKH6RDLDKNVVZCLXJI3HPNLXYKT5I7UPDV33UQCFO7CYIU6KJN6BE"
+      },
+      "sameAs": "https://algoexplorer.io/address/YH3UYXKH6RDLDKNVVZCLXJI3HPNLXYKT5I7UPDV33UQCFO7CYIU6KJN6BE"
+    },
+    {
+      "@type": "Person",
+      "name": "Qianqian Ye + Tiare Ribeaux",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "SDLB42ELW7ZDAYLSANL5AWLM7CKJPAW5FVNYE3PBCMVC7JMWHEZ7NKPPOE"
+      },
+      "sameAs": "https://algoexplorer.io/address/SDLB42ELW7ZDAYLSANL5AWLM7CKJPAW5FVNYE3PBCMVC7JMWHEZ7NKPPOE"
+    },
+    {
+      "@type": "Person",
+      "name": "Konrad Black",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "SEUECQKE4P7UEPBRA4GNXHVCGAIRRACDZHOONP6Q4HKT3YRYA3LKS62E7I"
+      },
+      "sameAs": "https://algoexplorer.io/address/SEUECQKE4P7UEPBRA4GNXHVCGAIRRACDZHOONP6Q4HKT3YRYA3LKS62E7I"
+    }
+  ],
+  "artEdition": "{{ .Asset.EditionTotal }}",
+  "position": "{{ .Asset.EditionNumber }}",
+  "artMedium": "8K virtual exhibition featuring a compilation of artworks by participating artists (playable stand-alone Windows/Mac compatible file with hi-res audio, viewable in VR on Oculus, Vive, or Gear VR headsets)",
+  "associatedMedia":
+  {
+    "@context": "https://schema.org",
+    "@type": "DataDownload",
+    "contentSize": "1944918347",
+    "contentUrl":"https://ipfs.io/ipfs/QmP94VDyfbcjiVR6n1o6XAXaANk5vJ3EWcCtt8kF4db89y?filename=EPOCH_Replicants_2021.zip",
+    "description": "REPLICANTS",
+    "name": "EPOCH_Replicants_2021.zip",
+    "hasPart": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "3D recreations, unique pieces of Financial Times newspaper, bamboo and adhesive\nVirtual installation, dimensions variable",
+        "description": "Made from financial newspaper and bamboo, Gordon Cheung’s window installation “Home” refers to homes in China with traditional window lattice designs that were demolished for rapid urbanisation. The sculpture hovers between states of being, suggesting a ghost architecture that would have supported the windows. The windows act as a demarcation between the landscape of progress, and the framework of identity, history and culture that define the individual. In the shadow of China’s monumental One Belt One Road endeavour, the work also speculates as to the varied aesthetic origins of the lattice designs, pointing towards the cultural transmission that occurred in the era of the great Silk Road.\n\nThe word “home” evokes the place where one lives, especially as a member of a family or household. It also carries the meaning of returning by instinct to one’s territory after leaving it. Being both Chinese and British, Cheung witnessed the 1997 British to China handover of the then colonised Hong Kong. His fluctuating identity prompts him to think about the definition of home, where and what it is, and the narratives of conquest. What is the meaning of home in an age where the world order is changing at accelerated speed? How can a domestic domicile be powerlessly torn down and replaced with a shopping mall or a skyscraper, all in the name of progress?\n\nHong Kong is often used as a backdrop in science fiction to explore the intersections of old and new architecture. The compressed futuristic city is composed of layered expressions of humanity, history and civilisation, forming a feedback loop that we collectively define but also simultaneously defines our identities. The existential questions of ‘who, why and what am I?’ are universal questions of consciousness, and also the germinating seeds of transformation that Cheung layers into his work. \n",
+        "name": "“Home,” 2019-2020",
+        "artist": {
+          "@type": "Person",
+          "name": "Gordon Cheung"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "Video animation\nTRT: 3 min loop",
+        "name": "“Power, Corruption and Lies,” 2021",
+        "description": "“Power, Corruption and Lies,” 2021",
+        "artist": {
+          "@type": "Person",
+          "name": "Gordon Cheung"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "Video animation\nTRT: 3 min loop",
+        "name": "“Jan van Huysum (New Order),” 2014",
+        "description": "“Jan van Huysum (New Order),” 2014",
+        "artist": {
+          "@type": "Person",
+          "name": "Gordon Cheung"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "Video animation\nTRT: 3 min loop",
+        "name": "“Eelke Jelles Eelkema (New Order),” 2014",
+        "description": "A sorting algorithm is used to non-destructively reorder pixels of photographs for distinct bodies of works that Gordon Cheung creates. Theoretically the images can be reassembled as if a hyper complex jigsaw to metaphorically suggest not repetitions but how history rhymes.\n\n“New Order” series was partly inspired by the British band of the same name and from their album cover of ‘Power, Corruption and Lies’ where Henri Fantin-Latour’s still life was used by the designer Peter Saville. He said that the flowers “suggested the means by which power, corruption and lies infiltrate our lives. They're seductive.” The title of the album was chosen from a 1981 conceptual art exhibition in Cologne, Germany when on the opening night the artist Gerhard Richter vandalised the exterior of the Kunsthalle by spray painting the text, ‘Power, Corruption and Lies’. Cheung’s “New Order” series was a reaction to the 2008 global financial crisis that led him to researching about the 1st recorded economic bubble and crash over the surreal speculation of tulip bulbs during the Dutch Golden Age over 370 years ago that at its peak individual bulbs sold for the price of a house. By using an algorithm that re-orders pixels of high resolution Rijksmuseum photographs of Dutch Golden Age still life, often featuring a tulip, they weave the romantic language of fragile mortality and futile materialism, the narratives of the birth of Modern Capitalism with the rise of the Dutch East India Trade company, Tulipmania and the repetition of history as it moves beyond the 2008 Financial crisis in the digital age. Visualised as dissolving digital sands of time, they echo Richter’s signature blurred paintings.\n\nThe algorithmic blur in the “New Order” series is a metaphor of our existence in a data-saturated era, an Ozymandian corrosion wrought with degraded memories and histories written by victors.\n",
+        "artist": {
+          "@type": "Person",
+          "name": "Gordon Cheung"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "Single channel video with audio (TRT: 2 min 34 sec), 3D installation\nDimensions variable\nSong credit: Zoe Polanski and Ori Itzhaki (Summer from the album ‘Gravity’)",
+        "name": "“Galath3a Salon,” 2021",
+        "description": "Project Galath3a speculate on the relationship between humanity and technology. The duo design Human Robot Interactions (HRI) using digital design and fabrication tools. The project’s aim is to promote trust between humans and machines via communication, gesture and touch. Galath3as installations challenge humans to trust robotic touch. \n \n“Galath3a Salon” is a design for the near future, where humans and robots coexist, cohabit and co-create. The work proposes an alternative to the dystopian world of “Blade Runner” (1982), promoting kinship with machines. The artwork includes a promo-video showing Galath3a’s research in (HRI) and a 3D space, the salon. The promo video is presented as a part of the salon, addressing consensual touch in a posthuman world. It shows a robotic arm mimicking human gestures, painting the researcher’s face. In the 3D salon, women and robots engage in touch and care. The intimate setting hosts bold scenes, showing faces painted and touched by robotic arms. The space’s soft and warm atmosphere supports trust and its modularity and dimension fit with a robotic range of movement. Applying makeup is at focus, as it requires putting one's face (and trust) in another's hands (and robotic arms). A robotic arm mirroring human gestures prompts questions about the nature of these behaviours: are they necessary? Should it be passed on? If so, how could we enhance it to empower women? Inspired by the writings of Donna Haraway (“Cyborg Manifesto”, 1985; “Staying with the Trouble: Making Kin in the Chthulucene”, 2016), the work raises questions about sexuality, gender biases and human-machine kinship. \n\nThe design effort includes 3D scans, robotic path-planning and simulation, 3D printing, spatial and installation design.\n\nGalath3a are designers Gili Ron and Irina Bogdan in collaboration with UR5 Robotic arm, named “Gala“. The research in woman-machine collaboration is performed at the Berlin Open Lab, Universität der Künste, Berlin.",
+        "artist": {
+          "@type": "Person",
+          "name": "Galath3a"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "Single-channel video with audio (TRT: 2 min loop) \n3000 x 1000 pixels",
+        "name": "“Digital Spread – Infect,” 2021",
+        "description": "“Digital Spread – Infect” draws on the recent expansion of digital communication technologies in the wake of global COVID-19 closures and quarantines. With in-person engagements greatly reduced, interrupted, and/or halted entirely, the urgency for devising alternative modes of engagement has resulted in a rapidly expanding virtual world. This acceleration has prompted the rise of a variety of carefully constructed, and happenstance, digital spaces and personas. Ruminating on the nascency of the internet in contradistinction with its recent expansion, “Digital Spread – Infect” visualizes the ways that everyday interactions and sites of gathering have shifted through virtual and physical engagements. Using 3D scans of Taiwanese public housing units, point clouds scattered throughout the work prompt viewers to explore the nascent idealisms and present realities of Taiwan’s public housing communities.\n\nSurveying the early allures and contemporary perils of self-sustained housing units, public housing in Taiwan has become increasingly precarious amidst the rise of the luxury apartment complex. With rapidly developing modern apartments mirroring many of the same utopianisms initiated within early housing structures and, coincidentally, the internet alike, “Digital Spread –Infect” considers the dissemination of digital data and socio-material change as parallel and interchangeable forces. Formally rendered to invoke a 1990s horizontal video game, this visual rumination on spheres of (dis)connectivity prompts the user to reconsider shared spaces, places of inhabitance, and the power dynamics that substantiate and frame them.",
+        "artist": {
+          "@type": "Person",
+          "name": "Hung Yu Hao"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "Digital Sculpture\nDimensions variable",
+        "name": "“Okapi,” 2021",
+        "description": "“Okapi” is a gentle and tender creature native to Keiken’s Metaverse. Found in the sprawling plateau, “Okapi” wears a vibrant armour which offers protection of their center point, their axis of existence, but also has the ability to absorb new experiences and readily calculate new points to position and adapt their axis. “Okapi“ is shy and reserved by nature but with perky, upright ears they can discern a vast range of frequencies allowing them to communicate with many different species. With four sensory arms “Okapi” uses these limbs to gather bio-data of the environments they encounter, storing it in their genetic make up for future generations to uncover and learn from. They are curious and love to traverse the Metaverse.\n\nKeiken are a collaborative practice, co-founded by artists Tanya Cruz, Hana Omori and Isabel Ramos in 2015, who frequently work with multiple collaborators. Based between London and Berlin, they come from mixed diasporic backgrounds (Mexican/Japanese/European/Jewish). They are building a collective shared space of virtual worlds, a Metaverse. Keiken, the Japanese word for experience, create speculative worlds, using moving-image, CGI, gaming software, installation, virtual and augmented reality, programming and performance to merge the physical and digital. Their work simulates new structures and ways of existing, exploring how societal introjection governs the way we feel, think and perceive.\n",
+        "artist": {
+          "@type": "Person",
+          "name": "Keiken"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "3D sculpture\nDimensions variable\n",
+        "name": "“Approximation (Tyrell owl),” 2021",
+        "description": "“Approximation (Tyrell owl)” is a recreation of an iconic still from the film “Blade Runner” (1982) wherein a replicant owl surveys the Tyrell Corporation building with an artificial eye. Composed as a 3D sculpture, this rendering of the owl functions as a digital approximation of the film’s synthetically created replicant owl; a bio-technological approximation of an actual animal species long lost to extinction within the film’s universe. The sculpture’s formal composition, a large head severed at roughly the same spot within its framing in the film, features a singular glaring eye that reiterates its foremost function as a surveillance mechanism. \n\nThe work’s accompanying physical artwork series “Approximations” expands on these sentiments through myriad photographic cutout sculptures of partially composed animals. These animal amalgamations visualize Novitskova’s ongoing interest in the replication of organic bodies and reconstruction of meaning through the medium, fiction, and cultural landscapes. Alongside “Approximation’s” digital rendering, REPLICANTS features components of an earlier digital collage work composed by Novitskova. This previous work included sculptural digital collage prints of truncated animal bodies surrounded by economic growth arrows. \n“These arrows” (2013) have been included within REPLICANTS as a neon sign on Queen’s Road Central. \n",
+        "artist": {
+          "@type": "Person",
+          "name": "Katja Novitskova"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "HD video (scanned from 16mm film painted with inks, dyes and piss), 1920 x 6480\n1 minute (looping)",
+        "name": "“Skyscraper Painted Hacker Cats,” 2020/2021",
+        "description": "“Skyscraper Painted Hacker Cats” is a nod to the ongoing phenomenon of the people’s fascination with cats on the Internet.  The projected grid of cats onto the defunct skyscraper advertising apparatuses of this virtual city, allow them to “hack” the spaces of consumer capitalism. At architectural scale, the looming, painted cats occupy the space of the gods, high above the abandoned city below. West first compiled 16mm clips of cats against a green screen. Manipulating the celluloid in her signature style, West applied brightly colored dye infused with urine to the filmstrip before transferring it to high-definition video. First presented across more than 75 billboards as part of Times Square Arts’ Midnight Moment series (the world's “largest, longest-running digital art exhibition”), it pays homage to the feline’s role across many moving image genres, from viral videos to experimental films. \n\n“Skyscraper Painted Hacker Cats”  - cat performances by Munchkin and original 16mm shot by Peter West.",
+        "artist": {
+          "@type": "Person",
+          "name": "Jennifer West"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "5-channel flatscreen television installation, 3D objects (scanned and modeled) and high-definition video (transferred from 16mm film shot on Arriflex S1 by Peter West)\nEach video: 1 minute (looping)",
+        "name": "“Archaeology of Smashed Flatscreen Televisions Thrown off Bridges,” 2020/2021",
+        "description": "The cinematic, apocalyptic image of L.A.’s barren river littered with cast-off electronics inspired West to preserve the evidence of these futile acts of violence against disposable technology.  The grid of flatscreen monitors facing upward floating in water in an abandoned parking garage are a taxonomic display, like an archeological case study of physical evidence–artifacts of our moment seen from some future time when our ecologically inevitable fate has already taken place. Placed on top of each monitor is a piece of broken personal technology or object collected by West from the Los Angeles River  - a cell phone with a broken screen, the shell of a boom box, corroded CD’s, remnants of broken television screens, a broken arrow and golf club. West arranged the random sampling of scavenged debris by type and filmed it in 16mm on green screen backgrounds. The filming’s irreverent style echoes the miscellany of the dredged collection. The artist’s cat is glimpsed walking in and out of frame, occasionally settling in the center, indifferent to the film production in process. During the film’s telecine transfer, a loose electrical cable caused the background screen to flash from green to magenta. West includes this glitching footage in a further embrace of indeterminacy and accident.",
+        "artist": {
+          "@type": "Person",
+          "name": "Jennifer West"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "Digital rendering / tattoo\nVirtual installation, dimensions variable",
+        "name": "“Nothing the God of biomechanics wouldn't let you into heaven for: 1-7”, 2021",
+        "description": "Dr. Woo has created seven unique masks which will appear jointly in REPLICANTS and TEKNOLUST: OBJECTOPHILIC FUTURES. Digitally rendered, each artwork calls upon various movements in which disguises have maneuvered throughout history, functionally, allegorically, and ritually, from Inuit ceremony, to Kabuki theater, to contemporary digital avatars on Twitter and Reddit. Within the digital replicant, the masks are indelibly marked on frozen and hanging cadavers/replacement body parts, perhaps as an oracle of what is to come for collectors who choose to have their bodies inked.\n\nTEKNOLUST: OBJECTOPHILIC FUTURES envisions a post-singularity utopia/distopia in which humans interact with intelligences of their own creation on level footing. The exhibition manifests multiple realms of existence: a fungible, physical space in WOAW Gallery on Queen’s Road, Hong Kong; EPOCH’s RELICANTS, which digitally recreates the architecture of WOAW’s Queen’s Road location and its surrounding buildings with an EPOCH-selected alternate roster of artists; and a series of IRL WOAW-situated portals that provide networks between tangible, spiritual, and virtual universes.",
+        "artist": {
+          "@type": "Person",
+          "name": "Dr. Woo"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "Digital Sculpture, audio, text\nDimensions variable",
+        "name": "“A.A.G.,” 2021 ",
+        "description": "“A.A.G.” is a transpacific deity born from submarine fiber optic cables, and the desire for human connection across the Pacific Ocean. Manifested as a goddexx, “A.A.G.” is a hybrid of the organic and the inorganic, brought forth from the interconnection of geographies, machines, physical undersea infrastructure, and the deep sea creatures that grow on it’s metal piping. Representing non-linear pathways of communication streams across the ocean, of both histories and future destinations, they can appear in many places and times at once, enabling the flow of the internet across the world. Here we see them surfaced at a cable landing in Hong Kong. In the dialogue playing in the background, “A.A.G.” has brought together two oceanic deities across the Pacific ocean: Mazu 媽祖  (a Chinese sea goddess, spoken by Qianqian Ye) and Hina opuhala ko’a (a Hawaiian goddess of coral reefs, spoken by Tiare Ribeaux). We hear all three in conversation as they confer about the state of humanity and the growth of technology over the past 1000 years. \n\n“A.A.G.” stands for the Asia-America Gateway submarine cable system that has landing points in California, Keawaula, Hawai’i, Lantau Island, Hong Kong, as well as Guam, Malaysia, Brunei, the Philippines, Singapore, and Thailand. The acronym as an utterance brings to mind a primordial state of being.\n\n“A.A.G.” is part of Kai 海 Hai (a hybrid of ‘Ocean’ in ʻŌlelo Hawai'i and Chinese), a series of virtual and augmented reality installations utilize transpacific stories, oral histories, myth and folklore from Polynesia to Asia - to explore environmental issues, indigenous and immigrant stories, migratory paths, and diaspora across the Pacific Ocean. Kai 海 Hai is a collaboration between Kānaka Maoli artist and filmmaker Tiare Ribeaux (from Honolulu based in the Bay Area) and Chinese artist and technologist Qianqian Ye (from Wenzhou based in LA). Mapping the ocean surface between Wenzhou, Honolulu, the Bay Area, and Los Angeles, this project remixes the ancestral, personal, and speculative stories about the Pacific Ocean.",
+        "artist": {
+          "@type": "Person",
+          "name": "Qianqian Ye + Tiare Ribeaux"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artMedium": "Stereo musical composition\nTRT: 7 min 49 sec",
+        "name": "“Human Era (Coda),” 2021",
+        "description": "The idea of emulation vs. replication, a theme that runs throughout the film “Blade Runner” (1982), was the starting point for creating a soundscape for the virtual space of the exhibition, REPLICANTS. The work, Human Era (Coda), addresses the problem of creating a new musical composition from a classic and ubiquitous piece of pop culture history by way of the composer taking on the characteristics of a replicant in order to create the work. (Maybe I am not human after all?) If one looks back to the mechanical reproductions first produced by the Gutenberg printing-press, its human operated mechanisms were susceptible to flaws in the end result. These flaws, these imperfections are what we now define as hallmarks of humanity – errors in execution. With that “tell“ in mind, the approach Konrad Black took was one of replication through blind emulation – to become “More human than human“ by drawing upon the implanted memory of Ridley Scott's film. Black subjected himself to the fallible nature of memory and how recall works. An attempt to achieve accuracy in the reproduction of the leitmotifs – that are so iconic in the original Vangelis soundtrack – resulted in human errors from memory distortion, thereby producing the musical mutations of Human Era (Coda).\n\nIn this sense, blind emulation becomes the point of identification with the replicants of Scott's film: they know their memories are implanted, but they need them artificially as part of their mechanical nature in order to live out their beautifully flawed lives.",
+        "artist": {
+          "@type": "Person",
+          "name": "Konrad Black"
+        }
+      }
+    ]
+  },
+  "alternateName":"{{ .Asset.CertificateLabel }}",
+  "url":"https://epoch.gallery/Replicants/",
+  "subjectOf": {
+	  "@context": "https://schema.org",
+	  "@type": "ExhibitionEvent",
+	  "url": "https://epoch.gallery/Replicants/",
+	  "name": "REPLICANTS",
+	  "startDate": "2021-10-09",
+	  "endDate": "2022-01-14",
+	  "description": "REPLICANTS borrows its title from the fictional bioengineered beings introduced within the 1982 science fiction film Blade Runner. The exhibition’s framing environment, modeled after Queen’s Road Central in Hong Kong, extends a virtual reproduction of the street and surrounding buildings of Woaw Gallery where REPLICANTS will be featured. This digital inversion of physical space and materiality, while mirroring the malleability of the replica, more broadly considers the limitations and possibilities for techno-reproductions.\n\nThe entirety of the REPLICANTS exhibition will be offered as a singular NFT containing a compilation of artworks by participating artists featured therein. The REPLICANTS NFT will be released on October 29th, 2021 in tandem with its inclusion in, and the opening of, the group exhibition TEKNOLUST: OBJECTOPHILIC FUTURES at Woaw Gallery, Hong Kong."
+    },
+  "offers": {
+    "@type": "Offer",
+    "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating\nartists and EPOCH. Differentiating this system from most traditional gallery systems, 70% will besplit evenly amongst all the participating artists and 30% will remain with EPOCH. 20% royalties for\nsecondary market sales will be evenly distributed amongst all the artists and EPOCH. Each\nparticipant will receive one NFT representing an Artist Proof (AP) edition. These AP editions are not\npart of the 20 publicly-offered editions for sale, but should they be sold by an artist, will carry the\nsame secondary market terms as the 20 NFTs in the publicly-offered edition. Upon resale, an additional 1% of the gross resale price will be reserved for secondary marketplace fees. The NFT Smart Contract is released on Github with an Apache 2.0 license.",
+    "url": "https://github.com/uncopied/epoch_replicants_nft"
+  }
+}
+
