@@ -24,7 +24,7 @@
     {
       "@type": "Organization",
       "name": "LACMA",
-      "additionalName": "Los Angeles County Museum of Art",
+      "legalName": "Los Angeles County Museum of Art",
       "url": "https://www.lacma.org/",
       "identifier": {
         "@type": "PropertyValue",
@@ -59,7 +59,7 @@
     {
       "@type": "Project",
       "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve",
-      "additionalName": "MUXX Project",
+      "alternateName": "MUXX Project",
       "member" : [
         {
           "@type": "Person",
@@ -181,7 +181,7 @@
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
-          "@type": "Project",
+          "@type": "Person",
           "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
         },
         "name": "Avatar Muxe, 2021-22",
@@ -192,7 +192,7 @@
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
-          "@type": "Project",
+          "@type": "Person",
           "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
         },
         "name": "Fractal Muxe, 2021-22",
@@ -203,7 +203,7 @@
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
-          "@type": "Project",
+          "@type": "Person",
           "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
         },
         "name": "Generated Muxe, 2021-22",
@@ -214,7 +214,7 @@
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
-          "@type": "Project",
+          "@type": "Person",
           "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
         },
         "name": "Germination Muxe, 2021-22",
@@ -225,7 +225,7 @@
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
-          "@type": "Project",
+          "@type": "Person",
           "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
         },
         "name": "Scanned Muxe, 2021-22",
@@ -236,7 +236,7 @@
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
-          "@type": "Project",
+          "@type": "Person",
           "name": "Jacqueline Kiyomi Gork and Rhett LaRue"
         },
         "name": "Moat, 2022",
@@ -269,7 +269,7 @@
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
-          "@type": "Project",
+          "@type": "Person",
           "name": "Ronald Rael and Virginia San Fratello"
         },
         "name": "Swarm City, 2022",
