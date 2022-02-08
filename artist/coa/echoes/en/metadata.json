@@ -6,119 +6,152 @@
   "datePublished": "2022-02-15",
   "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
   "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
-  "description": "{{ .Asset.CertificateLabel }} - {{ .AssetProperties.Description }}",
+  "description": "{{ .Asset.CertificateLabel }} - ECHOES\n\nFebruary 4 – May 6, 2022\n\nAmerican Artist\nLukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve\nJacqueline Kiyomi Gork and Rhett LaRue\nLawrence Lek\nJen Liu\nRonald Rael and Virginia San Fratello\nSarah Rara\n\nECHOES is an experimental collaboration between EPOCH and LACMA’s Art + Technology Lab featuring past and present Art + Technology Lab grant recipients and organized by artist and EPOCH creator Peter Wu+. The exhibition’s virtual landscape is modeled after the physical excavation area of LACMA’s east campus, where the forthcoming building for the permanent collection is slated to debut, as well as neighboring locales around Wilshire Boulevard in Los Angeles. The ECHOES NFT will be available on February 15th.\nECHOES is generously funded by the Algorand Foundation.",
   "copyrightHolder":[
     {
       "@type": "Person",
       "name": "{{ .Issuer.DisplayName }}",
+      "url": "https://epoch.gallery/",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+        "value":  "QQX5Y647GO7VLG33ZQWKEHO2OPXPVCEY7QNNE2AK2AVA4HYFFD4MJNFYFM"
       },
-      "sameAs": "https://algoexplorer.io/address/VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+      "sameAs": "https://algoexplorer.io/address/QQX5Y647GO7VLG33ZQWKEHO2OPXPVCEY7QNNE2AK2AVA4HYFFD4MJNFYFM"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Organization",
+      "name": "LACMA",
+      "additionalName": "Los Angeles County Museum of Art",
+      "url": "https://www.lacma.org/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "QQX5Y647GO7VLG33ZQWKEHO2OPXPVCEY7QNNE2AK2AVA4HYFFD4MJNFYFM"
+      },
+      "sameAs": "https://algoexplorer.io/address/QQX5Y647GO7VLG33ZQWKEHO2OPXPVCEY7QNNE2AK2AVA4HYFFD4MJNFYFM"
     }
   ],
   "creator": [
     {
       "@type": "Person",
       "name": "{{ .Issuer.DisplayName }}",
+      "url": "https://epoch.gallery/",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+        "value":  "QQX5Y647GO7VLG33ZQWKEHO2OPXPVCEY7QNNE2AK2AVA4HYFFD4MJNFYFM"
       },
-      "sameAs": "https://algoexplorer.io/address/VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+      "sameAs": "https://algoexplorer.io/address/QQX5Y647GO7VLG33ZQWKEHO2OPXPVCEY7QNNE2AK2AVA4HYFFD4MJNFYFM"
     },
     {
       "@type": "Person",
-      "name": "Gordon Cheung",
+      "name": "American Artist",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "M2WNUPEYKJTIQBYG2IUGXE3FWHN6EBEA6S7AF63O7OPBMUUEMB2UBYLI5Q"
+        "value":  "JQ3QOVBYDKSMZA42HB3DCWJWS4L6KR7ZMFUG5IYECEAM4WE3PP74GG6ZNM"
       },
-      "sameAs": "https://algoexplorer.io/address/M2WNUPEYKJTIQBYG2IUGXE3FWHN6EBEA6S7AF63O7OPBMUUEMB2UBYLI5Q"
+      "sameAs": "https://algoexplorer.io/address/JQ3QOVBYDKSMZA42HB3DCWJWS4L6KR7ZMFUG5IYECEAM4WE3PP74GG6ZNM"
+    },
+    {
+      "@type": "Project",
+      "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve",
+      "additionalName": "MUXX Project",
+      "member" : [
+        {
+          "@type": "Person",
+          "name": "Lukas Avendaño"
+        },
+        {
+          "@type": "Person",
+          "name": "Abraham Brody"
+        },        {
+          "@type": "Person",
+          "name": "Ana Lopez"
+        },        {
+          "@type": "Person",
+          "name": "Oswaldo Erreve"
+        }
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "HGIMASMUMZAI5SCNOYR65TIQM4JWLE736FERTFPCPUNZSQRXK42Q5VMNMQ"
+      },
+      "sameAs": "https://algoexplorer.io/address/HGIMASMUMZAI5SCNOYR65TIQM4JWLE736FERTFPCPUNZSQRXK42Q5VMNMQ"
+    },
+    {
+      "@type": "Project",
+      "name": "Jacqueline Kiyomi Gork and Rhett LaRue",
+      "member" : [
+        {
+          "@type": "Person",
+          "name": "Jacqueline Kiyomi Gork"
+        },
+        {
+          "@type": "Person",
+          "name": "Rhett LaRue"
+        }
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "5EP6AOHJBRLL7G2W74Q6NNOZOUCDT6F35ZRXSNTU4UHTHWDZVTDOAYTFAE"
+      },
+      "sameAs": "https://algoexplorer.io/address/5EP6AOHJBRLL7G2W74Q6NNOZOUCDT6F35ZRXSNTU4UHTHWDZVTDOAYTFAE"
     },
     {
       "@type": "Person",
-      "name": "Galath3a",
+      "name": "Lawrence Lek",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "NL2YCOBKWPI35PYSU4LGNM2II4PW7C766GJCRLFSDNVS47AV2MRHZ7A7FI"
+        "value":  "JUDGEZENUFSP3UGRQLGN7Q5QE4V3YIYQNZ76SI7Z7IXMKBYMK2JAJE4PWU"
       },
-      "sameAs": "https://algoexplorer.io/address/NL2YCOBKWPI35PYSU4LGNM2II4PW7C766GJCRLFSDNVS47AV2MRHZ7A7FI"
+      "sameAs": "https://algoexplorer.io/address/JUDGEZENUFSP3UGRQLGN7Q5QE4V3YIYQNZ76SI7Z7IXMKBYMK2JAJE4PWU"
     },
     {
       "@type": "Person",
-      "name": "Hung Yu Hao",
+      "name": "Jen Liu",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "FUZIWXSI2RTPW65MG475T7XKFC4O6LFPNG6J33RN4U2O4VZZQWMGFU6M24"
+        "value":  "DHTJB4G5KZI3H3AUBFMREUPPLQJMLG65NOREYDLUYUPVKTKJPQM5WF2WNA"
       },
-      "sameAs": "https://algoexplorer.io/address/FUZIWXSI2RTPW65MG475T7XKFC4O6LFPNG6J33RN4U2O4VZZQWMGFU6M24"
+      "sameAs": "https://algoexplorer.io/address/DHTJB4G5KZI3H3AUBFMREUPPLQJMLG65NOREYDLUYUPVKTKJPQM5WF2WNA"
+    },
+    {
+      "@type": "Project",
+      "name": "Ronald Rael and Virginia San Fratello",
+      "member" : [
+        {
+          "@type": "Person",
+          "name": "Ronald Rael"
+        },
+        {
+          "@type": "Person",
+          "name": "Virginia San Fratello"
+        }
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "3BHZPTXX6Q3GRS7URKAXSO7BT36HI2NLV4SLSUDTSFKMIH56NPZKK7HKUU"
+      },
+      "sameAs": "https://algoexplorer.io/address/3BHZPTXX6Q3GRS7URKAXSO7BT36HI2NLV4SLSUDTSFKMIH56NPZKK7HKUU"
     },
     {
       "@type": "Person",
-      "name": "Keiken",
+      "name": "Sarah Rara",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "LJX5SYXKAIXZ5PXBHJA4KBVHRHV5DWJ2MUBC2CWDAQIYFYOQVENLC4CYO4"
+        "value":  "WELR5BBI456XXE4GOVX4FK3GE2T2PA3LJ3VTPY7RHPDCL5H3CIXKUWNGS4"
       },
-      "sameAs": "https://algoexplorer.io/address/LJX5SYXKAIXZ5PXBHJA4KBVHRHV5DWJ2MUBC2CWDAQIYFYOQVENLC4CYO4"
-    },
-    {
-      "@type": "Person",
-      "name": "Katja Novitskova",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "AlgorandAddress",
-        "value":  "2A7KDBW3BJMGNNKF563QOVYC466POE5MTFXUVODNPTZRMDFZTHFYC7ZJFM"
-      },
-      "sameAs": "https://algoexplorer.io/address/2A7KDBW3BJMGNNKF563QOVYC466POE5MTFXUVODNPTZRMDFZTHFYC7ZJFM"
-    },
-    {
-      "@type": "Person",
-      "name": "Jennifer West",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "AlgorandAddress",
-        "value":  "3FT4J6OASHOTMXUVNJO5NC4WBQ75WUCBZFLFFL5BJPE6SRXFXOJ2RYYP7E"
-      },
-      "sameAs": "https://algoexplorer.io/address/3FT4J6OASHOTMXUVNJO5NC4WBQ75WUCBZFLFFL5BJPE6SRXFXOJ2RYYP7E"
-    },
-    {
-      "@type": "Person",
-      "name": "Dr. Woo",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "AlgorandAddress",
-        "value":  "YH3UYXKH6RDLDKNVVZCLXJI3HPNLXYKT5I7UPDV33UQCFO7CYIU6KJN6BE"
-      },
-      "sameAs": "https://algoexplorer.io/address/YH3UYXKH6RDLDKNVVZCLXJI3HPNLXYKT5I7UPDV33UQCFO7CYIU6KJN6BE"
-    },
-    {
-      "@type": "Person",
-      "name": "Qianqian Ye + Tiare Ribeaux",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "AlgorandAddress",
-        "value":  "SDLB42ELW7ZDAYLSANL5AWLM7CKJPAW5FVNYE3PBCMVC7JMWHEZ7NKPPOE"
-      },
-      "sameAs": "https://algoexplorer.io/address/SDLB42ELW7ZDAYLSANL5AWLM7CKJPAW5FVNYE3PBCMVC7JMWHEZ7NKPPOE"
-    },
-    {
-      "@type": "Person",
-      "name": "Konrad Black",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "AlgorandAddress",
-        "value":  "SEUECQKE4P7UEPBRA4GNXHVCGAIRRACDZHOONP6Q4HKT3YRYA3LKS62E7I"
-      },
-      "sameAs": "https://algoexplorer.io/address/SEUECQKE4P7UEPBRA4GNXHVCGAIRRACDZHOONP6Q4HKT3YRYA3LKS62E7I"
+      "sameAs": "https://algoexplorer.io/address/WELR5BBI456XXE4GOVX4FK3GE2T2PA3LJ3VTPY7RHPDCL5H3CIXKUWNGS4"
     }
   ],
   "artEdition": "{{ .Asset.EditionTotal }}",
@@ -128,171 +161,182 @@
   {
     "@context": "https://schema.org",
     "@type": "DataDownload",
-    "contentSize": "1944918347",
-    "contentUrl":"https://ipfs.io/ipfs/QmP94VDyfbcjiVR6n1o6XAXaANk5vJ3EWcCtt8kF4db89y?filename=EPOCH_Replicants_2021.zip",
-    "description": "REPLICANTS",
-    "name": "EPOCH_Replicants_2021.zip",
+    "contentSize": "4310734680",
+    "contentUrl":"https://ipfs.io/ipfs/QmQEX6HhE7oKWX4ktNmjrfrVHF95djgViRvs3a79LaMafv?filename=EPOCH_Echoes_2022.zip",
+    "description": "ECHOES",
+    "name": "EPOCH_Echoes_2022.zip",
     "hasPart": [
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "artMedium": "3D recreations, unique pieces of Financial Times newspaper, bamboo and adhesive\nVirtual installation, dimensions variable",
-        "description": "Made from financial newspaper and bamboo, Gordon Cheung’s window installation “Home” refers to homes in China with traditional window lattice designs that were demolished for rapid urbanisation. The sculpture hovers between states of being, suggesting a ghost architecture that would have supported the windows. The windows act as a demarcation between the landscape of progress, and the framework of identity, history and culture that define the individual. In the shadow of China’s monumental One Belt One Road endeavour, the work also speculates as to the varied aesthetic origins of the lattice designs, pointing towards the cultural transmission that occurred in the era of the great Silk Road.\n\nThe word “home” evokes the place where one lives, especially as a member of a family or household. It also carries the meaning of returning by instinct to one’s territory after leaving it. Being both Chinese and British, Cheung witnessed the 1997 British to China handover of the then colonised Hong Kong. His fluctuating identity prompts him to think about the definition of home, where and what it is, and the narratives of conquest. What is the meaning of home in an age where the world order is changing at accelerated speed? How can a domestic domicile be powerlessly torn down and replaced with a shopping mall or a skyscraper, all in the name of progress?\n\nHong Kong is often used as a backdrop in science fiction to explore the intersections of old and new architecture. The compressed futuristic city is composed of layered expressions of humanity, history and civilisation, forming a feedback loop that we collectively define but also simultaneously defines our identities. The existential questions of ‘who, why and what am I?’ are universal questions of consciousness, and also the germinating seeds of transformation that Cheung layers into his work. \n",
-        "name": "“Home,” 2019-2020",
         "artist": {
           "@type": "Person",
-          "name": "Gordon Cheung"
-        }
+          "name": "American  Artist"
+        },
+        "name": "Urban Light, 2022",
+        "artMedium": "Virtual installation, Dimensions variable",
+        "description": "This installation consists of cardboard boxes, storage bins and shelves of items that filled the garage of the artist’s childhood home. It is positioned where Chris Burden’s famous light sculpture by the same name is normally located. \n\nChris Burden bought the first lamps he used for Urban Light from the Rose Bowl Flea Market in Pasadena and eventually purchased the entire collection of antique lamps from a seller, and meticulous restorer of the lamps, named Jeff Levine. In a sense, Urban Light was the life’s work of that collector, and its acquisition into LACMA’s collection was a process facilitated by \nBurden. American Artist’s mother moved to Los Angeles around the same time as Chris Burden and occasionally sold things at the Rose Bowl flea market. She also sold things through her eBay store in the early 2000s, an uncommon trade for a Black woman of her generation, who’s mother had migrated from Oklahoma, eventually to Los Angeles. Artist’s mother filled their garage with objects she intended to sell—vinyl records, books, clothes, shoes, purses, and sunglasses—to the point that it was difficult to walk through. The narrative of Burden restoring iconic lamps from 1920s-30s Los Angeles is very romantic, but it raises a question about what parts of Los Angeles history, unlike these lamps, were legitimately lost in time because they were never maintained or restored, and who they belonged to. Reading Burden’s narrative conjured a story in Artist’s mind where someone encountered their mom’s goods and decided, after careful consideration, to purchase everything she had ever collected and offered for sale. Despite the maintenance of these goods being the opposite of the lamp posts, an artist like Chris Burden could have taken an interest in it and decided to buy it all. It is a monument to a different side of life in Los Angeles than the one memorialized by decorative lamp posts.\n\nAmerican Artist is an artist and educator based in New York who makes thought experiments that mine the history of technology, race, and knowledge production, beginning with their legal name change in 2013. \n"
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "artMedium": "Video animation\nTRT: 3 min loop",
-        "name": "“Power, Corruption and Lies,” 2021",
-        "description": "“Power, Corruption and Lies,” 2021",
         "artist": {
-          "@type": "Person",
-          "name": "Gordon Cheung"
-        }
+          "@type": "Project",
+          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+        },
+        "name": "Avatar Muxe, 2021-22",
+        "artMedium": "3D sculpture, virtual installation\nDimensions variable",
+        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "artMedium": "Video animation\nTRT: 3 min loop",
-        "name": "“Jan van Huysum (New Order),” 2014",
-        "description": "“Jan van Huysum (New Order),” 2014",
         "artist": {
-          "@type": "Person",
-          "name": "Gordon Cheung"
-        }
+          "@type": "Project",
+          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+        },
+        "name": "Fractal Muxe, 2021-22",
+        "artMedium": "3D animation with audio\nTRT: 1 min 6 sec loop",
+        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "artMedium": "Video animation\nTRT: 3 min loop",
-        "name": "“Eelke Jelles Eelkema (New Order),” 2014",
-        "description": "A sorting algorithm is used to non-destructively reorder pixels of photographs for distinct bodies of works that Gordon Cheung creates. Theoretically the images can be reassembled as if a hyper complex jigsaw to metaphorically suggest not repetitions but how history rhymes.\n\n“New Order” series was partly inspired by the British band of the same name and from their album cover of ‘Power, Corruption and Lies’ where Henri Fantin-Latour’s still life was used by the designer Peter Saville. He said that the flowers “suggested the means by which power, corruption and lies infiltrate our lives. They're seductive.” The title of the album was chosen from a 1981 conceptual art exhibition in Cologne, Germany when on the opening night the artist Gerhard Richter vandalised the exterior of the Kunsthalle by spray painting the text, ‘Power, Corruption and Lies’. Cheung’s “New Order” series was a reaction to the 2008 global financial crisis that led him to researching about the 1st recorded economic bubble and crash over the surreal speculation of tulip bulbs during the Dutch Golden Age over 370 years ago that at its peak individual bulbs sold for the price of a house. By using an algorithm that re-orders pixels of high resolution Rijksmuseum photographs of Dutch Golden Age still life, often featuring a tulip, they weave the romantic language of fragile mortality and futile materialism, the narratives of the birth of Modern Capitalism with the rise of the Dutch East India Trade company, Tulipmania and the repetition of history as it moves beyond the 2008 Financial crisis in the digital age. Visualised as dissolving digital sands of time, they echo Richter’s signature blurred paintings.\n\nThe algorithmic blur in the “New Order” series is a metaphor of our existence in a data-saturated era, an Ozymandian corrosion wrought with degraded memories and histories written by victors.\n",
         "artist": {
-          "@type": "Person",
-          "name": "Gordon Cheung"
-        }
+          "@type": "Project",
+          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+        },
+        "name": "Generated Muxe, 2021-22",
+        "artMedium": "3D GAN interpolation with audio\nTRT: 46 sec loop",
+        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "artMedium": "Single channel video with audio (TRT: 2 min 34 sec), 3D installation\nDimensions variable\nSong credit: Zoe Polanski and Ori Itzhaki (Summer from the album ‘Gravity’)",
-        "name": "“Galath3a Salon,” 2021",
-        "description": "Project Galath3a speculate on the relationship between humanity and technology. The duo design Human Robot Interactions (HRI) using digital design and fabrication tools. The project’s aim is to promote trust between humans and machines via communication, gesture and touch. Galath3as installations challenge humans to trust robotic touch. \n \n“Galath3a Salon” is a design for the near future, where humans and robots coexist, cohabit and co-create. The work proposes an alternative to the dystopian world of “Blade Runner” (1982), promoting kinship with machines. The artwork includes a promo-video showing Galath3a’s research in (HRI) and a 3D space, the salon. The promo video is presented as a part of the salon, addressing consensual touch in a posthuman world. It shows a robotic arm mimicking human gestures, painting the researcher’s face. In the 3D salon, women and robots engage in touch and care. The intimate setting hosts bold scenes, showing faces painted and touched by robotic arms. The space’s soft and warm atmosphere supports trust and its modularity and dimension fit with a robotic range of movement. Applying makeup is at focus, as it requires putting one's face (and trust) in another's hands (and robotic arms). A robotic arm mirroring human gestures prompts questions about the nature of these behaviours: are they necessary? Should it be passed on? If so, how could we enhance it to empower women? Inspired by the writings of Donna Haraway (“Cyborg Manifesto”, 1985; “Staying with the Trouble: Making Kin in the Chthulucene”, 2016), the work raises questions about sexuality, gender biases and human-machine kinship. \n\nThe design effort includes 3D scans, robotic path-planning and simulation, 3D printing, spatial and installation design.\n\nGalath3a are designers Gili Ron and Irina Bogdan in collaboration with UR5 Robotic arm, named “Gala“. The research in woman-machine collaboration is performed at the Berlin Open Lab, Universität der Künste, Berlin.",
         "artist": {
-          "@type": "Person",
-          "name": "Galath3a"
-        }
+          "@type": "Project",
+          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+        },
+        "name": "Germination Muxe, 2021-22",
+        "artMedium": "Video with 3D animation with audio\nTRT: 57 sec loop",
+        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "artMedium": "Single-channel video with audio (TRT: 2 min loop) \n3000 x 1000 pixels",
-        "name": "“Digital Spread – Infect,” 2021",
-        "description": "“Digital Spread – Infect” draws on the recent expansion of digital communication technologies in the wake of global COVID-19 closures and quarantines. With in-person engagements greatly reduced, interrupted, and/or halted entirely, the urgency for devising alternative modes of engagement has resulted in a rapidly expanding virtual world. This acceleration has prompted the rise of a variety of carefully constructed, and happenstance, digital spaces and personas. Ruminating on the nascency of the internet in contradistinction with its recent expansion, “Digital Spread – Infect” visualizes the ways that everyday interactions and sites of gathering have shifted through virtual and physical engagements. Using 3D scans of Taiwanese public housing units, point clouds scattered throughout the work prompt viewers to explore the nascent idealisms and present realities of Taiwan’s public housing communities.\n\nSurveying the early allures and contemporary perils of self-sustained housing units, public housing in Taiwan has become increasingly precarious amidst the rise of the luxury apartment complex. With rapidly developing modern apartments mirroring many of the same utopianisms initiated within early housing structures and, coincidentally, the internet alike, “Digital Spread –Infect” considers the dissemination of digital data and socio-material change as parallel and interchangeable forces. Formally rendered to invoke a 1990s horizontal video game, this visual rumination on spheres of (dis)connectivity prompts the user to reconsider shared spaces, places of inhabitance, and the power dynamics that substantiate and frame them.",
         "artist": {
-          "@type": "Person",
-          "name": "Hung Yu Hao"
-        }
+          "@type": "Project",
+          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+        },
+        "name": "Scanned Muxe, 2021-22",
+        "artMedium": "3D scanning animation with audio\nTRT: 46 sec loop",
+        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "artMedium": "Digital Sculpture\nDimensions variable",
-        "name": "“Okapi,” 2021",
-        "description": "“Okapi” is a gentle and tender creature native to Keiken’s Metaverse. Found in the sprawling plateau, “Okapi” wears a vibrant armour which offers protection of their center point, their axis of existence, but also has the ability to absorb new experiences and readily calculate new points to position and adapt their axis. “Okapi“ is shy and reserved by nature but with perky, upright ears they can discern a vast range of frequencies allowing them to communicate with many different species. With four sensory arms “Okapi” uses these limbs to gather bio-data of the environments they encounter, storing it in their genetic make up for future generations to uncover and learn from. They are curious and love to traverse the Metaverse.\n\nKeiken are a collaborative practice, co-founded by artists Tanya Cruz, Hana Omori and Isabel Ramos in 2015, who frequently work with multiple collaborators. Based between London and Berlin, they come from mixed diasporic backgrounds (Mexican/Japanese/European/Jewish). They are building a collective shared space of virtual worlds, a Metaverse. Keiken, the Japanese word for experience, create speculative worlds, using moving-image, CGI, gaming software, installation, virtual and augmented reality, programming and performance to merge the physical and digital. Their work simulates new structures and ways of existing, exploring how societal introjection governs the way we feel, think and perceive.\n",
         "artist": {
-          "@type": "Person",
-          "name": "Keiken"
-        }
+          "@type": "Project",
+          "name": "Jacqueline Kiyomi Gork and Rhett LaRue"
+        },
+        "name": "Moat, 2022",
+        "artMedium": "3D sculpture with stereo audio \nDimensions variable",
+        "description": "Moat is a water feature concept designed for sensory and bodily nourishment. It uses improbable material and natural elements that forces public entry into a narrow stairway putting you face level with water sounds and leading you to a reveal of the murky charcoal tank bed below a water cress harvest. This ancient, historic super-food weed is meant to symbolize artistic nourishment from our institutions that exist inside easily corruptible circumstances. The volume of water addresses detachment from the appropriate scarcity mindset that exists within the artistic economy while simultaneously advocating for the Venusian spirit of bringing beauty to society despite and because of harsh realities. It is a formal oasis in our desert ecosystem.\n\nJacqueline Kiyomi Gork works at the intersection of sound, sculpture and performance to create experiences for the listener/viewer to question and deepen their relationship to the sonic world. By altering the acoustics of an environment with sculptural interventions and multichannel sound systems Kiyomi Gork highlights the role individual bodies play in the perceptions of an environment.\n\nRhett LaRue is a multimedia artist living in Los Angeles. His work explores both real and virtual  material qualities for human engagement."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "artMedium": "3D sculpture\nDimensions variable\n",
-        "name": "“Approximation (Tyrell owl),” 2021",
-        "description": "“Approximation (Tyrell owl)” is a recreation of an iconic still from the film “Blade Runner” (1982) wherein a replicant owl surveys the Tyrell Corporation building with an artificial eye. Composed as a 3D sculpture, this rendering of the owl functions as a digital approximation of the film’s synthetically created replicant owl; a bio-technological approximation of an actual animal species long lost to extinction within the film’s universe. The sculpture’s formal composition, a large head severed at roughly the same spot within its framing in the film, features a singular glaring eye that reiterates its foremost function as a surveillance mechanism. \n\nThe work’s accompanying physical artwork series “Approximations” expands on these sentiments through myriad photographic cutout sculptures of partially composed animals. These animal amalgamations visualize Novitskova’s ongoing interest in the replication of organic bodies and reconstruction of meaning through the medium, fiction, and cultural landscapes. Alongside “Approximation’s” digital rendering, REPLICANTS features components of an earlier digital collage work composed by Novitskova. This previous work included sculptural digital collage prints of truncated animal bodies surrounded by economic growth arrows. \n“These arrows” (2013) have been included within REPLICANTS as a neon sign on Queen’s Road Central. \n",
         "artist": {
           "@type": "Person",
-          "name": "Katja Novitskova"
-        }
+          "name": "Lawrence Lek"
+        },
+        "name": "The Archive, 2021",
+        "artMedium": "Virtual installation with 10 digital stills\nDimensions variable",
+        "description": "The Archive is a virtual location from Lawrence Lek's upcoming CGI feature film Death Drive, a science fiction noir which reimagines the road movie in the age of sentient autonomous vehicles. Developed in part through the 2021 Art + Technology grant, the project continues Lek’s exploration of Sinofuturist worldbuilding, and focuses on the psychological relationship between human and nonhuman beings.\n\nThe film is set in the fictional smart city of SimBeijing, a full-scale replica of the Chinese capital built to test automated transport and urban surveillance systems. For EPOCH, the architecture has been transposed from SimBeijing to Los Angeles. The Archive references the language of monumental post-industrial spaces, repurposed in the film as a crash test center. Inside the virtual space, stills of SimBeijing are displayed as a gallery within the cavernous halls.\n\nLawrence Lek is a London-based artist, filmmaker, and musician known for his ongoing series of CGI films, soundtracks, and immersive virtual worlds, often set within a Sinofuturist cinematic universe."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "artMedium": "HD video (scanned from 16mm film painted with inks, dyes and piss), 1920 x 6480\n1 minute (looping)",
-        "name": "“Skyscraper Painted Hacker Cats,” 2020/2021",
-        "description": "“Skyscraper Painted Hacker Cats” is a nod to the ongoing phenomenon of the people’s fascination with cats on the Internet.  The projected grid of cats onto the defunct skyscraper advertising apparatuses of this virtual city, allow them to “hack” the spaces of consumer capitalism. At architectural scale, the looming, painted cats occupy the space of the gods, high above the abandoned city below. West first compiled 16mm clips of cats against a green screen. Manipulating the celluloid in her signature style, West applied brightly colored dye infused with urine to the filmstrip before transferring it to high-definition video. First presented across more than 75 billboards as part of Times Square Arts’ Midnight Moment series (the world's “largest, longest-running digital art exhibition”), it pays homage to the feline’s role across many moving image genres, from viral videos to experimental films. \n\n“Skyscraper Painted Hacker Cats”  - cat performances by Munchkin and original 16mm shot by Peter West.",
         "artist": {
           "@type": "Person",
-          "name": "Jennifer West"
-        }
+          "name": "Jen Liu"
+        },
+        "name": "Electropods, 2022",
+        "artMedium": "3D sculptures, virtual installation, stereo sound\nDimensions variable",
+        "description": "Seven pods are linked by connective tubing, with body parts, bubbles, cords and old tech emerging from within. These pods are modeled on a set piece from a work in progress, Pink Slime Caesar Shift: Electropore, 2021-22, in which a live action pod, filled with wires and emitting smoke, becomes the site of labor without end. Inside, an Asian performer connects various electronics to a power source – pink slime both inside and outside her body. The pod’s form is based on early 20th century Mongolian carceral boxes for female prisoners\n\nHere, the pods form a collective electrical circuit, electrical cords connect them to the ground of the garden. Obsolete office phones broadcast voices from the past: Grace Lee Boggs, Assata Shakur (her own voice as well as an excerpt of her autobiography read by “Bubbles,” the iOS speech utility), midi audio from Fred Ho’s Warrior Sisters: The New Adventures Of African And Asian Womyn Warriors, an industrial manual on Electropore genetic engineering machines (on cell death through electroshock) and a modified excerpt of Katherine Hayles’ How We Became Posthuman. Physical confinement and digital re-formation bind them together, in negative but possibly hopeful coalition.\n\nJen Liu is a New York-based visual artist working in video, painting, dance performance, and genetically engineered biomaterial, on topics of national identity, gendered economy, and the re-motivating of archival objects.\n"
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "artMedium": "5-channel flatscreen television installation, 3D objects (scanned and modeled) and high-definition video (transferred from 16mm film shot on Arriflex S1 by Peter West)\nEach video: 1 minute (looping)",
-        "name": "“Archaeology of Smashed Flatscreen Televisions Thrown off Bridges,” 2020/2021",
-        "description": "The cinematic, apocalyptic image of L.A.’s barren river littered with cast-off electronics inspired West to preserve the evidence of these futile acts of violence against disposable technology.  The grid of flatscreen monitors facing upward floating in water in an abandoned parking garage are a taxonomic display, like an archeological case study of physical evidence–artifacts of our moment seen from some future time when our ecologically inevitable fate has already taken place. Placed on top of each monitor is a piece of broken personal technology or object collected by West from the Los Angeles River  - a cell phone with a broken screen, the shell of a boom box, corroded CD’s, remnants of broken television screens, a broken arrow and golf club. West arranged the random sampling of scavenged debris by type and filmed it in 16mm on green screen backgrounds. The filming’s irreverent style echoes the miscellany of the dredged collection. The artist’s cat is glimpsed walking in and out of frame, occasionally settling in the center, indifferent to the film production in process. During the film’s telecine transfer, a loose electrical cable caused the background screen to flash from green to magenta. West includes this glitching footage in a further embrace of indeterminacy and accident.",
         "artist": {
-          "@type": "Person",
-          "name": "Jennifer West"
-        }
+          "@type": "Project",
+          "name": "Ronald Rael and Virginia San Fratello"
+        },
+        "name": "Swarm City, 2022",
+        "artMedium": "3D architectural rendering\nDimensions variable",
+        "description": "A swarm typically describes things that fly or move through space — a swarm of insects, or a swarm of Oort Cloud comets, for example. It also describes a large number of people or things. There is a need for a large number of housing units in Los Angeles, as there are currently 63,706 people experiencing homelessness in Los Angeles County. The Los Angeles City Council vowed to create 25,000 new housing units for the homeless by 2025 in an initiative called, A Way Home. While the city council seeks land for building housing in the sprawl of L.A., Rael San Fratello proposes that the city must consider verticality, which makes it possible to house vast numbers of people in a small footprint, while conserving land for food production and recreation, and reducing the need for driving, reducing emissions associated with cars and saving residents money. Swarm City also generates its own electricity with a multitude of surfaces where solar panels are installed. The ad-hoc nature of Swarm City enables residents to complete the architecture to meet their own needs. Without the constraint of gravity in the virtual world, Swarm City calls to attention the need for density by envisioning a swarm of housing that floats in the air as it seeks “a way home.”\n\nRael San Fratello is a design studio rooted in the discipline of architecture that recognizes the importance of the political and ethical aspects of design. Their focus is on research and development aligned with beauty and the belief that architecture has a social responsibility."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "artMedium": "Digital rendering / tattoo\nVirtual installation, dimensions variable",
-        "name": "“Nothing the God of biomechanics wouldn't let you into heaven for: 1-7”, 2021",
-        "description": "Dr. Woo has created seven unique masks which will appear jointly in REPLICANTS and TEKNOLUST: OBJECTOPHILIC FUTURES. Digitally rendered, each artwork calls upon various movements in which disguises have maneuvered throughout history, functionally, allegorically, and ritually, from Inuit ceremony, to Kabuki theater, to contemporary digital avatars on Twitter and Reddit. Within the digital replicant, the masks are indelibly marked on frozen and hanging cadavers/replacement body parts, perhaps as an oracle of what is to come for collectors who choose to have their bodies inked.\n\nTEKNOLUST: OBJECTOPHILIC FUTURES envisions a post-singularity utopia/distopia in which humans interact with intelligences of their own creation on level footing. The exhibition manifests multiple realms of existence: a fungible, physical space in WOAW Gallery on Queen’s Road, Hong Kong; EPOCH’s RELICANTS, which digitally recreates the architecture of WOAW’s Queen’s Road location and its surrounding buildings with an EPOCH-selected alternate roster of artists; and a series of IRL WOAW-situated portals that provide networks between tangible, spiritual, and virtual universes.",
         "artist": {
           "@type": "Person",
-          "name": "Dr. Woo"
-        }
+          "name": "Sarah Rara"
+        },
+        "name": "Landlords 1, 2021",
+        "artMedium": "4k video with audio, virtual installation\nTRT: 1 min 4 sec loop",
+        "description": "Landlords introduces the landlord as mosquito, presented as a series of shimmering long-takes installed along Wilshire Blvd. The landlord-mosquito feeds, and never stops feeding, in a series of eternal loops. The videos conjure the mundane horror of the landlord-tenant relationship within an environment of wealth and property consolidation by large real estate corporations that withhold, rather than provide, housing— an investment strategy that relies on logics of scarcity and extraction. \n\nSarah Rara is an artist based in Los Angeles working with video, sound, and performance. They are a primary organizer of the ongoing project Lucky Dragons. Their work, solo and in collaboration, has been presented at such institutions as the Whitney Museum of American Art, the Hammer Museum, the Centre Georges Pompidou, Walker Art Center in Minneapolis, London’s Institute for Contemporary Art, PS1 in New York, REDCAT and Human Resources in Los Angeles, MOCA Los Angeles, the 54th Venice Biennale, Documenta 14 in Athens, and the Smithsonian’s Hirshhorn Museum and Sculpture Garden, among others. Rara is a 2018 recipient of the LACMA Art + Technology Lab grant."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "artMedium": "Digital Sculpture, audio, text\nDimensions variable",
-        "name": "“A.A.G.,” 2021 ",
-        "description": "“A.A.G.” is a transpacific deity born from submarine fiber optic cables, and the desire for human connection across the Pacific Ocean. Manifested as a goddexx, “A.A.G.” is a hybrid of the organic and the inorganic, brought forth from the interconnection of geographies, machines, physical undersea infrastructure, and the deep sea creatures that grow on it’s metal piping. Representing non-linear pathways of communication streams across the ocean, of both histories and future destinations, they can appear in many places and times at once, enabling the flow of the internet across the world. Here we see them surfaced at a cable landing in Hong Kong. In the dialogue playing in the background, “A.A.G.” has brought together two oceanic deities across the Pacific ocean: Mazu 媽祖  (a Chinese sea goddess, spoken by Qianqian Ye) and Hina opuhala ko’a (a Hawaiian goddess of coral reefs, spoken by Tiare Ribeaux). We hear all three in conversation as they confer about the state of humanity and the growth of technology over the past 1000 years. \n\n“A.A.G.” stands for the Asia-America Gateway submarine cable system that has landing points in California, Keawaula, Hawai’i, Lantau Island, Hong Kong, as well as Guam, Malaysia, Brunei, the Philippines, Singapore, and Thailand. The acronym as an utterance brings to mind a primordial state of being.\n\n“A.A.G.” is part of Kai 海 Hai (a hybrid of ‘Ocean’ in ʻŌlelo Hawai'i and Chinese), a series of virtual and augmented reality installations utilize transpacific stories, oral histories, myth and folklore from Polynesia to Asia - to explore environmental issues, indigenous and immigrant stories, migratory paths, and diaspora across the Pacific Ocean. Kai 海 Hai is a collaboration between Kānaka Maoli artist and filmmaker Tiare Ribeaux (from Honolulu based in the Bay Area) and Chinese artist and technologist Qianqian Ye (from Wenzhou based in LA). Mapping the ocean surface between Wenzhou, Honolulu, the Bay Area, and Los Angeles, this project remixes the ancestral, personal, and speculative stories about the Pacific Ocean.",
         "artist": {
           "@type": "Person",
-          "name": "Qianqian Ye + Tiare Ribeaux"
-        }
+          "name": "Sarah Rara"
+        },
+        "name": "Landlords 2, 2021",
+        "artMedium": "4k video with audio, virtual installation\nTRT: 47 sec loop",
+        "description": "Landlords introduces the landlord as mosquito, presented as a series of shimmering long-takes installed along Wilshire Blvd. The landlord-mosquito feeds, and never stops feeding, in a series of eternal loops. The videos conjure the mundane horror of the landlord-tenant relationship within an environment of wealth and property consolidation by large real estate corporations that withhold, rather than provide, housing— an investment strategy that relies on logics of scarcity and extraction. \n\nSarah Rara is an artist based in Los Angeles working with video, sound, and performance. They are a primary organizer of the ongoing project Lucky Dragons. Their work, solo and in collaboration, has been presented at such institutions as the Whitney Museum of American Art, the Hammer Museum, the Centre Georges Pompidou, Walker Art Center in Minneapolis, London’s Institute for Contemporary Art, PS1 in New York, REDCAT and Human Resources in Los Angeles, MOCA Los Angeles, the 54th Venice Biennale, Documenta 14 in Athens, and the Smithsonian’s Hirshhorn Museum and Sculpture Garden, among others. Rara is a 2018 recipient of the LACMA Art + Technology Lab grant."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
-        "artMedium": "Stereo musical composition\nTRT: 7 min 49 sec",
-        "name": "“Human Era (Coda),” 2021",
-        "description": "The idea of emulation vs. replication, a theme that runs throughout the film “Blade Runner” (1982), was the starting point for creating a soundscape for the virtual space of the exhibition, REPLICANTS. The work, Human Era (Coda), addresses the problem of creating a new musical composition from a classic and ubiquitous piece of pop culture history by way of the composer taking on the characteristics of a replicant in order to create the work. (Maybe I am not human after all?) If one looks back to the mechanical reproductions first produced by the Gutenberg printing-press, its human operated mechanisms were susceptible to flaws in the end result. These flaws, these imperfections are what we now define as hallmarks of humanity – errors in execution. With that “tell“ in mind, the approach Konrad Black took was one of replication through blind emulation – to become “More human than human“ by drawing upon the implanted memory of Ridley Scott's film. Black subjected himself to the fallible nature of memory and how recall works. An attempt to achieve accuracy in the reproduction of the leitmotifs – that are so iconic in the original Vangelis soundtrack – resulted in human errors from memory distortion, thereby producing the musical mutations of Human Era (Coda).\n\nIn this sense, blind emulation becomes the point of identification with the replicants of Scott's film: they know their memories are implanted, but they need them artificially as part of their mechanical nature in order to live out their beautifully flawed lives.",
         "artist": {
           "@type": "Person",
-          "name": "Konrad Black"
-        }
+          "name": "Sarah Rara"
+        },
+        "name": "Landlords 3, 2021",
+        "artMedium": "4k video with audio, virtual installation\nTRT: 37 sec loop",
+        "description": "Landlords introduces the landlord as mosquito, presented as a series of shimmering long-takes installed along Wilshire Blvd. The landlord-mosquito feeds, and never stops feeding, in a series of eternal loops. The videos conjure the mundane horror of the landlord-tenant relationship within an environment of wealth and property consolidation by large real estate corporations that withhold, rather than provide, housing— an investment strategy that relies on logics of scarcity and extraction. \n\nSarah Rara is an artist based in Los Angeles working with video, sound, and performance. They are a primary organizer of the ongoing project Lucky Dragons. Their work, solo and in collaboration, has been presented at such institutions as the Whitney Museum of American Art, the Hammer Museum, the Centre Georges Pompidou, Walker Art Center in Minneapolis, London’s Institute for Contemporary Art, PS1 in New York, REDCAT and Human Resources in Los Angeles, MOCA Los Angeles, the 54th Venice Biennale, Documenta 14 in Athens, and the Smithsonian’s Hirshhorn Museum and Sculpture Garden, among others. Rara is a 2018 recipient of the LACMA Art + Technology Lab grant."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Sarah Rara"
+        },
+        "name": "Landlords 4, 2021",
+        "artMedium": "4k video with audio, virtual installation\nTRT: 1 min 35 sec loop",
+        "description": "Landlords introduces the landlord as mosquito, presented as a series of shimmering long-takes installed along Wilshire Blvd. The landlord-mosquito feeds, and never stops feeding, in a series of eternal loops. The videos conjure the mundane horror of the landlord-tenant relationship within an environment of wealth and property consolidation by large real estate corporations that withhold, rather than provide, housing— an investment strategy that relies on logics of scarcity and extraction. \n\nSarah Rara is an artist based in Los Angeles working with video, sound, and performance. They are a primary organizer of the ongoing project Lucky Dragons. Their work, solo and in collaboration, has been presented at such institutions as the Whitney Museum of American Art, the Hammer Museum, the Centre Georges Pompidou, Walker Art Center in Minneapolis, London’s Institute for Contemporary Art, PS1 in New York, REDCAT and Human Resources in Los Angeles, MOCA Los Angeles, the 54th Venice Biennale, Documenta 14 in Athens, and the Smithsonian’s Hirshhorn Museum and Sculpture Garden, among others. Rara is a 2018 recipient of the LACMA Art + Technology Lab grant."
       }
     ]
   },
   "alternateName":"{{ .Asset.CertificateLabel }}",
-  "url":"https://epoch.gallery/Replicants/",
+  "url":"https://epoch.gallery/Echoes/",
   "subjectOf": {
 	  "@context": "https://schema.org",
 	  "@type": "ExhibitionEvent",
-	  "url": "https://epoch.gallery/Replicants/",
-	  "name": "REPLICANTS",
-	  "startDate": "2021-10-09",
-	  "endDate": "2022-01-14",
-	  "description": "REPLICANTS borrows its title from the fictional bioengineered beings introduced within the 1982 science fiction film Blade Runner. The exhibition’s framing environment, modeled after Queen’s Road Central in Hong Kong, extends a virtual reproduction of the street and surrounding buildings of Woaw Gallery where REPLICANTS will be featured. This digital inversion of physical space and materiality, while mirroring the malleability of the replica, more broadly considers the limitations and possibilities for techno-reproductions.\n\nThe entirety of the REPLICANTS exhibition will be offered as a singular NFT containing a compilation of artworks by participating artists featured therein. The REPLICANTS NFT will be released on October 29th, 2021 in tandem with its inclusion in, and the opening of, the group exhibition TEKNOLUST: OBJECTOPHILIC FUTURES at Woaw Gallery, Hong Kong."
+	  "url": "https://epoch.gallery/Echoes/",
+	  "name": "ECHOES",
+	  "startDate": "2022-02-04",
+	  "endDate": "2022-05-06",
+	  "description": "ECHOES is an experimental collaboration between EPOCH and LACMA’s Art + Technology Lab featuring past and present Art + Technology Lab grant recipients and organized by artist and EPOCH creator Peter Wu+. The exhibition’s virtual landscape is modeled after the physical excavation area of LACMA’s east campus, where the forthcoming building for the permanent collection is slated to debut, as well as neighboring locales around Wilshire Boulevard in Los Angeles. The ECHOES NFT will be available on February 15th.\n\nECHOES is generously funded by the Algorand Foundation."
     },
   "offers": {
     "@type": "Offer",
-    "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating\nartists and EPOCH. Differentiating this system from most traditional gallery systems, 70% will besplit evenly amongst all the participating artists and 30% will remain with EPOCH. 20% royalties for\nsecondary market sales will be evenly distributed amongst all the artists and EPOCH. Each\nparticipant will receive one NFT representing an Artist Proof (AP) edition. These AP editions are not\npart of the 20 publicly-offered editions for sale, but should they be sold by an artist, will carry the\nsame secondary market terms as the 20 NFTs in the publicly-offered edition. Upon resale, an additional 1% of the gross resale price will be reserved for secondary marketplace fees. The NFT Smart Contract is released on Github with an Apache 2.0 license.",
-    "url": "https://github.com/uncopied/epoch_replicants_nft"
+    "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating artists and EPOCH. Differentiating this system from most traditional gallery systems, 70% of the sales proceeds will be split evenly amongst all the participating artists, 20% will be distributed to LACMA and 10% will remain with EPOCH. 20% royalties based on the gross sales price of each secondary market sale will be evenly distributed amongst all the artists, LACMA and EPOCH. Each participating artist and EPOCH will receive one NFT representing an Artist Proof (AP) edition. These AP editions are not part of the 5 publicly-offered editions for sale, but should they be sold by an artist, will carry the same secondary market terms as the 5 NFTs in the publicly-offered edition.",
+    "url": "https://github.com/uncopied/epoch_echoes_nft"
   }
 }
 
