@@ -15,9 +15,9 @@
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "QQX5Y647GO7VLG33ZQWKEHO2OPXPVCEY7QNNE2AK2AVA4HYFFD4MJNFYFM"
+        "value":  "VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
       },
-      "sameAs": "https://algoexplorer.io/address/QQX5Y647GO7VLG33ZQWKEHO2OPXPVCEY7QNNE2AK2AVA4HYFFD4MJNFYFM"
+      "sameAs": "https://algoexplorer.io/address/VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
     }
   ],
   "contributor": [
@@ -156,7 +156,7 @@
   ],
   "artEdition": "{{ .Asset.EditionTotal }}",
   "position": "{{ .Asset.EditionNumber }}",
-  "artMedium": "8K virtual exhibition featuring a compilation of artworks by participating artists (playable stand-alone Windows/Mac compatible file with hi-res audio, viewable in VR on Oculus, Vive, or Gear VR headsets)",
+  "artMedium": "8K virtual exhibition featuring a compilation of artworks by participating artists (playable stand-alone Windows/Mac compatible file with hi-res audio, viewable on VR headsets)",
   "associatedMedia":
   {
     "@context": "https://schema.org",
@@ -323,7 +323,7 @@
     ]
   },
   "alternateName":"{{ .Asset.CertificateLabel }}",
-  "url":"https://epoch.gallery/Echoes/",
+  "url":"https://epoch.gallery/echoes/",
   "subjectOf": {
 	  "@context": "https://schema.org",
 	  "@type": "ExhibitionEvent",
