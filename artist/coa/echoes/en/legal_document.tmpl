@@ -1,9 +1,9 @@
 {{ template "header.tmpl" .}}
 <div>
 <h2>
-    {{if (eq .Issuer.DisplayName "EPOCH")}}EPOCH x LACMA Art + Technology Lab{{- else}}=TESTNETONLY=EPOCH x LACMA Art + Technology Lab{{- end}}, "{{.Asset.Name}}," {{.CurrentYear}}; edition {{ $EditionNumberLessX := add .Asset.EditionNumber -5 }}{{ $EditionTotalLessX := add .Asset.EditionTotal -5 }}{{if (le .Asset.EditionNumber 5) }}{{ .Asset.EditionNumber }}/5{{- else}}{{ $EditionNumberLessX }}/{{ $EditionTotalLessX}} AP{{- end}}
+    {{.Asset.CertificateLabel}}
 </h2>
-<h3>{{if (eq .Issuer.DisplayName "EPOCH")}}{{- else}}=TESTNETONLY={{- end}}, "{{.Asset.Name}}," {{ $EditionNumberLessX := add .Asset.EditionNumber -5 }}{{ $EditionTotalLessX := add .Asset.EditionTotal -5 }}{{if (le .Asset.EditionNumber 5) }}{{ .Asset.EditionNumber }}/5{{- else}}{{ $EditionNumberLessX }}/{{ $EditionTotalLessX}} AP{{- end}} (featuring American Artist | Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve | Jaqueline Kiyomi Gork and Rhett LaRue | Lawerence Lek | Jen Liu | Ronald Rael and Virginia San Fratello | Sarah Rara)</h3>
+<h3>{{.Asset.Name}} (featuring American Artist | Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve | Jaqueline Kiyomi Gork and Rhett LaRue | Lawerence Lek | Jen Liu | Ronald Rael and Virginia San Fratello | Sarah Rara)</h3>
     <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
 <h3>Certificate of Authenticity</h3>
     <p>
