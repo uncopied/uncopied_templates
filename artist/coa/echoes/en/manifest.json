@@ -18,8 +18,11 @@
   ],
   "language": "en",
   "asset_properties": {
-    "date_created": {
+    "unit_name": {
       "ordering": 1
+    },
+    "date_created": {
+      "ordering": 2
     }
   },
   "certificate_template": "legal_document.tmpl",

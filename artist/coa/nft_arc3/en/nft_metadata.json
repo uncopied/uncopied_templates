@@ -2,8 +2,11 @@
   "name": "{{ .Asset.Name }}",
   "description": "{{ .AssetProperties.Description }}",
   "image": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
-  "external_url": "{{ .AssetProperties.ExternalUrl }}",
+  "external_url": "{{ .Metadata.UncopiedAssetURL }}",
   "properties": {
-    "license_url": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}"
+    "standard": "arc3",
+    "license_url": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
+    "provenance_proof_txn": "{{ .Metadata.AlgorandTransactionID }}",
+    "visual_artwork": "ipfs://{{ .Metadata.IPFSHash }}"
   }
 }
