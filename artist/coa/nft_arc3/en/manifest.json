@@ -1,0 +1,38 @@
+{
+  "id": "50099735-fccf-47bd-ba5d-cc036da50140",
+  "name": "Unique original 2D visual artwork (Algorand NFT ARC3)",
+  "type": "CoA",
+  "description": "Certificate of Authenticity by the artist for a unique original 2D visual artwork as an Algorand NFT.",
+  "author": "UNCOPIED",
+  "version": "1.0",
+  "manifest_version": 1,
+  "source_types": [
+    "png",
+    "jpg"
+  ],
+  "roles": [
+    "artist"
+  ],
+  "countries": [
+    "*"
+  ],
+  "language": "en",
+  "asset_properties": {
+    "description": {
+      "ordering": 1
+    },
+    "external_url": {
+      "ordering": 2
+    }
+  },
+  "certificate_template": "legal_document.tmpl",
+  "certificate_label_template": "certificate_label.txt",
+  "assetLabel_template": "asset_label.txt",
+  "metadata_template": "metadata.json",
+  "nft_metadata_template": "nft_metadata.json",
+  "edition_min": 1,
+  "edition_max": 1,
+  "license_terms_url": "someURL",
+  "privacy_terms_url": "someOtherURL",
+  "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/artist/coa/nft_arc3/en/uncopied_tampon.svg"
+}

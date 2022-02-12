@@ -1,0 +1,83 @@
+{{ template "header.tmpl" .}}
+<div>
+<h1>
+    "{{.Asset.Name}}", {{ .AssetProperties.AuthorName }}
+</h1>
+<h2>Ex-libris</h2>
+    <p>
+        Ce document certifie que {{ .Issuer.DisplayName }} déclare l'ouvrage <i>{{.Asset.Name}}</i> de l'auteur {{ .AssetProperties.AuthorName }} comme faisant partie de sa bibliothèque personnelle.
+    </p>
+        <div>
+            <table>
+            <thead>
+              <tr>
+                <th>Clé</th>
+                <th>Valeur</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Propriétaire</td>
+                <td>{{ .Issuer.DisplayName }}</td>
+              </tr>
+              <tr>
+                <td>Nom ou titre de l'ouvrage</td>
+                <td>{{ .Asset.Name }}</td>
+              </tr>
+              <tr>
+                <td>Auteur</td>
+                <td>{{ .AssetProperties.AuthorName }}</td>
+              </tr>
+              <tr>
+                <td>Description</td>
+                <td>{{ .AssetProperties.Description }}</td>
+              </tr>
+              <tr>
+                <td>Edition</td>
+                <td>{{ .AssetProperties.Edition }}</td>
+              </tr>
+              <tr>
+                <td>Nombre de pages</td>
+                <td>{{ .AssetProperties.NumberOfPages }}</td>
+              </tr>
+              <tr>
+                <td>ISBN</td>
+                <td>{{ .AssetProperties.Isbn }}</td>
+              </tr>
+            </tbody>
+            </table>
+        </div>
+    <p>
+        Une image en haute définition qui représente l'ouvrage est distribuée sous la license <strong>Tous droits réservés</strong> et
+        elle sera disponible pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible)
+        avec la clé de hachage cryptographique {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}.
+    </p>
+    <p>
+        L'image ci-dessous est une représentation en basse définition marquée par stéganographie et distribuée sous licence Creative Commons CC-BY-ND-4
+        et elle sera disponible pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible)
+        avec la clé de hachage cryptographique {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
+    </p>
+    <p>
+    </p>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
+    <p>
+        Les méta-données de l'ouvrage (les informations comme : titre, nom de l'auteur etc.) sont distribuées sous licence Public Domain CC0
+        et elles seront disponibles pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible).
+    </p>
+    <p>
+        Le label chirographique et le jeton cryptographique correspondent exactement à UN object physique original et unique.
+    </p>
+    <p>
+        Ce certificat est valide pour une durée de 10 ans. La présence d'un chirographe -marqué, signé ou non par l'émetteur- a valeur de signature physique et de signature cryptographique.
+    </p>
+    <h3>Autres images</h3>
+        <p>
+            Si d'autres images en basse définition représentant l'objet “{{.Asset.Name}}" ont été publiées pour un stockage permanent sous licence <strong>Creative Commons License (CC BY-NC-ND)</strong>, elles sont référencées ci-après:
+        </p>
+        <section id="photos">
+ {{ if .DigitalAssets.SecondaryImage.ThumbnailIPFSHash }}
+            <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.SecondaryImage.ThumbnailIPFSHash}}"/>
+ {{ end }}
+        </section>
+</div>
+{{ template "footer.tmpl" .}}

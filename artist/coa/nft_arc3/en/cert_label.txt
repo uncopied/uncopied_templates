@@ -1,0 +1,1 @@
+{{.Asset.Name}} by {{ .Issuer.DisplayName }}, {{.CurrentYear}} (Unique Original NFT)

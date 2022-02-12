@@ -1,19 +1,19 @@
 {{ template "header.tmpl" .}}
 <div>
 <h2>
-    {{.Asset.CertificateLabel}}
+    {{if (eq .Issuer.DisplayName "EPOCH")}}EPOCH x LACMA Art + Technology Lab{{- else}}=TESTNETONLY=EPOCH x LACMA Art + Technology Lab{{- end}}, "{{.Asset.Name}}," {{.CurrentYear}}; edition {{ $EditionNumberLessX := add .Asset.EditionNumber -5 }}{{ $EditionTotalLessX := add .Asset.EditionTotal -5 }}{{if (le .Asset.EditionNumber 5) }}{{ .Asset.EditionNumber }}/5{{- else}}{{ $EditionNumberLessX }}/{{ $EditionTotalLessX}} AP{{- end}}
 </h2>
-<h3>"{{.Asset.Name}}," - featuring Gordon Cheung, Galath3a, Hung Yu Hao, Keiken, Katja Novitskova, Jennifer West, Dr. Woo, Qianqian Ye + Tiare Ribeaux. Original Music by Konrad Black.</h3>
+<h3>{{if (eq .Issuer.DisplayName "EPOCH")}}{{- else}}=TESTNETONLY={{- end}}, "{{.Asset.Name}}," {{ $EditionNumberLessX := add .Asset.EditionNumber -5 }}{{ $EditionTotalLessX := add .Asset.EditionTotal -5 }}{{if (le .Asset.EditionNumber 5) }}{{ .Asset.EditionNumber }}/5{{- else}}{{ $EditionNumberLessX }}/{{ $EditionTotalLessX}} AP{{- end}} (featuring American Artist | Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve | Jaqueline Kiyomi Gork and Rhett LaRue | Lawerence Lek | Jen Liu | Ronald Rael and Virginia San Fratello | Sarah Rara)</h3>
     <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
 <h3>Certificate of Authenticity</h3>
     <p>
-        This document certifies that {{ .Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art by EPOCH and the participating artists' creative efforts.
+        This document certifies that {{ .Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art by {{ .Issuer.DisplayName }} and the participating artists' creative efforts.
     </p>
     <p>
-        The digital source of the piece “{{.Asset.Name}}" has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash <strong> QmP94VDyfbcjiVR6n1o6XAXaANk5vJ3EWcCtt8kF4db89y </strong>
+        The digital source of the piece “{{.Asset.Name}}" has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash <strong> QmQEX6HhE7oKWX4ktNmjrfrVHF95djgViRvs3a79LaMafv </strong>
     </p>
     <p>
-        The medium of the piece is: <strong> 8K virtual exhibition featuring a compilation of artworks by participating artists (playable stand-alone Windows/Mac compatible file with hi-res audio, viewable in VR on Oculus, Vive, or Gear VR headsets) </strong>.
+        The medium of the piece is: <strong> 8K virtual exhibition featuring a compilation of artworks by participating artists (playable stand-alone Windows/Mac compatible file with hi-res audio, viewable on VR headsets) </strong>.
     </p>
     <p>
         A high definition digital image representing the work “{{.Asset.Name}}" has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}.
@@ -21,10 +21,10 @@
     <p>
         The thumbnail is a lower definition copy of the digital image representing the work “{{.Asset.Name}}". It has been released under licence Creative Commons License (CC BY-NC-ND) and it will be stored 'forever' with cryptographic hash {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
 
-        Metadata describing the work “{{.Asset.Name}}" has been released under licence Creative Commons License (CC BY-NC-ND) and it will be stored 'forever'.
+        Metadata describing the work “{{.Asset.Name}}" has been released under licence Creative Commons License (CC0) and it will be stored 'forever'.
     </p>
     <p>
-        Of the exhibition dated 2021-10-09, were produced {{ .Asset.EditionTotal }} original and unique cryptographic UNCOPIED certificate tokens
+        Of the exhibition dated 2022-02-04, were produced {{ .Asset.EditionTotal }} original and unique cryptographic UNCOPIED certificate tokens
         and {{ .Asset.EditionTotal }} original and unique cryptographic EPOCH NFTs constituting the limited digital edition.
 
         Each UNCOPIED token (non-tradable and inalienable) corresponds to a single EPOCH NFT (tradable) : each element of one set is paired with exactly one element of the other set.
@@ -35,21 +35,24 @@
         <li>
             <p>Collector edition</p>
             <ul>
-                <li>{{.Issuer.DisplayName}}, "{{.Asset.Name}}," 1/20</li>
-                <li>{{.Issuer.DisplayName}}, "{{.Asset.Name}}," 2/20</li>
-                <li>{{.Issuer.DisplayName}}, "{{.Asset.Name}}," 3/20</li>
-                <li>...</li>
-                <li>{{.Issuer.DisplayName}}, "{{.Asset.Name}}," 20/20</li>
+                <li>{{.Asset.Name}}, 1/5</li>
+                <li>{{.Asset.Name}}, 2/5</li>
+                <li>{{.Asset.Name}}, 3/5</li>
+                <li>{{.Asset.Name}}, 4/5</li>
+                <li>{{.Asset.Name}}, 5/5</li>
             </ul>
         </li>
         <li>
         <p>Artist proof edition (AP)</p>
             <ul>
-                <li>{{.Issuer.DisplayName}}, "{{.Asset.Name}}," 1/10 AP</li>
-                <li>{{.Issuer.DisplayName}}, "{{.Asset.Name}}," 2/10 AP</li>
-                <li>{{.Issuer.DisplayName}}, "{{.Asset.Name}}," 3/10 AP</li>
-                <li>...</li>
-                <li>{{.Issuer.DisplayName}}, "{{.Asset.Name}}," 10/10 AP</li>
+                <li>{{.Asset.Name}}, 1/8 AP</li>
+                <li>{{.Asset.Name}}, 2/8 AP</li>
+                <li>{{.Asset.Name}}, 3/8 AP</li>
+                <li>{{.Asset.Name}}, 4/8 AP</li>
+                <li>{{.Asset.Name}}, 5/8 AP</li>
+                <li>{{.Asset.Name}}, 6/8 AP</li>
+                <li>{{.Asset.Name}}, 7/8 AP</li>
+                <li>{{.Asset.Name}}, 8/8 AP</li>
             </ul>
         </li>
     </ul>
@@ -73,7 +76,7 @@
         This Collector Agreement (the “Agreement”) regarding the acquisition of an NFT for one of EPOCH’s interactive environments (the “Project”), is between EPOCH and the purchaser (the “Collector”) of one or more of the EPOCH NFTs (the “NFT”) minted on Algorand, an ecologically friendly blockchain, representing ownership of a digital asset (the “Asset”).
     </p>
     <p>
-        This Agreement is intended to be informational, discursive, and also readable and understandable by non-lawyer NFT Collectors, so that there is no confusion as to inspiration, intention, application, and scope of the terms. The parties to this Agreement acknowledge the importance of mutual assent in the formation of an enforceable agreement, and the need to recognize the value of the artistic process beyond the primary transaction. Purchasers of the Assets are encouraged to engage both philosophically and financially with this Project as innovators in a uniquely collaborative and creative process. Part of that process includes sharing the information and experience by circulating the Asset and all accompanying documentation to others. Every exchange provides an opportunity for the value of EPOCH’s model to be recognized, and for a broader creative community comprised of the contributing artists to receive support: elevating the place of artists, and advocating for environmentally sustainable practices.
+        This Agreement is intended to be informational, discursive, and also readable and understandable by non-lawyer NFT Collectors, so that there is no confusion as to inspiration, intention, application, and scope of the terms. The parties to this Agreement acknowledge the importance of mutual assent in the formation of an enforceable agreement, and the need to recognize the value of the artistic process beyond the primary transaction. Purchasers of the Assets are encouraged to engage both philosophically and financially with this Project as innovators in a uniquely collaborative and creative process. Part of that process includes sharing the information and experience by circulating the Asset and all accompanying documentation to others. Every exchange provides an opportunity for the value of EPOCH’s model to be recognized, and for a broader creative community comprised of the contributing artists to receive support: elevating the place of artists, and advocating for environmentally sustainable practices. EPOCH has also worked collaboratively with the Los Angeles County Museum of Art in connection with the Project in a joint effort to explore emerging blockchain technologies.
     </p>
     <h4>
         EPOCH Background
@@ -88,7 +91,7 @@
         With the emergence of the NFT, many of the participating artists looked to EPOCH to bridge the gap between the crypto and contemporary art worlds. Being primarily artist-centric, EPOCH established itself as a virtual destination that challenges the status quo with its critical and innovative approach to curation and exhibition building. Continuing an ethos for innovation, through EPOCH, Peter Wu+ and the other artists involved with each exhibition are forging ahead into uncharted digital terrain, creating an equitable, collaborative, and sustainable system to engage both artists and collectors. To this end, EPOCH is working with <a href="https://uncopied.art">uncopied.art</a> to mint its NFTs on Algorand which is a <a href="https://www.algorand.com/technology/pure-proof-of-stake">pure proof of stake</a> blockchain, and is 99.9% less impactful on our environment than proof of work blockchains such as Ethereum.
     </p>
     <p>
-        Through Algorand’s smart contracts, profits can be automatically split between the participating artists and EPOCH. Differentiating this system from most traditional gallery systems, 70% will be split evenly amongst all the participating artists and 30% will remain with EPOCH. 20% royalties for secondary market sales will be evenly distributed amongst all the artists and EPOCH. Each participant will receive one NFT representing an Artist Proof (AP) edition. These AP editions are not part of the 20 publicly-offered editions for sale, but should they be sold by an artist, will carry the same secondary market terms as the 20 NFTs in the publicly-offered edition.
+        Through Algorand’s smart contracts, profits can be automatically split between the participating artists and EPOCH. Differentiating this system from most traditional gallery systems, 70% of the sales proceeds will be split evenly amongst all the participating artists, 20% will be distributed to LACMA and 10% will remain with EPOCH. 20% royalties based on the gross sales price of each secondary market sale will be evenly distributed amongst all the artists, LACMA and EPOCH. Each participating artist and EPOCH will receive one NFT representing an Artist Proof (AP) edition. These AP editions are not part of the 5 publicly-offered editions for sale, but should they be sold by an artist, will carry the same secondary market terms as the 5 NFTs in the publicly-offered edition.
     </p>
     <h4>
         The Art
@@ -115,10 +118,10 @@
         By purchasing one or more Asset, Collector understands, acknowledges, and agrees to the terms of this Agreement as follows:
     </p>
     <p>
-        1.      <b>Scope of Agreement.</b> As soon as possible, but in any event within a reasonable time after purchasing the Asset, Collector will receive a token representing ownership of the particular Exhibition (the “Asset”) associated with the NFT.
+        1.      <b>Scope of Agreement.</b> As soon as possible, but in any event within a reasonable time after purchasing the Asset, Collector will receive a token in a cyptocurrency wallet compatible with Algorand tokens (or other tokens determined by EPOCH) representing ownership of the particular Exhibition (the “Asset”) associated with the NFT.
     </p>
     <p>
-        2.      <b>Term and Termination of Agreement.</b> While nothing is truly forever, EPOCH will use reasonable efforts to ensure that this NFT remains functional and the Asset is accessible for as long as reasonably practicable, which will hopefully be close to “forever”. In the event of technological changes, migrations to new platforms or systems, or any other technology evolution or shift that is not compatible with the structure and nature of the NFT; termination or destruction of the currency or blockchain on which the NFT is minted; or the inaccessibility or destruction of the link to the Asset for the aforementioned or any other reasons, this Agreement will automatically terminate and EPOCH will have no further obligations hereunder. Upon the termination of this Agreement for any reason, Collector may retain legal ownership of any digital or physical assets in Collector’s possession, and will continue to be bound by any moral rights that exist with regard to any physical objects acquired as a result of this Agreement.
+        2.      <b>Term and Termination of Agreement.</b> While nothing is truly forever, EPOCH will use reasonable efforts to ensure that this NFT remains functional and the Asset is accessible for as long as reasonably practicable, which will hopefully be close to “forever”. In the event of technological changes, migrations to new platforms or systems, or any other technology evolution or shift that is not compatible with the structure and nature of the NFT; termination or destruction of the currency or blockchain on which the NFT is minted; or the inaccessibility or destruction of the link to the Asset for the aforementioned or any other reasons, this Agreement will automatically terminate and EPOCH will have no further obligations hereunder. Upon the termination of this Agreement for any reason, Collector may retain legal ownership of any digital or physical assets in Collector’s possession with the rights of display described in this document, and will continue to be bound by any moral rights that exist with regard to any physical objects acquired as a result of this Agreement.
     </p>
     <p>
         3.      <b>The Asset.</b> The NFTs will be minted on the Algorand blockchain, or any other platform that may be determined to best serve EPOCH’s purposes. Each NFT will include access to download a playable stand-alone version of the exhibition. The digital asset to which the NFT points will be stored on the InterPlanetary File System (IPFS). As a backup measure, upon purchase Collector should download the digital file of the Asset and store it in a secure location. In the event that the link between the NFT and the Asset is broken or not properly functioning, Collector will have the Asset file with confirmation of its origin. It is imperative that Collector save this file and the transmittal email for provenance and proper recordkeeping. Additionally, in the event the link between the NFT and the Asset is broken or not properly functioning, Collector may contact EPOCH at info@epoch.gallery and EPOCH will use reasonable efforts to remedy the situation in a fair and practicable manner.
@@ -134,19 +137,23 @@
     </p>
     <p>
         7.      <b>Right to Display Publicly.</b> Collector may display the Asset publicly but must include credit to the participating artists and EPOCH including a copyright notice, and refer to EPOCH’s webpage as follows:
-        “REPLICANTS" – featuring Gordon Cheung, Galath3a, Hung Yu Hao, Keiken, Katja Novitskova, Jennifer West, Dr. Woo, Qianqian Ye + Tiare Ribeaux. Original Music by Konrad Black. ©2021 EPOCH. All Rights Reserved. www.epoch.gallery
+
+        ECHOES (featuring American Artist | Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve | Jaqueline Kiyomi Gork and Rhett LaRue | Lawerence Lek | Jen Liu | Ronald Rael and Virginia San Fratello | Sarah Rara)
+        February 4 – May 6, 2022
+        EPOCH x LACMA Art + Technology Lab
+
     </p>
     <p>
-        8.      <b>Ownership.</b> There is sometimes the misperception that by owning an artwork, a collector owns all rights including intellectual property rights like copyright. This is not the case with object-based artwork, and it is also not the case with NFTs. Even though a Collector does not have any intellectual property rights in the Asset to which the NFT points, there are definitely responsibilities that come with ownership. The responsibilities that come with either collecting art or participating in society require attention and maintenance. This transaction is no different, and thus, Collector agrees to participate in this NFT ownership pursuant to the terms of this Agreement.
+        8.      <b>Ownership.</b> There is sometimes the misperception that by owning an artwork, a collector owns all rights including intellectual property rights like copyright. This is not the case with object- based artwork, and it is also not the case with NFTs. Even though a Collector does not have any intellectual property rights in the Asset to which the NFT points (other than the permissions given in this agreement), there are definitely responsibilities that come with ownership. The responsibilities that come with either collecting art or participating in society require attention and maintenance. This transaction is no different, and thus, Collector agrees to participate in this NFT ownership pursuant to the terms of this Agreement.
     </p>
     <p>
-        9.      <b>Asset Resale.</b> In order to maintain a sustainable career trajectory many artists are including a period during which collectors may not resell artwork, in this case however, Collector is free to sell the NFT at any time as long as that sale occurs completely on-chain, and on Algorand or another proof of stake blockchain compatible with Algorand, with no money or other compensation changing hands off-chain. Upon resale, an additional 1% of the gross resale price will be reserved for secondary marketplace fees.
+        9.      <b>Asset Resale.</b> In order to maintain a sustainable career trajectory many artists are including a period during which collectors may not resell artwork, in this case however, Collector is free to sell the NFT at any time as long as that sale occurs completely on-chain, and on Algorand or another proof of stake blockchain compatible with Algorand, with no money or other compensation changing hands off-chain. Upon resale, 1% of the gross resale price will be reserved for secondary marketplace fees.
     </p>
     <p>
-        10.  <b>Resale Royalties.</b> Upon resale, 20% of the gross resale price will be equally divided and paid to EPOCH and each of the participating artists whose works were included in that Exhibition.
+        10.  <b>Resale Royalties.</b> Upon resale, 20% of the gross resale price of each secondary market sale will be equally divided and paid to EPOCH[, LACMA] and each of the participating artists whose works were included in that Exhibition.
     </p>
     <p>
-        11.  <b>Consequences and Remedies.</b> In the event that the Asset becomes inaccessible or unavailable for any reason at all, this Agreement automatically terminates pursuant to section 2 above, though all intellectual property obligations will survive. Because the eternal stability of the Asset cannot be guaranteed, it is highly encouraged that Collector download the Asset and maintain the Asset in a secure location to guard against the possibility of losing access in the event the link from the NFT to the Asset breaks for any reason.
+        11.  <b>Consequences and Remedies.</b> In the event that the Asset becomes inaccessible or unavailable for any reason at all, this Agreement automatically terminates pursuant to section 2 above, though all intellectual property obligations will survive as well as the permissions given to the Collector to the extent contained in this agreement. Because the eternal stability of the Asset cannot be guaranteed, it is highly encouraged that Collector download the Asset and maintain the Asset in a secure location to guard against the possibility of losing access in the event the link from the NFT to the Asset breaks for any reason.
     </p>
     <p>
         12.  <b>Dispute Resolution.</b> In the event any disputes arise out of this Agreement, the parties agree to resolve such disputes only by mutual agreement or mediation with a mutually-agreed-upon neutral third party. The parties waive any and all rights to bring disputes to arbitration or litigation in any form or forum. Each party will be responsible for its own attorney fees and costs.

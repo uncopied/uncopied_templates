@@ -1,0 +1,2 @@
+Ex-libris
+{{ .Issuer.DisplayName }}
