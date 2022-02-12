@@ -1,8 +1,10 @@
 {
   "name": "{{ .Asset.Name }}",
-  "description": "{{ .AssetProperties.Description }}",
-  "image": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "description": "{{ .Asset.CertificateLabel }} - {{ .AssetProperties.Description }}",
+  "image": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
   "external_url": "{{ .Metadata.UncopiedAssetURL }}",
+  "decimals": 0,
+  "unitName":  "{{ .AssetProperties.UnitName }}",
   "properties": {
     "standard": "arc3",
     "license_url": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
