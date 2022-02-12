@@ -1,8 +1,12 @@
 {
   "name": "{{ .Asset.Name }}",
-  "description": "{{ .Asset.CertificateLabel }} - {{ .AssetProperties.Description }}",
+  "description": "{{ .Asset.CertificateLabel }}",
   "image": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
-  "external_url": "https://api.uncopied.art/c/v/V",
+  "external_url": "{{ .Metadata.UncopiedAssetURL }}",
   "properties": {
+    "standard": "arc3",
+    "license_url": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
+    "provenance_proof_txn": "{{ .Metadata.AlgorandTransactionID }}",
+    "visual_artwork": "ipfs://{{ .Metadata.IPFSHash }}"
   }
 }

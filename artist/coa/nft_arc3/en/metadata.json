@@ -6,25 +6,24 @@
   "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
   "alternateName":"{{ .Asset.CertificateLabel }}",
   "description": "{{ .AssetProperties.Description }}",
+  "copyrightHolder":[
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "{{ .Issuer.Address }}"
+      },
+      "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
+    }
+  ],
   "creator": [
     {
       "@type": "Person",
       "name": "{{ .Issuer.Username }}"
     }
   ],
-  "width": [
-    {
-      "@type": "Distance",
-      "name": "{{ .AssetProperties.Width }}"
-    }
-  ],
-  "height": [
-    {
-      "@type": "Distance",
-      "name": "{{ .AssetProperties.Height }}"
-    }
-  ],
   "artMedium": "{{ .AssetProperties.ArtMedium }}",
-  "artworkSurface": "{{ .AssetProperties.ArtworkSurface }}",
   "dateCreated": "{{ .AssetProperties.DateCreated }}"
 }

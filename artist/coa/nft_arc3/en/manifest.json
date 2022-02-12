@@ -18,11 +18,14 @@
   ],
   "language": "en",
   "asset_properties": {
-    "description": {
+    "unit_name": {
       "ordering": 1
     },
-    "external_url": {
+    "description": {
       "ordering": 2
+    },
+    "medium": {
+      "ordering": 3
     }
   },
   "certificate_template": "legal_document.tmpl",
