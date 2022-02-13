@@ -4,6 +4,10 @@
   "description": "CoA limited edition json schema fields. English version",
   "type": "object",
   "properties": {
+    "unit_name": {
+      "description": "Unit Name=EPOCH",
+      "type": "string"
+    },
     "date_created": {
       "description": "Date Created",
       "type": "string",
@@ -25,6 +29,7 @@
     }
   },
   "required": [
+    "unit_name",
     "date_created",
     "digital_assets"
   ]
