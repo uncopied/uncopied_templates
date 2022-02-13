@@ -1,1 +1,0 @@
-{{.Asset.Name  .Asset.Edition}}
