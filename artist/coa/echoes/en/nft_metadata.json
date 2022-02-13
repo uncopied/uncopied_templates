@@ -1,14 +1,15 @@
 {
   "name": "{{ .Asset.Name }}",
   "description": "{{ .Asset.CertificateLabel }}",
-  "image": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
+  "image": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "image_mimetype": "image/png",
   "external_url": "{{ .Metadata.UncopiedAssetURL }}",
   "decimals": 0,
   "unitName":  "{{ .AssetProperties.UnitName }}",
   "properties": {
     "standard": "arc3",
-    "license_url": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
-    "provenance_proof_txn": "{{ .Metadata.AlgorandTransactionID }}",
-    "visual_artwork": "ipfs://{{ .Metadata.IPFSHash }}"
+    "document_url": "ipfs://{{ .Asset.IPFSHash }}",
+    "linked_data": "ipfs://{{ .Metadata.IPFSHash }}",
+    "provenance_proof_txn": "{{ .Metadata.AlgorandTransactionID }}"
   }
 }
