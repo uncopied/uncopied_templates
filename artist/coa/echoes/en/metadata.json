@@ -4,7 +4,8 @@
   "name": "{{ .Asset.Name }}",
   "dateCreated": "{{ .AssetProperties.DateCreated }}",
   "datePublished": "2022-02-15",
-  "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
+  "thumbnailUrl": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
   "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
   "description": "{{ .Asset.CertificateLabel }} - ECHOES\n\nFebruary 4 – May 6, 2022\n\nAmerican Artist\nLukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve\nJacqueline Kiyomi Gork and Rhett LaRue\nLawrence Lek\nJen Liu\nRonald Rael and Virginia San Fratello\nSarah Rara\n\nECHOES is an experimental collaboration between EPOCH and LACMA’s Art + Technology Lab featuring past and present Art + Technology Lab grant recipients and organized by artist and EPOCH creator Peter Wu+. The exhibition’s virtual landscape is modeled after the physical excavation area of LACMA’s east campus, where the forthcoming building for the permanent collection is slated to debut, as well as neighboring locales around Wilshire Boulevard in Los Angeles. The ECHOES NFT will be available on February 15th.\nECHOES is generously funded by the Algorand Foundation.",
   "copyrightHolder":[
