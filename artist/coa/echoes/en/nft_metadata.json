@@ -1,13 +1,16 @@
 {
   "name": "{{ .Asset.Name }}",
   "description": "{{.Asset.Name}} - American Artist | Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve | Jaqueline Kiyomi Gork and Rhett LaRue | Lawerence Lek | Jen Liu | Ronald Rael and Virginia San Fratello | Sarah Rara",
-  "image": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
-  "image_mimetype": "image/jpeg",
+  "image": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "image_mimetype": "image/png",
   "external_url": "{{ .Metadata.UncopiedAssetURL }}",
   "decimals": 0,
   "unitName":  "{{ .AssetProperties.UnitName }}",
   "properties": {
     "standard": "arc3",
+    "source_image": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
+    "source_image_mimetype": "image/jpeg",
+    "associated_media_url":"ipfs://QmQEX6HhE7oKWX4ktNmjrfrVHF95djgViRvs3a79LaMafv?filename=EPOCH_Echoes_2022.zip",
     "document_url": "ipfs://{{ .Asset.IPFSHash }}",
     "linked_data": "ipfs://{{ .Metadata.IPFSHash }}",
     "provenance_proof_txn": "{{ .Metadata.AlgorandTransactionID }}"
