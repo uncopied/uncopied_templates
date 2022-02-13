@@ -1,6 +1,6 @@
 {
   "name": "{{ .Asset.Name }}",
-  "description": "{{.Asset.Name}} - American Artist | Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve | Jaqueline Kiyomi Gork and Rhett LaRue | Lawerence Lek | Jen Liu | Ronald Rael and Virginia San Fratello | Sarah Rara",
+  "description": "{{.Asset.CertificateLabel}} - American Artist | Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve | Jaqueline Kiyomi Gork and Rhett LaRue | Lawerence Lek | Jen Liu | Ronald Rael and Virginia San Fratello | Sarah Rara",
   "image": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
   "image_mimetype": "image/png",
   "external_url": "{{ .Metadata.UncopiedAssetURL }}",
