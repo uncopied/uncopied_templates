@@ -1,0 +1,65 @@
+{
+  "id": "be3f2d42-f904-4136-adfc-f1e43b812bd4",
+  "name": "NANCY BAKER CAHILL NFT",
+  "type": "CoA",
+  "description": "UNCOPIED/CDAS custom template for NANCY BAKER CAHILL NFT. NB: this template is reserved for NANCY BAKER CAHILL.",
+  "author": "EPOCH",
+  "version": "1.0",
+  "manifest_version": 1,
+  "source_types": [
+    "png",
+    "jpg"
+  ],
+  "roles": [
+    "artist"
+  ],
+  "countries": [
+    "*"
+  ],
+  "language": "en",
+  "asset_properties": {
+    "description": {
+      "ordering": 1
+    },
+    "art_medium": {
+      "ordering": 2
+    },
+    "unit_name": {
+      "ordering": 3
+    },
+    "video_name": {
+      "ordering": 4
+    },
+    "video_ipfs": {
+      "ordering": 5
+    },
+    "production": {
+      "ordering": 6
+    },
+    "production_address": {
+      "ordering": 7
+    },
+    "sound_artist": {
+      "ordering": 8
+    },
+    "sound_artist_address": {
+      "ordering": 9
+    },
+    "nft_count": {
+      "ordering": 10
+    },
+    "date_created": {
+      "ordering": 11
+    }
+  },
+  "certificate_template": "blueprint.tmpl",
+  "certificate_label_template": "certificate_label.txt",
+  "asset_label_template": "asset_label.txt",
+  "metadata_template": "metadata.json",
+  "nft_metadata_template": "nft_metadata.json",
+  "edition_min": 3,
+  "edition_max": 3,
+  "license_terms_url": "https://nancybakercahill.com/",
+  "privacy_terms_url": "https://nancybakercahill.com/",
+  "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/artist/coa/nancybaker_nft/en/CDAS_logo_f.png"
+}
