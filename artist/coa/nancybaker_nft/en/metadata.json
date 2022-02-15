@@ -1,0 +1,92 @@
+{ 
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "{{ .Asset.Name }}",
+  "dateCreated": "{{ .AssetProperties.DateCreated }}",
+  "datePublished": "{{ .AssetProperties.DateCreated }}",
+  "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
+  "description": "{{ .Asset.CertificateLabel }} - {{ .AssetProperties.Description }}",
+  "copyrightHolder":[
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "{{ .Issuer.Address }}"
+      },
+      "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
+    }
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "{{ .Issuer.Address }}"
+      },
+      "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
+    },
+    {
+      "@type": "Person",
+      "name": "{{ .AssetProperties.SoundArtist }}",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "{{ .AssetProperties.SoundArtistAddress }}"
+      },
+      "sameAs": "https://algoexplorer.io/address/{{ .AssetProperties.SoundArtistAddress }}"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "name": "{{ .AssetProperties.Production }}",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "{{ .AssetProperties.ProductionAddress }}"
+      },
+      "sameAs": "https://algoexplorer.io/address/{{ .AssetProperties.ProductionAddress }}"
+    }
+  ],
+  "artEdition": "{{ .Asset.EditionTotal }}",
+  "position": "{{ .Asset.EditionNumber }}",
+  "artMedium": "{{ .AssetProperties.SoundArtistAddress }}",
+  "associatedMedia":
+  {
+    "@context": "https://schema.org",
+    "@type": "DataDownload",
+    "contentSize": "4310734680",
+    "contentUrl":"https://ipfs.io/ipfs/{{ .AssetProperties.VideoIpfs }}",
+    "description": "{{ .AssetProperties.VideoName }}",
+    "name": "{{ .AssetProperties.VideoName }}",
+    "hasPart": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "{{.Issuer.DisplayName}}"
+        },
+        "name": "{{ .Asset.Name }} video",
+        "artMedium": "Video"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "{{ .AssetProperties.SoundArtist }}"
+        },
+        "name": "{{ .Asset.Name }} audio",
+        "artMedium": "Audio"
+      }
+    ]
+  },
+  "alternateName":"{{ .Asset.CertificateLabel }}"
+}
+
