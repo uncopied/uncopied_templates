@@ -1,0 +1,36 @@
+{{ template "header.tmpl" .}}
+<div>
+<h1>
+    {{ .Asset.CertificateLabel }}
+</h1>
+<h2>Certificate of Authenticity for an Algorand NFT (ARC3) </h2>
+    <p>
+        This document certifies that {{ .Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art
+        of the author's own creative efforts.
+    </p>
+    <p>
+        The high definition digital source of the work (or a high definition digital copy issued by the author) has been released by the author
+        under licence "All Rights Reserved" and it will be stored forever (with exceptions if for Illegal, Harmful, or Offensive Content) with
+        cryptographic hash {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}.
+    </p>
+    <p>
+        The thumbnail below is a lower definition copy of the digital source which has been released under licence CC BY-NC-ND 4.0 and it will be stored
+        forever (with exceptions if for Illegal, Harmful, or Offensive Content) with cryptographic hash {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
+
+        The artwork's metadata (information such as : title, author etc.) has been released under licence CCO and it will be stored
+        forever (with exceptions if for Illegal, Harmful, or Offensive Content).
+    </p>
+    <p>
+        The digital source corresponds to exactly ONE original and unique NFT. Identical or very similar images correspond to that exact unique NFT.
+    </p>
+    <p>
+        Of the digital source were produced ONE original and unique cryptographic token constituting the Original NFT.
+        Each UNCOPIED token (non-tradable and inalienable) corresponds to a single NFT (tradable) : each element of one set is paired with exactly one element of the other set.
+    </p>
+    <p>
+
+    </p>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
+
+</div>
+{{ template "footer.tmpl" .}}
