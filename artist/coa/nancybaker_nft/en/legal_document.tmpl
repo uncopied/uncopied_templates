@@ -1,0 +1,600 @@
+{{ template "header.tmpl" .}}
+<div>
+<h2>
+    {{.Asset.CertificateLabel}}
+</h2>
+<h3>{{.Asset.Name}}</h3>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
+<h3>Certificate of Authenticity</h3>
+    <p>
+        This document certifies that {{ .Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art by {{ .Issuer.DisplayName }} and the participating artists' creative efforts.
+    </p>
+    <p>
+        The digital source of the piece “{{.Asset.Name}}" has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash <strong> QmQEX6HhE7oKWX4ktNmjrfrVHF95djgViRvs3a79LaMafv </strong>
+    </p>
+    <p>
+        The medium of the piece is: <strong> {{ .AssetProperties.ArtMedium }} </strong>.
+    </p>
+    <p>
+        A high definition digital image representing the work “{{.Asset.Name}}" has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}.
+    </p>
+    <p>
+        The thumbnail is a lower definition copy of the digital image representing the work “{{.Asset.Name}}". It has been released under licence Creative Commons License (CC BY-NC-ND) and it will be stored 'forever' with cryptographic hash {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
+
+        Metadata describing the work “{{.Asset.Name}}" has been released under licence Creative Commons License (CC0) and it will be stored 'forever'.
+    </p>
+    <p>
+        Of the digital object, were produced {{ .Asset.EditionTotal }} original and unique cryptographic UNCOPIED certificate tokens
+        and {{ .Asset.EditionTotal }} original and unique cryptographic {{ .Issuer.DisplayName }} issued NFTs constituting the limited digital edition.
+
+        Each UNCOPIED token (non-tradable and inalienable) corresponds to a single {{ .Issuer.DisplayName }} issued NFT (tradable) : each element of one set is paired with exactly one element of the other set.
+
+        The {{ .Asset.EditionTotal }} tokens are labeled as follow:
+    </p>
+    <ul>
+        <li>
+            <p>Collector edition</p>
+            <ul>
+                <li>"{{.Asset.Name}}," 1/1</li>
+            </ul>
+        </li>
+        <li>
+        <p>Artist proof edition (AP)</p>
+            <ul>
+                <li>"{{.Asset.Name}}," 1/2 AP</li>
+                <li>"{{.Asset.Name}}," 2/2 AP</li>
+            </ul>
+        </li>
+    </ul>
+    <p style="page-break-before: always">
+
+    </p>
+    <p>
+        <br/>
+    </p>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin-left: 1in; margin-right: 1in; margin-top: 0.5in; margin-bottom: 0.5in }
+		p { margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		a:link { color: #0563c1; text-decoration: underline }
+	</style>
+
+<div title="header"><p align="center" style="margin-bottom: 0in; line-height: 100%">
+	<br/>
+
+	</p>
+	<p style="margin-bottom: 0.46in; border: none; padding: 0in; line-height: 100%">
+	<br/>
+
+	</p>
+</div><p align="center" style="margin-bottom: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 16pt"><i><u><b>BLUEPRINT
+FOR</b></u></i></font></font></font></p>
+<p align="center" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 16pt"><i><u><b>MUSHROOM
+CLOUD LA (Proximities)</b></u></i></font></font></font></p>
+<p align="center" style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="center" style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><u><b>The
+Plan</b></u></font></font></font></p>
+<p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif">This
+Blueprint is an articulation of the intentions for </font></font><font color="#000000"><font face="Architects Daughter, serif"><i>Mushroom
+Cloud</i></font></font><font color="#000000"><font face="Architects Daughter, serif">
+</font></font><font color="#000000"><font face="Architects Daughter, serif"><i>LA
+(Proximities)</i></font></font><font color="#000000"><font face="Architects Daughter, serif">
+project (the “Project”), within an NFT environment that is
+evolving toward a Web 3.0 future.&nbsp; Just as a blueprint for a
+building provides details for construction, this Blueprint is
+intended to embody the vision of Nancy Baker Cahill (the “Artist”)
+and her collaborators.&nbsp;</font></font><font color="#000000"><font face="Architects Daughter, serif"><i>This
+Project in its entirety </i></font></font><font color="#000000"><font face="Architects Daughter, serif">is
+a reminder that we are not only accountable for the results of our
+actions, but that there is still a way by which we can consciously
+pull together and formulate a structure that supports life rather
+than continuing down a path to mutually-assured destruction.&nbsp;
+This Blueprint and the interactivity that it contemplates, coincides
+with the conversations and innovation happening around efforts to
+connect various blockchains in a truly interoperable ecosystem.  Both
+this Project and the evolution of blockchain interoperability, in
+their own ways, reinforce the need for each of us to make use of our
+own networks and connections to be conduits and champions for
+positive and productive change.  </font></font>
+</p>
+<p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font color="#000000"><font face="Architects Daughter, serif">However,
+building a meaningful network requires more than just intentions: it
+also requires action!  Recognizing the value of the artistic process
+beyond the initial creation of the work and the primary transaction
+is crucial to establishing legacy and an enduring vision. The owner
+of the </font></font><font color="#000000"><font face="Architects Daughter, serif"><i>Slipstream:</i></font></font><font color="#000000"><font face="Architects Daughter, serif">
+</font></font><font color="#000000"><font face="Architects Daughter, serif"><i>Mushroom
+Cloud</i></font></font><font color="#000000"><font face="Architects Daughter, serif">
+</font></font><font color="#000000"><font face="Architects Daughter, serif"><i>LA
+(Proximities)</i></font></font><font color="#000000"><font face="Architects Daughter, serif">
+NFT (the “NFT”) is encouraged to actively engage with this
+Project as an innovator in an ongoing mutually-creative process, and
+to share the experience by circulating the NFT to as many others as
+possible.&nbsp; With resale royalties allocated between the Artist
+and Wampum Codes, the Land Back/Climate Justice initiative of artist
+and collaborator Amelia Winger-Bearskin, every exchange provides an
+opportunity for the Project’s vision to be recognized anew.  The
+secondary transactions allow multiple Collectors to engage with the
+Artist, feel the sense of ownership of the artwork embedded in the
+NFT, and intentionally participate in advocating for environmentally
+sound practices.</font></font></p>
+<p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<font color="#000000">&nbsp;</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="center" style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%; page-break-before: always">
+<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><u><b>The
+Details</b></u></font></font></font></p>
+<p style="margin-left: 0.5in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol>
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Acquiring
+	the Work</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif">.
+	 As soon as possible, but in any event within a reasonable time
+	after purchasing the NFT, Collector will receive a token
+	representing ownership of the </font></font><font color="#000000"><font face="Architects Daughter, serif"><i>Slipstream:</i></font></font><font color="#000000"><font face="Architects Daughter, serif">
+	</font></font><font color="#000000"><font face="Architects Daughter, serif"><i>Mushroom
+	Cloud</i></font></font><font color="#000000"><font face="Architects Daughter, serif">
+	</font></font><font color="#000000"><font face="Architects Daughter, serif"><i>LA
+	(Proximities)</i></font></font><font color="#000000"><font face="Architects Daughter, serif">
+	video (the “Video”).  Additionally, the primary Collector will
+	receive a set of five (5) physical objects as further set forth in
+	Section 3 below, and a printed copy of this Blueprint to accompany
+	each of the five (5) objects.  Together, all of these components
+	comprise the Project in its entirety and may be referred to as the
+	“Artwork.”  </font></font>
+	</p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="2">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>The
+	NFT</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif"><b>.
+	 </b></font></font><font color="#000000"><font face="Architects Daughter, serif">The
+	NFT is minted on the Algorand blockchain.  (Although Algorand assets
+	are correctly identified as Algorand Standard Assets (“ASA”),
+	for purposes of being clear in the current marketplace, the unique
+	assets associated with the Project are referred to as NFTs.) The
+	unique NFT is comprised of a metadata file registered on the
+	Algorand Blockchain, with links on the InterPlanetary File System
+	(IPFS) to the Video, and this Blueprint.  </font></font>
+	</p>
+</ol>
+<p style="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif">Upon
+the minting of the NFT, there will also be a chirographic record
+generated.  The chirographic record will be cut into five separate
+pieces.  Two pieces will be sent to Collector upon purchase of the
+NFT, and should be maintained in a safe place where they are unlikely
+to be lost or destroyed; the third piece will be retained by the
+Artist; the fourth piece will be maintained in Uncopied’s files;
+and the fifth piece will be deposited into Uncopied’s U.S. archives
+held at the Art Resource offices in New York.  As a backup measure,
+Artist authorizes and suggests that Collector, upon purchase, should
+download the digital files associated this NFT and store the digital
+files in a secure location. If any or all the links between the NFT
+and the associated digital files are broken or not properly
+functioning, Collector still will have and can enjoy the digital
+files.  In any event, the NFT will remain available on the blockchain
+and can be accessed at any time using the QR and bar codes on any one
+of the chirographic pieces.  It is imperative that Collector retain
+the chirographic document, the digital files, and all information
+pertaining to the NFT for provenance, proper recordkeeping, and any
+required remediation.  In the event the link(s) between the NFT and
+one or more of the digital files is/are broken or not properly
+functioning, Collector may contact Uncopied at
+</font></font><font color="#000000"><font face="Architects Daughter, serif"><u>elian.carsenat@uncopied.art</u></font></font><font color="#000000"><font face="Architects Daughter, serif">
+and Uncopied will use reasonable efforts to remedy the situation in a
+fair and practicable manner.  Otherwise, Artist may elect to
+terminate this Agreement pursuant to the terms of Section ___ below. </font></font>
+</p>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="3">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>The
+	Physical Objects</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif"><b>.
+	 </b></font></font><font color="#000000"><font face="Architects Daughter, serif">The
+	original purchase of the unique NFT is accompanied by physical
+	objects consisting of five (5) cubes or ‘nodes’.  Each node
+	consists of a firey orange base, referencing the increasingly
+	intense fire danger prominent in the Southern California location of
+	the Project.  At the center of each cube, a single, pearlescent
+	‘spore’ is suspended, representing the collector’s role in
+	supporting and ‘germinating’ a personal mycelium structure and
+	making a meaningful contribution to an interactive community. The
+	five (5) nodes are all 2x2 inches in size. As a physical
+	manifestation of this Blueprint, Collector is invited to ‘gift’
+	four (4) of the nodes to people in their community whom Collector
+	wishes to include in this special network.  This exercise is
+	intended to stimulate a generative force and create an enduring
+	network of connections beyond the Collector. </font></font>
+	</p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif">The
+physical artworks may be retained by the original Collector and any
+recipients regardless of whether the NFT is resold.  The physical
+artwork(s) possessed by the Collector may be resold with or without
+the NFT at the Collector’s discretion.  At the time of the initial
+sale of the NFT, the physical works will accompany this sale as a
+gift with purchase to be valued at their replacement value for
+purposes of taxes, customs, or duties calculations.  The value of the
+physical works for resale purposes will be based on what the market
+determines the value to be.</font></font></p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif">For
+each of the physical artworks there will also be a chirographic
+record generated.  For each artwork, the chirographic record will be
+cut into five separate pieces.  Two pieces will be sent to Collector
+upon purchase of the NFT—one affixed to the packaging for the
+artwork, the other in an envelope with a copy of this Blueprint. Both
+should be maintained in a safe place where they are unlikely to be
+lost or destroyed.  The third piece will be retained by the Artist.
+The fourth piece will be maintained in Uncopied’s files.  The fifth
+piece will be deposited into Uncopied’s U.S. archives held at the
+Art Resource offices in New York.  </font></font>
+</p>
+<p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="4">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Right
+	to Copy the NFT.  </b></font></font></font><font color="#000000"><font face="Architects Daughter, serif">Collector
+	may copy the video associated with the NFT for purposes of
+	recordkeeping and self-insurance in the event that any of the links
+	within the NFT degrade, </font></font><font color="#000000"><font face="Architects Daughter, serif">break,
+	or cease to properly function</font></font><font color="#000000"><font face="Architects Daughter, serif">.</font></font></p>
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Right
+	to Display the NFT</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif"><b>.
+	 </b></font></font><font color="#000000"><font face="Architects Daughter, serif">Collector
+	may display the NFT for personal use, or loan the NFT for public
+	display in an institutional setting.  Any public display of the
+	Video must be on a square monitor, preferably with no border, and
+	must be accompanied by the embedded sound.  The public display of
+	the Video should include this Blueprint.  The physical objects
+	should </font></font><font color="#000000"><font face="Architects Daughter, serif"><i>only
+	</i></font></font><font color="#000000"><font face="Architects Daughter, serif">be
+	displayed in conjunction with a display of the Video and this
+	Blueprint.</font></font></p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif">Any
+public display of the NFT must include credit to Nancy Baker Cahill
+including a copyright notice as follows:</font></font></p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p align="center" style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif"><i>Slipstream:
+Mushroom Cloud LA (Proximities)</i></font></font><font color="#000000"><font face="Architects Daughter, serif">
+by Nancy Baker Cahill</font></font></p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif">©2022
+Nancy Baker Cahill.  All Rights Reserved. </font></font>
+</p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif">Credit
+must also be given to important collaborators:</font></font></p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p align="center" style="margin-left: 0.25in; margin-bottom: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif"><b>Legal:</b></font></font><font color="#000000"><font face="Architects Daughter, serif">
+Sarah Conley Odenkirk</font></font></p>
+<p align="center" style="margin-left: 0.25in; margin-bottom: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif"><b>Sound
+Collaboration:</b></font></font><font color="#000000"><font face="Architects Daughter, serif">
+Amelia Winger-Bearskin </font></font>
+</p>
+<p align="center" style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif"><b>Production:</b></font></font><font color="#000000"><font face="Architects Daughter, serif">
+Jens Zalzala, Shaking Earth Digital</font></font></p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif">If the
+Blueprint is included as part of any display of the NFT, credit must
+be included to Sarah Conley Odenkirk as the author of the Blueprint
+text.</font></font></p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif">Artist
+retains a display copy of the NFT which she may loan out at her sole
+and exclusive discretion.  </font></font>
+</p>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="6">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Loaning
+	the AR</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt">
+	</font></font></font><font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Component</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif">.
+	 Similar to the traditional rules governing a loan of conceptual
+	artwork, the video and this Blueprint associated with the NFT may be
+	loaned for display as long as Artist or someone from Artist’s
+	studio is notified and oversees the installation or context of
+	display.  The loan must be made pursuant to a written agreement
+	clearly establishing the duration of the loan and with the clear
+	understanding that Collector must remain the owner of the NFT for
+	the duration of the loan.  If the NFT ownership is transferred
+	during the course of the loan, the loan agreement will be
+	automatically terminated, and the transferring Collector will be
+	solely responsible for any consequences of such termination.</font></font></p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="7">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Use
+	of Blueprint.</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif"><b>
+	 </b></font></font><font color="#000000"><font face="Architects Daughter, serif">This
+	Blueprint may be copied, redistributed, remixed,  transformed, and
+	built-upon for any purpose including commercial use, with credit
+	given to Sarah Conley Odenkirk for the original crafting of this
+	text along with a statement detailing any changes made.</font></font></p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="8">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Representations
+	and Warranties</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif"><b>.
+	 </b></font></font><font color="#000000"><font face="Architects Daughter, serif">Artist
+	represents and warrants that she is the creator of the Artwork
+	associated with the NFT, and to the best of her knowledge, nothing
+	in the Video, the physical objects, or the NFT violates any
+	intellectual property rights.</font></font><font color="#000000"><font face="Architects Daughter, serif"><b>
+	</b></font></font>
+	</p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="9">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Intellectual
+	Property Ownership</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif"><b>.
+	 </b></font></font><font color="#000000"><font face="Architects Daughter, serif">Except
+	as set forth above regarding the Blueprint, all intellectual
+	property pertaining to the NFT, the Video, and the accompanying
+	physical nodes, including but not limited to copyright, applicable
+	moral rights, and trademark, remains with the Artist. Except as
+	allowed by this Blueprint, under no circumstances is Collector
+	allowed to reproduce the NFT, the Video, or the physical artworks in
+	any medium or create derivative works without Artist’s specific
+	written consent.  Collector’s purchase of the NFT entitles the
+	Collector to ownership of that NFT, and the rights to display the
+	NFT as set forth in Section 4 above, and to resell the NFT pursuant
+	to the terms of this Blueprint. </font></font>
+	</p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<font color="#000000"><font face="Architects Daughter, serif">Artist
+specifically retains the right to create derivative works and future
+installations that use some or all of the components present in this
+Project.</font></font></p>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="10">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Ownership</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif"><b>.</b></font></font><font color="#000000"><font face="Architects Daughter, serif">
+	 There is sometimes the misperception that by owning an artwork, a
+	Collector owns all rights including intellectual property rights
+	like copyright.  This is not the case with physical artwork, and it
+	is also not the case with NFTs.  Even though a Collector does not
+	have any intellectual property rights in the artwork associated with
+	the NFT, there are definitely responsibilities that come with
+	ownership.  The responsibilities that come with either collecting
+	art or participating in society require attention and maintenance.
+	This transaction is no different, and thus, by purchasing this NFT,
+	Collector agrees to participate in this NFT ownership pursuant to
+	the terms of this Blueprint.</font></font></p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="11">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>NFT
+	Resale</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif"><b>.
+	 </b></font></font><font color="#000000"><font face="Architects Daughter, serif">Collector
+	is free to sell the NFT at any time as long as that sale occurs
+	completely on-chain, on Algorand or another blockchain compatible
+	with Algorand, and the established resale royalty is paid to Artist
+	and Artist’s collaborators.  </font></font>
+	</p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="12">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Term
+	and Termination of Agreement</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif">.
+	 While nothing is truly forever, Artist will use reasonable efforts
+	to ensure that this NFT remains functional and the digital files
+	attached are accessible for as long as reasonably practicable, which
+	will hopefully be close to “forever”.  In the event of
+	technological changes, migrations to new platforms or systems, or
+	any other technology evolution or shifts not compatible with the
+	structure and nature of the NFT; termination or destruction of the
+	currency or blockchain on which the NFT is minted; or the
+	inaccessibility or destruction of the link to the attached digital
+	files for the aforementioned or any other reasons, and neither
+	Uncopied nor the Artist can reasonably remedy the situation, this
+	Agreement will automatically terminate and neither Uncopied nor
+	Artist will have further obligations hereunder.  Artist may also
+	terminate this Agreement at any time for her sole convenience.  Upon
+	the termination of this Agreement for any reason, Owner may retain
+	ownership of any digital or physical assets in Owner’s possession,
+	and will continue to be bound by any and all intellectual property
+	rights and/or moral rights that exist with regard to the NFT, the
+	associated artwork, and any physical objects acquired at the time of
+	purchase. </font></font>
+	</p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="13">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Dispute
+	Resolution</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif"><b>.
+	 </b></font></font><font color="#000000"><font face="Architects Daughter, serif">In
+	the event any disputes arise out of this Agreement, the parties
+	agree to resolve such disputes only by mutual agreement or mediation
+	with a mutually-agreed-upon neutral third party.  The parties waive
+	any and all rights to bring disputes to arbitration or litigation in
+	any form or forum.  Each party will be responsible for its own
+	attorney fees and costs. </font></font>
+	</p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="14">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Disclaimer
+	of Liability</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif"><b>.
+	 </b></font></font><font color="#000000"><font face="Architects Daughter, serif">In
+	no event will Artist, or any developers, collaborators, employees,
+	agents, representatives, attorneys, or assigns, be liable or
+	responsible for any loss or damage of the NFT or associated digital
+	files due to any technological advancements, evolution of platforms
+	or digital environments, or failure in any part of the system that
+	results in link breakage, damage, or destruction of the NFT for any
+	reason, including but not limited to any negligent action or
+	inaction of the Artist or any developers, collaborators, employees,
+	agents, representatives, or assigns.  </font></font>
+	</p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="15">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Effect
+	of Future Regulations.</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif"><b>
+	 </b></font></font><font color="#000000"><font face="Architects Daughter, serif">In
+	the event that federal or state regulations are instituted in the
+	future requiring NFT owners to adhere to rules, laws, or policies;
+	take specific actions with regard to their NFT ownership; or provide
+	additional information to comply with any governmental regulations
+	including but not limited to IRS, SEC, or other international
+	transaction standards intended to combat money laundering (AML), and
+	fraud such as Know Your Client (KYC) regulations, Collector agrees
+	to abide by such rules, laws, policies, regulations, and/or
+	standards.  In no event will the Artist or any developers,
+	collaborators, employees, agents, representatives, or assigns be
+	responsible for any direct or indirect consequences of such future
+	rules, laws, policies, regulations, and/or standards.</font></font></p>
+</ol>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+<br/>
+
+</p>
+<ol start="16">
+	<li><p style="margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<font color="#000000"><font face="Architects Daughter, serif"><font size="4" style="font-size: 14pt"><b>Waiver
+	of Details</b></font></font></font><font color="#000000"><font face="Architects Daughter, serif"><b>.
+	</b></font></font><font color="#000000"><font face="Architects Daughter, serif">
+	In the event that Artist chooses not to exercise any part of the
+	Details set forth in this Blueprint, such choice will not be
+	interpreted as abandoning or waiving the importance of any of the
+	Details of the Blueprint in the future.</font></font></p>
+</ol>
+<p align="justify" style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-left: 0.25in; text-indent: -0.25in; margin-bottom: 0in; line-height: 100%">
+<br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<div title="footer"><p style="margin-top: 0.46in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%">
+	<br/>
+
+	</p>
+</div>
+
+</div>
+{{ template "footer.tmpl" .}}
