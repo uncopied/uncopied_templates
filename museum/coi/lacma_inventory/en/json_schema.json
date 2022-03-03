@@ -26,7 +26,8 @@
     },
     "artist_birth_date": {
       "description": "Artist Birth Date",
-      "type": "date"
+      "type": "string",
+      "format": "date"
     },
     "art_medium": {
       "description": "Art Medium",
@@ -42,7 +43,8 @@
     },
     "date_created": {
       "description": "Date Created",
-      "type": "date"
+      "type": "string",
+      "format": "date"
     },
     "digital_assets": {
       "description": "Digital Assets",
