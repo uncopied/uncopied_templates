@@ -25,7 +25,7 @@
       "type": "string"
     },
     "artist_birth_date": {
-      "description": "Medium",
+      "description": "Artist Birth Date",
       "type": "date"
     },
     "art_medium": {
