@@ -1,0 +1,96 @@
+{{ template "header.tmpl" .}}
+<div>
+<h1>
+    {{ .Asset.CertificateLabel }}
+</h1>
+<h2>Certificat d'authenticité pour une œuvre physique en édition limitée</h2>
+    <p>
+        Ce document certifie que {{ .Issuer.DisplayName }} déclare <strong>{{.Asset.Name}}</strong>
+        comme étant une œuvre physique en édition limitée, authentique et le résultat du processus de création de son auteur.
+    </p>
+        <div>
+            <table>
+            <thead>
+              <tr>
+                <th>Clé</th>
+                <th>Valeur</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Organisme émetteur (OE)</td>
+                <td>{{ .Issuer.DisplayName }}</td>
+              </tr>
+              <tr>
+                <td>Nom ou titre de l'œuvre</td>
+                <td>{{ .Asset.Name }}</td>
+              </tr>
+              <tr>
+                <td>Description</td>
+                <td>{{ .AssetProperties.Description }}</td>
+              </tr>
+              <tr>
+                <td>Dimensions</td>
+                <td>{{ .AssetProperties.Height }} mm x {{ .AssetProperties.Width }} mm</td>
+              </tr>
+              <tr>
+                <td>Matériaux ou Surface</td>
+                <td>{{ .AssetProperties.ArtworkSurface }}</td>
+              </tr>
+              <tr>
+                <td>Technique de production ou Médium</td>
+                <td>{{ .AssetProperties.ArtMedium }}</td>
+              </tr>
+              <tr>
+                <td>Nombre total d'exemplaires</td>
+                <td>{{ .Asset.EditionTotal }}</td>
+              </tr>
+            </tbody>
+            </table>
+        </div>
+    <p>
+        Une image en haute définition qui représente l'œuvre est distribuée sous la license <strong>Tous droits réservés</strong> et
+        elle sera disponible pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible)
+        avec la clé de hachage cryptographique {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}.
+    </p>
+    <p>
+        L'image ci-dessous est une représentation en basse définition marquée par stéganographie et distribuée sous licence Creative Commons CC-BY-ND-4
+        et elle sera disponible pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible)
+        avec la clé de hachage cryptographique {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
+    </p>
+    <p>
+
+    </p>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
+    <p>
+        Les méta-données de l'œuvre (les informations comme : titre, nom de l'auteur etc.) sont distribuées sous licence Public Domain CC0
+        et elles seront disponibles pour un stockage permanent (sauf exceptions pour le contenu illégal et répréhensible).
+    </p>
+    <p>
+        De cette image numérique ont été produits {{ .Asset.EditionTotal }} exemplaires originaux et uniques qui constituent l'édition physique limitée.
+        Les exemplaires sont numérotés de 1 à {{ .Asset.EditionTotal }} de {{ .Asset.EditionTotal }} originaux au total.
+        Ces exemplaires originaux sont les seuls à être étiquetés par un chirographe, physiquement marqué ou signé par l'artiste.
+        L'exemplaire numéroté {{ .Asset.EditionNumber }} / {{ .Asset.EditionTotal }} est un exemplaire original de l'édition limitée.
+
+		Les impressions physiques sont réalisées sur support {{.AssetProperties.ArtMedium}} avec la taille {{.AssetProperties.Height}} x {{.AssetProperties.Width}}.
+    </p>
+    <p>
+        Chaque label chirographique et jeton cryptographique correspondent exactement à UN object physique de l'édition limitée.
+    </p>
+    <p>
+        Ce certificat est valide pour une durée de 10 ans. La présence d'un chirographe -marqué, signé ou non par l'émetteur- a valeur de signature physique et de signature cryptographique.
+    </p>
+    <h3>Autres images</h3>
+        <p>
+            Si d'autres images en basse définition représentant l'objet “{{.Asset.Name}}" ont été publiées pour un stockage permanent sous licence <strong>Creative Commons License (CC BY-NC-ND)</strong>, elles sont référencées ci-après:
+        </p>
+        <section id="photos">
+ {{ if .DigitalAssets.PictureBack.ThumbnailIPFSHash }}
+            <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureBack.ThumbnailIPFSHash}}"/>
+ {{ end }}
+ {{ if .DigitalAssets.PictureFrontWithoutFrame.ThumbnailIPFSHash }}
+            <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PictureFrontWithoutFrame.ThumbnailIPFSHash}}"/>
+ {{ end }}
+        </section>
+</div>
+{{ template "footer.tmpl" .}}
