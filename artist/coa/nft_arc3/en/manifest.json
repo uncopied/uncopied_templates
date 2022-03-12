@@ -31,7 +31,10 @@
   "certificate_template": "legal_document.tmpl",
   "certificate_label_template": "certificate_label.txt",
   "assetLabel_template": "asset_label.txt",
-  "metadata_template": "metadata.json",
+  "metadata_templates": {
+    "uncopied": "uncopied.json",
+    "arc3": "arc3.json"
+  },
   "nft_metadata_template": "nft_metadata.json",
   "edition_min": 1,
   "edition_max": 1,

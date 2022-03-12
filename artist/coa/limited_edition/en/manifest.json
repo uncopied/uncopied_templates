@@ -40,7 +40,9 @@
   "certificate_template": "legal_document.tmpl",
   "certificate_label_template": "certificate_label.txt",
   "asset_label_template": "asset_label.txt",
-  "metadata_template": "metadata.json",
+  "metadata_templates": {
+    "uncopied": "uncopied.json"
+  },
   "edition_min": 2,
   "edition_max": 100,
   "license_terms_url": "someURL2",

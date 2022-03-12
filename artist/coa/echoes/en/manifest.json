@@ -28,8 +28,10 @@
   "certificate_template": "legal_document.tmpl",
   "certificate_label_template": "certificate_label.txt",
   "asset_label_template": "asset_label.txt",
-  "metadata_template": "metadata.json",
-  "nft_metadata_template": "nft_metadata.json",
+  "metadata_templates": {
+    "uncopied": "uncopied.json",
+    "arc3": "arc3.json"
+  },
   "edition_min": 13,
   "edition_max": 13,
   "license_terms_url": "https://epoch.gallery/terms-of-use/",
