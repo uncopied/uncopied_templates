@@ -59,7 +59,6 @@
     "uncopied": "uncopied.json",
     "arc3": "arc3.json"
   },
-  "nft_metadata_template": "nft_metadata.json",
   "edition_min": 3,
   "edition_max": 3,
   "license_terms_url": "https://nancybakercahill.com/",
