@@ -3,14 +3,14 @@
   "description": "{{ .Asset.CertificateLabel }} - {{ .AssetProperties.Description }}",
   "image": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
   "image_mimetype": "image/png",
-  "external_url": "{{ .Metadata.UncopiedAssetURL }}",
+  "external_url": "{{ .Metadata.Arc3.UncopiedAssetURL }}",
   "decimals": 0,
   "unitName":  "{{ .AssetProperties.UnitName }}",
   "properties": {
     "standard": "arc3",
     "source_image": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
     "document_url": "ipfs://{{ .Asset.IPFSHash }}",
-    "linked_data": "ipfs://{{ .Metadata.IPFSHash }}",
-    "provenance_proof_txn": "{{ .Metadata.AlgorandTransactionID }}"
+    "linked_data": "ipfs://{{ .Metadata.Arc3.IPFSHash }}",
+    "provenance_proof_txn": "{{ .Metadata.Arc3.AlgorandTransactionID }}"
   }
 }
