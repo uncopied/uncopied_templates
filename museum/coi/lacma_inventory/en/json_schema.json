@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoI for LACMA",
+  "description": "CoI for LACMA. English version",
+  "type": "object",
+  "properties": {
+    "unit_name": {
+      "description": "Unit Name (max 8 chars)",
+      "type": "string"
+    },
+    "inventory_id": {
+      "description": "Inventory Id",
+      "type": "string"
+    },
+    "description": {
+      "description": "Description",
+      "type": "string"
+    },
+    "artist_name": {
+      "description": "Artists Name",
+      "type": "string"
+    },
+    "artist_birth_place": {
+      "description": "Artist Birth Place",
+      "type": "string"
+    },
+    "artist_birth_date": {
+      "description": "Artist Birth Date",
+      "type": "string",
+      "format": "date"
+    },
+    "art_medium": {
+      "description": "Art Medium",
+      "type": "string"
+    },
+    "art_form": {
+      "description": "Art Form",
+      "type": "string"
+    },
+    "artwork_surface": {
+      "description": "Artwork Surface",
+      "type": "string"
+    },
+    "date_created": {
+      "description": "Date Created",
+      "type": "string",
+      "format": "date"
+    },
+    "digital_assets": {
+      "description": "Digital Assets",
+      "type": "object",
+      "properties": {
+        "primary_image": {
+          "description": "Primary Image",
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [
+        "primary_image"
+      ]
+    }
+  },
+  "required": [
+    "unit_name",
+    "inventory_id",
+    "digital_assets"
+  ]
+}
