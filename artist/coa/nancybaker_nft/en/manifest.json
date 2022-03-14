@@ -55,9 +55,10 @@
   "certificate_template": "blueprint.tmpl",
   "certificate_label_template": "certificate_label.txt",
   "asset_label_template": "asset_label.txt",
-  "metadata_template": "metadata.json",
-  "standard": ["algorand","arc3","arc69"],
-  "nft_metadata_template": "nft_metadata.json",
+  "metadata_templates": {
+    "uncopied": "uncopied.json",
+    "arc3": "arc3.json"
+  },
   "edition_min": 3,
   "edition_max": 3,
   "license_terms_url": "https://nancybakercahill.com/",
