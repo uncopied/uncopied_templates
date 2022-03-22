@@ -51,7 +51,7 @@
   },
   "certificate_template": "legal_document.tmpl",
   "certificate_label_template": "certificate_label.txt",
-  "assetLabel_template": "asset_label.txt",
+  "asset_label_template": "asset_label.txt",
   "metadata_templates": {
     "uncopied": "uncopied.json",
     "arc3": "arc3.json"
