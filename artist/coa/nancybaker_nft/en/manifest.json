@@ -52,7 +52,7 @@
       "ordering": 11
     }
   },
-  "certificate_template": "blueprint.tmpl",
+  "legal_document_template": "blueprint.tmpl",
   "certificate_label_template": "cert_label.txt",
   "asset_label_template": "asset_label.txt",
   "metadata_templates": {
