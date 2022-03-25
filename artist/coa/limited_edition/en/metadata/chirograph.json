@@ -1,0 +1,12 @@
+{
+  "@context": "https://uncopied.art",
+  "@type": "Chirograph",
+  "certificateLabel": "{{ .Asset.CertificateLabel }}",
+  "mailToContentLeft": "MailToContentLeft",
+  "mailToContentRight": "MailToContentRight",
+  "topHelper": "TopHelper",
+  "bottomHelper": "BottomHelper",
+  "leftHelper": "LeftHelper",
+  "rightHelper": "RightHelper",
+  "previewUrl": "https://uncopied.art/about/chirograph/"
+}

@@ -1,4 +1,4 @@
-{ 
+{
   "@context": "https://uncopied.art",
   "@type": "Chirograph",
   "certificateLabel":"{{ .Asset.CertificateLabel }}",
@@ -10,4 +10,3 @@
   "rightHelper":"Please, do not forget to send this RIGHT part by post. We will activate the digital certificate within 3 days of receiving the physical copy in our PO Box. The RIGHT part will be archived by a trusted third party indicated on the postal address.",
   "previewUrl":"https://uncopied.art/about/chirograph/"
 }
-
