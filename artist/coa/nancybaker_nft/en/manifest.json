@@ -57,7 +57,8 @@
   "asset_label_template": "asset_label.txt",
   "metadata_templates": {
     "uncopied": "uncopied.json",
-    "arc3": "arc3.json"
+    "arc3": "arc3.json",
+    "chirograph": "chirograph.json"
   },
   "edition_min": 3,
   "edition_max": 3,
