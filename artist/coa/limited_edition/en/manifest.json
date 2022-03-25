@@ -41,6 +41,7 @@
   "certificate_label_template": "cert_label.txt",
   "asset_label_template": "asset_label.txt",
   "metadata_templates": {
+    "chirograph": "chirograph.json"
     "uncopied": "uncopied.json"
   },
   "edition_min": 2,
