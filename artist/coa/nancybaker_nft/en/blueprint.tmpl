@@ -35,7 +35,7 @@
 <h2>
     {{.Asset.CertificateLabel}}
 </h2>
-<h3>{{.Asset.Name}}</h3>
+<h3>{{ .AssetProperties.Description }}</h3>
     <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
 <h3>Certificate of Authenticity</h3>
     <p>
