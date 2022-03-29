@@ -33,23 +33,17 @@
     "video_ipfs": {
       "ordering": 5
     },
-    "production": {
+    "sound_artist": {
       "ordering": 6
     },
-    "production_address": {
+    "sound_artist_address": {
       "ordering": 7
     },
-    "sound_artist": {
+    "nft_count": {
       "ordering": 8
     },
-    "sound_artist_address": {
-      "ordering": 9
-    },
-    "nft_count": {
-      "ordering": 10
-    },
     "date_created": {
-      "ordering": 11
+      "ordering": 9
     }
   },
   "legal_document_template": "blueprint.tmpl",
@@ -60,8 +54,8 @@
     "arc3": "arc3.json",
     "chirograph": "chirograph.json"
   },
-  "edition_min": 3,
-  "edition_max": 3,
+  "edition_min": 2,
+  "edition_max": 2,
   "license_terms_url": "https://nancybakercahill.com/",
   "privacy_terms_url": "https://nancybakercahill.com/",
   "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/artist/coa/nancybaker_nft/en/CDAS_logo_f.png"

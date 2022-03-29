@@ -24,14 +24,6 @@
       "description": "Video's IPFS hash",
       "type": "string"
     },
-    "production": {
-      "description": "Production",
-      "type": "string"
-    },
-    "production_address": {
-      "description": "Production Address",
-      "type": "string"
-    },
     "sound_artist": {
       "description": "Sound Artist",
       "type": "string"
@@ -70,8 +62,6 @@
     "unit_name",
     "video_name",
     "video_ipfs",
-    "production",
-    "production_address",
     "sound_artist",
     "sound_artist_address",
     "nft_count",
