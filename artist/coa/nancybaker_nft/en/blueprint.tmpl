@@ -55,6 +55,17 @@
 
         Metadata describing the work “{{.Asset.Name}}" has been released under licence Creative Commons License (CC0) and it will be stored 'forever'.
     </p>
+    <section id="photos">
+        {{ if .DigitalAssets.CubeImage.ThumbnailIPFSHash }}
+        <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.CubeImage.ThumbnailIPFSHash}}"/>
+        {{ end }}
+    </section>
+    <p>
+        A high definition digital image representing the physical object has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash {{ .DigitalAssets.CubeImage.SourceIPFSHash }}.
+    </p>
+    <p>
+        The thumbnail is a lower definition copy of the digital image representing the physical object. It has been released under licence Creative Commons License (CC BY-NC-ND) and it will be stored 'forever' with cryptographic hash {{ .DigitalAssets.CubeImage.ThumbnailIPFSHash }}.
+    </p>
     <p>
         Of the digital object, were produced {{ .Asset.EditionTotal }} original and unique cryptographic UNCOPIED certificate tokens
         and {{ .Asset.EditionTotal }} original and unique cryptographic {{ .Issuer.DisplayName }} issued NFTs constituting the limited digital edition.

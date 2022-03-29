@@ -49,10 +49,16 @@
           "description": "Primary Image",
           "type": "string",
           "format": "uuid"
+        },
+        "cube_image": {
+          "description": "Physical Object Image",
+          "type": "string",
+          "format": "uuid"
         }
       },
       "required": [
-        "primary_image"
+        "primary_image",
+        "cube_image"
       ]
     }
   },
