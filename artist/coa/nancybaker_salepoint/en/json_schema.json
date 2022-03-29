@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoA limited edition json schema fields description",
+  "description": "CoA limited edition json schema fields. English version",
+  "type": "object",
+  "properties": {
+    "asset": {
+      "description": "Asset",
+      "type": "string"
+    },
+    "seller": {
+      "description": "Seller",
+      "type": "string"
+    },
+    "price": {
+      "description": "Price",
+      "type": "string"
+    },
+    "contract_result": {
+      "description": "Contract Result",
+      "type": "string"
+    },
+    "digital_assets": {
+      "description": "Digital Assets",
+      "type": "object",
+      "properties": {
+        "primary_image": {
+          "description": "Primary Image",
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [
+        "primary_image"
+      ]
+    }
+  },
+  "required": [
+    "description",
+    "art_medium",
+    "unit_name",
+    "video_name",
+    "sound_artist",
+    "sound_artist_address",
+    "nft_count",
+    "date_created",
+    "digital_assets"
+  ]
+}
