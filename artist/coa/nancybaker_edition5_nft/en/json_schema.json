@@ -28,10 +28,6 @@
       "description": "Sound Artist Address",
       "type": "string"
     },
-    "nft_count": {
-      "description": "Number of NFTs (vs. APs)",
-      "type": "number"
-    },
     "date_created": {
       "description": "Date Created",
       "type": "string",
@@ -45,16 +41,10 @@
           "description": "Primary Image",
           "type": "string",
           "format": "uuid"
-        },
-        "cube_image": {
-          "description": "Physical Object Image",
-          "type": "string",
-          "format": "uuid"
         }
       },
       "required": [
-        "primary_image",
-        "cube_image"
+        "primary_image"
       ]
     }
   },
@@ -65,7 +55,6 @@
     "video_name",
     "sound_artist",
     "sound_artist_address",
-    "nft_count",
     "date_created",
     "digital_assets"
   ]

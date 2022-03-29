@@ -54,16 +54,6 @@
   "artEdition": "{{ .Asset.EditionTotal }}",
   "position": "{{ .Asset.EditionNumber }}",
   "artMedium": "{{ .AssetProperties.ArtMedium }}",
-  "hasPart": {
-    "@context": "https://schema.org",
-    "@type": "Sculpture",
-    "name": "The “Node”",
-    "dateCreated": "{{ .AssetProperties.DateCreated }}",
-    "datePublished": "{{ .AssetProperties.DateCreated }}",
-    "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.CubeImage.ThumbnailIPFSHash }}",
-    "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
-    "description": "The cube is a physical object consisting of one (1) cube or “Node”.  The Node consists of a fiery orange base, referencing the increasingly intense fire danger prominent in the Southern California location of the Project.  At the center of the Node, a single, pearlescent ‘spore’ is suspended, representing the Collector’s role in supporting and ‘germinating’ a personal mycelium structure and making a meaningful contribution to an interactive network."
-  },
   "associatedMedia":
   {
     "@context": "https://schema.org",
@@ -102,3 +92,4 @@
     "url": "https://github.com/uncopied/mushroom_cloud_nft"
   }
 }
+
