@@ -68,8 +68,7 @@
   {
     "@context": "https://schema.org",
     "@type": "DataDownload",
-    "contentSize": "54353329",
-    "contentUrl":"https://ipfs.io/ipfs/QmXZuHCMc8CH1K47UDBvArmjjDiCAtFYxVAA6wuDkJeXtz",
+    "contentUrl":"https://ipfs.io/ipfs/{{ .AssetProperties.VideoHash }}",
     "description": "{{ .AssetProperties.VideoName }}",
     "name": "{{ .AssetProperties.VideoName }}",
     "hasPart": [

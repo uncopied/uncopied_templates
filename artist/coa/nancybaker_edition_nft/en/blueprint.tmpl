@@ -78,11 +78,10 @@
         <li>
             <p>Collector edition</p>
             <ul>
-                <li>"{{.Asset.Name}}," 1/5</li>
-                <li>"{{.Asset.Name}}," 2/5</li>
-                <li>"{{.Asset.Name}}," 3/5</li>
-                <li>"{{.Asset.Name}}," 4/5</li>
-                <li>"{{.Asset.Name}}," 5/5</li>
+                <li>"{{.Asset.Name}}," 1/{{ .Asset.EditionTotal }}</li>
+                <li>"{{.Asset.Name}}," 2/{{ .Asset.EditionTotal }}</li>
+                <li>...</li>
+                <li>"{{.Asset.Name}}," {{ .Asset.EditionTotal }}/{{ .Asset.EditionTotal }}</li>
             </ul>
         </li>
     </ul>

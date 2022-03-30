@@ -1,9 +1,9 @@
 {
-  "id": "be3f2d42-f904-4136-adfc-f1e43b812bd4",
-  "name": "NANCY BAKER CAHILL 1CUBE NFT",
+  "id": "be3f2d42-f904-4136-adfc-f1e43b812bd7",
+  "name": "NANCY BAKER CAHILL Edition of x NFTs",
   "type": "CoA",
-  "description": "UNCOPIED/CDAS custom template for NANCY BAKER CAHILL 1CUBEE NFT. NB: this template is reserved for NANCY BAKER CAHILL.",
-  "author": "EPOCH",
+  "description": "UNCOPIED/CDAS custom template for NANCY BAKER CAHILL Edition of x NFT. NB: this template is reserved for NANCY BAKER CAHILL.",
+  "author": "CDAS",
   "version": "1.0",
   "manifest_version": 1,
   "source_types": [
@@ -30,17 +30,20 @@
     "video_name": {
       "ordering": 4
     },
-    "sound_artist": {
+    "video_hash": {
       "ordering": 5
     },
-    "sound_artist_address": {
+    "sound_artist": {
       "ordering": 6
     },
-    "nft_count": {
+    "sound_artist_address": {
       "ordering": 7
     },
-    "date_created": {
+    "nft_count": {
       "ordering": 8
+    },
+    "date_created": {
+      "ordering": 9
     }
   },
   "legal_document_template": "blueprint.tmpl",
@@ -51,9 +54,9 @@
     "arc3": "arc3.json",
     "chirograph": "chirograph.json"
   },
-  "edition_min": 2,
-  "edition_max": 2,
+  "edition_min": 1,
+  "edition_max": 20,
   "license_terms_url": "https://nancybakercahill.com/",
   "privacy_terms_url": "https://nancybakercahill.com/",
-  "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/artist/coa/nancybaker_nft/en/CDAS_logo_f.png"
+  "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/artist/coa/nancybaker_edition_nft/en/CDAS_logo_f.png"
 }

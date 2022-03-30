@@ -20,6 +20,10 @@
       "description": "Video Name",
       "type": "string"
     },
+    "video_hash": {
+      "description": "Video IPFS CID",
+      "type": "string"
+    },
     "sound_artist": {
       "description": "Sound Artist",
       "type": "string"
@@ -27,10 +31,6 @@
     "sound_artist_address": {
       "description": "Sound Artist Address",
       "type": "string"
-    },
-    "nft_count": {
-      "description": "Number of NFTs (vs. APs)",
-      "type": "number"
     },
     "date_created": {
       "description": "Date Created",
@@ -45,16 +45,10 @@
           "description": "Primary Image",
           "type": "string",
           "format": "uuid"
-        },
-        "cube_image": {
-          "description": "Physical Object Image",
-          "type": "string",
-          "format": "uuid"
         }
       },
       "required": [
-        "primary_image",
-        "cube_image"
+        "primary_image"
       ]
     }
   },
@@ -63,9 +57,9 @@
     "art_medium",
     "unit_name",
     "video_name",
+    "video_hash",
     "sound_artist",
     "sound_artist_address",
-    "nft_count",
     "date_created",
     "digital_assets"
   ]
