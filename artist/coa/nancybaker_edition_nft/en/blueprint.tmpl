@@ -1,0 +1,197 @@
+{{ template "header.tmpl" .}}
+<body>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Architects+Daughter" />
+<style type="text/css">
+        @media print {
+            tr.vendorListHeading {
+                background-color: #1f3763 !important;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+        @media print {
+            .vendorListHeading th {
+                color: white !important;
+            }
+        }
+		@page {
+            size: A4;
+            margin: 0;
+		    background-color: #1f3763
+		}
+		body {
+			background-color:#1f3763;
+			margin-top:100px;
+			margin-left:100px;
+			margin-right:100px;
+			font-family: "Architects Daughter";
+			color:white;
+		}
+		p {
+			margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent;
+		}
+		a:link { color: #0563c1; text-decoration: underline }
+</style>
+<div>
+<h2>
+    {{.Asset.CertificateLabel}}
+</h2>
+<h3>{{ .AssetProperties.Description }}</h3>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
+<h3>Certificate of Authenticity</h3>
+    <p>
+        This document certifies that {{ .Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art by {{ .Issuer.DisplayName }} and the participating artists' creative efforts.
+    </p>
+    <p>
+        The digital source of the piece “{{.Asset.Name}}" has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash <strong> QmQEX6HhE7oKWX4ktNmjrfrVHF95djgViRvs3a79LaMafv </strong>
+    </p>
+    <p>
+        The medium of the piece is: <strong> {{ .AssetProperties.ArtMedium }} </strong>.
+    </p>
+    <p>
+        A high definition digital image representing the work “{{.Asset.Name}}" has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}.
+    </p>
+    <p>
+        The thumbnail is a lower definition copy of the digital image representing the work “{{.Asset.Name}}". It has been released under licence Creative Commons License (CC BY-NC-ND) and it will be stored 'forever' with cryptographic hash {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
+
+        Metadata describing the work “{{.Asset.Name}}" has been released under licence Creative Commons License (CC0) and it will be stored 'forever'.
+    </p>
+    <section id="photos">
+        {{ if .DigitalAssets.CubeImage.ThumbnailIPFSHash }}
+        <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.CubeImage.ThumbnailIPFSHash}}"/>
+        {{ end }}
+    </section>
+    <p>
+        A high definition digital image representing the physical object has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash {{ .DigitalAssets.CubeImage.SourceIPFSHash }}.
+    </p>
+    <p>
+        The thumbnail is a lower definition copy of the digital image representing the physical object. It has been released under licence Creative Commons License (CC BY-NC-ND) and it will be stored 'forever' with cryptographic hash {{ .DigitalAssets.CubeImage.ThumbnailIPFSHash }}.
+    </p>
+    <p>
+        Of the digital object, were produced {{ .Asset.EditionTotal }} original and unique cryptographic UNCOPIED certificate tokens
+        and {{ .Asset.EditionTotal }} original and unique cryptographic {{ .Issuer.DisplayName }} issued NFTs constituting the limited digital edition.
+
+        Each UNCOPIED token (non-tradable and inalienable) corresponds to a single {{ .Issuer.DisplayName }} issued NFT (tradable) : each element of one set is paired with exactly one element of the other set.
+
+        The {{ .Asset.EditionTotal }} tokens are labeled as follow:
+    </p>
+    <ul>
+        <li>
+            <p>Collector edition</p>
+            <ul>
+                <li>"{{.Asset.Name}}," 1/{{ .Asset.EditionTotal }}</li>
+                <li>"{{.Asset.Name}}," 2/{{ .Asset.EditionTotal }}</li>
+                <li>...</li>
+                <li>"{{.Asset.Name}}," {{ .Asset.EditionTotal }}/{{ .Asset.EditionTotal }}</li>
+            </ul>
+        </li>
+    </ul>
+    <p style="page-break-before: always">
+
+    </p>
+    <p>
+        <br/>
+    </p>
+</div>
+<div class="blueprint">
+<h1>BLUEPRINT FOR</br>
+    AR MUSHROOM CLOUD LA (Proximities)</br>
+    Edition of 5
+</h1>
+
+<h2>The Plan</h2>
+<p>
+This Blueprint is an articulation of the intentions for Mushroom Cloud LA (Proximities) project (the “Project”), within an NFT environment that is evolving toward a Web 3.0 future.  Just as a blueprint for a building provides details for construction, this Blueprint is intended to embody the vision of Nancy Baker Cahill (the “Artist”) and her collaborators. This Project in its entirety is a reminder that we are not only accountable for the results of our actions, but that there is still a way by which we can consciously pull together and formulate a structure that supports life rather than continuing down a path to mutually-assured destruction.  This Blueprint and the interactivity that it contemplates, coincides with the conversations and innovation happening around efforts to connect various blockchains in a truly interoperable ecosystem.  Both this Project and the evolution of blockchain interoperability, in their own ways, reinforce the need for each of us to make use of our own networks and connections to be conduits and champions for positive and productive change.
+</p>
+<p>
+However, building a meaningful network requires more than just intentions: it also requires action!  Recognizing the value of the artistic process beyond the initial creation of the work and the primary transaction is crucial to establishing legacy and an enduring vision. Each owner (the “Collector”) of one of the five (5) AR Mushroom Cloud LA (Proximities) NFTs (the “NFT”) is encouraged to actively engage with this Project as an innovator in an ongoing mutually-creative process, and to share the experience by circulating the NFT to as many others as possible.  With resale royalties allocated between the Artist and Wampum Codes, the Land Back/Climate Justice initiative of artist and collaborator Amelia Winger-Bearskin, every exchange provides an opportunity for the Project’s vision to be recognized anew.  The secondary transactions allow multiple Collectors to engage with the Artist, feel the sense of ownership of the artwork associated with the NFT, and intentionally participate in advocating for environmentally sound practices.
+</p>
+
+<h2>The Details</h2>
+<p>
+1.	<strong>Acquiring the Work.</strong>  As soon as possible, but in any event within a reasonable time after purchasing the NFT, Collector will receive a token representing ownership of one (1) of the five (5) AR Slipstream: Mushroom Cloud LA (Proximities) videos (the “Video”), and a printed or printable copy of this Blueprint.  Together, the Video with the Blueprint embody the embedded accountability intended by the Project, and together these elements comprise the NFT and may be referred to as the “Artwork.”
+</p>
+<p>
+2.	<strong>The NFT.</strong> The NFT is minted on the Algorand blockchain.  (Although Algorand assets are correctly identified as Algorand Standard Assets (“ASA”), for purposes of being clear in the current marketplace, the unique assets associated with the Project are referred to as NFTs.) The unique NFT is comprised of a metadata file registered on the Algorand Blockchain, with links on the InterPlanetary File System (IPFS) to the Video, and this Blueprint.
+</p>
+<p>
+Upon the minting of the NFT, there will also be a chirographic record generated.  The chirographic record will be cut into five separate pieces.  Two pieces will be sent to Collector upon purchase of the NFT, and should be maintained in a safe place where they are unlikely to be lost or destroyed; the third piece will be retained by the Artist; the fourth piece will be maintained in Uncopied’s files; and the fifth piece will be deposited into Uncopied’s U.S. archives held at the Art Resource offices in New York.
+</p>
+<p>
+As a backup measure, Artist authorizes and suggests that Collector, upon purchase, download the digital files associated this NFT and store the digital files in a secure location. If any or all the links between the NFT and the associated digital files are broken or not properly functioning, Collector still will have and can enjoy the digital files.  In any event, the NFT will remain available on the blockchain and can be accessed at any time using the QR and bar codes on any one of the chirographic pieces.  It is imperative that Collector retain the chirographic document, the digital files, and all information pertaining to the NFT for provenance, proper recordkeeping, and any required remediation.  In the event the link(s) between the NFT and one or more of the digital files is/are broken or not properly functioning, Collector may contact Uncopied at elian.carsenat@uncopied.art and Uncopied will use reasonable efforts to remedy the situation in a fair and practicable manner.
+</p>
+<p>
+3.	<strong>Right to Copy the NFT.  </strong>  Collector may copy the Video associated with the NFT for purposes of recordkeeping and self-insurance in the event that any of the links within the NFT degrade, break, or cease to properly function.
+</p>
+<p>
+5.	<strong>Right to Display or Create Derivative Works.</strong>  Collector may display the Video for personal use, or loan the NFT (or a copy of the Video) for public display in an institutional setting pursuant to those details set out in Section 5 below.  Any public display of the Video must be on a square monitor, preferably with no border, and must be accompanied by the embedded sound.  The public display of the Video should include this Blueprint.  Images of the Video and the Blueprint may be included in two-dimensional formats for the purpose of creating educational materials, documenting, or marketing and promoting the exhibition.  Otherwise, any merchandise or commercial use of the NFT or Video in any format must be separately approved in writing by the Artist.
+</p>
+
+<p>
+Any public display, or authorized derivative work including the NFT (such as an exhibition catalog or promotional materials for the exhibition) must credit Nancy Baker Cahill and include a copyright notice as follows:
+</p>
+<p align="center"><strong>Slipstream: Mushroom Cloud LA (Proximities) by Nancy Baker Cahill<br/>
+    ©2022 Nancy Baker Cahill.  All Rights Reserved.
+</strong>
+</p>
+<p>
+Credit must also be given to important collaborators:
+</p>
+<p align="center"><strong>
+    Blueprint Drafted By: Sarah Conley Odenkirk<br/>
+    Sound Collaboration: Amelia Winger-Bearskin<br/>
+    Production: Jens Zalzala, Shaking Earth Digital
+</strong>
+<p>
+    If the Blueprint is included as part of any display of the NFT, credit must be included in the display to <strong>Sarah Conley Odenkirk</strong> as the author of the Blueprint text.
+</p>
+<p>
+    Artist retains a display copy of the NFT which she may loan out at her sole and exclusive discretion.
+</p>
+<p>
+5.	<strong>Loaning the NFT.  </strong>  Similar to the traditional rules governing a loan of conceptual artwork, the Video and this Blueprint associated with the NFT may be loaned for display as long as the Artist or someone from the Artist’s studio is notified and oversees the installation or context of display.  The loan must be made pursuant to a written agreement clearly establishing the duration of the loan and with the clear understanding that Collector must remain the owner of the NFT for the duration of the loan.  If the NFT ownership is transferred during the course of the loan, the loan agreement may be automatically terminated, and the transferring Collector will be solely responsible for any consequences of such termination.
+</p>
+<p>
+6.	<strong>Use of Blueprint.</strong>  This Blueprint may be copied, redistributed, remixed,  transformed, and built-upon for any purpose including commercial use, with credit given to Sarah Conley Odenkirk for the original crafting of this text along with a statement detailing any changes made.
+</p>
+<p>
+7.	<strong>Representations and Warranties.</strong>  The Artist represents and warrants that she is the creator of the Artwork associated with the NFT, and to the best of her knowledge, nothing in the Video or the NFT violates any third party’s intellectual property rights.
+</p>
+<p>
+8.	<strong>Intellectual Property Ownership.</strong> Except as set forth above regarding the content of the Blueprint, all intellectual property pertaining to the NFT and the Video, including but not limited to copyright, applicable moral rights, and trademark, remains with the Artist. Except as allowed by this Blueprint, under no circumstances is Collector allowed to reproduce the NFT or the Video in any medium or create derivative works without Artist’s specific written consent.
+</p>
+<p>
+    Collector’s purchase of the NFT entitles the Collector to ownership of the NFT, and the rights to display and/or loan the NFT as set forth in Sections 5 and 6 above, and to resell the NFT pursuant to the terms of this Blueprint.
+</p>
+<p>
+    Artist specifically retains the right to create derivative works and future installations that use some or all of the components present in this Project.
+</p>
+<p>
+9.	<strong>Ownership.</strong>  There is sometimes the misconception that by owning an artwork, a Collector owns all rights including intellectual property rights like copyright.  This is not the case with physical artwork, and it is also not the case with NFTs.  Even though a Collector does not have any intellectual property rights in the artwork associated with the NFT, there are definitely responsibilities that come with ownership.  The responsibilities that come with either collecting art or participating in society require attention and maintenance.  This transaction is no different, and thus, by purchasing this NFT, Collector agrees to participate in this NFT ownership pursuant to the terms of this Blueprint.
+</p>
+<p>
+10.	<strong>NFT Resale.</strong>  Collector is free to sell the NFT at any time as long as that sale occurs completely on-chain, on Algorand or another blockchain compatible with Algorand, and the established resale royalty is paid to Artist and Artist’s collaborators.
+</p>
+<p>
+11.	<strong>Term and Termination of Agreement.</strong>  While nothing is truly forever, Artist will use reasonable efforts to ensure that this NFT remains functional and the digital files attached are accessible for as long as reasonably practicable, which will hopefully be close to “forever”.  In the event of technological changes, migrations to new platforms or systems, or any other technology evolution or shifts not compatible with the structure and nature of the NFT; termination or destruction of the currency or blockchain on which the NFT is minted; or the inaccessibility or destruction of the link to the attached digital files for the aforementioned or any other reasons, if neither Uncopied nor the Artist or Artist’s estate can reasonably remedy the situation through reminting the NFT or implement another mutually-agreeable solution to maintain the Artwork associated with the NFT, this Agreement will automatically terminate and neither Uncopied nor Artist will have further obligations hereunder.  All intellectual property to any remaining component of the NFT and/or associated Artwork will remain with Artist or Artist’s estate.
+</p>
+<p>
+    Artist may also terminate this Agreement at any time for her sole convenience.
+</p>
+<p>
+    Upon the termination of this Agreement for any reason, Collector may retain ownership of any digital or physical material in Collector’s possession, and will continue to be bound by any and all intellectual property rights and/or moral rights that exist with regard to the NFT, the associated Artwork, and any physical material acquired at the time of purchase.
+</p>
+<p>
+12.	<strong>Dispute Resolution.</strong>  In the event any disputes arise out of this Agreement, the parties agree to resolve such disputes only by mutual agreement or mediation with a mutually-agreed-upon neutral third party.  The parties waive any and all rights to bring disputes to arbitration or litigation in any form or forum.  Each party will be responsible for its own attorney fees and costs.
+</p>
+<p>
+13.	<strong>Disclaimer of Liability.</strong>  In no event will Artist, or any developers, collaborators, employees, agents, representatives, attorneys, or assigns, be liable or responsible for any loss or damage of the NFT or associated digital files due to any reason including but not limited to technological advancements, evolution of platforms or digital environments, or failure in any part of the system that results in link breakage, damage, or destruction of the NFT for any reason, including but not limited to any negligent action or inaction of the Artist or any developers, collaborators, employees, agents, representatives, attorneys, or assigns.
+</p>
+<p>
+14.	<strong>Effect of Future Regulations.</strong>  In the event that future federal or state regulations require NFT owners to adhere to rules, laws, or policies; take specific actions with regard to their NFT ownership; or provide additional information to comply with any governmental regulations including but not limited to IRS, SEC, or other national or international transaction standards intended to combat money laundering (AML), and fraud such as Know Your Client (KYC) regulations, Collector agrees to abide by such rules, laws, policies, regulations, and/or standards.  In no event will the Artist or any developers, collaborators, employees, agents, representatives, attorneys, or assigns be responsible for any direct or indirect consequences of such future rules, laws, policies, regulations, and/or standards.
+</p>
+<p>
+15.	<strong>16.	Waiver of Details.</strong>  In the event that Artist chooses not to exercise any part of the Details set forth in this Blueprint, such choice will not be interpreted as abandoning or waiving the importance of any of the Details of the Blueprint in the future.
+</p>
+</div>
+</body>
+{{ template "footer.tmpl" .}}

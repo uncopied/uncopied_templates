@@ -4,8 +4,32 @@
   "description": "CoA limited edition json schema fields. English version",
   "type": "object",
   "properties": {
+    "description": {
+      "description": "Description",
+      "type": "string"
+    },
+    "art_medium": {
+      "description": "Art Medium",
+      "type": "string"
+    },
     "unit_name": {
-      "description": "Unit Name=EPOCH",
+      "description": "Unit Name (len=<8)",
+      "type": "string"
+    },
+    "video_name": {
+      "description": "Video Name",
+      "type": "string"
+    },
+    "video_hash": {
+      "description": "Video IPFS CID",
+      "type": "string"
+    },
+    "sound_artist": {
+      "description": "Sound Artist",
+      "type": "string"
+    },
+    "sound_artist_address": {
+      "description": "Sound Artist Address",
       "type": "string"
     },
     "date_created": {
@@ -29,7 +53,13 @@
     }
   },
   "required": [
+    "description",
+    "art_medium",
     "unit_name",
+    "video_name",
+    "video_hash",
+    "sound_artist",
+    "sound_artist_address",
     "date_created",
     "digital_assets"
   ]

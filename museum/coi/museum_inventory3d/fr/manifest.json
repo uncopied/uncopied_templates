@@ -64,10 +64,13 @@
       "ordering": 15
     }
   },
-  "certificate_template": "legal_document.tmpl",
-  "certificate_label_template": "certificate_label.txt",
+  "legal_document_template": "legal_document.tmpl",
+  "certificate_label_template": "cert_label.txt",
   "asset_label_template": "asset_label.txt",
-  "metadata_template": "metadata.json",
+  "metadata_templates": {
+    "uncopied": "uncopied.json",
+    "chirograph": "chirograph.json"
+  },
   "edition_min": 1,
   "edition_max": 1,
   "license_terms_url": "someURL",

@@ -1,0 +1,62 @@
+{
+  "id": "be3f2d42-f904-4136-adfc-f1e43b812bd4",
+  "name": "NANCY BAKER CAHILL 1CUBE NFT",
+  "type": "CoA",
+  "description": "UNCOPIED/CDAS custom template for NANCY BAKER CAHILL 1CUBEE NFT. NB: this template is reserved for NANCY BAKER CAHILL.",
+  "author": "CDAS",
+  "version": "1.0",
+  "manifest_version": 1,
+  "source_types": [
+    "png",
+    "jpg"
+  ],
+  "roles": [
+    "artist"
+  ],
+  "countries": [
+    "*"
+  ],
+  "language": "en",
+  "asset_properties": {
+    "description": {
+      "ordering": 1
+    },
+    "art_medium": {
+      "ordering": 2
+    },
+    "unit_name": {
+      "ordering": 3
+    },
+    "video_name": {
+      "ordering": 4
+    },
+    "video_hash": {
+      "ordering": 5
+    },
+    "sound_artist": {
+      "ordering": 6
+    },
+    "sound_artist_address": {
+      "ordering": 7
+    },
+    "nft_count": {
+      "ordering": 8
+    },
+    "date_created": {
+      "ordering": 9
+    }
+  },
+  "legal_document_template": "blueprint.tmpl",
+  "certificate_label_template": "cert_label.txt",
+  "asset_label_template": "asset_label.txt",
+  "metadata_templates": {
+    "uncopied": "uncopied.json",
+    "arc3": "arc3.json",
+    "chirograph": "chirograph.json"
+  },
+  "edition_min": 2,
+  "edition_max": 2,
+  "license_terms_url": "https://nancybakercahill.com/",
+  "privacy_terms_url": "https://nancybakercahill.com/",
+  "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/artist/coa/nancybaker_cube_nft/en/CDAS_logo_f.png"
+}

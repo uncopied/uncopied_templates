@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoA limited edition json schema fields description",
+  "description": "CoA limited edition json schema fields. English version",
+  "type": "object",
+  "properties": {
+    "description": {
+      "description": "Description",
+      "type": "string"
+    },
+    "art_medium": {
+      "description": "Art Medium",
+      "type": "string"
+    },
+    "unit_name": {
+      "description": "Unit Name (len=<8)",
+      "type": "string"
+    },
+    "video_name": {
+      "description": "Video Name",
+      "type": "string"
+    },
+    "video_hash": {
+      "description": "Video IPFS CID",
+      "type": "string"
+    },
+    "sound_artist": {
+      "description": "Sound Artist",
+      "type": "string"
+    },
+    "sound_artist_address": {
+      "description": "Sound Artist Address",
+      "type": "string"
+    },
+    "nft_count": {
+      "description": "Number of NFTs (vs. APs)",
+      "type": "number"
+    },
+    "date_created": {
+      "description": "Date Created",
+      "type": "string",
+      "format": "date"
+    },
+    "digital_assets": {
+      "description": "Digital Assets",
+      "type": "object",
+      "properties": {
+        "primary_image": {
+          "description": "Primary Image",
+          "type": "string",
+          "format": "uuid"
+        },
+        "cube_image": {
+          "description": "Physical Object Image",
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [
+        "primary_image",
+        "cube_image"
+      ]
+    }
+  },
+  "required": [
+    "description",
+    "art_medium",
+    "unit_name",
+    "video_name",
+    "video_hash",
+    "sound_artist",
+    "sound_artist_address",
+    "nft_count",
+    "date_created",
+    "digital_assets"
+  ]
+}

@@ -1,4 +1,5 @@
 {{ template "header.tmpl" .}}
+<body>
 <div>
 <h1>
     {{ .Asset.CertificateLabel }}
@@ -36,4 +37,5 @@
     <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
 
 </div>
+</body>
 {{ template "footer.tmpl" .}}
