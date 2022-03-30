@@ -1,0 +1,1 @@
+{{if (eq .Issuer.DisplayName "Nancy Baker Cahill")}}{{- else}}=TEST={{- end}}{{.Issuer.DisplayName}}, "{{.Asset.Name}}," {{.CurrentYear}}; edition {{ .Asset.EditionNumber }}/{{.Asset.EditionTotal}}

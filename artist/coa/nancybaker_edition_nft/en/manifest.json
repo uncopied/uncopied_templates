@@ -1,8 +1,8 @@
 {
   "id": "be3f2d42-f904-4136-adfc-f1e43b812bd7",
-  "name": "NANCY BAKER CAHILL Edition of x NFTs",
+  "name": "NANCY BAKER CAHILL Mushroom Cloud 5/5 NFTs",
   "type": "CoA",
-  "description": "UNCOPIED/CDAS custom template for NANCY BAKER CAHILL Edition of x NFT. NB: this template is reserved for NANCY BAKER CAHILL.",
+  "description": "UNCOPIED/CDAS custom template for NANCY BAKER CAHILL Mushroom Cloud 5/5 NFT. NB: this template is reserved for NANCY BAKER CAHILL.",
   "author": "CDAS",
   "version": "1.0",
   "manifest_version": 1,
@@ -54,8 +54,8 @@
     "arc3": "arc3.json",
     "chirograph": "chirograph.json"
   },
-  "edition_min": 1,
-  "edition_max": 20,
+  "edition_min": 5,
+  "edition_max": 5,
   "license_terms_url": "https://nancybakercahill.com/",
   "privacy_terms_url": "https://nancybakercahill.com/",
   "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/artist/coa/nancybaker_edition_nft/en/CDAS_logo_f.png"
