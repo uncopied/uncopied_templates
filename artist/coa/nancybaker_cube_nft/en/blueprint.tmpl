@@ -1,6 +1,7 @@
 {{ template "header.tmpl" .}}
 <body>
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Architects+Daughter" />
+<div class="bg-container"></div>
 <style type="text/css">
         @media print {
             tr.vendorListHeading {
@@ -26,6 +27,14 @@
 			font-family: "Architects Daughter";
 			color:white;
 		}
+	    .bg-container {
+                  position: fixed;
+                  height: 100%;
+                  width: 100%;
+                  z-index: 0;
+                  background-color:#1f3763;
+                  background-size: 100% 100%;
+                }
 		p {
 			margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent;
 		}
