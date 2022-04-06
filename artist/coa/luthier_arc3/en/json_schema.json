@@ -8,6 +8,10 @@
       "description": "Unit Name (max 8 chars)",
       "type": "string"
     },
+    "instrument_type": {
+      "description": "Instrument (violin, guitar, ...)",
+      "type": "string"
+    },
     "description": {
       "description": "Description",
       "type": "string"
@@ -39,6 +43,7 @@
   },
   "required": [
     "unit_name",
+    "instrument_type",
     "description",
     "date_created",
     "digital_assets"

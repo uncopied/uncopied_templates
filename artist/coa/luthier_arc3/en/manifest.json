@@ -1,8 +1,8 @@
 {
   "id": "50099735-fccf-47bd-ba5d-cc026da50111",
-  "name": "Unique original 2D visual artwork (Algorand NFT ARC3)",
+  "name": "Luthier made instrument (w/ NFT)",
   "type": "CoA",
-  "description": "Certificate of Authenticity by the artist for a unique original 2D visual artwork as an Algorand NFT.",
+  "description": "Certificate of Authenticity by the Luthier for a unique instrument attached to a NFT representing ownership.",
   "author": "UNCOPIED",
   "version": "1.0",
   "manifest_version": 1,
@@ -21,8 +21,14 @@
     "unit_name": {
       "ordering": 1
     },
-    "description": {
+    "instrument_type": {
       "ordering": 2
+    },
+    "description": {
+      "ordering": 3
+    },
+    "date_created": {
+      "ordering": 4
     }
   },
   "legal_document_template": "legal_document.tmpl",
