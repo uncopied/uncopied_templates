@@ -1,0 +1,45 @@
+{{ template "header.tmpl" .}}
+<body>
+<div>
+<h1>
+    {{ .Asset.CertificateLabel }}
+</h1>
+<h2>Certificate of Authenticity for an Original {{ .AssetProperties.InstrumentType }} </h2>
+    <p>
+        This document certifies that {{ .Issuer.DisplayName }} declares the {{ .AssetProperties.InstrumentType }} mentioned below, to be an authentic, original piece of the Luthiers's own shop.
+    </p>
+    <p>
+        The high definition digital picture of the {{ .AssetProperties.InstrumentType }} (or a high definition digital copy issued by the author) has been released by the author
+        under licence "All Rights Reserved" and it will be stored forever (with exceptions if for Illegal, Harmful, or Offensive Content) with
+        cryptographic hash {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}.
+        The image of the {{ .AssetProperties.InstrumentType }} is of sufficient quality to recognize the object's uniqueness.
+    </p>
+    <p>
+        The thumbnail below is a lower definition copy of the digital picture which has been released under licence CC BY-NC-ND 4.0 and it will be stored
+        forever (with exceptions if for Illegal, Harmful, or Offensive Content) with cryptographic hash {{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}.
+
+        The {{ .AssetProperties.InstrumentType }}'s metadata has been released under licence CCO and it will be stored
+        forever (with exceptions if for Illegal, Harmful, or Offensive Content).
+    </p>
+    <p>
+        The digital source corresponds to exactly ONE original and unique NFT. Identical or very similar images correspond to that exact unique NFT. The NFT is designed to represent and prove ownership of the physical object.
+        Transferring the NFT represents a transfer of ownership for the physical object. Initially the NFT is stored in the Luthier's own cryptographic wallet, OR the first buyer on the condition he/she purchases the {{ .AssetProperties.InstrumentType }} directly
+        and physically from the Luthier's workshop.
+    </p>
+    <p>
+        Of the digital source were produced ONE original and unique cryptographic token constituting the Original NFT.
+        Each UNCOPIED token (non-tradable and inalienable) corresponds to a single NFT (tradable) : each element of one set is paired with exactly one element of the other set.
+    </p>
+    <p>
+
+    </p>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
+
+    <section id="photos">
+ {{ if .DigitalAssets.SecondaryImage.ThumbnailIPFSHash }}
+        <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.SecondaryImage.ThumbnailIPFSHash}}"/>
+ {{ end }}
+    </section>
+</div>
+</body>
+{{ template "footer.tmpl" .}}
