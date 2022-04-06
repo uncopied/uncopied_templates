@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoA unique original json schema fields description",
+  "description": "CoA unique original json schema fields. English version",
+  "type": "object",
+  "properties": {
+    "unit_name": {
+      "description": "Unit Name (max 8 chars)",
+      "type": "string"
+    },
+    "description": {
+      "description": "Description",
+      "type": "string"
+    },
+    "date_created": {
+      "description": "Date Created",
+      "type": "string",
+      "format": "date"
+    },
+    "digital_assets": {
+      "description": "Digital Assets",
+      "type": "object",
+      "properties": {
+        "primary_image": {
+          "description": "Primary Image",
+          "type": "string",
+          "format": "uuid"
+        },
+        "secondary_image": {
+          "description": "Secondary Image",
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [
+        "primary_image"
+      ]
+    }
+  },
+  "required": [
+    "unit_name",
+    "description",
+    "date_created",
+    "digital_assets"
+  ]
+}
