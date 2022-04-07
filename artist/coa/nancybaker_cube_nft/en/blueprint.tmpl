@@ -30,6 +30,10 @@
           background-color: #1f3763;
           background-size: 100% 100%;
         }
+        .content {
+          position: relative;
+          z-index: 1;
+        }
 		html {
 		    width:100%;
 		    height:100%;
@@ -47,7 +51,7 @@
 		}
 		a:link { color: #0563c1; text-decoration: underline }
 </style>
-<div>
+<div class="content">
 <h2>
     {{.Asset.CertificateLabel}}
 </h2>
@@ -110,7 +114,6 @@
     <p>
         <br/>
     </p>
-</div>
 <div class="blueprint">
 <h1>BLUEPRINT FOR</br>
     SLIPSTREAM: MUSHROOM CLOUD LA (Proximities)</br>
@@ -219,6 +222,7 @@ Credit must also be given to important collaborators:
 <p>
 16.	<strong>16.	Waiver of Details.</strong>  In the event that Artist chooses not to exercise any part of the Details set forth in this Blueprint, such choice will not be interpreted as abandoning or waiving the importance of any of the Details of the Blueprint in the future.
 </p>
+</div>
 </div>
 </body>
 {{ template "footer.tmpl" .}}
