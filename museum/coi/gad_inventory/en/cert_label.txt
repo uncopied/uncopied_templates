@@ -1,0 +1,1 @@
+ALPASLAN ATAMAN ARCHIVE INVENTORY {{ .AssetProperties.InventoryId }}

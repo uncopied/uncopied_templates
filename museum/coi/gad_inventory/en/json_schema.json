@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoI for GAD Foundation",
+  "description": "CoI for GAD Foundation. English version",
+  "type": "object",
+  "properties": {
+    "unit_name": {
+      "description": "Unit Name (max 8 chars)",
+      "type": "string"
+    },
+    "inventory_id": {
+      "description": "Inventory Id",
+      "type": "string"
+    },
+    "description": {
+      "description": "Description",
+      "type": "string"
+    },
+    "height": {
+      "description": "Height (cm)",
+      "type": "string"
+    },
+    "width": {
+      "description": "Width (cm)",
+      "type": "string"
+    },
+    "artwork_surface": {
+      "description": "Artwork Surface (Paper Type)",
+      "type": "string"
+    },
+    "inventory_date": {
+      "description": "Inventory Date",
+      "type": "string",
+      "format": "date"
+    },
+    "digital_assets": {
+      "description": "Digital Assets",
+      "type": "object",
+      "properties": {
+        "primary_image": {
+          "description": "Primary Image",
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [
+        "primary_image"
+      ]
+    }
+  },
+  "required": [
+    "unit_name",
+    "inventory_id",
+    "description",
+    "width",
+    "height",
+    "digital_assets"
+  ]
+}

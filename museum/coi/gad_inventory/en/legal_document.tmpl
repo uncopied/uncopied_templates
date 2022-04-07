@@ -1,0 +1,36 @@
+{{ template "header.tmpl" .}}
+<body>
+<style type="text/css">
+        @media print {
+            tr.vendorListHeading {
+                -webkit-print-color-adjust: exact;
+            }
+        }
+        @media print {
+            .vendorListHeading th {
+                color: white !important;
+            }
+        }
+		@page {
+            size: A4;
+            margin: 0;
+            padding: 0;
+            width: 100%; /* for A4 page you can use width: 8.3in; */
+            height: 100%; /* for A4 page you can use height: 11.7in; */
+		}
+</style>
+<div>
+<h1>
+    {{ .Asset.CertificateLabel }}
+</h1>
+<h2>{{ .AssetProperties.Description }}</h2>
+<img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}">
+<table>
+<tr><td>INVENTORY NUMBER:</td><td>{{ .AssetProperties.InventoryId }}</td></tr>
+<tr><td>NAME (recto) (verso):</td><td>{{ .AssetProperties.Description }}</td></tr>
+<tr><td>DIMENSIONS:</td><td>{{ .AssetProperties.Width }}cm x {{ .AssetProperties.Height }}</td></tr>
+<tr><td>PAPER TYPE:</td><td></td>{{ .AssetProperties.ArtworkSurface }}</tr>
+</table>
+</div>
+</body>
+{{ template "footer.tmpl" .}}
