@@ -21,6 +21,10 @@
             width: 100%; /* for A4 page you can use width: 8.3in; */
             height: 100%; /* for A4 page you can use height: 11.7in; */
 		}
+		html {
+		    width:100%;
+		    height:100%;
+		}
 		body {
 			background-color:#1f3763;
 			margin-top:100px;
@@ -29,13 +33,6 @@
 			font-family: "Architects Daughter";
 			color:white;
 		}
-	    #footer {
-            align: right;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-        }
 		p {
 			margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent;
 		}
@@ -213,9 +210,6 @@ Credit must also be given to important collaborators:
 <p>
 16.	<strong>16.	Waiver of Details.</strong>  In the event that Artist chooses not to exercise any part of the Details set forth in this Blueprint, such choice will not be interpreted as abandoning or waiving the importance of any of the Details of the Blueprint in the future.
 </p>
-</div>
-<div id="footer">
-.
 </div>
 </body>
 {{ template "footer.tmpl" .}}
