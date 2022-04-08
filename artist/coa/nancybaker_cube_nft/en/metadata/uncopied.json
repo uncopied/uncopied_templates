@@ -64,6 +64,13 @@
     "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
     "description": "The cube is a physical object consisting of one (1) cube or “Node”.  The Node consists of a fiery orange base, referencing the increasingly intense fire danger prominent in the Southern California location of the Project.  At the center of the Node, a single, pearlescent ‘spore’ is suspended, representing the Collector’s role in supporting and ‘germinating’ a personal mycelium structure and making a meaningful contribution to an interactive network."
   },
+  "video": {
+    "@context": "https://schema.org/",
+    "@type": "VideoObject",
+    "name": "{{ .AssetProperties.VideoName }}",
+    "description": "{{ .AssetProperties.VideoName }}",
+    "contentUrl": "https://ipfs.io/ipfs/{{ .AssetProperties.VideoHash }}"
+  },
   "associatedMedia":
   {
     "@context": "https://schema.org",
