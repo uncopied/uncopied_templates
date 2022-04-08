@@ -45,15 +45,18 @@
     {
       "@type": "Person",
       "name": "Sarah Conley Odenkirk"
-    },
-    {
-      "@type": "Person",
-      "name": "Jens Zalzala, Shaking Earth Digital"
     }
   ],
   "artEdition": "{{ .Asset.EditionTotal }}",
   "position": "{{ .Asset.EditionNumber }}",
   "artMedium": "{{ .AssetProperties.ArtMedium }}",
+  "video": {
+    "@context": "https://schema.org/",
+    "@type": "VideoObject",
+    "name": "{{ .AssetProperties.VideoName }}",
+    "description": "{{ .AssetProperties.VideoName }}",
+    "contentUrl": "https://ipfs.io/ipfs/{{ .AssetProperties.VideoHash }}"
+  },
   "associatedMedia":
   {
     "@context": "https://schema.org",
