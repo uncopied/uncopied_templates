@@ -36,12 +36,6 @@
     "sound_artist": {
       "ordering": 6
     },
-    "sound_artist_address": {
-      "ordering": 7
-    },
-    "nft_count": {
-      "ordering": 8
-    },
     "date_created": {
       "ordering": 9
     }

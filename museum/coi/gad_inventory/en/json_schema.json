@@ -1,35 +1,35 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "CoA limited edition json schema fields description",
-  "description": "CoA limited edition json schema fields. English version",
+  "title": "CoI for GAD Foundation",
+  "description": "CoI for GAD Foundation. English version",
   "type": "object",
   "properties": {
+    "unit_name": {
+      "description": "Unit Name (max 8 chars)",
+      "type": "string"
+    },
+    "inventory_id": {
+      "description": "Inventory Id",
+      "type": "string"
+    },
     "description": {
       "description": "Description",
       "type": "string"
     },
-    "art_medium": {
-      "description": "Art Medium",
+    "height": {
+      "description": "Height (cm)",
       "type": "string"
     },
-    "unit_name": {
-      "description": "Unit Name (len=<8)",
+    "width": {
+      "description": "Width (cm)",
       "type": "string"
     },
-    "video_name": {
-      "description": "Video Name",
+    "artwork_surface": {
+      "description": "Artwork Surface (Paper Type)",
       "type": "string"
     },
-    "video_hash": {
-      "description": "Video IPFS CID",
-      "type": "string"
-    },
-    "sound_artist": {
-      "description": "Sound Artist",
-      "type": "string"
-    },
-    "date_created": {
-      "description": "Date Created",
+    "inventory_date": {
+      "description": "Inventory Date",
       "type": "string",
       "format": "date"
     },
@@ -49,13 +49,11 @@
     }
   },
   "required": [
-    "description",
-    "art_medium",
     "unit_name",
-    "video_name",
-    "video_hash",
-    "sound_artist",
-    "date_created",
+    "inventory_id",
+    "description",
+    "width",
+    "height",
     "digital_assets"
   ]
 }
