@@ -64,7 +64,7 @@
         This document certifies that {{ .Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art by {{ .Issuer.DisplayName }} and the participating artists' creative efforts.
     </p>
     <p>
-        The digital source of the piece “{{.Asset.Name}}" has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash <strong> QmQEX6HhE7oKWX4ktNmjrfrVHF95djgViRvs3a79LaMafv </strong>
+        The digital source of the piece “{{.Asset.Name}}" has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash <strong> {{ .AssetProperties.VideoHash }} </strong>
     </p>
     <p>
         The medium of the piece is: <strong> {{ .AssetProperties.ArtMedium }} </strong>.
@@ -173,7 +173,7 @@ Credit must also be given to important collaborators:
 </p>
 <p align="center"><strong>
     Blueprint Drafted By: Sarah Conley Odenkirk<br/>
-    Sound Collaboration: Amelia Winger-Bearskin<br/>
+    Sound Collaboration: {{ .AssetProperties.SoundArtist }}<br/>
     Production: Jens Zalzala, Shaking Earth Digital
 </strong>
 <p>

@@ -28,10 +28,6 @@
       "description": "Sound Artist",
       "type": "string"
     },
-    "sound_artist_address": {
-      "description": "Sound Artist Address",
-      "type": "string"
-    },
     "date_created": {
       "description": "Date Created",
       "type": "string",
@@ -59,7 +55,6 @@
     "video_name",
     "video_hash",
     "sound_artist",
-    "sound_artist_address",
     "date_created",
     "digital_assets"
   ]
