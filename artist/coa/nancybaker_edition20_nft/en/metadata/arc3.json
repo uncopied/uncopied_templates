@@ -9,7 +9,6 @@
   "properties": {
     "standard": "arc3",
     "source_image": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
-    "source_image_mimetype": "image/jpeg",
     "document_url": "ipfs://{{ .Asset.IPFSHash }}",
     "linked_data": "ipfs://{{ .Metadata.Uncopied.IPFSHash }}",
     "provenance_proof_txn": "{{ .Metadata.Uncopied.AlgorandTransactionID }}"
