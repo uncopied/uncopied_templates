@@ -29,61 +29,17 @@
         "value":  "{{ .Issuer.Address }}"
       },
       "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
-    },
-    {
-      "@type": "Person",
-      "name": "{{ .AssetProperties.SoundArtist }}",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "AlgorandAddress",
-        "value":  "{{ .AssetProperties.SoundArtistAddress }}"
-      },
-      "sameAs": "https://algoexplorer.io/address/{{ .AssetProperties.SoundArtistAddress }}"
     }
   ],
   "contributor": [
     {
       "@type": "Person",
       "name": "Sarah Conley Odenkirk"
-    },
-    {
-      "@type": "Person",
-      "name": "Jens Zalzala, Shaking Earth Digital"
     }
   ],
   "artEdition": "{{ .Asset.EditionTotal }}",
   "position": "{{ .Asset.EditionNumber }}",
   "artMedium": "{{ .AssetProperties.ArtMedium }}",
-  "associatedMedia":
-  {
-    "@context": "https://schema.org",
-    "@type": "DataDownload",
-    "contentUrl":"https://ipfs.io/ipfs/{{ .AssetProperties.VideoHash }}",
-    "description": "{{ .AssetProperties.VideoName }}",
-    "name": "{{ .AssetProperties.VideoName }}",
-    "hasPart": [
-      {
-        "@context": "https://schema.org",
-        "@type": "VisualArtwork",
-        "artist": {
-          "@type": "Person",
-          "name": "{{.Issuer.DisplayName}}"
-        },
-        "name": "{{ .Asset.Name }} video",
-        "artMedium": "Video"
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "VisualArtwork",
-        "artist": {
-          "@type": "Person",
-          "name": "{{ .AssetProperties.SoundArtist }}"
-        },
-        "name": "{{ .Asset.Name }} audio",
-        "artMedium": "Audio"
-      }
-    ]
-  },
   "alternateName":"{{ .Asset.CertificateLabel }}",
   "offers": {
     "@type": "Offer",

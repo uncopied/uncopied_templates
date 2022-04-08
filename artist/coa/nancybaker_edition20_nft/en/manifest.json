@@ -27,23 +27,8 @@
     "unit_name": {
       "ordering": 3
     },
-    "video_name": {
-      "ordering": 4
-    },
-    "video_hash": {
-      "ordering": 5
-    },
-    "sound_artist": {
-      "ordering": 6
-    },
-    "sound_artist_address": {
-      "ordering": 7
-    },
-    "nft_count": {
-      "ordering": 8
-    },
     "date_created": {
-      "ordering": 9
+      "ordering": 4
     }
   },
   "legal_document_template": "blueprint.tmpl",

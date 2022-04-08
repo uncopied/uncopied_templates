@@ -1,5 +1,6 @@
 {{ template "header.tmpl" .}}
 <body>
+<div class="bg-container"></div>
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Architects+Daughter" />
 <style type="text/css">
         @media print {
@@ -16,7 +17,28 @@
 		@page {
             size: A4;
             margin: 0;
-		    background-color: #1f3763
+            padding: 0;
+		    background-color: #1f3763;
+            width: 100%; /* for A4 page you can use width: 8.3in; */
+            height: 100%; /* for A4 page you can use height: 11.7in; */
+		}
+		.bg-container {
+          position: fixed;
+          height: 100%;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          z-index: 0;
+          background-color: #1f3763;
+          background-size: 100% 100%;
+        }
+        .content {
+          position: relative;
+          z-index: 1;
+        }
+		html {
+		    width:100%;
+		    height:100%;
 		}
 		body {
 			background-color:#1f3763;
@@ -31,7 +53,7 @@
 		}
 		a:link { color: #0563c1; text-decoration: underline }
 </style>
-<div>
+<div class="content">
 <h2>
     {{.Asset.CertificateLabel}}
 </h2>
@@ -42,7 +64,7 @@
         This document certifies that {{ .Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art by {{ .Issuer.DisplayName }} and the participating artists' creative efforts.
     </p>
     <p>
-        The digital source of the piece “{{.Asset.Name}}" has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash <strong> QmQEX6HhE7oKWX4ktNmjrfrVHF95djgViRvs3a79LaMafv </strong>
+        The digital source of the piece “{{.Asset.Name}}" has been released by {{ .Issuer.DisplayName }} and it will be stored 'forever' with cryptographic hash <strong> {{ .DigitalAssets.PrimaryImage.SourceIPFSHash }} </strong>
     </p>
     <p>
         The medium of the piece is: <strong> {{ .AssetProperties.ArtMedium }} </strong>.
@@ -91,7 +113,6 @@
     <p>
         <br/>
     </p>
-</div>
 <div class="blueprint">
 <h1>BLUEPRINT FOR</br>
     MUSHROOM CLOUD LA DIPTYCH (Proximities)</br>
@@ -129,7 +150,7 @@ As a backup measure, Artist authorizes and suggests that Collector, upon purchas
 <p>
 Any public display, or authorized derivative work including the NFT (such as an exhibition catalog or promotional materials for the exhibition) must credit Nancy Baker Cahill and include a copyright notice as follows:
 </p>
-<p align="center"><strong>Slipstream: Mushroom Cloud LA (Proximities) by Nancy Baker Cahill<br/>
+<p align="center"><strong>Mushroom Cloud LA (Proximities) Diptych by Nancy Baker Cahill<br/>
     ©2022 Nancy Baker Cahill.  All Rights Reserved.
 </strong>
 </p>
@@ -137,9 +158,7 @@ Any public display, or authorized derivative work including the NFT (such as an 
 Credit must also be given to important collaborators:
 </p>
 <p align="center"><strong>
-    Blueprint Drafted By: Sarah Conley Odenkirk<br/>
-    Sound Collaboration: Amelia Winger-Bearskin<br/>
-    Production: Jens Zalzala, Shaking Earth Digital
+    Blueprint Drafted By: Sarah Conley Odenkirk
 </strong>
 <p>
     If the Blueprint is included as part of any display of the NFT, credit must be included in the display to <strong>Sarah Conley Odenkirk</strong> as the author of the Blueprint text.
@@ -192,6 +211,7 @@ Credit must also be given to important collaborators:
 <p>
 15.	<strong>16.	Waiver of Details.</strong>  In the event that Artist chooses not to exercise any part of the Details set forth in this Blueprint, such choice will not be interpreted as abandoning or waiving the importance of any of the Details of the Blueprint in the future.
 </p>
+</div>
 </div>
 </body>
 {{ template "footer.tmpl" .}}
