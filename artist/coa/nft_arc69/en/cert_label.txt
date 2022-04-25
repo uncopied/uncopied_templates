@@ -1,0 +1,1 @@
+{{.Asset.Name}} (ARC69 upgrade)

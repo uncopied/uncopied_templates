@@ -1,0 +1,15 @@
+{{ template "header.tmpl" .}}
+<body>
+<div>
+<h1>
+    {{ .Asset.CertificateLabel }}
+</h1>
+<h2>Certificate of Authenticity for an Algorand NFT (ARC69 upgrade) </h2>
+    <p>
+        This document certifies that {{ .Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art
+        of the author's own creative efforts.
+    </p>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
+</div>
+</body>
+{{ template "footer.tmpl" .}}

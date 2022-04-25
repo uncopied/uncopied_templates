@@ -1,0 +1,12 @@
+{
+  "standard": "arc69",
+  "description": "{{ .AssetProperties.Description }}",
+  "external_url": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "mime_type": "image/png",
+  "properties": {
+    "source_image": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
+    "document_url": "ipfs://{{ .Asset.IPFSHash }}",
+    "linked_data": "ipfs://{{ .Metadata.Uncopied.IPFSHash }}",
+    "provenance_proof_txn": "{{ .Metadata.Arc3.AlgorandTransactionID }}"
+  }
+}
