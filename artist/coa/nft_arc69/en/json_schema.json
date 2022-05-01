@@ -16,6 +16,10 @@
       "description": "NFT Asset ID",
       "type": "string"
     },
+    "original_certificate_url": {
+      "description": "Original certificate URL",
+      "type": "string"
+    },
     "digital_assets": {
       "description": "Digital Assets",
       "type": "object",
@@ -35,6 +39,7 @@
     "unit_name",
     "description",
     "asset_id",
+    "original_certificate_url",
     "digital_assets"
   ]
 }
