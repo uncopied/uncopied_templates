@@ -8,7 +8,7 @@
     "certificate_url": "{{ .Metadata.Uncopied.UncopiedAssetURL }}",
     "document_url": "ipfs://{{ .Asset.IPFSHash }}",
     "linked_data": "ipfs://{{ .Metadata.Uncopied.IPFSHash }}",
-    "provenance_proof_txn": "{{ .Metadata.Arc3.AlgorandTransactionID }}",
+    "provenance_proof_txn": "{{ .Metadata.Arc69.AlgorandTransactionID }}",
     "asset_id": "{{ .AssetProperties.AssetId }}",
     "original_certificate_url": "{{ .AssetProperties.OriginalCertificateUrl }}"
   }
