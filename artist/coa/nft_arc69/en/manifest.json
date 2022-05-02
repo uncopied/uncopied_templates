@@ -24,7 +24,7 @@
     "description": {
       "ordering": 2
     },
-    "medium": {
+    "original_certificate_url": {
       "ordering": 3
     }
   },

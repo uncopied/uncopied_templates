@@ -1,10 +1,11 @@
 {
   "standard": "arc69",
   "description": "{{ .AssetProperties.Description }}",
-  "external_url": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "external_url": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}#i",
   "mime_type": "image/png",
+  "media_url": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
   "properties": {
-    "source_image": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
+    "certificate_url": "{{ .Metadata.Uncopied.UncopiedAssetURL }}",
     "document_url": "ipfs://{{ .Asset.IPFSHash }}",
     "linked_data": "ipfs://{{ .Metadata.Uncopied.IPFSHash }}",
     "provenance_proof_txn": "{{ .Metadata.Arc3.AlgorandTransactionID }}",
