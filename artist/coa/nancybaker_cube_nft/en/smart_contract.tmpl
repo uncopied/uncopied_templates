@@ -5,7 +5,7 @@ put_on_sale = And(
     # fund escrow
     Gtxn[0].type_enum() == TxnType.Payment,
     Gtxn[0].amount() == Int(int(0.5 * 1e6)),
-    Gtxn[0].sender() == Addr('PIQVKPN4EAHMS74DK5CSCIZCJ6CM7OSIUZYQ5Y6MYFP26XZHBPRNJHAPDA'),
+    Gtxn[0].sender() == Addr({{ .Fields.ArtistMainAddress }}),
     Gtxn[0].close_remainder_to() == Global.zero_address(),
     # opt in escrow
     Gtxn[1].type_enum() == TxnType.AssetTransfer,
@@ -17,7 +17,7 @@ put_on_sale = And(
     # transfer asset to escrow
     Gtxn[2].type_enum() == TxnType.AssetTransfer,
     Gtxn[2].asset_amount() == Int(1),
-    Gtxn[2].sender() == Addr('PIQVKPN4EAHMS74DK5CSCIZCJ6CM7OSIUZYQ5Y6MYFP26XZHBPRNJHAPDA'),
+    Gtxn[2].sender() == Addr({{ .Fields.ArtistMainAddress }}),
     Gtxn[2].asset_receiver() == Gtxn[1].sender(),
     Gtxn[2].asset_close_to() == Global.zero_address(),
     Gtxn[2].xfer_asset() == Int(78961298),
@@ -28,7 +28,7 @@ buy_asset = And(
     # pay seller 90% of the sale
     Gtxn[0].type_enum() == TxnType.Payment,
     Gtxn[0].amount() == Int(90000000),
-    Gtxn[0].receiver() == Addr('PIQVKPN4EAHMS74DK5CSCIZCJ6CM7OSIUZYQ5Y6MYFP26XZHBPRNJHAPDA'),
+    Gtxn[0].receiver() == Addr({{ .Fields.ArtistMainAddress }}),
     Gtxn[0].close_remainder_to() == Global.zero_address(),
     # opt in buyer to nft
     Gtxn[1].type_enum() == TxnType.AssetTransfer,
@@ -46,13 +46,13 @@ buy_asset = And(
     # close escrow remainder to seller
     Gtxn[3].type_enum() == TxnType.Payment,
     Gtxn[3].amount() == Int(0),
-    Gtxn[3].receiver() == Addr('PIQVKPN4EAHMS74DK5CSCIZCJ6CM7OSIUZYQ5Y6MYFP26XZHBPRNJHAPDA'),
-    Gtxn[3].close_remainder_to() == Addr('PIQVKPN4EAHMS74DK5CSCIZCJ6CM7OSIUZYQ5Y6MYFP26XZHBPRNJHAPDA'),
+    Gtxn[3].receiver() == Addr({{ .Fields.ArtistMainAddress }}),
+    Gtxn[3].close_remainder_to() == Addr({{ .Fields.ArtistMainAddress }}),
     Gtxn[3].sender() == Gtxn[2].sender(),
     # pay collaborator 10% of the sale
     Gtxn[4].type_enum() == TxnType.Payment,
     Gtxn[4].amount() == Int(90000000),
-    Gtxn[4].receiver() == Addr('E6U45JTJJQKGIQXECBTUAEARHU7PKCSRVLR5Q4PWT2EDG5XSOVOMK77LUA'),
+    Gtxn[4].receiver() == Addr({{ .Fields.ArtistSound }}),
     Gtxn[4].close_remainder_to() == Global.zero_address(),
 )
 
@@ -64,19 +64,19 @@ cancel = And(
     Gtxn[0].sender() == Gtxn[0].asset_receiver(),
     Gtxn[0].asset_close_to() == Global.zero_address(),
     Gtxn[0].xfer_asset() == Int(78961298),
-    Gtxn[0].asset_receiver() == Addr('PIQVKPN4EAHMS74DK5CSCIZCJ6CM7OSIUZYQ5Y6MYFP26XZHBPRNJHAPDA'),
+    Gtxn[0].asset_receiver() == Addr({{ .Fields.ArtistMainAddress }}),
     # close asset to seller
     Gtxn[1].type_enum() == TxnType.AssetTransfer,
     Gtxn[1].asset_amount() == Int(1),
     Gtxn[1].xfer_asset() == Int(78961298),
-    Gtxn[1].asset_receiver() == Addr('PIQVKPN4EAHMS74DK5CSCIZCJ6CM7OSIUZYQ5Y6MYFP26XZHBPRNJHAPDA'),
-    Gtxn[1].asset_close_to() == Addr('PIQVKPN4EAHMS74DK5CSCIZCJ6CM7OSIUZYQ5Y6MYFP26XZHBPRNJHAPDA'),
+    Gtxn[1].asset_receiver() == Addr({{ .Fields.ArtistMainAddress }}),
+    Gtxn[1].asset_close_to() == Addr({{ .Fields.ArtistMainAddress }}),
     # close escrow remainder to seller
     Gtxn[2].type_enum() == TxnType.Payment,
     Gtxn[2].amount() == Int(0),
     Gtxn[2].sender() == Gtxn[1].sender(),
-    Gtxn[2].receiver() == Addr('PIQVKPN4EAHMS74DK5CSCIZCJ6CM7OSIUZYQ5Y6MYFP26XZHBPRNJHAPDA'),
-    Gtxn[2].close_remainder_to() == Addr('PIQVKPN4EAHMS74DK5CSCIZCJ6CM7OSIUZYQ5Y6MYFP26XZHBPRNJHAPDA'),
+    Gtxn[2].receiver() == Addr({{ .Fields.ArtistMainAddress }}),
+    Gtxn[2].close_remainder_to() == Addr({{ .Fields.ArtistMainAddress }}),
 )
 
 security = And(
