@@ -27,7 +27,7 @@ buy_asset = And(
     Global.group_size() == Int(4),
     # pay seller 90% of the sale
     Gtxn[0].type_enum() == TxnType.Payment,
-    Gtxn[0].amount() == Int({{ .Fields.Price }}),
+    Gtxn[0].amount() == Int({{ .Fields.Price }} * 1e6 * 0.9),
     Gtxn[0].receiver() == Addr('{{ .Fields.ArtistMainAddress }}'),
     Gtxn[0].close_remainder_to() == Global.zero_address(),
     # opt in buyer to nft
@@ -51,7 +51,7 @@ buy_asset = And(
     Gtxn[3].sender() == Gtxn[2].sender(),
     # pay collaborator 10% of the sale
     Gtxn[4].type_enum() == TxnType.Payment,
-    Gtxn[4].amount() == Int({{ .Fields.Price }}),
+    Gtxn[4].amount() == Int({{ .Fields.Price }} * 1e6 * 0.1),
     Gtxn[4].receiver() == Addr('{{ .Fields.ArtistSound }}'),
     Gtxn[4].close_remainder_to() == Global.zero_address(),
 )
