@@ -27,7 +27,7 @@ buy_asset = And(
     Global.group_size() == Int(4),
     # pay seller 90% of the sale
     Gtxn[0].type_enum() == TxnType.Payment,
-    Gtxn[0].amount() == Int(90000000),
+    Gtxn[0].amount() == Int({{ .Fields.Price }}),
     Gtxn[0].receiver() == Addr({{ .Fields.ArtistMainAddress }}),
     Gtxn[0].close_remainder_to() == Global.zero_address(),
     # opt in buyer to nft
@@ -36,13 +36,13 @@ buy_asset = And(
     Gtxn[1].sender() == Gtxn[0].sender(),
     Gtxn[1].sender() == Gtxn[1].asset_receiver(),
     Gtxn[1].asset_close_to() == Global.zero_address(),
-    Gtxn[1].xfer_asset() == Int(78961298),
+    Gtxn[1].xfer_asset() == Int({{ .Fields.AssetIndex }}),
     # transfer asset to buyer
     Gtxn[2].type_enum() == TxnType.AssetTransfer,
     Gtxn[2].asset_amount() == Int(1),
     Gtxn[2].asset_receiver() == Gtxn[1].sender(),
     Gtxn[2].asset_close_to() == Gtxn[1].sender(),
-    Gtxn[2].xfer_asset() == Int(78961298),
+    Gtxn[2].xfer_asset() == Int({{ .Fields.AssetIndex }}),
     # close escrow remainder to seller
     Gtxn[3].type_enum() == TxnType.Payment,
     Gtxn[3].amount() == Int(0),
@@ -51,7 +51,7 @@ buy_asset = And(
     Gtxn[3].sender() == Gtxn[2].sender(),
     # pay collaborator 10% of the sale
     Gtxn[4].type_enum() == TxnType.Payment,
-    Gtxn[4].amount() == Int(90000000),
+    Gtxn[4].amount() == Int({{ .Fields.Price }}),
     Gtxn[4].receiver() == Addr({{ .Fields.ArtistSound }}),
     Gtxn[4].close_remainder_to() == Global.zero_address(),
 )
@@ -63,12 +63,12 @@ cancel = And(
     Gtxn[0].asset_amount() == Int(0),
     Gtxn[0].sender() == Gtxn[0].asset_receiver(),
     Gtxn[0].asset_close_to() == Global.zero_address(),
-    Gtxn[0].xfer_asset() == Int(78961298),
+    Gtxn[0].xfer_asset() == Int({{ .Fields.AssetIndex }}),
     Gtxn[0].asset_receiver() == Addr({{ .Fields.ArtistMainAddress }}),
     # close asset to seller
     Gtxn[1].type_enum() == TxnType.AssetTransfer,
     Gtxn[1].asset_amount() == Int(1),
-    Gtxn[1].xfer_asset() == Int(78961298),
+    Gtxn[1].xfer_asset() == Int({{ .Fields.AssetIndex }}),
     Gtxn[1].asset_receiver() == Addr({{ .Fields.ArtistMainAddress }}),
     Gtxn[1].asset_close_to() == Addr({{ .Fields.ArtistMainAddress }}),
     # close escrow remainder to seller
