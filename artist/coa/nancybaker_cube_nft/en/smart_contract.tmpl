@@ -80,7 +80,7 @@ cancel = And(
 )
 
 security = And(
-    Txn.fee() &lt;= Global.min_txn_fee(),
+    Txn.fee() &lt= Global.min_txn_fee(),
     Txn.lease() == Global.zero_address(),
     Txn.rekey_to() == Global.zero_address(),
     Int(salt) == Int(salt),
