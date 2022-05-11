@@ -54,7 +54,14 @@
     "arc3": "arc3.json",
     "chirograph": "chirograph.json"
   },
-  "smart_contract_template": "smart_contract.tmpl",
+  "smart_contract": {
+    "template": "smart_contract.tmpl",
+    "fields": {
+      "artist_main_address": "PIQVKPN4EAHMS74DK5CSCIZCJ6CM7OSIUZYQ5Y6MYFP26XZHBPRNJHAPDA",
+      "artist_sound": "E6U45JTJJQKGIQXECBTUAEARHU7PKCSRVLR5Q4PWT2EDG5XSOVOMK77LUA",
+      "price": 90000000
+    }
+  },
   "edition_min": 2,
   "edition_max": 2,
   "license_terms_url": "https://nancybakercahill.com/",
