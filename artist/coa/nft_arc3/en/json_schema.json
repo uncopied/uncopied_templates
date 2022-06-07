@@ -16,6 +16,10 @@
       "description": "Medium",
       "type": "string"
     },
+    "price": {
+      "description": "Price (in $Algo)",
+      "type": "string"
+    },
     "digital_assets": {
       "description": "Digital Assets",
       "type": "object",
@@ -35,6 +39,7 @@
     "unit_name",
     "description",
     "medium",
+    "price",
     "digital_assets"
   ]
 }

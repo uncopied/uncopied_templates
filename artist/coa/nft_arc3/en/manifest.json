@@ -26,6 +26,14 @@
     },
     "medium": {
       "ordering": 3
+    },
+    "price": {
+      "ordering": 4
+    }
+  },
+  "smart_contract": {
+    "template": "smart_contract.tmpl",
+    "fields": {
     }
   },
   "legal_document_template": "legal_document.tmpl",
