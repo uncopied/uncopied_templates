@@ -23,6 +23,9 @@
     },
     "date_created": {
       "ordering": 2
+    },
+    "nft_count": {
+      "ordering": 8
     }
   },
   "certificate_template": "legal_document.tmpl",

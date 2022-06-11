@@ -157,15 +157,15 @@
   ],
   "artEdition": "{{ .Asset.EditionTotal }}",
   "position": "{{ .Asset.EditionNumber }}",
-  "artMedium": "8K virtual exhibition featuring a compilation of artworks by participating artists (playable stand-alone Windows/Mac compatible file with hi-res audio, viewable on VR headsets)",
+  "artMedium": "{{ .AssetProperties.ArtMedium }}",
   "associatedMedia":
   {
     "@context": "https://schema.org",
     "@type": "DataDownload",
-    "contentSize": "4310734680",
-    "contentUrl":"https://ipfs.io/ipfs/QmQEX6HhE7oKWX4ktNmjrfrVHF95djgViRvs3a79LaMafv?filename=EPOCH_CRYOSPHERE_2022.zip",
+    "contentSize": "{{ .AssetProperties.MediaFileSize }}",
+    "contentUrl":"https://ipfs.io/ipfs/{{ .AssetProperties.MediaFileCid }}?filename={{ .AssetProperties.MediaFileName }}",
     "description": "CRYOSPHERE",
-    "name": "EPOCH_CRYOSPHERE_2022.zip",
+    "name": "{{ .AssetProperties.MediaFileName }}",
     "hasPart": [
       {
         "@context": "https://schema.org",
@@ -329,15 +329,15 @@
     "@context": "https://schema.org",
     "@type": "ExhibitionEvent",
     "url": "https://epoch.gallery/CRYOSPHERE/",
-    "name": "CRYOSPHERE",
-    "startDate": "2022-02-04",
-    "endDate": "2022-05-06",
+    "name": "{{ .Asset.Name }}",
+    "startDate": "{{ .AssetProperties.ExhibitionDateStart }}",
+    "endDate": "{{ .AssetProperties.ExhibitionDateEnd}}",
     "description": "CRYOSPHERE is an experimental collaboration between EPOCH and LACMA’s Art + Technology Lab featuring past and present Art + Technology Lab grant recipients and organized by artist and EPOCH creator Peter Wu+. The exhibition’s virtual landscape is modeled after the physical excavation area of LACMA’s east campus, where the forthcoming building for the permanent collection is slated to debut, as well as neighboring locales around Wilshire Boulevard in Los Angeles. The CRYOSPHERE NFT will be available on February 15th.\n\nCRYOSPHERE is generously funded by the Algorand Foundation."
   },
   "offers": {
     "@type": "Offer",
-    "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating artists and EPOCH. Differentiating this system from most traditional gallery systems, 70% of the sales proceeds will be split evenly amongst all the participating artists, 20% will be distributed to LACMA and 10% will remain with EPOCH. 20% royalties based on the gross sales price of each secondary market sale will be evenly distributed amongst all the artists, LACMA and EPOCH. Each participating artist and EPOCH will receive one NFT representing an Artist Proof (AP) edition. These AP editions are not part of the 5 publicly-offered editions for sale, but should they be sold by an artist, will carry the same secondary market terms as the 5 NFTs in the publicly-offered edition.",
-    "url": "https://github.com/uncopied/epoch_CRYOSPHERE_nft"
+    "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating artists and EPOCH.",
+    "url": "https://github.com/uncopied/epoch_cryosphere_nft"
   }
 }
 
