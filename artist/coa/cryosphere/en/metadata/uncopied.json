@@ -1,0 +1,343 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "{{ .Asset.Name }}",
+  "dateCreated": "{{ .AssetProperties.DateCreated }}",
+  "datePublished": "2022-02-15",
+  "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
+  "thumbnailUrl": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
+  "description": "{{ .Asset.CertificateLabel }} - CRYOSPHERE\n\nFebruary 4 – May 6, 2022\n\nAmerican Artist\nLukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve\nJacqueline Kiyomi Gork and Rhett LaRue\nLawrence Lek\nJen Liu\nRonald Rael and Virginia San Fratello\nSarah Rara\n\nCRYOSPHERE is an experimental collaboration between EPOCH and LACMA’s Art + Technology Lab featuring past and present Art + Technology Lab grant recipients and organized by artist and EPOCH creator Peter Wu+. The exhibition’s virtual landscape is modeled after the physical excavation area of LACMA’s east campus, where the forthcoming building for the permanent collection is slated to debut, as well as neighboring locales around Wilshire Boulevard in Los Angeles. The CRYOSPHERE NFT will be available on February 15th.\nCRYOSPHERE is generously funded by the Algorand Foundation.",
+  "copyrightHolder":[
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}",
+      "url": "https://epoch.gallery/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+      },
+      "sameAs": "https://algoexplorer.io/address/VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Organization",
+      "name": "LACMA",
+      "legalName": "Los Angeles County Museum of Art",
+      "url": "https://www.lacma.org/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "QQX5Y647GO7VLG33ZQWKEHO2OPXPVCEY7QNNE2AK2AVA4HYFFD4MJNFYFM"
+      },
+      "sameAs": "https://algoexplorer.io/address/QQX5Y647GO7VLG33ZQWKEHO2OPXPVCEY7QNNE2AK2AVA4HYFFD4MJNFYFM"
+    }
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}",
+      "url": "https://epoch.gallery/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+      },
+      "sameAs": "https://algoexplorer.io/address/VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+    },
+    {
+      "@type": "Person",
+      "name": "American Artist",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "JQ3QOVBYDKSMZA42HB3DCWJWS4L6KR7ZMFUG5IYECEAM4WE3PP74GG6ZNM"
+      },
+      "sameAs": "https://algoexplorer.io/address/JQ3QOVBYDKSMZA42HB3DCWJWS4L6KR7ZMFUG5IYECEAM4WE3PP74GG6ZNM"
+    },
+    {
+      "@type": "Project",
+      "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve",
+      "alternateName": "MUXX Project",
+      "member" : [
+        {
+          "@type": "Person",
+          "name": "Lukas Avendaño"
+        },
+        {
+          "@type": "Person",
+          "name": "Abraham Brody"
+        },        {
+          "@type": "Person",
+          "name": "Ana Lopez"
+        },        {
+          "@type": "Person",
+          "name": "Oswaldo Erreve"
+        }
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "HGIMASMUMZAI5SCNOYR65TIQM4JWLE736FERTFPCPUNZSQRXK42Q5VMNMQ"
+      },
+      "sameAs": "https://algoexplorer.io/address/HGIMASMUMZAI5SCNOYR65TIQM4JWLE736FERTFPCPUNZSQRXK42Q5VMNMQ"
+    },
+    {
+      "@type": "Project",
+      "name": "Jacqueline Kiyomi Gork and Rhett LaRue",
+      "member" : [
+        {
+          "@type": "Person",
+          "name": "Jacqueline Kiyomi Gork"
+        },
+        {
+          "@type": "Person",
+          "name": "Rhett LaRue"
+        }
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "5EP6AOHJBRLL7G2W74Q6NNOZOUCDT6F35ZRXSNTU4UHTHWDZVTDOAYTFAE"
+      },
+      "sameAs": "https://algoexplorer.io/address/5EP6AOHJBRLL7G2W74Q6NNOZOUCDT6F35ZRXSNTU4UHTHWDZVTDOAYTFAE"
+    },
+    {
+      "@type": "Person",
+      "name": "Lawrence Lek",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "JUDGEZENUFSP3UGRQLGN7Q5QE4V3YIYQNZ76SI7Z7IXMKBYMK2JAJE4PWU"
+      },
+      "sameAs": "https://algoexplorer.io/address/JUDGEZENUFSP3UGRQLGN7Q5QE4V3YIYQNZ76SI7Z7IXMKBYMK2JAJE4PWU"
+    },
+    {
+      "@type": "Person",
+      "name": "Jen Liu",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "DHTJB4G5KZI3H3AUBFMREUPPLQJMLG65NOREYDLUYUPVKTKJPQM5WF2WNA"
+      },
+      "sameAs": "https://algoexplorer.io/address/DHTJB4G5KZI3H3AUBFMREUPPLQJMLG65NOREYDLUYUPVKTKJPQM5WF2WNA"
+    },
+    {
+      "@type": "Project",
+      "name": "Ronald Rael and Virginia San Fratello",
+      "member" : [
+        {
+          "@type": "Person",
+          "name": "Ronald Rael"
+        },
+        {
+          "@type": "Person",
+          "name": "Virginia San Fratello"
+        }
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "3BHZPTXX6Q3GRS7URKAXSO7BT36HI2NLV4SLSUDTSFKMIH56NPZKK7HKUU"
+      },
+      "sameAs": "https://algoexplorer.io/address/3BHZPTXX6Q3GRS7URKAXSO7BT36HI2NLV4SLSUDTSFKMIH56NPZKK7HKUU"
+    },
+    {
+      "@type": "Person",
+      "name": "Sarah Rara",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "WELR5BBI456XXE4GOVX4FK3GE2T2PA3LJ3VTPY7RHPDCL5H3CIXKUWNGS4"
+      },
+      "sameAs": "https://algoexplorer.io/address/WELR5BBI456XXE4GOVX4FK3GE2T2PA3LJ3VTPY7RHPDCL5H3CIXKUWNGS4"
+    }
+  ],
+  "artEdition": "{{ .Asset.EditionTotal }}",
+  "position": "{{ .Asset.EditionNumber }}",
+  "artMedium": "8K virtual exhibition featuring a compilation of artworks by participating artists (playable stand-alone Windows/Mac compatible file with hi-res audio, viewable on VR headsets)",
+  "associatedMedia":
+  {
+    "@context": "https://schema.org",
+    "@type": "DataDownload",
+    "contentSize": "4310734680",
+    "contentUrl":"https://ipfs.io/ipfs/QmQEX6HhE7oKWX4ktNmjrfrVHF95djgViRvs3a79LaMafv?filename=EPOCH_CRYOSPHERE_2022.zip",
+    "description": "CRYOSPHERE",
+    "name": "EPOCH_CRYOSPHERE_2022.zip",
+    "hasPart": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "American  Artist"
+        },
+        "name": "Urban Light, 2022",
+        "artMedium": "Virtual installation, Dimensions variable",
+        "description": "This installation consists of cardboard boxes, storage bins and shelves of items that filled the garage of the artist’s childhood home. It is positioned where Chris Burden’s famous light sculpture by the same name is normally located. \n\nChris Burden bought the first lamps he used for Urban Light from the Rose Bowl Flea Market in Pasadena and eventually purchased the entire collection of antique lamps from a seller, and meticulous restorer of the lamps, named Jeff Levine. In a sense, Urban Light was the life’s work of that collector, and its acquisition into LACMA’s collection was a process facilitated by \nBurden. American Artist’s mother moved to Los Angeles around the same time as Chris Burden and occasionally sold things at the Rose Bowl flea market. She also sold things through her eBay store in the early 2000s, an uncommon trade for a Black woman of her generation, who’s mother had migrated from Oklahoma, eventually to Los Angeles. Artist’s mother filled their garage with objects she intended to sell—vinyl records, books, clothes, shoes, purses, and sunglasses—to the point that it was difficult to walk through. The narrative of Burden restoring iconic lamps from 1920s-30s Los Angeles is very romantic, but it raises a question about what parts of Los Angeles history, unlike these lamps, were legitimately lost in time because they were never maintained or restored, and who they belonged to. Reading Burden’s narrative conjured a story in Artist’s mind where someone encountered their mom’s goods and decided, after careful consideration, to purchase everything she had ever collected and offered for sale. Despite the maintenance of these goods being the opposite of the lamp posts, an artist like Chris Burden could have taken an interest in it and decided to buy it all. It is a monument to a different side of life in Los Angeles than the one memorialized by decorative lamp posts.\n\nAmerican Artist is an artist and educator based in New York who makes thought experiments that mine the history of technology, race, and knowledge production, beginning with their legal name change in 2013. \n"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+        },
+        "name": "Avatar Muxe, 2021-22",
+        "artMedium": "3D sculpture, virtual installation\nDimensions variable",
+        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+        },
+        "name": "Fractal Muxe, 2021-22",
+        "artMedium": "3D animation with audio\nTRT: 1 min 6 sec loop",
+        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+        },
+        "name": "Generated Muxe, 2021-22",
+        "artMedium": "3D GAN interpolation with audio\nTRT: 46 sec loop",
+        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+        },
+        "name": "Germination Muxe, 2021-22",
+        "artMedium": "Video with 3D animation with audio\nTRT: 57 sec loop",
+        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+        },
+        "name": "Scanned Muxe, 2021-22",
+        "artMedium": "3D scanning animation with audio\nTRT: 46 sec loop",
+        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Jacqueline Kiyomi Gork and Rhett LaRue"
+        },
+        "name": "Moat, 2022",
+        "artMedium": "3D sculpture with stereo audio \nDimensions variable",
+        "description": "Moat is a water feature concept designed for sensory and bodily nourishment. It uses improbable material and natural elements that forces public entry into a narrow stairway putting you face level with water sounds and leading you to a reveal of the murky charcoal tank bed below a water cress harvest. This ancient, historic super-food weed is meant to symbolize artistic nourishment from our institutions that exist inside easily corruptible circumstances. The volume of water addresses detachment from the appropriate scarcity mindset that exists within the artistic economy while simultaneously advocating for the Venusian spirit of bringing beauty to society despite and because of harsh realities. It is a formal oasis in our desert ecosystem.\n\nJacqueline Kiyomi Gork works at the intersection of sound, sculpture and performance to create experiences for the listener/viewer to question and deepen their relationship to the sonic world. By altering the acoustics of an environment with sculptural interventions and multichannel sound systems Kiyomi Gork highlights the role individual bodies play in the perceptions of an environment.\n\nRhett LaRue is a multimedia artist living in Los Angeles. His work explores both real and virtual  material qualities for human engagement."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Lawrence Lek"
+        },
+        "name": "The Archive, 2021",
+        "artMedium": "Virtual installation with 10 digital stills\nDimensions variable",
+        "description": "The Archive is a virtual location from Lawrence Lek's upcoming CGI feature film Death Drive, a science fiction noir which reimagines the road movie in the age of sentient autonomous vehicles. Developed in part through the 2021 Art + Technology grant, the project continues Lek’s exploration of Sinofuturist worldbuilding, and focuses on the psychological relationship between human and nonhuman beings.\n\nThe film is set in the fictional smart city of SimBeijing, a full-scale replica of the Chinese capital built to test automated transport and urban surveillance systems. For EPOCH, the architecture has been transposed from SimBeijing to Los Angeles. The Archive references the language of monumental post-industrial spaces, repurposed in the film as a crash test center. Inside the virtual space, stills of SimBeijing are displayed as a gallery within the cavernous halls.\n\nLawrence Lek is a London-based artist, filmmaker, and musician known for his ongoing series of CGI films, soundtracks, and immersive virtual worlds, often set within a Sinofuturist cinematic universe."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Jen Liu"
+        },
+        "name": "Electropods, 2022",
+        "artMedium": "3D sculptures, virtual installation, stereo sound\nDimensions variable",
+        "description": "Seven pods are linked by connective tubing, with body parts, bubbles, cords and old tech emerging from within. These pods are modeled on a set piece from a work in progress, Pink Slime Caesar Shift: Electropore, 2021-22, in which a live action pod, filled with wires and emitting smoke, becomes the site of labor without end. Inside, an Asian performer connects various electronics to a power source – pink slime both inside and outside her body. The pod’s form is based on early 20th century Mongolian carceral boxes for female prisoners\n\nHere, the pods form a collective electrical circuit, electrical cords connect them to the ground of the garden. Obsolete office phones broadcast voices from the past: Grace Lee Boggs, Assata Shakur (her own voice as well as an excerpt of her autobiography read by “Bubbles,” the iOS speech utility), midi audio from Fred Ho’s Warrior Sisters: The New Adventures Of African And Asian Womyn Warriors, an industrial manual on Electropore genetic engineering machines (on cell death through electroshock) and a modified excerpt of Katherine Hayles’ How We Became Posthuman. Physical confinement and digital re-formation bind them together, in negative but possibly hopeful coalition.\n\nJen Liu is a New York-based visual artist working in video, painting, dance performance, and genetically engineered biomaterial, on topics of national identity, gendered economy, and the re-motivating of archival objects.\n"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Ronald Rael and Virginia San Fratello"
+        },
+        "name": "Swarm City, 2022",
+        "artMedium": "3D architectural rendering\nDimensions variable",
+        "description": "A swarm typically describes things that fly or move through space — a swarm of insects, or a swarm of Oort Cloud comets, for example. It also describes a large number of people or things. There is a need for a large number of housing units in Los Angeles, as there are currently 63,706 people experiencing homelessness in Los Angeles County. The Los Angeles City Council vowed to create 25,000 new housing units for the homeless by 2025 in an initiative called, A Way Home. While the city council seeks land for building housing in the sprawl of L.A., Rael San Fratello proposes that the city must consider verticality, which makes it possible to house vast numbers of people in a small footprint, while conserving land for food production and recreation, and reducing the need for driving, reducing emissions associated with cars and saving residents money. Swarm City also generates its own electricity with a multitude of surfaces where solar panels are installed. The ad-hoc nature of Swarm City enables residents to complete the architecture to meet their own needs. Without the constraint of gravity in the virtual world, Swarm City calls to attention the need for density by envisioning a swarm of housing that floats in the air as it seeks “a way home.”\n\nRael San Fratello is a design studio rooted in the discipline of architecture that recognizes the importance of the political and ethical aspects of design. Their focus is on research and development aligned with beauty and the belief that architecture has a social responsibility."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Sarah Rara"
+        },
+        "name": "Landlords 1, 2021",
+        "artMedium": "4k video with audio, virtual installation\nTRT: 1 min 4 sec loop",
+        "description": "Landlords introduces the landlord as mosquito, presented as a series of shimmering long-takes installed along Wilshire Blvd. The landlord-mosquito feeds, and never stops feeding, in a series of eternal loops. The videos conjure the mundane horror of the landlord-tenant relationship within an environment of wealth and property consolidation by large real estate corporations that withhold, rather than provide, housing— an investment strategy that relies on logics of scarcity and extraction. \n\nSarah Rara is an artist based in Los Angeles working with video, sound, and performance. They are a primary organizer of the ongoing project Lucky Dragons. Their work, solo and in collaboration, has been presented at such institutions as the Whitney Museum of American Art, the Hammer Museum, the Centre Georges Pompidou, Walker Art Center in Minneapolis, London’s Institute for Contemporary Art, PS1 in New York, REDCAT and Human Resources in Los Angeles, MOCA Los Angeles, the 54th Venice Biennale, Documenta 14 in Athens, and the Smithsonian’s Hirshhorn Museum and Sculpture Garden, among others. Rara is a 2018 recipient of the LACMA Art + Technology Lab grant."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Sarah Rara"
+        },
+        "name": "Landlords 2, 2021",
+        "artMedium": "4k video with audio, virtual installation\nTRT: 47 sec loop",
+        "description": "Landlords introduces the landlord as mosquito, presented as a series of shimmering long-takes installed along Wilshire Blvd. The landlord-mosquito feeds, and never stops feeding, in a series of eternal loops. The videos conjure the mundane horror of the landlord-tenant relationship within an environment of wealth and property consolidation by large real estate corporations that withhold, rather than provide, housing— an investment strategy that relies on logics of scarcity and extraction. \n\nSarah Rara is an artist based in Los Angeles working with video, sound, and performance. They are a primary organizer of the ongoing project Lucky Dragons. Their work, solo and in collaboration, has been presented at such institutions as the Whitney Museum of American Art, the Hammer Museum, the Centre Georges Pompidou, Walker Art Center in Minneapolis, London’s Institute for Contemporary Art, PS1 in New York, REDCAT and Human Resources in Los Angeles, MOCA Los Angeles, the 54th Venice Biennale, Documenta 14 in Athens, and the Smithsonian’s Hirshhorn Museum and Sculpture Garden, among others. Rara is a 2018 recipient of the LACMA Art + Technology Lab grant."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Sarah Rara"
+        },
+        "name": "Landlords 3, 2021",
+        "artMedium": "4k video with audio, virtual installation\nTRT: 37 sec loop",
+        "description": "Landlords introduces the landlord as mosquito, presented as a series of shimmering long-takes installed along Wilshire Blvd. The landlord-mosquito feeds, and never stops feeding, in a series of eternal loops. The videos conjure the mundane horror of the landlord-tenant relationship within an environment of wealth and property consolidation by large real estate corporations that withhold, rather than provide, housing— an investment strategy that relies on logics of scarcity and extraction. \n\nSarah Rara is an artist based in Los Angeles working with video, sound, and performance. They are a primary organizer of the ongoing project Lucky Dragons. Their work, solo and in collaboration, has been presented at such institutions as the Whitney Museum of American Art, the Hammer Museum, the Centre Georges Pompidou, Walker Art Center in Minneapolis, London’s Institute for Contemporary Art, PS1 in New York, REDCAT and Human Resources in Los Angeles, MOCA Los Angeles, the 54th Venice Biennale, Documenta 14 in Athens, and the Smithsonian’s Hirshhorn Museum and Sculpture Garden, among others. Rara is a 2018 recipient of the LACMA Art + Technology Lab grant."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Sarah Rara"
+        },
+        "name": "Landlords 4, 2021",
+        "artMedium": "4k video with audio, virtual installation\nTRT: 1 min 35 sec loop",
+        "description": "Landlords introduces the landlord as mosquito, presented as a series of shimmering long-takes installed along Wilshire Blvd. The landlord-mosquito feeds, and never stops feeding, in a series of eternal loops. The videos conjure the mundane horror of the landlord-tenant relationship within an environment of wealth and property consolidation by large real estate corporations that withhold, rather than provide, housing— an investment strategy that relies on logics of scarcity and extraction. \n\nSarah Rara is an artist based in Los Angeles working with video, sound, and performance. They are a primary organizer of the ongoing project Lucky Dragons. Their work, solo and in collaboration, has been presented at such institutions as the Whitney Museum of American Art, the Hammer Museum, the Centre Georges Pompidou, Walker Art Center in Minneapolis, London’s Institute for Contemporary Art, PS1 in New York, REDCAT and Human Resources in Los Angeles, MOCA Los Angeles, the 54th Venice Biennale, Documenta 14 in Athens, and the Smithsonian’s Hirshhorn Museum and Sculpture Garden, among others. Rara is a 2018 recipient of the LACMA Art + Technology Lab grant."
+      }
+    ]
+  },
+  "alternateName":"{{ .Asset.CertificateLabel }}",
+  "url":"https://epoch.gallery/CRYOSPHERE/",
+  "subjectOf": {
+    "@context": "https://schema.org",
+    "@type": "ExhibitionEvent",
+    "url": "https://epoch.gallery/CRYOSPHERE/",
+    "name": "CRYOSPHERE",
+    "startDate": "2022-02-04",
+    "endDate": "2022-05-06",
+    "description": "CRYOSPHERE is an experimental collaboration between EPOCH and LACMA’s Art + Technology Lab featuring past and present Art + Technology Lab grant recipients and organized by artist and EPOCH creator Peter Wu+. The exhibition’s virtual landscape is modeled after the physical excavation area of LACMA’s east campus, where the forthcoming building for the permanent collection is slated to debut, as well as neighboring locales around Wilshire Boulevard in Los Angeles. The CRYOSPHERE NFT will be available on February 15th.\n\nCRYOSPHERE is generously funded by the Algorand Foundation."
+  },
+  "offers": {
+    "@type": "Offer",
+    "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating artists and EPOCH. Differentiating this system from most traditional gallery systems, 70% of the sales proceeds will be split evenly amongst all the participating artists, 20% will be distributed to LACMA and 10% will remain with EPOCH. 20% royalties based on the gross sales price of each secondary market sale will be evenly distributed amongst all the artists, LACMA and EPOCH. Each participating artist and EPOCH will receive one NFT representing an Artist Proof (AP) edition. These AP editions are not part of the 5 publicly-offered editions for sale, but should they be sold by an artist, will carry the same secondary market terms as the 5 NFTs in the publicly-offered edition.",
+    "url": "https://github.com/uncopied/epoch_CRYOSPHERE_nft"
+  }
+}
+

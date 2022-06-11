@@ -1,0 +1,1 @@
+{{if (eq .Issuer.DisplayName "EPOCH")}}{{- else}}=TESTNETONLY={{- end}}"{{.Asset.Name}}," {{ $EditionNumberLessX := add .Asset.EditionNumber -5 }}{{ $EditionTotalLessX := add .Asset.EditionTotal -5 }}{{if (le .Asset.EditionNumber 5) }}{{ .Asset.EditionNumber }}/5{{- else}}{{ $EditionNumberLessX }}/{{ $EditionTotalLessX}} AP{{- end}}
