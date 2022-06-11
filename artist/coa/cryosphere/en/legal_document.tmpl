@@ -24,8 +24,6 @@
         Metadata describing the work “{{.Asset.Name}}" has been released under licence Creative Commons License (CC0) and it will be stored 'forever'.
     </p>
     <p>
-{{ $EditionNumberLessX := sub .Asset.EditionNumber .AssetProperties.NftCount }}
-{{ $EditionTotalLessX := sub .Asset.EditionTotal .AssetProperties.NftCount }}
         Of the exhibition dated {{ .AssetProperties.ExhibitionDateStart }}, were produced {{ .Asset.EditionTotal }} original and unique cryptographic UNCOPIED certificate tokens
         and {{ .Asset.EditionTotal }} original and unique cryptographic {{ .Issuer.DisplayName }} NFTs constituting the limited digital edition.
 
@@ -46,10 +44,10 @@
         <li>
         <p>Artist proof edition (AP)</p>
             <ul>
-                <li>"{{.Asset.Name}}," 1/{{ $EditionTotalLessX}} AP</li>
-                <li>"{{.Asset.Name}}," 2/{{ $EditionTotalLessX}} AP</li>
+                <li>"{{.Asset.Name}}," 1/8 AP</li>
+                <li>"{{.Asset.Name}}," 2/8 AP</li>
                 <li>...</li>
-                <li>"{{.Asset.Name}}," {{ $EditionTotalLessX}}/{{ $EditionTotalLessX}} AP</li>
+                <li>"{{.Asset.Name}}," 8/8 AP</li>
             </ul>
         </li>
     </ul>
@@ -127,7 +125,7 @@
         4.      <b>EPOCH’s Representations and Warranties.</b> EPOCH represents and warrants that it is the creator of the Asset and the NFT, and to the best of its knowledge, nothing in the Asset or the NFT violates any other intellectual property rights.
     </p>
     <p>
-        5.      <b>Assets.</b> Through NFTs, EPOCH has created sellable versions of each of the Exhibitions in order to benefit the participating artists, fund future exhibitions, and maintain a sustainable artistic practice for all participants. Each EPOCH Exhibition will be uploaded and experienced online for a limited time on EPOCH’s website (the “Website”) at <a href="https://epoch.gallery/">https://epoch.gallery/</a>. EPOCH will mint each exhibition in its entirety as an edition {{.AssetProperties.NftCount}} NFTs that will be for sale to collectors. Additionally, {{ $EditionTotalLessX}} APs will be minted for each artist contributing work to the exhibition and EPOCH. One AP will be transferred to each artist’s crypto wallet at the end of the exhibition’s run.
+        5.      <b>Assets.</b> Through NFTs, EPOCH has created sellable versions of each of the Exhibitions in order to benefit the participating artists, fund future exhibitions, and maintain a sustainable artistic practice for all participants. Each EPOCH Exhibition will be uploaded and experienced online for a limited time on EPOCH’s website (the “Website”) at <a href="https://epoch.gallery/">https://epoch.gallery/</a>. EPOCH will mint each exhibition in its entirety as an edition {{.AssetProperties.NftCount}} NFTs that will be for sale to collectors. Additionally, 8 APs will be minted for each artist contributing work to the exhibition and EPOCH. One AP will be transferred to each artist’s crypto wallet at the end of the exhibition’s run.
     </p>
     <p>
         6.      <b>Intellectual Property Ownership.</b> All intellectual property pertaining to the Asset including but not limited to copyright, including applicable moral rights, and trademark, remains with EPOCH. The rights to the artworks included in the Asset all remain with the contributing artists. Under no circumstances is Collector allowed to reproduce the Asset in any medium or create derivative works without EPOCH’s specific written consent. Collector’s purchase of an NFT entitles the Collector to ownership of that NFT and the rights to privately display the Asset, and to resell the NFT pursuant to the terms of this Agreement.

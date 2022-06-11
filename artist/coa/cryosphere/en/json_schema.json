@@ -28,7 +28,7 @@
       "description": "Media File Name",
       "type": "string"
     },
-    "media_file_name": {
+    "media_file_size": {
       "description": "Media File Size",
       "type": "number"
     },
