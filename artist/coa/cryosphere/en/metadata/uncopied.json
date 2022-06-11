@@ -3,11 +3,11 @@
   "@type": "VisualArtwork",
   "name": "{{ .Asset.Name }}",
   "dateCreated": "{{ .AssetProperties.DateCreated }}",
-  "datePublished": "2022-02-15",
+  "datePublished": "{{ .AssetProperties.DateCreated }}",
   "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
   "thumbnailUrl": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
   "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
-  "description": "{{ .Asset.CertificateLabel }} - CRYOSPHERE\n\nFebruary 4 – May 6, 2022\n\nAmerican Artist\nLukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve\nJacqueline Kiyomi Gork and Rhett LaRue\nLawrence Lek\nJen Liu\nRonald Rael and Virginia San Fratello\nSarah Rara\n\nCRYOSPHERE is an experimental collaboration between EPOCH and LACMA’s Art + Technology Lab featuring past and present Art + Technology Lab grant recipients and organized by artist and EPOCH creator Peter Wu+. The exhibition’s virtual landscape is modeled after the physical excavation area of LACMA’s east campus, where the forthcoming building for the permanent collection is slated to debut, as well as neighboring locales around Wilshire Boulevard in Los Angeles. The CRYOSPHERE NFT will be available on February 15th.\nCRYOSPHERE is generously funded by the Algorand Foundation.",
+  "description": "{{ .Asset.CertificateLabel }} - {{ .AssetProperties.Description }}\n{{ .AssetProperties.DescriptionLong }}",
   "copyrightHolder":[
     {
       "@type": "Person",
@@ -16,23 +16,23 @@
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+        "value":  "{{ .Issuer.Address }}"
       },
-      "sameAs": "https://algoexplorer.io/address/VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+      "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
     }
   ],
   "contributor": [
     {
       "@type": "Organization",
-      "name": "LACMA",
-      "legalName": "Los Angeles County Museum of Art",
+      "name": "Cook Inletkeeper",
+      "legalName": "Cook Inletkeeper (charity)",
       "url": "https://www.lacma.org/",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "QQX5Y647GO7VLG33ZQWKEHO2OPXPVCEY7QNNE2AK2AVA4HYFFD4MJNFYFM"
+        "value":  "OJ5SLMQJ6F4HKUWWAC4QXFXEKKZPWBUON7M6G6H26TAEUFRJCF4VFL5KII"
       },
-      "sameAs": "https://algoexplorer.io/address/QQX5Y647GO7VLG33ZQWKEHO2OPXPVCEY7QNNE2AK2AVA4HYFFD4MJNFYFM"
+      "sameAs": "https://algoexplorer.io/address/OJ5SLMQJ6F4HKUWWAC4QXFXEKKZPWBUON7M6G6H26TAEUFRJCF4VFL5KII"
     }
   ],
   "creator": [
@@ -43,116 +43,79 @@
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+        "value":  "{{ .Issuer.Address }}"
       },
-      "sameAs": "https://algoexplorer.io/address/VTAUB5LOVTWKXICWEDBO5UG2JNNGEW7ULRB4PQB23DGRKSAXDVPORQNZJE"
+      "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
     },
     {
       "@type": "Person",
-      "name": "American Artist",
+      "name": "Carolina Caycedo",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "JQ3QOVBYDKSMZA42HB3DCWJWS4L6KR7ZMFUG5IYECEAM4WE3PP74GG6ZNM"
+        "value":  "RM36WBDUER7JL2LTTRDQFTRSRFDBWUP7LOBRXK2NK3ULVDMC2LVFR3B77E"
       },
-      "sameAs": "https://algoexplorer.io/address/JQ3QOVBYDKSMZA42HB3DCWJWS4L6KR7ZMFUG5IYECEAM4WE3PP74GG6ZNM"
+      "sameAs": "https://algoexplorer.io/address/RM36WBDUER7JL2LTTRDQFTRSRFDBWUP7LOBRXK2NK3ULVDMC2LVFR3B77E"
+    },
+    {
+      "@type": "Person",
+      "name": "Patricia Echeverria Liras",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "4G6WVNKD5KLK6TWDXRYHLKXY6RP2DF6QN4U7433SXVOAMHF6NUFUGZ63MM"
+      },
+      "sameAs": "https://algoexplorer.io/address/4G6WVNKD5KLK6TWDXRYHLKXY6RP2DF6QN4U7433SXVOAMHF6NUFUGZ63MM"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiabao Li",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "IVC5ZUOIYFAMEPDAGKSHYQ6TICYGM7EY5U6B5SFLNXGOMEZPSKMHKS3YCI"
+      },
+      "sameAs": "https://algoexplorer.io/address/IVC5ZUOIYFAMEPDAGKSHYQ6TICYGM7EY5U6B5SFLNXGOMEZPSKMHKS3YCI"
+    },
+    {
+      "@type": "Person",
+      "name": "Alfredo Salazar-Caro",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "RPXFA2ESARLEPZXEY6LKXVN2C6IOBEMIE3H4FHVRK7XA2NXRENLOMISZAE"
+      },
+      "sameAs": "https://algoexplorer.io/address/RPXFA2ESARLEPZXEY6LKXVN2C6IOBEMIE3H4FHVRK7XA2NXRENLOMISZAE"
+    },
+    {
+      "@type": "Person",
+      "name": "Nathan Shafer",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "62QLITARWFBHEHZHK4O45OO4DFPQOMBJZZB3X5EXKSNENK2OCOWWTJ7NZ4"
+      },
+      "sameAs": "https://algoexplorer.io/address/62QLITARWFBHEHZHK4O45OO4DFPQOMBJZZB3X5EXKSNENK2OCOWWTJ7NZ4"
+    },
+    {
+      "@type": "Person",
+      "name": "Jakob Kudsk Steensen",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "5EBC6ZKF7IHS24DPFEBCWYA5QXSDDLSKYX47SJHLQ5UMTFIQYM7VXG7TLM"
+      },
+      "sameAs": "https://algoexplorer.io/address/5EBC6ZKF7IHS24DPFEBCWYA5QXSDDLSKYX47SJHLQ5UMTFIQYM7VXG7TLM"
     },
     {
       "@type": "Project",
-      "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve",
-      "alternateName": "MUXX Project",
-      "member" : [
-        {
-          "@type": "Person",
-          "name": "Lukas Avendaño"
-        },
-        {
-          "@type": "Person",
-          "name": "Abraham Brody"
-        },        {
-          "@type": "Person",
-          "name": "Ana Lopez"
-        },        {
-          "@type": "Person",
-          "name": "Oswaldo Erreve"
-        }
-      ],
+      "name": "Studio Above&Below",
       "identifier": {
         "@type": "PropertyValue",
         "propertyID": "AlgorandAddress",
-        "value":  "HGIMASMUMZAI5SCNOYR65TIQM4JWLE736FERTFPCPUNZSQRXK42Q5VMNMQ"
+        "value":  "UCESGOWDR5ETRT6IESARVQE5QRQB2OXJN2CXOUGGW32OY7TMY3L6K52CBU"
       },
-      "sameAs": "https://algoexplorer.io/address/HGIMASMUMZAI5SCNOYR65TIQM4JWLE736FERTFPCPUNZSQRXK42Q5VMNMQ"
-    },
-    {
-      "@type": "Project",
-      "name": "Jacqueline Kiyomi Gork and Rhett LaRue",
-      "member" : [
-        {
-          "@type": "Person",
-          "name": "Jacqueline Kiyomi Gork"
-        },
-        {
-          "@type": "Person",
-          "name": "Rhett LaRue"
-        }
-      ],
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "AlgorandAddress",
-        "value":  "5EP6AOHJBRLL7G2W74Q6NNOZOUCDT6F35ZRXSNTU4UHTHWDZVTDOAYTFAE"
-      },
-      "sameAs": "https://algoexplorer.io/address/5EP6AOHJBRLL7G2W74Q6NNOZOUCDT6F35ZRXSNTU4UHTHWDZVTDOAYTFAE"
-    },
-    {
-      "@type": "Person",
-      "name": "Lawrence Lek",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "AlgorandAddress",
-        "value":  "JUDGEZENUFSP3UGRQLGN7Q5QE4V3YIYQNZ76SI7Z7IXMKBYMK2JAJE4PWU"
-      },
-      "sameAs": "https://algoexplorer.io/address/JUDGEZENUFSP3UGRQLGN7Q5QE4V3YIYQNZ76SI7Z7IXMKBYMK2JAJE4PWU"
-    },
-    {
-      "@type": "Person",
-      "name": "Jen Liu",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "AlgorandAddress",
-        "value":  "DHTJB4G5KZI3H3AUBFMREUPPLQJMLG65NOREYDLUYUPVKTKJPQM5WF2WNA"
-      },
-      "sameAs": "https://algoexplorer.io/address/DHTJB4G5KZI3H3AUBFMREUPPLQJMLG65NOREYDLUYUPVKTKJPQM5WF2WNA"
-    },
-    {
-      "@type": "Project",
-      "name": "Ronald Rael and Virginia San Fratello",
-      "member" : [
-        {
-          "@type": "Person",
-          "name": "Ronald Rael"
-        },
-        {
-          "@type": "Person",
-          "name": "Virginia San Fratello"
-        }
-      ],
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "AlgorandAddress",
-        "value":  "3BHZPTXX6Q3GRS7URKAXSO7BT36HI2NLV4SLSUDTSFKMIH56NPZKK7HKUU"
-      },
-      "sameAs": "https://algoexplorer.io/address/3BHZPTXX6Q3GRS7URKAXSO7BT36HI2NLV4SLSUDTSFKMIH56NPZKK7HKUU"
-    },
-    {
-      "@type": "Person",
-      "name": "Sarah Rara",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "AlgorandAddress",
-        "value":  "WELR5BBI456XXE4GOVX4FK3GE2T2PA3LJ3VTPY7RHPDCL5H3CIXKUWNGS4"
-      },
-      "sameAs": "https://algoexplorer.io/address/WELR5BBI456XXE4GOVX4FK3GE2T2PA3LJ3VTPY7RHPDCL5H3CIXKUWNGS4"
+      "sameAs": "https://algoexplorer.io/address/UCESGOWDR5ETRT6IESARVQE5QRQB2OXJN2CXOUGGW32OY7TMY3L6K52CBU"
     }
   ],
   "artEdition": "{{ .Asset.EditionTotal }}",
@@ -164,7 +127,7 @@
     "@type": "DataDownload",
     "contentSize": "{{ .AssetProperties.MediaFileSize }}",
     "contentUrl":"https://ipfs.io/ipfs/{{ .AssetProperties.MediaFileCid }}?filename={{ .AssetProperties.MediaFileName }}",
-    "description": "CRYOSPHERE",
+    "description": "{{ .Asset.Name }}",
     "name": "{{ .AssetProperties.MediaFileName }}",
     "hasPart": [
       {
@@ -172,167 +135,145 @@
         "@type": "VisualArtwork",
         "artist": {
           "@type": "Person",
-          "name": "American  Artist"
+          "name": "Carolina Caycedo"
         },
-        "name": "Urban Light, 2022",
-        "artMedium": "Virtual installation, Dimensions variable",
-        "description": "This installation consists of cardboard boxes, storage bins and shelves of items that filled the garage of the artist’s childhood home. It is positioned where Chris Burden’s famous light sculpture by the same name is normally located. \n\nChris Burden bought the first lamps he used for Urban Light from the Rose Bowl Flea Market in Pasadena and eventually purchased the entire collection of antique lamps from a seller, and meticulous restorer of the lamps, named Jeff Levine. In a sense, Urban Light was the life’s work of that collector, and its acquisition into LACMA’s collection was a process facilitated by \nBurden. American Artist’s mother moved to Los Angeles around the same time as Chris Burden and occasionally sold things at the Rose Bowl flea market. She also sold things through her eBay store in the early 2000s, an uncommon trade for a Black woman of her generation, who’s mother had migrated from Oklahoma, eventually to Los Angeles. Artist’s mother filled their garage with objects she intended to sell—vinyl records, books, clothes, shoes, purses, and sunglasses—to the point that it was difficult to walk through. The narrative of Burden restoring iconic lamps from 1920s-30s Los Angeles is very romantic, but it raises a question about what parts of Los Angeles history, unlike these lamps, were legitimately lost in time because they were never maintained or restored, and who they belonged to. Reading Burden’s narrative conjured a story in Artist’s mind where someone encountered their mom’s goods and decided, after careful consideration, to purchase everything she had ever collected and offered for sale. Despite the maintenance of these goods being the opposite of the lamp posts, an artist like Chris Burden could have taken an interest in it and decided to buy it all. It is a monument to a different side of life in Los Angeles than the one memorialized by decorative lamp posts.\n\nAmerican Artist is an artist and educator based in New York who makes thought experiments that mine the history of technology, race, and knowledge production, beginning with their legal name change in 2013. \n"
+        "name": "Patron Mono, 2018\nFrom the Water Portraits series",
+        "artMedium": "3-channel HD video, color, sound\nTRT: 4 min 32 sec \nSound by Cay Castagnetto",
+        "description": "Patron Mono portrays the lower Cauca river canyon, located in the department of Antioquia, currently affected by the crisis of the Hidroituango dam. The muleteers, fishermen and artisanal miners that make up the canyon culture refer to the Cauca River as Patron Mono (Blonde Boss), both for its yellow color and for the gold found in its waters and sands. For them, it is the best employer in the world because it does not set schedules and never refuses to pay, that is, it always provides them with fish and gold. The projected triptych is composed of footage of gold artisanally harvested from the Cauca River, as well as footage taken in the same canyon. \n\nCarolina Caycedo is a Colombian, London-born, multidisciplinary artist known for her performances, videos, artist’s books, sculptures, and installations that examine environmental and social issues. Her work contributes to the construction of environmental historical memory as a fundamental element for non-repetition of violence against human and nonhuman entities. She lives and works in Los Angeles. \n\nShe is a 2021-2022 inaugural U.S. Latinx Artist Fellow and the 2020-2022 inaugural Borderlands Fellow at the Center for Imagination in the Borderlands at Arizona State University (ASU) and the Vera List Center for Art and Politics at The New School."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
           "@type": "Person",
-          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+          "name": "Carolina Caycedo"
         },
-        "name": "Avatar Muxe, 2021-22",
-        "artMedium": "3D sculpture, virtual installation\nDimensions variable",
-        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
+        "name": "Corazon de Oro/Heart of Gold, 2022",
+        "artMedium": "3D models of raw gold shavings harvested by artisanal miners from the Lower Cauca River in Colombia\nDimensions variable",
+        "description": "The heart of our mountains and rivers is made of Gold. Pineapple and corn absorb color from the land’s generous heart to nurture us physically and spiritually. The colonizers and the greedy changed the meaning and use of our gold, from the collective to the individual, from giving life to bringing death. We carry gold inside the circuits of our smartphones and tablets, without care for ritual. To touch and hold gold in its natural state reconnects us with mineral light, and makes us perennial alongside our past and future ancestors.\n\nEl corazón de nuestras montañas y de nuestros ríos es de Oro. La piña y el maíz absorben el color del corazón generoso de la tierra para alimentarnos física y espiritualmente. Los colonizadores y los avaros cambiaron el sentido y el uso de nuestro oro, de lo colectivo a lo individual, de lo que da vida a lo que trae muerte. Cargamos oro en los circuitos de nuestros smartphones y tablets, sin ningún sentido de la ritualidad. Tocar y sostener oro en su estado natural nos reconecta con la luz mineral, y nos hace perennes junto a nuestro ancestros pasados y futuros."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
           "@type": "Person",
-          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+          "name": "Patricia Echeverria Liras"
         },
-        "name": "Fractal Muxe, 2021-22",
-        "artMedium": "3D animation with audio\nTRT: 1 min 6 sec loop",
-        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
+        "name": "Song for a Rising Sea, 2022",
+        "artMedium": "3D photogrammetry scan, 3D models, directional audio",
+        "description": "Matanuska melts.\nMeanwhile, halfway across the globe\none of the last fishermen in the port of Jaffa\nreturns from a journey at sea.\nHe weaves a large turquoise net\nto the sounds of Umm Kulthum:\n\"Only a few fish left,\" \nhe says. \n\nPatricia Echeverria Liras is a Spanish artist working across immersive technologies, social justice, and storytelling to explore forms of collective, personal liberation, and equity in the machine age. She has previously collaborated on international projects including: a “Public Therapy Tour” across Palestine with AM Qattan Foundation and Matadero Madrid; “Outside In,” a playback performance with the Freedom Theatre from Jenin, and Sakakini Cultural Center; “Parallel Utopias,” an environmental conflict resolution scheme at the Korean DMZ with National Geographic, and most recently \"Nowhere Left to Go\" at the Venice Biennale VR Lab. She is currently a Sandbox Fellow, NYU ITP/IMA Project Fellow, resident at SAT (Société des Arts Technologiques) in Montreal, and resident artist at Vertical Crypto Art. "
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
           "@type": "Person",
-          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+          "name": "Jiabao Li"
         },
-        "name": "Generated Muxe, 2021-22",
-        "artMedium": "3D GAN interpolation with audio\nTRT: 46 sec loop",
-        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
+        "name": "Glacier’s Lament, 2021",
+        "artMedium": "4K video with audio\nTRT: 2 min 49 sec",
+        "description": "Glaciers are sentinels of climate change. They are the most visible evidence of global warming today. This series of works embodies the stunning beauty, rapid change, fragility, destructive power, and magnificence of glaciers. At the same time, they challenge the audience with the dramatic, irreversible ecological damages from climate change.\n\nIn Glacier’s Lament, Jiabao Li used data from glacier melting in the past 60 years to compose music and dance with local musicians who have witnessed the recession of the Mendenhall glacier over their lifetimes in Juneau, Alaska. They performed the piece on the glacier, collaborating with the glacier’s own sounds.\n\nJiabao Li creates works addressing climate change, interspecies world sharing, humane technology, and a just, sustainable future. In Jiabao’s TED Talk, she uncovered how technology mediates the way we perceive reality. She is a current member of the NEW INC incubator at the New Museum."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
           "@type": "Person",
-          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+          "name": "Jiabao Li"
         },
-        "name": "Germination Muxe, 2021-22",
-        "artMedium": "Video with 3D animation with audio\nTRT: 57 sec loop",
-        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
+        "name": "Once a Glacier, 2022",
+        "artMedium": "3D sculpture, virtual installation\n3D model: Boxiang Yu\nProducer: Jenny Qin Ya Guo",
+        "description": "“In traditional Inupiaq stories, the glaciers carry memories from the past and communicate their memories through the glacier’s songs. They circulate. They transform. They are living.”\n\nOnce a Glacier is from a VR film of the same title that tells the story of a relationship between a girl and a piece of glacier, where as the girl grows up, the existence of the glacier is threatened. This VR film relates the lifetime of a human to natural phenomena. We think of nature's time scale as millions of years and humans’ are under a hundred, yet with the current speed of climate change, many glaciers are vanishing within our lifetime. Glacial time, once was slow, is now fast. By telling the story of the life journey of a piece of glacial ice and its glacier of origin along with the life of a girl, the film makes this human-nature timescale tangible and warns the audience that climate change is happening right now and the consequences are within our lifetimes. "
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
           "@type": "Person",
-          "name": "Lukas Avendaño, EYIBRA (Abraham Brody), NNUX (Ana Lopez), and Oswaldo Erreve"
+          "name": "Alfredo Salazar-Caro"
         },
-        "name": "Scanned Muxe, 2021-22",
-        "artMedium": "3D scanning animation with audio\nTRT: 46 sec loop",
-        "description": "This installation is a series of digital pieces that accompany the project MUXX, currently in residence at LACMA as part of the Art +Technology Grant. The project explores non-binary gender identity through the lense of the Muxes (a third gender) of the Zapotec nation of Mexico. In the five 3D works seen, the artists explore the changing nature of the Muxe, featuring artist and ‘Muxe’ Lukas Avendaño. Sound by EYIBRA, videos by Oswaldo Erreve. \n\nMUXX is a collective created during the residency at LACMA, made up of artists Lukas Avendaño (performance artist, choreographer and 'Muxe'), EYIBRA (fka Abraham Brody, composer, performer and multimedia artist), Oswaldo Erreve (digital artist), and NNUX (composer, producer, sound artist)."
+        "name": "SOL: Statue of Liberty/Statue of Lies AKA Last Days of Babylon, 2020",
+        "artMedium": "3D models, virtual installation, video with audio",
+        "description": " In this work, Salazar-Caro reacts to the world events as they unfolded in 2020. The Statue of liberty has been a symbol of America’s gift of opportunity and welcoming arms to immigrants, however America’s history shows that this is no more than an exaggerated myth. The foundation of the nation-state commonly known as the United States of America, was built on genocide, slavery and ecocyde. The result after 500 years of this egregious ritual and the plague of white supremacy, is a dying earth and social inequality unlike humanity has ever seen.\n\nSOL is also the alchemical name for the sun, a universally worshiped deity and the likely cause of humanity’s demise, as the insatiable greed of industrialization and hypercapitalism accelerate global heating for the sake of exponential profits.\n\nThe sculpture is covered in sigils, turning it into a magical, alchemical object, with the intention of further accelerating the downfall of the beast that consumes the earth. Among the sigils one can find the Red Hand Print over the statue’s mouth, signifying the struggle for Missing and Murdered Indigenous women. Indigenous people all across the globe are stewards of the land and of earth, contribute least to global emissions, and yet they are some of the most affected by industrial irresponsibility.The Summerian sigil for ‘God’ is present on the forehead of the statue as well as on the book, an allegory for achieving a higher state of consciousness, and then sharing that knowledge with those who have ears to listen. ”Let those who can read, read.” The words “Last Days of Babylon” appear prominently in the back of the SOL, as a reminder of the hermetic law of rhythm, telling us that the pendulum will always swing, meaning that all great empires that have risen through history, also have to fall. \n\nLong Live the First Nations of Turtle Island. Long Live our relatives from Africa. Long Live our Sacred Mother Earth.\n\nMay the fall of the Greed Infested Ones be swift, so we may heal and rebuild.\n\nAlfredo Salazar-Caro is creator living/working between Mexico City, NYC, and Online. His works are an amalgamation of Portraiture, Installation, Documentary, Video, XR, Social Sculpture and Speculative Architecture. He is co-creator and creative director of DiMoDA, The Digital Museum of Digital Art. DiMoDA is a groundbreaking project that functions as a VR institution and exhibition platform dedicated to the development of XR Art. Salazar-Caro’s work has been exhibited internationally. Exhibitions include: Tribeca Film Festival, Dreamlands @ Whitney Museum US, The Wrong Biennale, BR, New Normal LB/TR, Die Ungerahmte Welt, HeK, CH, Siggraph Asia, TH and 1Mes1Artista CDMX among others.  His work can be seen in publications such as Leonardo, Cultured Magazine, \nVice Magazine and +"
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
           "@type": "Person",
-          "name": "Jacqueline Kiyomi Gork and Rhett LaRue"
+          "name": "Nathan Shafer"
         },
-        "name": "Moat, 2022",
-        "artMedium": "3D sculpture with stereo audio \nDimensions variable",
-        "description": "Moat is a water feature concept designed for sensory and bodily nourishment. It uses improbable material and natural elements that forces public entry into a narrow stairway putting you face level with water sounds and leading you to a reveal of the murky charcoal tank bed below a water cress harvest. This ancient, historic super-food weed is meant to symbolize artistic nourishment from our institutions that exist inside easily corruptible circumstances. The volume of water addresses detachment from the appropriate scarcity mindset that exists within the artistic economy while simultaneously advocating for the Venusian spirit of bringing beauty to society despite and because of harsh realities. It is a formal oasis in our desert ecosystem.\n\nJacqueline Kiyomi Gork works at the intersection of sound, sculpture and performance to create experiences for the listener/viewer to question and deepen their relationship to the sonic world. By altering the acoustics of an environment with sculptural interventions and multichannel sound systems Kiyomi Gork highlights the role individual bodies play in the perceptions of an environment.\n\nRhett LaRue is a multimedia artist living in Los Angeles. His work explores both real and virtual  material qualities for human engagement."
+        "name": "Arctic City, 2018",
+        "artMedium": "3D architecture, virtual installation / mixed reality",
+        "description": "Arctic City is a domed polar city originally designed by Frei Otto in the 1950s. This domed city has been proposed multiple times to be built in the circumpolar Arctic, including Alaska. It has also been proposed for Antarctica. The 3D/MR version of Arctic City originally appeared as geolocated augmented reality outside of the city of Kotzebue, AK as part of the Dirigibles of Denali project from 2018 at the Pratt Museum in Homer, AK. That project used AR to recreate all three of the domed city proposals in Alaska during the 20th century.\n\nNathan Shafer is a new media artist, author and special education teacher from Alaska. He is one of the founding members of both the Meme-Rider Media Team, an art collective founded in 2000 designing early form internet memes, and Manifest.AR, the first International art collective making mobile augmented reality works. He was profiled by PBS Digital Studios as part of an online collaboration called The Future in 2014. His current work is called Wintermoot, an augmented Alaskan comic book for which he received a Creative Capital award in 2020. He has contributed chapters to all of the books on Augmented Reality in the Springer Series on Cultural Computing: “Augmented Reality Art” (2014), “Augmented Reality Games” (2019), “Augmented Reality in Education” (2020), “Augmented Reality in Tourism, Museums and Heritage” (2021); as well as the forthcoming “Augmented Reality and Artificial Intelligence” (2023)."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
           "@type": "Person",
-          "name": "Lawrence Lek"
+          "name": "Nathan Shafer"
         },
-        "name": "The Archive, 2021",
-        "artMedium": "Virtual installation with 10 digital stills\nDimensions variable",
-        "description": "The Archive is a virtual location from Lawrence Lek's upcoming CGI feature film Death Drive, a science fiction noir which reimagines the road movie in the age of sentient autonomous vehicles. Developed in part through the 2021 Art + Technology grant, the project continues Lek’s exploration of Sinofuturist worldbuilding, and focuses on the psychological relationship between human and nonhuman beings.\n\nThe film is set in the fictional smart city of SimBeijing, a full-scale replica of the Chinese capital built to test automated transport and urban surveillance systems. For EPOCH, the architecture has been transposed from SimBeijing to Los Angeles. The Archive references the language of monumental post-industrial spaces, repurposed in the film as a crash test center. Inside the virtual space, stills of SimBeijing are displayed as a gallery within the cavernous halls.\n\nLawrence Lek is a London-based artist, filmmaker, and musician known for his ongoing series of CGI films, soundtracks, and immersive virtual worlds, often set within a Sinofuturist cinematic universe."
+        "name": "Arctic Adventure Sculpture Garden, 2018",
+        "artMedium": "3D sculptures, virtual installation / mixed reality",
+        "description": "The Arctic Adventure Sculpture Garden are a series of 3D models designed using texture maps and sprites from the 1994 videogame “Arctic Adventure.” The models are treated as a sculpture garden place outside and within Arctic City."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
           "@type": "Person",
-          "name": "Jen Liu"
+          "name": "Nathan Shafer"
         },
-        "name": "Electropods, 2022",
-        "artMedium": "3D sculptures, virtual installation, stereo sound\nDimensions variable",
-        "description": "Seven pods are linked by connective tubing, with body parts, bubbles, cords and old tech emerging from within. These pods are modeled on a set piece from a work in progress, Pink Slime Caesar Shift: Electropore, 2021-22, in which a live action pod, filled with wires and emitting smoke, becomes the site of labor without end. Inside, an Asian performer connects various electronics to a power source – pink slime both inside and outside her body. The pod’s form is based on early 20th century Mongolian carceral boxes for female prisoners\n\nHere, the pods form a collective electrical circuit, electrical cords connect them to the ground of the garden. Obsolete office phones broadcast voices from the past: Grace Lee Boggs, Assata Shakur (her own voice as well as an excerpt of her autobiography read by “Bubbles,” the iOS speech utility), midi audio from Fred Ho’s Warrior Sisters: The New Adventures Of African And Asian Womyn Warriors, an industrial manual on Electropore genetic engineering machines (on cell death through electroshock) and a modified excerpt of Katherine Hayles’ How We Became Posthuman. Physical confinement and digital re-formation bind them together, in negative but possibly hopeful coalition.\n\nJen Liu is a New York-based visual artist working in video, painting, dance performance, and genetically engineered biomaterial, on topics of national identity, gendered economy, and the re-motivating of archival objects.\n"
+        "name": "Pilot Bread Portals to Wintermoot, 2019-2022 ",
+        "artMedium": "Comic Book, Augmented Reality",
+        "description": "Pilot Bread Portals to Wintermoot is a series of 3D pilot bread sculptures that link to Wintermoot comic books. The Wintermoot comic book is a limited series of augmented reality comic books that tell a sprawling set of Alaskan science fiction stories that are married with an intense set of social art practices to create progressive and sustainable Alaskan characters that are collaboratively reflective of Indigenous practices and worldviews. Several of the characters in Wintermoot have ‘cryoverse’ powers connected to glaciers and ice fields.  The domed cities in Alaska which were never built, exist in the reality of the Wintermoot stories. Wintermoot is presented here as a series of downloadable pdfs."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
           "@type": "Person",
-          "name": "Ronald Rael and Virginia San Fratello"
+          "name": "Jakob Kudsk Steensen"
         },
-        "name": "Swarm City, 2022",
-        "artMedium": "3D architectural rendering\nDimensions variable",
-        "description": "A swarm typically describes things that fly or move through space — a swarm of insects, or a swarm of Oort Cloud comets, for example. It also describes a large number of people or things. There is a need for a large number of housing units in Los Angeles, as there are currently 63,706 people experiencing homelessness in Los Angeles County. The Los Angeles City Council vowed to create 25,000 new housing units for the homeless by 2025 in an initiative called, A Way Home. While the city council seeks land for building housing in the sprawl of L.A., Rael San Fratello proposes that the city must consider verticality, which makes it possible to house vast numbers of people in a small footprint, while conserving land for food production and recreation, and reducing the need for driving, reducing emissions associated with cars and saving residents money. Swarm City also generates its own electricity with a multitude of surfaces where solar panels are installed. The ad-hoc nature of Swarm City enables residents to complete the architecture to meet their own needs. Without the constraint of gravity in the virtual world, Swarm City calls to attention the need for density by envisioning a swarm of housing that floats in the air as it seeks “a way home.”\n\nRael San Fratello is a design studio rooted in the discipline of architecture that recognizes the importance of the political and ethical aspects of design. Their focus is on research and development aligned with beauty and the belief that architecture has a social responsibility."
+        "name": "Terratic Animism, 2016",
+        "artMedium": "4K video with audio\nTRT: 10 min 53 sec",
+        "description": "Terratic Animism is a video & virtual reality project, where people are free to roam around a digital winter forest that Jakob Kudsk Steensen created while artist in residence at MASS MoCA, 2016. His original inspiration was the dystopian ecology zeitgeist that he felt dominated popular science and media. Wearing a self-made costume made of mylar, Steensen filmed himself exploring derelict infrastructures along a river leading through Green Mountain National forest. To make the work, one month was spent crawling through tunnels in derelict water plants, abandoned factories and an old rusty school bus. While exploring the landscape, he began to think of digital animation as a form of animism. He started to see virtual replicas of real world locations as primal practices we do as humans to develop sign systems we can use, in order to connect and merge with entire landscapes. Steensen’s critique of mass image production extends Terratic Animism to explore feelings of climate anxiety, and the loss of a modernist utopian techno future. Terratic Animism transmits how attempts of symbiosis with nature remain in a tentative position, existing here through the virtuality of visual technologies. \n\nJakob Kudsk Steensen is an artist working with environmental storytelling through 3d animation, sound and immersive installations. He creates poetic interpretations about overlooked natural phenomena through collaborations with field biologists, composers and writers. Projects are based on extensive fieldwork. Key collaborators include Musician ARCA, Composer and Musical Director for the Philip Glass Ensemble Michael Riesman, Ornithologist and author Dr. Douglas H. Pratt, Architect Sir David Adjaye OBE RA, BTS, the Cornell Lab of Ornithology, and the Natural History Museum Berlin, among others."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
           "@type": "Person",
-          "name": "Sarah Rara"
+          "name": "Jakob Kudsk Steensen"
         },
-        "name": "Landlords 1, 2021",
-        "artMedium": "4k video with audio, virtual installation\nTRT: 1 min 4 sec loop",
-        "description": "Landlords introduces the landlord as mosquito, presented as a series of shimmering long-takes installed along Wilshire Blvd. The landlord-mosquito feeds, and never stops feeding, in a series of eternal loops. The videos conjure the mundane horror of the landlord-tenant relationship within an environment of wealth and property consolidation by large real estate corporations that withhold, rather than provide, housing— an investment strategy that relies on logics of scarcity and extraction. \n\nSarah Rara is an artist based in Los Angeles working with video, sound, and performance. They are a primary organizer of the ongoing project Lucky Dragons. Their work, solo and in collaboration, has been presented at such institutions as the Whitney Museum of American Art, the Hammer Museum, the Centre Georges Pompidou, Walker Art Center in Minneapolis, London’s Institute for Contemporary Art, PS1 in New York, REDCAT and Human Resources in Los Angeles, MOCA Los Angeles, the 54th Venice Biennale, Documenta 14 in Athens, and the Smithsonian’s Hirshhorn Museum and Sculpture Garden, among others. Rara is a 2018 recipient of the LACMA Art + Technology Lab grant."
+        "name": "Icicle, 2022",
+        "artMedium": "3D photogrammetry scan\nDimensions variable",
+        "description": "The icicle was scanned at an altitude of 2400 metres by artist Jakob Kudsk Steensen in February 2022 near the Arolla glacier.\n\nJakob has recently exhibited with his major solo exhibition “Berl-Berl” in Berlin at Halleam Berghain, commissioned by LAS, and at Luma Arles with Liminal Lands for the Prelude exhibition. He was a finalist for the Future Generation Art Prize at the 2019 Venice Biennale. He received the Serpentine Augmented Architecture commission in 2019 to create his work The Deep Listener with Google Arts and Culture. He is therecipient of the best VR graphics for RE-ANIMATED (2019) at the Cinequest Festival for Technology and Cinema, the Prix du Jury (2019) at Les Rencontres Arles, the WebbyAward-People’s Choice VR (2018), and the Games for Change Award-Most Innovative (2018), among others."
       },
       {
         "@context": "https://schema.org",
         "@type": "VisualArtwork",
         "artist": {
           "@type": "Person",
-          "name": "Sarah Rara"
+          "name": "Studio Above&Below"
         },
-        "name": "Landlords 2, 2021",
-        "artMedium": "4k video with audio, virtual installation\nTRT: 47 sec loop",
-        "description": "Landlords introduces the landlord as mosquito, presented as a series of shimmering long-takes installed along Wilshire Blvd. The landlord-mosquito feeds, and never stops feeding, in a series of eternal loops. The videos conjure the mundane horror of the landlord-tenant relationship within an environment of wealth and property consolidation by large real estate corporations that withhold, rather than provide, housing— an investment strategy that relies on logics of scarcity and extraction. \n\nSarah Rara is an artist based in Los Angeles working with video, sound, and performance. They are a primary organizer of the ongoing project Lucky Dragons. Their work, solo and in collaboration, has been presented at such institutions as the Whitney Museum of American Art, the Hammer Museum, the Centre Georges Pompidou, Walker Art Center in Minneapolis, London’s Institute for Contemporary Art, PS1 in New York, REDCAT and Human Resources in Los Angeles, MOCA Los Angeles, the 54th Venice Biennale, Documenta 14 in Athens, and the Smithsonian’s Hirshhorn Museum and Sculpture Garden, among others. Rara is a 2018 recipient of the LACMA Art + Technology Lab grant."
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "VisualArtwork",
-        "artist": {
-          "@type": "Person",
-          "name": "Sarah Rara"
-        },
-        "name": "Landlords 3, 2021",
-        "artMedium": "4k video with audio, virtual installation\nTRT: 37 sec loop",
-        "description": "Landlords introduces the landlord as mosquito, presented as a series of shimmering long-takes installed along Wilshire Blvd. The landlord-mosquito feeds, and never stops feeding, in a series of eternal loops. The videos conjure the mundane horror of the landlord-tenant relationship within an environment of wealth and property consolidation by large real estate corporations that withhold, rather than provide, housing— an investment strategy that relies on logics of scarcity and extraction. \n\nSarah Rara is an artist based in Los Angeles working with video, sound, and performance. They are a primary organizer of the ongoing project Lucky Dragons. Their work, solo and in collaboration, has been presented at such institutions as the Whitney Museum of American Art, the Hammer Museum, the Centre Georges Pompidou, Walker Art Center in Minneapolis, London’s Institute for Contemporary Art, PS1 in New York, REDCAT and Human Resources in Los Angeles, MOCA Los Angeles, the 54th Venice Biennale, Documenta 14 in Athens, and the Smithsonian’s Hirshhorn Museum and Sculpture Garden, among others. Rara is a 2018 recipient of the LACMA Art + Technology Lab grant."
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "VisualArtwork",
-        "artist": {
-          "@type": "Person",
-          "name": "Sarah Rara"
-        },
-        "name": "Landlords 4, 2021",
-        "artMedium": "4k video with audio, virtual installation\nTRT: 1 min 35 sec loop",
-        "description": "Landlords introduces the landlord as mosquito, presented as a series of shimmering long-takes installed along Wilshire Blvd. The landlord-mosquito feeds, and never stops feeding, in a series of eternal loops. The videos conjure the mundane horror of the landlord-tenant relationship within an environment of wealth and property consolidation by large real estate corporations that withhold, rather than provide, housing— an investment strategy that relies on logics of scarcity and extraction. \n\nSarah Rara is an artist based in Los Angeles working with video, sound, and performance. They are a primary organizer of the ongoing project Lucky Dragons. Their work, solo and in collaboration, has been presented at such institutions as the Whitney Museum of American Art, the Hammer Museum, the Centre Georges Pompidou, Walker Art Center in Minneapolis, London’s Institute for Contemporary Art, PS1 in New York, REDCAT and Human Resources in Los Angeles, MOCA Los Angeles, the 54th Venice Biennale, Documenta 14 in Athens, and the Smithsonian’s Hirshhorn Museum and Sculpture Garden, among others. Rara is a 2018 recipient of the LACMA Art + Technology Lab grant."
+        "name": "Disposition Volume Series No. 006, 2022",
+        "artMedium": "3D models, video loop",
+        "description": "Inspired by natural phenomena found in water particles and ice cycles, Disposition Volume Series No. 006 takes computer models of particles and chemical interactions through a simulation (PyroSim) to create a solid structure from these results. The outcomes are similar to how water vapour can become ice skipping the moment of becoming water liquid, a phenomenon which may not be able to be perceived anymore if temperatures will continuously increase. \n\nManifesting precious and changing natural momentums which may be lost or change one day, the sculptures represent the beauty of those vulnerable and ephemeral moments.\n\nThe process is taken from an ongoing research and development series of geometries created through procedural software. Whilst these simulation results don’t model changing states of matter like real world phenomena, digital sculptures are formed through creating vertices and finding dense points in space. The results are a sequence of sculptures and a video artwork.\n\nStudio Above&Below is a London-based art and technology practice founded by Daria Jelonek and Perry-James Sugden after graduating from the Royal College of Art. Their work combines digital art, data and XR in order to draw together unseen connections between humans, machines and the environment. Believing in research-based art, Studio Above&Below often works with scientists, technologists and communities to push the boundaries of digital media for future living."
       }
     ]
   },
   "alternateName":"{{ .Asset.CertificateLabel }}",
-  "url":"https://epoch.gallery/CRYOSPHERE/",
+  "url":"https://epoch.gallery/cryosphere/",
   "subjectOf": {
     "@context": "https://schema.org",
     "@type": "ExhibitionEvent",
-    "url": "https://epoch.gallery/CRYOSPHERE/",
+    "url": "https://epoch.gallery/cryosphere/",
     "name": "{{ .Asset.Name }}",
     "startDate": "{{ .AssetProperties.ExhibitionDateStart }}",
     "endDate": "{{ .AssetProperties.ExhibitionDateEnd}}",
-    "description": "CRYOSPHERE is an experimental collaboration between EPOCH and LACMA’s Art + Technology Lab featuring past and present Art + Technology Lab grant recipients and organized by artist and EPOCH creator Peter Wu+. The exhibition’s virtual landscape is modeled after the physical excavation area of LACMA’s east campus, where the forthcoming building for the permanent collection is slated to debut, as well as neighboring locales around Wilshire Boulevard in Los Angeles. The CRYOSPHERE NFT will be available on February 15th.\n\nCRYOSPHERE is generously funded by the Algorand Foundation."
+    "description": "{{ .AssetProperties.DescriptionLong}}"
   },
   "offers": {
     "@type": "Offer",

@@ -8,6 +8,18 @@
       "description": "Unit Name=EPOCH",
       "type": "string"
     },
+    "description": {
+      "description": "Description",
+      "type": "string"
+    },
+    "description_long": {
+      "description": "Long Description",
+      "type": "string"
+    },
+    "art_medium": {
+      "description": "Art Medium",
+      "type": "string"
+    },
     "media_file_cid": {
       "description": "Media File CID",
       "type": "string"
