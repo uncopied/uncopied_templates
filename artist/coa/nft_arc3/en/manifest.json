@@ -34,6 +34,9 @@
   "smart_contract": {
     "template": "smart_contract.tmpl",
     "fields": {
+      "artist_main_address": "WUTOND4GA5FQ7L6F3PKZESDN32ZD5WMKVQBXBBPSGOJNOX5IJSNBRJQVJI",
+      "artist_sound": "WUTOND4GA5FQ7L6F3PKZESDN32ZD5WMKVQBXBBPSGOJNOX5IJSNBRJQVJI",
+      "price": 100
     }
   },
   "legal_document_template": "legal_document.tmpl",
