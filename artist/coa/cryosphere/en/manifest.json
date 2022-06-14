@@ -39,6 +39,7 @@
   "smart_contract": {
     "template": "smart_contract.tmpl",
     "fields": {
+      "price": 350
     }
   },
   "edition_min": 10,
