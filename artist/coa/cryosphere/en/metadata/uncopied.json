@@ -1,0 +1,284 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "{{ .Asset.Name }}",
+  "dateCreated": "{{ .AssetProperties.DateCreated }}",
+  "datePublished": "{{ .AssetProperties.DateCreated }}",
+  "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
+  "thumbnailUrl": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
+  "description": "{{ .Asset.CertificateLabel }} - {{ .AssetProperties.Description }}\n{{ .AssetProperties.DescriptionLong }}",
+  "copyrightHolder":[
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}",
+      "url": "https://epoch.gallery/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "{{ .Issuer.Address }}"
+      },
+      "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Organization",
+      "name": "Cook Inletkeeper",
+      "legalName": "Cook Inletkeeper (charity)",
+      "url": "https://www.lacma.org/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "OJ5SLMQJ6F4HKUWWAC4QXFXEKKZPWBUON7M6G6H26TAEUFRJCF4VFL5KII"
+      },
+      "sameAs": "https://algoexplorer.io/address/OJ5SLMQJ6F4HKUWWAC4QXFXEKKZPWBUON7M6G6H26TAEUFRJCF4VFL5KII"
+    }
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}",
+      "url": "https://epoch.gallery/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "{{ .Issuer.Address }}"
+      },
+      "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
+    },
+    {
+      "@type": "Person",
+      "name": "Carolina Caycedo",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "RM36WBDUER7JL2LTTRDQFTRSRFDBWUP7LOBRXK2NK3ULVDMC2LVFR3B77E"
+      },
+      "sameAs": "https://algoexplorer.io/address/RM36WBDUER7JL2LTTRDQFTRSRFDBWUP7LOBRXK2NK3ULVDMC2LVFR3B77E"
+    },
+    {
+      "@type": "Person",
+      "name": "Patricia Echeverria Liras",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "4G6WVNKD5KLK6TWDXRYHLKXY6RP2DF6QN4U7433SXVOAMHF6NUFUGZ63MM"
+      },
+      "sameAs": "https://algoexplorer.io/address/4G6WVNKD5KLK6TWDXRYHLKXY6RP2DF6QN4U7433SXVOAMHF6NUFUGZ63MM"
+    },
+    {
+      "@type": "Person",
+      "name": "Jiabao Li",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "IVC5ZUOIYFAMEPDAGKSHYQ6TICYGM7EY5U6B5SFLNXGOMEZPSKMHKS3YCI"
+      },
+      "sameAs": "https://algoexplorer.io/address/IVC5ZUOIYFAMEPDAGKSHYQ6TICYGM7EY5U6B5SFLNXGOMEZPSKMHKS3YCI"
+    },
+    {
+      "@type": "Person",
+      "name": "Alfredo Salazar-Caro",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "RPXFA2ESARLEPZXEY6LKXVN2C6IOBEMIE3H4FHVRK7XA2NXRENLOMISZAE"
+      },
+      "sameAs": "https://algoexplorer.io/address/RPXFA2ESARLEPZXEY6LKXVN2C6IOBEMIE3H4FHVRK7XA2NXRENLOMISZAE"
+    },
+    {
+      "@type": "Person",
+      "name": "Nathan Shafer",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "62QLITARWFBHEHZHK4O45OO4DFPQOMBJZZB3X5EXKSNENK2OCOWWTJ7NZ4"
+      },
+      "sameAs": "https://algoexplorer.io/address/62QLITARWFBHEHZHK4O45OO4DFPQOMBJZZB3X5EXKSNENK2OCOWWTJ7NZ4"
+    },
+    {
+      "@type": "Person",
+      "name": "Jakob Kudsk Steensen",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "5EBC6ZKF7IHS24DPFEBCWYA5QXSDDLSKYX47SJHLQ5UMTFIQYM7VXG7TLM"
+      },
+      "sameAs": "https://algoexplorer.io/address/5EBC6ZKF7IHS24DPFEBCWYA5QXSDDLSKYX47SJHLQ5UMTFIQYM7VXG7TLM"
+    },
+    {
+      "@type": "Project",
+      "name": "Studio Above&Below",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "UCESGOWDR5ETRT6IESARVQE5QRQB2OXJN2CXOUGGW32OY7TMY3L6K52CBU"
+      },
+      "sameAs": "https://algoexplorer.io/address/UCESGOWDR5ETRT6IESARVQE5QRQB2OXJN2CXOUGGW32OY7TMY3L6K52CBU"
+    }
+  ],
+  "artEdition": "{{ .Asset.EditionTotal }}",
+  "position": "{{ .Asset.EditionNumber }}",
+  "artMedium": "{{ .AssetProperties.ArtMedium }}",
+  "associatedMedia":
+  {
+    "@context": "https://schema.org",
+    "@type": "DataDownload",
+    "contentSize": "{{ .AssetProperties.MediaFileSize }}",
+    "contentUrl":"https://ipfs.io/ipfs/{{ .AssetProperties.MediaFileCid }}?filename={{ .AssetProperties.MediaFileName }}",
+    "description": "{{ .Asset.Name }}",
+    "name": "{{ .AssetProperties.MediaFileName }}",
+    "hasPart": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Carolina Caycedo"
+        },
+        "name": "Patron Mono, 2018\nFrom the Water Portraits series",
+        "artMedium": "3-channel HD video, color, sound\nTRT: 4 min 32 sec \nSound by Cay Castagnetto",
+        "description": "Patron Mono portrays the lower Cauca river canyon, located in the department of Antioquia, currently affected by the crisis of the Hidroituango dam. The muleteers, fishermen and artisanal miners that make up the canyon culture refer to the Cauca River as Patron Mono (Blonde Boss), both for its yellow color and for the gold found in its waters and sands. For them, it is the best employer in the world because it does not set schedules and never refuses to pay, that is, it always provides them with fish and gold. The projected triptych is composed of footage of gold artisanally harvested from the Cauca River, as well as footage taken in the same canyon. \n\nCarolina Caycedo is a Colombian, London-born, multidisciplinary artist known for her performances, videos, artist’s books, sculptures, and installations that examine environmental and social issues. Her work contributes to the construction of environmental historical memory as a fundamental element for non-repetition of violence against human and nonhuman entities. She lives and works in Los Angeles. \n\nShe is a 2021-2022 inaugural U.S. Latinx Artist Fellow and the 2020-2022 inaugural Borderlands Fellow at the Center for Imagination in the Borderlands at Arizona State University (ASU) and the Vera List Center for Art and Politics at The New School."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Carolina Caycedo"
+        },
+        "name": "Corazon de Oro/Heart of Gold, 2022",
+        "artMedium": "3D models of raw gold shavings harvested by artisanal miners from the Lower Cauca River in Colombia\nDimensions variable",
+        "description": "The heart of our mountains and rivers is made of Gold. Pineapple and corn absorb color from the land’s generous heart to nurture us physically and spiritually. The colonizers and the greedy changed the meaning and use of our gold, from the collective to the individual, from giving life to bringing death. We carry gold inside the circuits of our smartphones and tablets, without care for ritual. To touch and hold gold in its natural state reconnects us with mineral light, and makes us perennial alongside our past and future ancestors.\n\nEl corazón de nuestras montañas y de nuestros ríos es de Oro. La piña y el maíz absorben el color del corazón generoso de la tierra para alimentarnos física y espiritualmente. Los colonizadores y los avaros cambiaron el sentido y el uso de nuestro oro, de lo colectivo a lo individual, de lo que da vida a lo que trae muerte. Cargamos oro en los circuitos de nuestros smartphones y tablets, sin ningún sentido de la ritualidad. Tocar y sostener oro en su estado natural nos reconecta con la luz mineral, y nos hace perennes junto a nuestro ancestros pasados y futuros."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Patricia Echeverria Liras"
+        },
+        "name": "Song for a Rising Sea, 2022",
+        "artMedium": "3D photogrammetry scan, 3D models, directional audio",
+        "description": "Matanuska melts.\nMeanwhile, halfway across the globe\none of the last fishermen in the port of Jaffa\nreturns from a journey at sea.\nHe weaves a large turquoise net\nto the sounds of Umm Kulthum:\n Only a few fish left, he says. \n\nPatricia Echeverria Liras is a Spanish artist working across immersive technologies, social justice, and storytelling to explore forms of collective, personal liberation, and equity in the machine age. She has previously collaborated on international projects including: a “Public Therapy Tour” across Palestine with AM Qattan Foundation and Matadero Madrid; “Outside In,” a playback performance with the Freedom Theatre from Jenin, and Sakakini Cultural Center; “Parallel Utopias,” an environmental conflict resolution scheme at the Korean DMZ with National Geographic, and most recently Nowhere Left to Go at the Venice Biennale VR Lab. She is currently a Sandbox Fellow, NYU ITP/IMA Project Fellow, resident at SAT (Société des Arts Technologiques) in Montreal, and resident artist at Vertical Crypto Art. "
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Jiabao Li"
+        },
+        "name": "Glacier’s Lament, 2021",
+        "artMedium": "4K video with audio\nTRT: 2 min 49 sec",
+        "description": "Glaciers are sentinels of climate change. They are the most visible evidence of global warming today. This series of works embodies the stunning beauty, rapid change, fragility, destructive power, and magnificence of glaciers. At the same time, they challenge the audience with the dramatic, irreversible ecological damages from climate change.\n\nIn Glacier’s Lament, Jiabao Li used data from glacier melting in the past 60 years to compose music and dance with local musicians who have witnessed the recession of the Mendenhall glacier over their lifetimes in Juneau, Alaska. They performed the piece on the glacier, collaborating with the glacier’s own sounds.\n\nJiabao Li creates works addressing climate change, interspecies world sharing, humane technology, and a just, sustainable future. In Jiabao’s TED Talk, she uncovered how technology mediates the way we perceive reality. She is a current member of the NEW INC incubator at the New Museum."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Jiabao Li"
+        },
+        "name": "Once a Glacier, 2022",
+        "artMedium": "3D sculpture, virtual installation\n3D model: Boxiang Yu\nProducer: Jenny Qin Ya Guo",
+        "description": "“In traditional Inupiaq stories, the glaciers carry memories from the past and communicate their memories through the glacier’s songs. They circulate. They transform. They are living.”\n\nOnce a Glacier is from a VR film of the same title that tells the story of a relationship between a girl and a piece of glacier, where as the girl grows up, the existence of the glacier is threatened. This VR film relates the lifetime of a human to natural phenomena. We think of nature's time scale as millions of years and humans’ are under a hundred, yet with the current speed of climate change, many glaciers are vanishing within our lifetime. Glacial time, once was slow, is now fast. By telling the story of the life journey of a piece of glacial ice and its glacier of origin along with the life of a girl, the film makes this human-nature timescale tangible and warns the audience that climate change is happening right now and the consequences are within our lifetimes. "
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Alfredo Salazar-Caro"
+        },
+        "name": "SOL: Statue of Liberty/Statue of Lies AKA Last Days of Babylon, 2020",
+        "artMedium": "3D models, virtual installation, video with audio",
+        "description": " In this work, Salazar-Caro reacts to the world events as they unfolded in 2020. The Statue of liberty has been a symbol of America’s gift of opportunity and welcoming arms to immigrants, however America’s history shows that this is no more than an exaggerated myth. The foundation of the nation-state commonly known as the United States of America, was built on genocide, slavery and ecocyde. The result after 500 years of this egregious ritual and the plague of white supremacy, is a dying earth and social inequality unlike humanity has ever seen.\n\nSOL is also the alchemical name for the sun, a universally worshiped deity and the likely cause of humanity’s demise, as the insatiable greed of industrialization and hypercapitalism accelerate global heating for the sake of exponential profits.\n\nThe sculpture is covered in sigils, turning it into a magical, alchemical object, with the intention of further accelerating the downfall of the beast that consumes the earth. Among the sigils one can find the Red Hand Print over the statue’s mouth, signifying the struggle for Missing and Murdered Indigenous women. Indigenous people all across the globe are stewards of the land and of earth, contribute least to global emissions, and yet they are some of the most affected by industrial irresponsibility.The Summerian sigil for ‘God’ is present on the forehead of the statue as well as on the book, an allegory for achieving a higher state of consciousness, and then sharing that knowledge with those who have ears to listen. ”Let those who can read, read.” The words “Last Days of Babylon” appear prominently in the back of the SOL, as a reminder of the hermetic law of rhythm, telling us that the pendulum will always swing, meaning that all great empires that have risen through history, also have to fall. \n\nLong Live the First Nations of Turtle Island. Long Live our relatives from Africa. Long Live our Sacred Mother Earth.\n\nMay the fall of the Greed Infested Ones be swift, so we may heal and rebuild.\n\nAlfredo Salazar-Caro is creator living/working between Mexico City, NYC, and Online. His works are an amalgamation of Portraiture, Installation, Documentary, Video, XR, Social Sculpture and Speculative Architecture. He is co-creator and creative director of DiMoDA, The Digital Museum of Digital Art. DiMoDA is a groundbreaking project that functions as a VR institution and exhibition platform dedicated to the development of XR Art. Salazar-Caro’s work has been exhibited internationally. Exhibitions include: Tribeca Film Festival, Dreamlands @ Whitney Museum US, The Wrong Biennale, BR, New Normal LB/TR, Die Ungerahmte Welt, HeK, CH, Siggraph Asia, TH and 1Mes1Artista CDMX among others.  His work can be seen in publications such as Leonardo, Cultured Magazine, \nVice Magazine and +"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Nathan Shafer"
+        },
+        "name": "Arctic City, 2018",
+        "artMedium": "3D architecture, virtual installation / mixed reality",
+        "description": "Arctic City is a domed polar city originally designed by Frei Otto in the 1950s. This domed city has been proposed multiple times to be built in the circumpolar Arctic, including Alaska. It has also been proposed for Antarctica. The 3D/MR version of Arctic City originally appeared as geolocated augmented reality outside of the city of Kotzebue, AK as part of the Dirigibles of Denali project from 2018 at the Pratt Museum in Homer, AK. That project used AR to recreate all three of the domed city proposals in Alaska during the 20th century.\n\nNathan Shafer is a new media artist, author and special education teacher from Alaska. He is one of the founding members of both the Meme-Rider Media Team, an art collective founded in 2000 designing early form internet memes, and Manifest.AR, the first International art collective making mobile augmented reality works. He was profiled by PBS Digital Studios as part of an online collaboration called The Future in 2014. His current work is called Wintermoot, an augmented Alaskan comic book for which he received a Creative Capital award in 2020. He has contributed chapters to all of the books on Augmented Reality in the Springer Series on Cultural Computing: “Augmented Reality Art” (2014), “Augmented Reality Games” (2019), “Augmented Reality in Education” (2020), “Augmented Reality in Tourism, Museums and Heritage” (2021); as well as the forthcoming “Augmented Reality and Artificial Intelligence” (2023)."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Nathan Shafer"
+        },
+        "name": "Arctic Adventure Sculpture Garden, 2018",
+        "artMedium": "3D sculptures, virtual installation / mixed reality",
+        "description": "The Arctic Adventure Sculpture Garden are a series of 3D models designed using texture maps and sprites from the 1994 videogame “Arctic Adventure.” The models are treated as a sculpture garden place outside and within Arctic City."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Nathan Shafer"
+        },
+        "name": "Pilot Bread Portals to Wintermoot, 2019-2022 ",
+        "artMedium": "Comic Book, Augmented Reality",
+        "description": "Pilot Bread Portals to Wintermoot is a series of 3D pilot bread sculptures that link to Wintermoot comic books. The Wintermoot comic book is a limited series of augmented reality comic books that tell a sprawling set of Alaskan science fiction stories that are married with an intense set of social art practices to create progressive and sustainable Alaskan characters that are collaboratively reflective of Indigenous practices and worldviews. Several of the characters in Wintermoot have ‘cryoverse’ powers connected to glaciers and ice fields.  The domed cities in Alaska which were never built, exist in the reality of the Wintermoot stories. Wintermoot is presented here as a series of downloadable pdfs."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Jakob Kudsk Steensen"
+        },
+        "name": "Terratic Animism, 2016",
+        "artMedium": "4K video with audio\nTRT: 10 min 53 sec",
+        "description": "Terratic Animism is a video & virtual reality project, where people are free to roam around a digital winter forest that Jakob Kudsk Steensen created while artist in residence at MASS MoCA, 2016. His original inspiration was the dystopian ecology zeitgeist that he felt dominated popular science and media. Wearing a self-made costume made of mylar, Steensen filmed himself exploring derelict infrastructures along a river leading through Green Mountain National forest. To make the work, one month was spent crawling through tunnels in derelict water plants, abandoned factories and an old rusty school bus. While exploring the landscape, he began to think of digital animation as a form of animism. He started to see virtual replicas of real world locations as primal practices we do as humans to develop sign systems we can use, in order to connect and merge with entire landscapes. Steensen’s critique of mass image production extends Terratic Animism to explore feelings of climate anxiety, and the loss of a modernist utopian techno future. Terratic Animism transmits how attempts of symbiosis with nature remain in a tentative position, existing here through the virtuality of visual technologies. \n\nJakob Kudsk Steensen is an artist working with environmental storytelling through 3d animation, sound and immersive installations. He creates poetic interpretations about overlooked natural phenomena through collaborations with field biologists, composers and writers. Projects are based on extensive fieldwork. Key collaborators include Musician ARCA, Composer and Musical Director for the Philip Glass Ensemble Michael Riesman, Ornithologist and author Dr. Douglas H. Pratt, Architect Sir David Adjaye OBE RA, BTS, the Cornell Lab of Ornithology, and the Natural History Museum Berlin, among others."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Jakob Kudsk Steensen"
+        },
+        "name": "Icicle, 2022",
+        "artMedium": "3D photogrammetry scan\nDimensions variable",
+        "description": "The icicle was scanned at an altitude of 2400 metres by artist Jakob Kudsk Steensen in February 2022 near the Arolla glacier.\n\nJakob has recently exhibited with his major solo exhibition “Berl-Berl” in Berlin at Halleam Berghain, commissioned by LAS, and at Luma Arles with Liminal Lands for the Prelude exhibition. He was a finalist for the Future Generation Art Prize at the 2019 Venice Biennale. He received the Serpentine Augmented Architecture commission in 2019 to create his work The Deep Listener with Google Arts and Culture. He is therecipient of the best VR graphics for RE-ANIMATED (2019) at the Cinequest Festival for Technology and Cinema, the Prix du Jury (2019) at Les Rencontres Arles, the WebbyAward-People’s Choice VR (2018), and the Games for Change Award-Most Innovative (2018), among others."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Studio Above&Below"
+        },
+        "name": "Disposition Volume Series No. 006, 2022",
+        "artMedium": "3D models, video loop",
+        "description": "Inspired by natural phenomena found in water particles and ice cycles, Disposition Volume Series No. 006 takes computer models of particles and chemical interactions through a simulation (PyroSim) to create a solid structure from these results. The outcomes are similar to how water vapour can become ice skipping the moment of becoming water liquid, a phenomenon which may not be able to be perceived anymore if temperatures will continuously increase. \n\nManifesting precious and changing natural momentums which may be lost or change one day, the sculptures represent the beauty of those vulnerable and ephemeral moments.\n\nThe process is taken from an ongoing research and development series of geometries created through procedural software. Whilst these simulation results don’t model changing states of matter like real world phenomena, digital sculptures are formed through creating vertices and finding dense points in space. The results are a sequence of sculptures and a video artwork.\n\nStudio Above&Below is a London-based art and technology practice founded by Daria Jelonek and Perry-James Sugden after graduating from the Royal College of Art. Their work combines digital art, data and XR in order to draw together unseen connections between humans, machines and the environment. Believing in research-based art, Studio Above&Below often works with scientists, technologists and communities to push the boundaries of digital media for future living."
+      }
+    ]
+  },
+  "alternateName":"{{ .Asset.CertificateLabel }}",
+  "url":"https://epoch.gallery/cryosphere/",
+  "subjectOf": {
+    "@context": "https://schema.org",
+    "@type": "ExhibitionEvent",
+    "url": "https://epoch.gallery/cryosphere/",
+    "name": "{{ .Asset.Name }}",
+    "startDate": "{{ .AssetProperties.ExhibitionDateStart }}",
+    "endDate": "{{ .AssetProperties.ExhibitionDateEnd}}",
+    "description": "{{ .AssetProperties.DescriptionLong}}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating artists and EPOCH.",
+    "url": "https://github.com/uncopied/epoch_cryosphere_nft"
+  }
+}
+

@@ -11,6 +11,6 @@
     "source_image": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
     "document_url": "ipfs://{{ .Asset.IPFSHash }}",
     "linked_data": "ipfs://{{ .Metadata.Uncopied.IPFSHash }}",
-    "provenance_proof_txn": "{{ .Metadata.Arc3.AlgorandTransactionID }}"
+    "provenance_proof_txn": "{{ .Metadata.Uncopied.AlgorandTransactionID }}"
   }
 }

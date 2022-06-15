@@ -1,0 +1,18 @@
+{{ template "header.tmpl" .}}
+<body>
+<div>
+<h1>
+    {{ .Asset.CertificateLabel }}
+</h1>
+<h2>Certificate of Authenticity for an Algorand NFT (ARC69 upgrade) </h2>
+    <p>
+        This document certifies that {{ .Issuer.DisplayName }} declares the piece of artwork mentioned below, to be an authentic, original piece of art of the author's own creative efforts.
+    </p>
+    <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"/>
+    <p>
+        This document represents ONLY a technical upgrade to ARC69, a NFT standard that was published after the release of the original NFTs with asset ID {{ .AssetProperties.AssetId }}.
+        The original certificate is accessible at the address <a href="{{ .AssetProperties.OriginalCertificateUrl }}">{{ .AssetProperties.OriginalCertificateUrl }}</a>
+    </p>
+</div>
+</body>
+{{ template "footer.tmpl" .}}

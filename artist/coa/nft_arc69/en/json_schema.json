@@ -12,12 +12,12 @@
       "description": "Description",
       "type": "string"
     },
-    "medium": {
-      "description": "Medium",
+    "asset_id": {
+      "description": "NFT Asset ID",
       "type": "string"
     },
-    "price": {
-      "description": "Price (in $Algo)",
+    "original_certificate_url": {
+      "description": "Original certificate URL",
       "type": "string"
     },
     "digital_assets": {
@@ -38,8 +38,8 @@
   "required": [
     "unit_name",
     "description",
-    "medium",
-    "price",
+    "asset_id",
+    "original_certificate_url",
     "digital_assets"
   ]
 }

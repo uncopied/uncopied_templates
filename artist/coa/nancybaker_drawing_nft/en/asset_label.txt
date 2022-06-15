@@ -1,1 +1,0 @@
-{{if (eq .Issuer.DisplayName "Nancy Baker Cahill")}}{{- else}}=TEST={{- end}}"{{.Asset.Name}}, " 1/1
