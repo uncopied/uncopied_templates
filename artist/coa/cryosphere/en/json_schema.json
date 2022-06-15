@@ -12,6 +12,10 @@
       "description": "Description",
       "type": "string"
     },
+    "artists": {
+      "description": "Artist Names",
+      "type": "string"
+    },
     "description_long": {
       "description": "Long Description",
       "type": "string"

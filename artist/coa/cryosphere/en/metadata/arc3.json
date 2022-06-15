@@ -1,6 +1,6 @@
 {
   "name": "{{ .Asset.Name }}",
-  "description": "{{.Asset.CertificateLabel}} - {{ .AssetProperties.Description }}",
+  "description": "{{.Asset.CertificateLabel}} {{ .AssetProperties.Artists }}",
   "image": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
   "image_mimetype": "image/png",
   "external_url": "{{ .Metadata.Uncopied.UncopiedAssetURL }}",

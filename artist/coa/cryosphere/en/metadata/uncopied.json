@@ -7,7 +7,7 @@
   "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
   "thumbnailUrl": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
   "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
-  "description": "{{ .Asset.CertificateLabel }} - {{ .AssetProperties.Description }}\n{{ .AssetProperties.DescriptionLong }}",
+  "description": "{{ .Asset.CertificateLabel }} {{ .AssetProperties.Artists }}\n{{ .AssetProperties.DescriptionLong }}",
   "copyrightHolder":[
     {
       "@type": "Person",
