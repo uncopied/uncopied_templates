@@ -1,0 +1,326 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "{{ .Asset.Name }}",
+  "dateCreated": "{{ .AssetProperties.DateCreated }}",
+  "datePublished": "{{ .AssetProperties.DateCreated }}",
+  "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
+  "thumbnailUrl": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
+  "description": "{{ .Asset.CertificateLabel }} {{ .AssetProperties.Artists }}\n{{ .AssetProperties.DescriptionLong }}",
+  "copyrightHolder":[
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}",
+      "url": "https://epoch.gallery/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "{{ .Issuer.Address }}"
+      },
+      "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Organization",
+      "name": "Reproductive Justice",
+      "legalName": "Reproductive Justice (Organizations list)",
+      "url": "https://ipfs.io/ipfs/QmWzp3mqazwmtawtRVPdY44pjQL6Z72wzxk4usWayeQN9W",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "3A2GMSYRUVFLBK7F3IUA6XOBHYL3NLGIBJBB7CWW7F6TLEJXKY6RZOHMOU"
+      },
+      "sameAs": "https://algoexplorer.io/address/3A2GMSYRUVFLBK7F3IUA6XOBHYL3NLGIBJBB7CWW7F6TLEJXKY6RZOHMOU"
+    }
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}",
+      "url": "https://epoch.gallery/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "{{ .Issuer.Address }}"
+      },
+      "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
+    },
+    {
+      "@type": "Person",
+      "name": "Nancy Baker Cahill",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "CDDY6HNSDADMNMINRAX5S4I6ZTM4NUI3ET44UMFZCGBWJ2HAEDG5LJDK5A"
+      },
+      "sameAs": "https://algoexplorer.io/address/CDDY6HNSDADMNMINRAX5S4I6ZTM4NUI3ET44UMFZCGBWJ2HAEDG5LJDK5A"
+    },
+    {
+      "@type": "Person",
+      "name": "Carrie Chen",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "WQDDG4ANZJLL657VWU2OBM54OQIXT7ZHRWD5CLPJMRXNRBUZSI3CS7KXSU"
+      },
+      "sameAs": "https://algoexplorer.io/address/WQDDG4ANZJLL657VWU2OBM54OQIXT7ZHRWD5CLPJMRXNRBUZSI3CS7KXSU"
+    },
+    {
+      "@type": "Person",
+      "name": "Vitoria Cribb",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "EFI6V5ZARB7FI5N3HX3KMEMYYKXIVKGAEUQZ75PHQEFIBUK7XRMXHKW6FE"
+      },
+      "sameAs": "https://algoexplorer.io/address/EFI6V5ZARB7FI5N3HX3KMEMYYKXIVKGAEUQZ75PHQEFIBUK7XRMXHKW6FE"
+    },
+    {
+      "@type": "Person",
+      "name": "Elana Mann",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "NLRJEJT7H7OJ3ZJJ3ZONV3X33NP25WC4VIHYUQJQU26AJXENJJW4TV7IPQ"
+      },
+      "sameAs": "https://algoexplorer.io/address/NLRJEJT7H7OJ3ZJJ3ZONV3X33NP25WC4VIHYUQJQU26AJXENJJW4TV7IPQ"
+    },
+    {
+      "@type": "Person",
+      "name": "Martina Menegon",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "JCFE3QFMLPOS4MWKZ7DV6MYH5JP4GXGREYQDXMFQA42HRQKDDHAJQ7ZBYU"
+      },
+      "sameAs": "https://algoexplorer.io/address/JCFE3QFMLPOS4MWKZ7DV6MYH5JP4GXGREYQDXMFQA42HRQKDDHAJQ7ZBYU"
+    },
+    {
+      "@type": "Person",
+      "name": "Operator",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "57VDOQC7DNGTEAX6KSCPTPK6CRZIZMPP2XW63KV52X7ANIWAVOIJTDJ5XY"
+      },
+      "sameAs": "https://algoexplorer.io/address/57VDOQC7DNGTEAX6KSCPTPK6CRZIZMPP2XW63KV52X7ANIWAVOIJTDJ5XY"
+    },
+    {
+      "@type": "Person",
+      "name": "Sasha Stiles",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "SWP7ANEB4BM7KICPHNXLY25EM2N24PHZQUCDIJ5LW7PKB6P3XOW5UL7JMA"
+      },
+      "sameAs": "https://algoexplorer.io/address/SWP7ANEB4BM7KICPHNXLY25EM2N24PHZQUCDIJ5LW7PKB6P3XOW5UL7JMA"
+    },{
+      "@type": "Person",
+      "name": "Hana Yoo",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "EH433KSF5AYEWO7BERGUJUDMPLRVRNSYUCS62KLYPRBJ7672JC2ODBD5FY"
+      },
+      "sameAs": "https://algoexplorer.io/address/EH433KSF5AYEWO7BERGUJUDMPLRVRNSYUCS62KLYPRBJ7672JC2ODBD5FY"
+    }
+  ],
+  "artEdition": "{{ .Asset.EditionTotal }}",
+  "position": "{{ .Asset.EditionNumber }}",
+  "artMedium": "{{ .AssetProperties.ArtMedium }}",
+  "associatedMedia":
+  {
+    "@context": "https://schema.org",
+    "@type": "DataDownload",
+    "contentSize": "{{ .AssetProperties.MediaFileSize }}",
+    "contentUrl":"https://ipfs.io/ipfs/{{ .AssetProperties.MediaFileCid }}?filename={{ .AssetProperties.MediaFileName }}",
+    "description": "{{ .Asset.Name }}",
+    "name": "{{ .AssetProperties.MediaFileName }}",
+    "hasPart": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Nancy Baker Cahill"
+        },
+        "name": "Unprotected, 2017",
+        "artMedium": "Digitized graphite drawing",
+        "description": "On September 28, 2018, during Dr. Ford’s testimony against now Justice Kavanaugh, Nancy Baker Cahill geolocated her drawing in augmented reality (AR), titled Unprotected, in front of the United States Supreme Court. The drawing hails from her Surds series, which explored trauma responses in the body and embodied knowledge. The Surds series was inspired by a powerful book of feminist philosophy by Susan J. Brison called Aftermath, which addressed the author’s metabolization of her own sexual assault. Baker Cahill appended the word “Unprotected” to her AR drawing for two reasons. The first was obvious; during Dr. Ford’s testimony, as during Anita Hill’s decades earlier, millions of Americans were reminded of the dearth of judicial protections for victims of sexual assault and of the cultural systems that continue to erase, mock and intimidate those who dare to speak up. The second was a reminder that the Equal Rights Amendment (ERA) has never been ratified; well over half of the American population remains unequally protected under the law. At the time, it felt astonishing in 2018.  As of June 24, 2022, it appears it may never be ratified. \n\nNancy Baker Cahill is a new media artist who examines systemic power, selfhood, and embodied consciousness through drawing and shared immersive space. She is the Founder and Artistic Director of 4th Wall, a free Augmented Reality (AR) art platform exploring resistance and inclusive creative expression. \n\nBaker Cahill was an artist scholar in the Berggruen Institute’s Transformations of the Human Fellowship, and a 2021 resident at Oxy Arts’ ‘Encoding Futures,’ focused on AR monuments. She is a TEDx speaker and a member of the Guild of Future Architects. In 2021, she was awarded the Williams College Bicentennial Medal of Honor and received the C.O.L.A. Master Artist Fellowship. \nShe is a 2022 LACMA Art and Tech Grant recipient."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Nancy Baker Cahill"
+        },
+        "name": "State Property, 2022",
+        "artMedium": "Digital sculpture",
+        "description": "State Property, a digital neon sculpture of an exploded uterus, refers to court-ordered, state-sanctioned intervention on bodies, where wombs become disembodied sites of legal and criminal action. Forced birth is violent. Cruel externalities, known and yet to come, are represented in the organ’s fracturing. State Property underscores the corruption of what should be an individual's autonomous right to decide the circumstances under which reproduction occurs. Neon, often a language of cheap advertising, reflects the false promises of maternal support after birth. \n\nThe fundmentalist salvo overturning Roe represents not just a constitutional crisis of personhood and an abject abuse of power, but one of precedent; public statements indicate that marriage equality and contraceptive rights are also now in the crosshairs. In this historic moment, artistic interventions will play a critical role in provoking meaningful public discourse and action.\nNancy Baker Cahill is a new media artist who examines systemic power, selfhood, and embodied consciousness through drawing and shared immersive space. She is the Founder and Artistic Director of 4th Wall, a free Augmented Reality (AR) art platform exploring resistance and inclusive creative expression. \n\nBaker Cahill was an artist scholar in the Berggruen Institute’s Transformations of the Human Fellowship, and a 2021 resident at Oxy Arts’ ‘Encoding Futures,’ focused on AR monuments. She is a TEDx speaker and a member of the Guild of Future Architects. In 2021, she was awarded the Williams College Bicentennial Medal of Honor and received the C.O.L.A. Master Artist Fellowship. \nShe is a 2022 LACMA Art and Tech Grant recipient."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Carrie Chen"
+        },
+        "name": "Temporal Portrait: Carrie, 2022",
+        "artMedium": "3D animation with audio\nTRT: 1 min 17 sec loop",
+        "description": "Temporal Portrait: Carrie is simultaneously a group portrait and a self-portrait. Using GAN technology and referencing ancestral records, Chen simulates stages of aging and imagines the moment when transgenerational versions of her 3D selves gather in spacetime. \n\nTheir collective presence is a meditation on nonlinear concepts of time and the artist's existence as a Chinese American woman. It is also a celebration of resiliency and life. Together, the 24 female figures occupy a long stretch of space. They breathe, blink, and hold their gaze with the viewer as a confrontational gesture responding to the marginalization of women and as a subversive stance on the male-dominated genre of group portraiture.\n\nCarrie Chen is a media artist working with simulation, projection and virtual reality. Drawing from a background in Psychology and Art History, she takes a phenomenological approach to investigating sublime experiences, portraiture and memory. Chen holds an MFA from UCLA Design Media Arts and is researching artificial faces in the age of social media and AI. Chen grew up between New York and Shanghai, and currently lives in Los Angeles."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Vitória Cribb"
+        },
+        "name": "SCATUES, 2022",
+        "artMedium": "3D Sculptures",
+        "description": "SCATUES was inspired by the two marble figures presented in front of the SCOTUS building. The original sculptures represent two human figures seated on a marble throne - on the left is a feminine figure representing the “Contemplation of Justice” and on the right a masculine figure representing the “Guardian of the Authority of Law, according to the Supreme's official website.”\n\nIn the artwork SCATUES, Vitória Cribb recreates and superimposed two feminine and digital sculptures with the digital version of the two original marble statues. In Cribb’s digital version, the left and right sculpture overlaps with the original “Contemplation of Justice” and “Guardian of Authority” sculptures. The new shapes represent a 3D feminine figure, with their index finger raised (a gesture that can be interpreted as asking for permission to self-expression in many Western cultures) - What once materialized as a mere contemplation of justice, now asks for permission to give an opinion on a feminine agenda, as well as what was previously materialized as “Guard of the Authority of the Law,” now, it materializes as the “Guardian” that in an attempt of free expression tries to defend and take care of those who have lost autonomy over their own body and suffer given the lack of free access to quality healthcare.\n\nThe artist also surrounds the new 3D sculptures with a lot of static eyes and ears - These elements, in the artist perspective, represents the public attention and commotion with the end of bodily autonomy for a certain social group but at the same time a paralysis of other social groups that only observe and do not have an effective participation in the fight for the reconquest for these rights that are of collective interest since it represents a public health problem.\n\nDaughter of a Haitian father and Brazilian mother, Cribb creates and experiments through digital and visual narratives that permeate techniques such as: Animations and CGI image development, Augmented Reality and Immersive Environments for web. The artist uses the digital environment as a means to explain her investigations and reflections crossed by her subconscious. The investigation of social behavior in the face of the development of new visual information technologies, in contemporary society, and the transposition of her thinking through the immateriality present in digital are central points in the works developed \nby the artist in recent years. In 2022 Vitória Cribb got nominated and awarded the PIPA PRIZE Award - A relevant Brazilian Contemporary Art Prize; Her works has been featured in international exhibitions such like: The Silence of Tired Tongues (Framer Framed, Amsterdam, 2022); Hotel Blue (Vellum LA, Los Angeles, 2022); Disembodied Behaviors (Bitforms Gallery, New York , 2020) and The Brazil that I Want (Centre d'Art Contemporain Genève, online, 2020)."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Elana Mann"
+        },
+        "name": "Call to Arms, 2022",
+        "artMedium": "3D model with a 4:05 min audio piece by Sharon Chohi Kim",
+        "description": "This piece is a sculptural megaphone. The hole in the palm of the hand connects through the interior chamber in the arm to the bell of a trumpet. The piece is a symbol of emergence: although a speaker’s mouth is covered when they use it, their voice is still heard. The audio is composed by Sharon Chohi Kim and performed by Mikaela Elson, Sara Sinclair Gomez, Sharon Chohi Kim and Kathryn Shuman. Through the sculpture, voices are muted and amplified as they wail and whisper. They are intensified, and they are silenced. They ask, “Can you hear me?” \n\nElana Mann explores the power of the collective voice and dynamic listening through art and activism. Mann’s artwork, involving sculpture, sound, and symbols, stems from growing up in the aural/oral culture of Judaism. Recent solo exhibitions have taken place at 18th Street Arts Center, Santa Monica, CA, Lawndale Art Center, Houston, TX, Artpace San Antonio, TX, and Pitzer College Art Galleries, Claremont, CA, with group shows/screenings at the Museum of Contemporary Art, La Jolla, the Orange County Museum of Art and the Hirshhorn Museum and Sculpture Garden. Mann is a 2021 Sustainable Arts Grant awardee and a Future Art award recipient. Her work has been written about in Artforum, Hyperallergic, and the LA Times."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Elana Mann"
+        },
+        "name": "Our work is never done (unfinished business) II, 2022",
+        "artMedium": "3D model by Jean-Paul Leonard with 28 sec audio",
+        "description": "This piece is an homage to a six-person protest horn originally created by Charles Chase called a “mega-kazoo horn.” Chase created the “mega-kazoo horn” in the 1970s to use in street marches promoting socialist ideals. He is the founder of the Folk Music Center and Museum in Claremont, CA. Unlike Chase's instrument, which involved siren whistles, this horn amplifies six voices. It requires six people to listen to themselves and each other if they want to effectively use the instrument. The audio piece was recorded at a 2017 International Women’s Day march in downtown Los Angeles. The chant in the recording is part of a text by the activist Assata Shakur."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Elana Mann"
+        },
+        "name": "Rattle Watch I (Evil Eye), 2022",
+        "artMedium": "3D model by Hings Lim with 29 sec audio",
+        "description": "This protest rattle is used in marches and demonstrations on the streets as well as in personal rituals at home. The rattle is inspired by the Jewish folk instrument called a “grogger,” which is played to drown out the name of a villain (Haman) who wanted to slay the entire Jewish community. Similarly, this protest rattle provides energy and power during a time when we are being called to create massive transformational change. The instrument is a celebration of resiliency in the face of danger, destruction and death.\n \nThe rattle sound was recorded at Irenic Projects, Altadena, CA; the crowd cheering is a recording of a 2013 protest in Austin, Texas of an anti-abortion bill, Senate Bill 5 (SB5). Special thanks to Gregory Michael Hernandez for making this piece possible."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Elana Mann"
+        },
+        "name": "Rattle Watch II (Equity, Dignity), 2022",
+        "artMedium": "3D model by Hings Lim with 38 sec audio",
+        "description": "This protest rattle is used in marches and demonstrations on the streets as well as in personal rituals at home. The rattle is inspired by the Jewish folk instrument called a “grogger,” which is played to drown out the name of a villain (Haman) who wanted to slay the entire Jewish community. Similarly, this protest rattle provides energy and power during a time when we are being called to create massive transformational change. The instrument is a celebration of resiliency in the face of danger, destruction and death.\n \nThe rattle sound was recorded at Irenic Projects, Altadena, CA; the crowd cheering is a recording of a 2013 protest in Austin, Texas of an anti-abortion bill, Senate Bill 5 (SB5). Special thanks to Gregory Michael Hernandez for making this piece possible."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Elana Mann"
+        },
+        "name": "Rattle Watch III (Change), 2022",
+        "artMedium": "3D model by Hings Lim with 59 sec audio",
+        "description": "This protest rattle is used in marches and demonstrations on the streets as well as in personal rituals at home. The rattle is inspired by the Jewish folk instrument called a “grogger,” which is played to drown out the name of a villain (Haman) who wanted to slay the entire Jewish community. Similarly, this protest rattle provides energy and power during a time when we are being called to create massive transformational change. The instrument is a celebration of resiliency in the face of danger, destruction and death. \n\nThe sound was recorded at Irenic Projects, Altadena, CA. Special thanks to Gregory Michael Hernandez for making this piece possible."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Elana Mann"
+        },
+        "name": "Rattle Watch IV (Now), 2022",
+        "artMedium": "3D model by Hings Lim with 43 sec audio",
+        "description": "This protest rattle is used in marches and demonstrations on the streets as well as in personal rituals at home. The rattle is inspired by the Jewish folk instrument called a “grogger,” which is played to drown out the name of a villain (Haman) who wanted to slay the entire Jewish community. Similarly, this protest rattle provides energy and power during a time when we are being called to create massive transformational change. The instrument is a celebration of resiliency in the face of danger, destruction and death.\n \nThe rattle sound was recorded at Irenic Projects, Altadena, CA; the crowd cheering is a recording of a 2013 protest in Austin, Texas of an anti-abortion bill, Senate Bill 5 (SB5). Special thanks to Gregory Michael Hernandez for making this piece possible."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Elana Mann"
+        },
+        "name": "Rattle Watch V (Care), 2022",
+        "artMedium": "3D model by Hings Lim with 35 sec audio",
+        "description": "This protest rattle is used in marches and demonstrations on the streets as well as in personal rituals at home. The rattle is inspired by the Jewish folk instrument called a “grogger,” which is played to drown out the name of a villain (Haman) who wanted to slay the entire Jewish community. Similarly, this protest rattle provides energy and power during a time when we are being called to create massive transformational change. The instrument is a celebration of resiliency in the face of danger, destruction and death.\n \nThe sound was recorded at Irenic Projects, Altadena, CA. Special thanks to Gregory Michael Hernandez for making this piece possible.\n"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Martina Menegon"
+        },
+        "name": "not again, not anymore, 2022",
+        "artMedium": "Virtual sculpture",
+        "description": "not again, not anymore is a virtual sculpture made of ğlȋtcẖed self-portraits performing a moment that could be just before as well as right after a battle. \n\nCreated as an homage to all the resilient women and a call for keeping strong in the ongoing fights for our bodily autonomy and rights, the composition also express the artist personal journey, struggles and experiences. As we can no longer divide offline and online realities, the fight for the future of our unprotected bodies extends away from keyboard, taking shape and space in the cyberspace.\n\nMartina Menegon is an artist, curator and educator based in Vienna and working predominantly with Interactive and Extended Reality Art. In her works, Martina creates intimate and complex assemblages of physical and virtual elements that explore the contemporary self and its “phygital” corporeality. She experiments with the uncanny and the grotesque, the self and the body and the dialogue between physical and virtual realities, to create disorienting experiences that become perceivable despite their virtual nature."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Ania Catherine and Dejha Ti (Operator)"
+        },
+        "name": "Still contemplating justice, 2022",
+        "artMedium": "Site-specific text based installation",
+        "description": "Trespassers of these steps will be punished.\nTrespassers of bodily sovereignty will be inside making decisions.\n \nThe text highlights the absurdity in the fact that there are consequences for trespassing staircases and lawns, while sexual trespassers sit inside protected buildings making laws about others’ bodies. The interpretation of the Right to Privacy, what is private, who/what is protected and from whom, are not practical questions, but political ones. At the entrance of the Supreme \nCourt building sits a statue of a female figure called “The Contemplation of Justice,” created between 1932-1934. The title of Ti and Catherine’s work, “Still contemplating justice” speaks from the perspective of this figure, who (nearly 100 years later) is still contemplating the concept of justice from her seat—particularly in light of recent decisions that emotionally transport many in the U.S. through a time machine to a bleak past. The font was found on a flyer from the 1930s advertising “Sex hygiene in and out of marriage”, a public lecture for women given by a man.  \n\nAnia Catherine and Dejha Ti are a Berlin-based experiential artist duo who founded their art house Operator in 2016. Referred to as \"the two critical contemporary voices on digital art’s international stages” (Clot Magazine) and \"LGBT power couple\" (Flaunt), their expertise collide in large-scale conceptual works recognizable for their signature poetic approach to technology. Ti’s background as an immersive artist and HCI technologist, and Catherine’s as a performance artist and choreographer make for a uniquely medium-fluent output–weaving together environments, technology and the body. In fall 2021, the duo began a translation of their Lumen Prize-winning work “I’d rather be in a dark silence than” into the Privacy Collection, a durational release of works exploring the tension between privacy and transparency on the blockchain. They've been speakers at BBC, Christie’s Art+Tech Summit, Art Basel, Bloomberg ART+TECHNOLOGY, SXSW, Ars Electronica, and recognized by the Lumen Prize, S+T+ARTS Prize, and ADC Awards."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Sasha Stiles"
+        },
+        "name": "Poet, Unprotected, 2022",
+        "artMedium": "Virtual palimpsest of digitally rendered poetry on aged, analog paper; mp4\nTRT: 1 min 30 sec",
+        "description": "Poet, Unprotected is a response to the Supreme Court's June 2022 decision to overturn Roe v. Wade. Linking ink to blood, the poem considers how bodily autonomy protects the creative instinct and renders poetic language as both personal and public documentation. A hybrid artifact, the piece layers digital text over yellowing analog pages to place contemporary events within the long history of this country's flawed views on personhood.\n\nSasha Stiles is a first-generation Kalmyk-American poet, artist, AI researcher and co-founder of theVERSEverse, an NFT poetry gallery. A pioneer of generative literature and blockchain poetics, she is the recipient of a Future Art Award and a nominee for the Forward Prize, Pushcart Prize and Best of the Net. Her first book, Technelegy (Black Spring Press Group, 2021/2022) has been hailed as an “instant techno-classic.”"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Hana Yoo"
+        },
+        "name": "아해 A-HAE / A Child of Child, 2018",
+        "artMedium": "HD video with stereo audio\nTRT: 13 min 11 sec",
+        "description": "A Child of Child is a short film with speculative scenarios that investigates the mental and physical pain of a female body which is inevitably responsible for the reproduction of life. Inspired by the South Korean poem “Craw's eye view Poem number 1”(Yi-Sang, 1934), the film depicts the endless attempts of creation, while facing the “most natural artifact.”\n\nHana Yoo is interested in investigating the collective anxiety and transcendental experiences, formulated from the natural-artificial process of reversing perspective. Working in film and multimedia installation, she engages with the allegory of nature and technological appropriation in the context of human-environment transformation, and reconstructs them through storytelling. Her works have been shown at museums and festivals internationally including the Fotomuseum (Winterthur, CH), European Media Art Festival (EMAF, DE), and Busan International Video Art Festival (Busan, KR) among others."
+      }
+    ]
+  },
+  "alternateName":"{{ .Asset.CertificateLabel }}",
+  "url":"https://epoch.gallery/unprotected/",
+  "subjectOf": {
+    "@context": "https://schema.org",
+    "@type": "ExhibitionEvent",
+    "url": "https://epoch.gallery/unprotected/",
+    "name": "{{ .Asset.Name }}",
+    "startDate": "{{ .AssetProperties.ExhibitionDateStart }}",
+    "endDate": "{{ .AssetProperties.ExhibitionDateEnd}}",
+    "description": "{{ .AssetProperties.DescriptionLong}}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating artists and EPOCH.",
+    "url": "https://github.com/uncopied/epoch_unprotected_nft"
+  }
+}
+
