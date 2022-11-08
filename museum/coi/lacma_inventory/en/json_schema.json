@@ -49,6 +49,26 @@
       "description": "Copyright Year",
       "type": "string"
     },
+    "width": {
+      "description": "Width",
+      "type": "string"
+    },
+    "height": {
+      "description": "Height",
+      "type": "string"
+    },
+    "width_framed": {
+      "description": "Width (Framed)",
+      "type": "string"
+    },
+    "height_framed": {
+      "description": "Height (Framed)",
+      "type": "string"
+    },
+    "provenance": {
+      "description": "Provenance",
+      "type": "string"
+    },
     "digital_assets": {
       "description": "Digital Assets",
       "type": "object",
