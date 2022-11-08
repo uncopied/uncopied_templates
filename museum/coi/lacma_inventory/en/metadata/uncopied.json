@@ -59,7 +59,6 @@
   "artworkSurface": "{{ .AssetProperties.ArtworkSurface }}",
   "width": "{{ .AssetProperties.Width }}",
   "height": "{{ .AssetProperties.Height }}",
-  "dateCreated": "{{ .AssetProperties.DateCreated }}",
   "ownershipFundingInfo": [
     {
       "@type": "Organization",
