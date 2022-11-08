@@ -44,6 +44,13 @@
         "propertyID": "AlgorandAddress",
         "value":  "{{ .Issuer.Address }}"
       },
+      "owns":[
+        {
+          "@type": "OwnershipInfo",
+          "name": "Provenance of {{ .Asset.Name }}",
+          "description": "{{ .AssetProperties.Provenance }}"
+        }
+      ],
       "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
     }
   ],
@@ -58,24 +65,5 @@
   "artForm": "{{ .AssetProperties.ArtForm }}",
   "artworkSurface": "{{ .AssetProperties.ArtworkSurface }}",
   "width": "{{ .AssetProperties.Width }}",
-  "height": "{{ .AssetProperties.Height }}",
-  "ownershipFundingInfo": [
-    {
-      "@type": "Organization",
-      "name": "{{ .Issuer.DisplayName }}",
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "AlgorandAddress",
-        "value":  "{{ .Issuer.Address }}"
-      },
-      "owns":[
-        {
-          "@type": "OwnershipInfo",
-          "name": "Provenance of {{ .Asset.Name }}",
-          "description": "{{ .AssetProperties.Provenance }}"
-        }
-      ],
-      "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
-    }
-  ]
+  "height": "{{ .AssetProperties.Height }}"
 }
