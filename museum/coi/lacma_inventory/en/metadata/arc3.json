@@ -1,6 +1,6 @@
 {
   "name": "{{ .Asset.Name }}",
-  "description": "{{ .Asset.CertificateLabel }}\n“Artwork from the collection of the Los Angeles County Museum of Art.”\n“© {{ .AssetProperties.CopyrightYear }} {{ .AssetProperties.ArtistName }}, All Rights Reserved.”\n{{ .AssetProperties.Description }}",
+  "description": "{{ .AssetProperties.UnitName }}\n{{ .Asset.CertificateLabel }}\n“Artwork from the collection of the Los Angeles County Museum of Art.”\n“© {{ .AssetProperties.CopyrightYear }} {{ .AssetProperties.ArtistName }}, All Rights Reserved.”\n{{ .AssetProperties.CuratorNotes }}",
   "image": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
   "image_mimetype": "image/png",
   "external_url": "{{ .Metadata.Uncopied.UncopiedAssetURL }}",

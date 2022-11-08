@@ -17,7 +17,7 @@
       "type": "string"
     },
     "curator_notes": {
-      "description": "CuratorNotes",
+      "description": "Curator Notes",
       "type": "string"
     },
     "artist_name": {
@@ -68,6 +68,10 @@
       "description": "Provenance",
       "type": "string"
     },
+    "same_as": {
+      "description": "Same As (Collection URL)",
+      "type": "string"
+    },
     "digital_assets": {
       "description": "Digital Assets",
       "type": "object",
@@ -85,6 +89,7 @@
   },
   "required": [
     "unit_name",
+    "artwork_name",
     "inventory_id",
     "copyright_year",
     "artist_name",

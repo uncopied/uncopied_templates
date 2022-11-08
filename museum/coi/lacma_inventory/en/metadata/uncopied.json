@@ -6,8 +6,16 @@
   "thumbnailUrl": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
   "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
   "alternateName":"{{ .Asset.CertificateLabel }}",
-  "description": "{{ .AssetProperties.Description }}",
+  "description": "{{ .AssetProperties.CuratorNotes }}",
   "copyrightHolder":[
+    {
+      "@type": "Person",
+      "name": "{{ .AssetProperties.ArtistName }}",
+      "birthPlace": "{{ .AssetProperties.ArtistBirthPlace }}",
+      "birthDate": "{{ .AssetProperties.ArtistBirthYear }}-00-00"
+    }
+  ],
+  "sdPublisher":[
     {
       "@type": "Person",
       "name": "{{ .Issuer.DisplayName }}",
@@ -25,6 +33,12 @@
       "name": "{{ .Issuer.Username }}"
     }
   ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Inventory Id",
+    "value":  "{{ .AssetProperties.InventoryId }} "
+  },
+  "sameAs": "{{ .AssetProperties.SameAs }}",
   "artMedium": "{{ .AssetProperties.ArtMedium }}",
   "dateCreated": "{{ .AssetProperties.DateCreated }}"
 }
