@@ -12,12 +12,16 @@
       "description": "Inventory Id",
       "type": "string"
     },
-    "description": {
-      "description": "Description",
+    "artwork_name": {
+      "description": "Artwork Name",
+      "type": "string"
+    },
+    "curator_notes": {
+      "description": "CuratorNotes",
       "type": "string"
     },
     "artist_name": {
-      "description": "Artists Name",
+      "description": "Artist Name",
       "type": "string"
     },
     "artist_birth_place": {
@@ -65,6 +69,7 @@
     "inventory_id",
     "copyright_year",
     "artist_name",
+    "curator_notes",
     "digital_assets"
   ]
 }
