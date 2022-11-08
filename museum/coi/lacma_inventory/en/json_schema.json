@@ -72,6 +72,11 @@
       "description": "Same As (Collection URL)",
       "type": "string"
     },
+    "date_created": {
+      "description": "Date Created",
+      "type": "string",
+      "format": "date"
+    },
     "digital_assets": {
       "description": "Digital Assets",
       "type": "object",
