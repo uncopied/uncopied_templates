@@ -28,10 +28,9 @@
       "description": "Artist Birth Place",
       "type": "string"
     },
-    "artist_birth_date": {
-      "description": "Artist Birth Date",
-      "type": "string",
-      "format": "date"
+    "artist_birth_year": {
+      "description": "Artist Birth Year",
+      "type": "string"
     },
     "art_medium": {
       "description": "Art Medium",
