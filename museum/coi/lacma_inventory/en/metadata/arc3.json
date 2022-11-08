@@ -1,6 +1,6 @@
 {
   "name": "{{ .Asset.Name }}",
-  "description": "{{ .Asset.CertificateLabel }} - {{ .AssetProperties.Description }}",
+  "description": "{{ .Asset.CertificateLabel }}\n“Artwork from the collection of the Los Angeles County Museum of Art.”\n“© {{ .AssetProperties.CopyrightYear }} {{ .AssetProperties.ArtistName }}, All Rights Reserved.”\n{{ .AssetProperties.Description }}",
   "image": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
   "image_mimetype": "image/png",
   "external_url": "{{ .Metadata.Uncopied.UncopiedAssetURL }}",
@@ -11,6 +11,8 @@
     "source_image": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
     "document_url": "ipfs://{{ .Asset.IPFSHash }}",
     "linked_data": "ipfs://{{ .Metadata.Uncopied.IPFSHash }}",
-    "provenance_proof_txn": "{{ .Metadata.Uncopied.AlgorandTransactionID }}"
+    "provenance_proof_txn": "{{ .Metadata.Uncopied.AlgorandTransactionID }}",
+    "copyright_notice": "“Artwork from the collection of the Los Angeles County Museum of Art.”\n“© {{ .AssetProperties.CopyrightYear }} {{ .AssetProperties.ArtistName }}, All Rights Reserved.”"
   }
 }
+
