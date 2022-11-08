@@ -9,7 +9,7 @@
   "copyrightNotice": "“Artwork from the collection of the Los Angeles County Museum of Art.”\n“© {{ .AssetProperties.CopyrightYear }} {{ .AssetProperties.ArtistName }}, All Rights Reserved.”",
   "copyrightYear": "{{ .AssetProperties.CopyrightYear }}",
   "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
-  "alternateName":"{{ .Asset.ArtworkName }}; {{ .Asset.CertificateLabel }}",
+  "alternateName":"{{ .AssetProperties.ArtworkName }}; {{ .Asset.CertificateLabel }}",
   "description": "{{ .AssetProperties.CuratorNotes }}",
   "artist":[
     {
