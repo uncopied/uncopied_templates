@@ -16,6 +16,10 @@
       "description": "Artist Names",
       "type": "string"
     },
+    "description_nft": {
+      "description": "NFT Description",
+      "type": "string"
+    },
     "description_long": {
       "description": "Long Description",
       "type": "string"
@@ -35,6 +39,10 @@
     "media_file_size": {
       "description": "Media File Size",
       "type": "number"
+    },
+    "exhibition_website": {
+      "description": "Exhibition Web Site",
+      "type": "string"
     },
     "exhibition_date_start": {
       "description": "Exhibition Date Start",

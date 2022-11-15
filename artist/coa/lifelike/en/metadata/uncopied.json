@@ -307,11 +307,11 @@
     ]
   },
   "alternateName":"{{ .Asset.CertificateLabel }}",
-  "url":"https://epoch.gallery/unprotected/",
+  "url":"https://{{ .AssetProperties.ExhibitionWebsite }}",
   "subjectOf": {
     "@context": "https://schema.org",
     "@type": "ExhibitionEvent",
-    "url": "https://epoch.gallery/unprotected/",
+    "url": "https://{{ .AssetProperties.ExhibitionWebsite }}",
     "name": "{{ .Asset.Name }}",
     "startDate": "{{ .AssetProperties.ExhibitionDateStart }}",
     "endDate": "{{ .AssetProperties.ExhibitionDateEnd}}",
@@ -320,7 +320,7 @@
   "offers": {
     "@type": "Offer",
     "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating artists and EPOCH.",
-    "url": "https://github.com/uncopied/epoch_unprotected_nft"
+    "url": "https://github.com/uncopied/epoch_{{ lower .Asset.Name }}_nft"
   }
 }
 

@@ -42,8 +42,8 @@
       "price": 350
     }
   },
-  "edition_min": 10,
-  "edition_max": 258,
+  "edition_min": 1,
+  "edition_max": 9,
   "license_terms_url": "https://epoch.gallery/terms-of-use/",
   "privacy_terms_url": "https://epoch.gallery/privacy-policy/",
   "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/artist/coa/LIFELIKE/en/EPOCH_logo_f.svg"

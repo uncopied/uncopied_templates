@@ -1,18 +1,21 @@
 {
   "name": "{{ .Asset.Name }}",
-  "description": "{{.Asset.CertificateLabel}} {{ .AssetProperties.Artists }}",
+  "description": "{{.Asset.CertificateLabel}} {{ .AssetProperties.DescriptionNft }}",
   "image": "ipfs://{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
   "image_mimetype": "image/png",
-  "external_url": "{{ .Metadata.Uncopied.UncopiedAssetURL }}",
+  "external_url": "https://{{ .AssetProperties.ExhibitionWebsite }}",
   "decimals": 0,
   "unitName": "{{ .AssetProperties.UnitName }}",
   "properties": {
-    "standard": "arc3",
-    "source_image": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
-    "source_image_mimetype": "image/jpeg",
-    "associated_media_url": "ipfs://{{ .AssetProperties.MediaFileCid }}",
-    "document_url": "ipfs://{{ .Asset.IPFSHash }}",
-    "linked_data": "ipfs://{{ .Metadata.Uncopied.IPFSHash }}",
-    "provenance_proof_txn": "{{ .Metadata.Uncopied.AlgorandTransactionID }}"
+    "digital media / artwork": "ipfs.io/ipfs/{{ .AssetProperties.MediaFileCid }}?filename={{ .AssetProperties.MediaFileName }}",
+    "file size": "{{ .AssetProperties.MediaFileSize }}",
+    "mime type": "application/zip",
+    "certificate": "{{ .Metadata.Uncopied.UncopiedAssetURL }}",
+    "certificate document": "ipfs.io/ipfs/{{ .Asset.IPFSHash }}",
+    "expanded metadata": "ipfs.io/ipfs/{{ .Metadata.Uncopied.IPFSHash }}",
+    "provenance proof txn": "{{ .Metadata.Uncopied.AlgorandTransactionID }}",
+    "source image": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
+    "website": "{{ .AssetProperties.ExhibitionWebsite }}",
+    "standard": "arc3"
   }
 }
