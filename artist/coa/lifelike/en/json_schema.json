@@ -38,7 +38,7 @@
     },
     "media_file_size": {
       "description": "Media File Size",
-      "type": "number"
+      "type": "string"
     },
     "exhibition_website": {
       "description": "Exhibition Web Site",
@@ -60,7 +60,7 @@
       "format": "date"
     },
     "nft_count": {
-      "description": "Number of NFTs (vs. APs)",
+      "description": "NFT edition number (or 0 for APs)",
       "type": "number"
     },
     "digital_assets": {
