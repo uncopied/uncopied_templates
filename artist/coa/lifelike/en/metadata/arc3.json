@@ -14,7 +14,7 @@
     "certificate document": "ipfs.io/ipfs/{{ .Asset.IPFSHash }}",
     "expanded metadata": "ipfs.io/ipfs/{{ .Metadata.Uncopied.IPFSHash }}",
     "uncopied creation txn": "{{ .Metadata.Uncopied.AlgorandTransactionID }}",
-    "source image": "ipfs://{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
+    "source image": "ipfs.io/ipfs/{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
     "website": "{{ .AssetProperties.ExhibitionWebsite }}",
     "standard": "arc3"
   }
