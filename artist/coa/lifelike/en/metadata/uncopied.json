@@ -1,0 +1,249 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "{{ .Asset.Name }}",
+  "dateCreated": "{{ .AssetProperties.DateCreated }}",
+  "datePublished": "{{ .AssetProperties.DateCreated }}",
+  "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
+  "thumbnailUrl": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
+  "description": "{{ .Asset.CertificateLabel }} {{ .AssetProperties.Artists }}\n{{ .AssetProperties.DescriptionLong }}",
+  "copyrightHolder":[
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}",
+      "url": "https://epoch.gallery/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "{{ .Issuer.Address }}"
+      },
+      "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
+    }
+  ],
+  "contributor": [
+    {
+      "@type": "Person",
+      "name": "Katie Peyton Hofstadter",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "Z32SLXR2546BBPIOW3BMA42KWOFK3O6EVHJIDWUZP7XI2DOI5PDA7CTX2E"
+      },
+      "sameAs": "https://algoexplorer.io/address/Z32SLXR2546BBPIOW3BMA42KWOFK3O6EVHJIDWUZP7XI2DOI5PDA7CTX2E"
+    }
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "{{ .Issuer.DisplayName }}",
+      "url": "https://epoch.gallery/",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "{{ .Issuer.Address }}"
+      },
+      "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
+    },
+    {
+      "@type": "Person",
+      "name": "Cassils",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "YV22DXQ3NDD2C4DSCIGLBYWHDKA3QZLCYDVPQFB2NI52M2XN7KT7FQI7NM"
+      },
+      "sameAs": "https://algoexplorer.io/address/YV22DXQ3NDD2C4DSCIGLBYWHDKA3QZLCYDVPQFB2NI52M2XN7KT7FQI7NM"
+    },
+    {
+      "@type": "Person",
+      "name": "Lans King",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "C3CEEC3YKAZ7KWS2BNEH3RJ2QCQH5HRZ7GVQOAOLXZOCWBXUX2QS6TW77Q"
+      },
+      "sameAs": "https://algoexplorer.io/address/C3CEEC3YKAZ7KWS2BNEH3RJ2QCQH5HRZ7GVQOAOLXZOCWBXUX2QS6TW77Q"
+    },
+    {
+      "@type": "Person",
+      "name": "Lauren Lee McCarthy",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "ERKPZBOWGLF2IU3N2Y5FCNLEPB3ZSEZDKIUMOSU2K7BOJHLSL45X2JDSZY"
+      },
+      "sameAs": "https://algoexplorer.io/address/ERKPZBOWGLF2IU3N2Y5FCNLEPB3ZSEZDKIUMOSU2K7BOJHLSL45X2JDSZY"
+    },
+    {
+      "@type": "Person",
+      "name": "Nicole Wilson",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "3NZ4L3J64XHQ7KMD3XGC4M72243OTJN3YH6AVKWVJM4K2FII5XHG4SBNQY"
+      },
+      "sameAs": "https://algoexplorer.io/address/3NZ4L3J64XHQ7KMD3XGC4M72243OTJN3YH6AVKWVJM4K2FII5XHG4SBNQY"
+    },
+    {
+      "@type": "Person",
+      "name": "Pussy Riot",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "T72W7IAWN2AX5ITSRITVDLDGMMVHZ7ZEMPFOBYYWOYBMHIUOJDTH4JOQ4A"
+      },
+      "sameAs": "https://algoexplorer.io/address/T72W7IAWN2AX5ITSRITVDLDGMMVHZ7ZEMPFOBYYWOYBMHIUOJDTH4JOQ4A"
+    },
+    {
+      "@type": "Person",
+      "name": "Sputniko!",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "JHPTQUE5C2I4FL6MWSFCS7IM4CH6GARPFKRIAGSRGQX4LHSINCPN7NDQFM"
+      },
+      "sameAs": "https://algoexplorer.io/address/JHPTQUE5C2I4FL6MWSFCS7IM4CH6GARPFKRIAGSRGQX4LHSINCPN7NDQFM"
+    },
+    {
+      "@type": "Person",
+      "name": "Xin Liu",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "FWTRHUD2V7YYUAJ6TFFDH4UI3B7PKZWUD4D7LQIGVGF7N5CVBGUA4OKNDU"
+      },
+      "sameAs": "https://algoexplorer.io/address/FWTRHUD2V7YYUAJ6TFFDH4UI3B7PKZWUD4D7LQIGVGF7N5CVBGUA4OKNDU"
+    }
+  ],
+  "artEdition": "{{ .Asset.EditionTotal }}",
+  "position": "{{ .Asset.EditionNumber }}",
+  "artMedium": "{{ .AssetProperties.ArtMedium }}",
+  "associatedMedia":
+  {
+    "@context": "https://schema.org",
+    "@type": "DataDownload",
+    "contentSize": "{{ .AssetProperties.MediaFileSize }}",
+    "contentUrl":"https://ipfs.io/ipfs/{{ .AssetProperties.MediaFileCid }}?filename={{ .AssetProperties.MediaFileName }}",
+    "description": "{{ .Asset.Name }}",
+    "name": "{{ .AssetProperties.MediaFileName }}",
+    "hasPart": [
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Cassils"
+        },
+        "name": "PRESSED, 2018",
+        "artMedium": "Performance documentation\nTRT: 8 minutes 39 seconds",
+        "description": "Cyclic is a groundbreaking performance by renowned artists Cassils, Ron Athey and Fanaa, which was performed to an international audience on World AIDS Day, 2019. PRESSED is Cassils contribution to the Cyclic triptych and was performed in the uniquely resonant collapsed “lung” of Biosphere 2, a site which simultaneously evokes utopian and dystopian possibilities. \n\nThe audience is shrouded in darkness until their attention is drawn across the room, where a light shines on Cassils lying on the metal floor of the lung, the temperature of the room near freezing. One hundred pounds of thick, rectangular glass is placed on top of their prone body by two men. Cassils maneuvers the sheer weight of the material with controlled slow movement in order not to shatter the glass. The sonic conditions of the lung amplify every strained breath and the echoing sound of scraping glass. Invoking the specimen, the “other”, and surveillance, Cassils summons the ghosts of Ana Mendieta and Chris Burden. Playing with voyeurism, the frame, pressure and resistance, this action the artist calls PRESSED speaks to the pressure of Visibility. The increasing representation of trans identity throughout art and popular culture in recent years has been nothing if not paradoxical. Trans visibility is touted as a sign of a liberal society, but it has coincided with a political moment marked both by heightened violence against trans people (especially trans women of color) and by the suppression of trans rights under civil law. PRESSED explores this double-edged glass sword. \n\nCassils is a transgender artist who makes their own body the material and protagonist of their performances. Cassils's art contemplates the history(s) of LGBTQI+ violence, representation, struggle and survival. For Cassils, performance is a form of social sculpture: Drawing from the idea that bodies are formed in relation to forces of power and social expectations, Cassils’s work investigates historical contexts to examine the present moment.  \n\nCassils has had recent solo exhibitions at HOME Manchester, Station Museum of Contemporary Art, Perth Institute for Contemporary Arts, Ronald Feldman Fine Arts, NYC; Institute for Contemporary Art, AU; Philadelphia Academy of Fine Arts; Bemis Center, Omaha; MU Eindhoven, Netherlands.   \n\nThey are the recipient of the National Creation Fund, a 2020 Fleck Residency from the Banff Center for the Arts, a Princeton Lewis Artist Fellowship finalist, a Villa Bellagio Rockefeller Foundation Fellowship, a United States Artist Fellowship, a Guggenheim Fellowship and a Creative Capital Award.\n\nCassils is an Associate Professor in Sculpture and Integrated Practices at PRATT Institute.\n\nCredits:\nCassils, PRESSED, 2018\n(Biosphere 2, Oracle, Arizona)\nRuntime: 8:39 min\nPerformance: Cassils, \nVideography: Graham Kolbeins\nCurator: Ginger Porcella\nProducers: MOCA Tuscon, Cassils\nEngineering by Kadet Kuhne\nLighting Design: Greg Houston\nLight Board Operator: Mirella Majalc\n\nThank You: Ginger Porcella, Biosphere 2, \nJohn Adams, Josh Banno, Taber Maccallum, \nJane Poynter, Cristy Michel, Jim Pollack, \nSharon Holnback, Canada Council For the Arts\n\nWe acknowledge the support of the \nCanada Council For the Arts\n\nFilmed on Location in the Lung of Biosphere 2 \nin Oracle, Arizona, December 2, 2018\n\nText adapted from MOCA Tucson program: \nhttps://moca-tucson.org/program/biosphere-\nperformance/\n"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Lans King"
+        },
+        "name": "Be Like Water, 2022",
+        "artMedium": "Virtual sculpture generated with a brain computer interface device",
+        "description": "This virtual sculpture was generated by the artist using a brain computer interface device that captures brain activity data. The data is fed into a generative algorithm and parametric software, and each channel is mapped to a specific parameter. The software transforms an initial geometry into a variety of new forms that are unique and rare. \n\nThis is a prototype for a performance-generative artwork called The Cyborg Manifesto.1 In 2023, Lans King will tour this series of performances during which he will generate virtual sculptures in real time whilst wearing a brain computer interface device. For this performance, he will spend 24 hours in a glass pod, connected to a computer running a generative algorithm. These works may be collected as NFTs that will permit the holders to acquire physical versions of the sculptures.\n\nThe work was generated specifically for the Ocean biome of Biosphere 2. Beginning with the form of a water droplet, the final sculpture was generated as Lans meditated on the phrase “be like water.” The phrase is attributed to Bruce Lee; it is based on Taoist philosophy about living in a state of flow. \n     \nThis work is meant to float above and reflect water, which comprises 71% of the earth’s surface, 60% of human bodies, and 70% of human brains. The fluid texture and looping lines of the sculpture reflect the cycling phases of water in a given ecosystem: evaporation, condensation, use, waste, and purification. In the context of this virtual Ocean biome, it also reflects on current water issues of climate, drought, and scarcity.\n\nLans King is an interdisciplinary artist, also known as “The Artist from the Future.” His ongoing project, “The Hyperreality Show,” blurs the lines between real & virtual, analog & digital, humanity & technology. This interconnected ecosystem of artworks includes paintings, videos, installations, sculptures, digital, and his signature canvas-screen hybrids. His artwork was recently curated for auction at Christie’s in New York.\n\nIn 2019, Lans surgically implanted an NFC microchip capsule in his hand and registered his artist-self on the blockchain. It became the basis for his seminal work (Network of) Self, 2019 - Current. The microchip is linked to a series of NFTs that will track his physical, emotional, and cerebral data for the remainder of his life. It is a self-portrait of the artist as represented by his personal data. He has been making crypto art since 2017.\n\nLans King’s work was the subject of a recent BBC documentary “The Cultural Frontline.” He has also been covered in FlashArt, ArtNet, Artsy, RightClickSave, Huffmag, FAD Magazine, and Widewalls. His work is represented in prominent collections internationally.\n\nBorn in Saint Vincent (British Antilles), Lans King was raised and educated in New York, US. His studies in Cognitive Science focused on artificial intelligence and human-machine interaction. Previous to his art career, he was a digital strategist in the communication sectors specializing in luxury, finance, and media brands. He developed his art practice in parallel. Lans currently lives and works between London, Paris, and New York. \n\n1 This title references Donna Haraway’s essay, “A Cyborg Manifesto,” published in the Socialist Review in 1985.\n"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Lauren Lee McCarthy"
+        },
+        "name": "Sleepover, 2020",
+        "artMedium": "Virtual recreation of performance, photography, text message",
+        "description": "By the end of 2020, it became increasingly hard to tell what existed beyond the computer screen. Months of caution began to induce feelings of extreme recklessness and futility. In a last ditch effort to get close, the artist sent a performance called Sleepover via text message to friends. A holiday offering of her live body outside their home. They have only text communication. She spends the night out on their lawn. Each of them thinking of the other’s physicality. Seeking presence.\n\nThis work is installed in the agricultural mesocosm of Biosphere, known as the Intensive Agricultural Biome. These three atriums were designed to provide bodily nourishment for Biospherians during the two intensive periods when they were materially cut off from the outside world.\n\nLauren Lee McCarthy is an artist examining social relationships in the context of surveillance, automation, and network culture through performance, software, and installation. Her works consist of performances inviting viewers to engage. To remote control her dates. To be followed. To welcome her in as their human smart home. To attend a party hosted by artificial intelligence. In these interactions, there is a reciprocal risk taking and vulnerability, as performer and audience are both challenged to relinquish control, both implicated, as each reformulate their own relationship to the systems that govern our lives. Lauren has received numerous grants, fellowships, and residencies from Creative Capital, United States Artists, Sundance, Eyebeam, LACMA, MASS MoCA, Pioneer Works, Stanford, NYU, and Ars Electronica. Lauren's work has been widely exhibited internationally. Lauren is also the creator of p5.js, an open-source art and education platform that prioritizes access and diversity in learning to code. \n"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Lauren Lee McCarthy"
+        },
+        "name": "I Heard Talking Is Dangerous, 2020-Ongoing",
+        "artMedium": "Performance, custom software, photography, video\nTRT: 2 minutes 28 seconds\n",
+        "description": "Feeling completely disconnected, the artist created I Heard Talking Is Dangerous trying to break through. Showing up on doorsteps, she delivers a monologue via phone screen and text-to-speech. She explains that she just heard masks and six feet are not safe enough. They’ve recommended we stop talking to each other, they say talking is dangerous. So she made an alternative. Is there really safety in distance?\n\nThis work is installed in the agricultural mesocosm of Biosphere 2, known as the Intensive Agricultural Biome. These three atriums were designed to provide bodily nourishment for the Biospherians during the two intensive periods when they were materially cut off from the outside world."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Lauren Lee McCarthy"
+        },
+        "name": "good night, 2020-Ongoing",
+        "artMedium": "Performance, text message",
+        "description": "This is a performance for one person at a time. Every night before the artist sleeps, she texts the owner of the work good night. The performance continues as long as she is alive. When the owner no longer wants to experience the performance, they may transfer it to someone else.\n\nThis work is installed in the agricultural mesocosm of Biosphere 2, known as the Intensive Agricultural Biome. These three atriums were designed to provide bodily nourishment for the Biospherians during the two intensive periods when they were materially cut off from the outside world.\n"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Xin Liu"
+        },
+        "name": "When we were all flowers, 2022",
+        "artMedium": "Digital sculpture",
+        "description": "In her series of inquiries on the genetic myth of personhood and community. Xin Liu visualizes her sequenced genetic code by assigning colors to the letters, AaCcGgTt. The digital sculpture in this exhibition is both a flower and a root system, signifying fertility in a hostile environment, the desert, where she grew up. It shares forms and thematic resonance with When we were flowers, a collaboration with local Uygur artisans in Hotan, Xinjiang, in which carpets were created using the Senna knot weaving method, with the color-coded background of the artist's genetic sequence and the traditional pattern of pomegranate flowers in its foreground.\n\nThis sculpture is brought to life above the Fog Desert biome of Biosphere 2. Viewers can stroll the network of walkways above the sand, cacti and other desert plants, to view this gorgeous, complex and coded body via different angles and elevations.\n\nXin Liu is an artist and engineer. She creates experiences to take measurements in our personal, social, and technological spaces in a post-metaphysical world. Her work resides in between the measurable and ineffable, seeking tensions and reconciliations at macro- and micro-scales that are beyond our daily experiences. With a focus on embodied storytelling, she explores her ideas through different materials and mediums. Since 2017, she has created a series of experimental performances in zero gravity. Her inquiries on gravity led to “Living Distance,” an outer space performance of a wisdom tooth, questioning mortality, mutation, and our desire for exploration, which premiered at the Sundance Film Festival in 2020. In 2021, her first institutional solo exhibition in Aranya Art Center presented seven projects ranging from dance performances, sculpture, installation, and films, centering around the verticality of space, extraterrestrial explorations, and cosmic metabolism. \n\nXin is the Arts Curator in the Space Exploration Initiative at MIT Media Lab and also an artist-in-residence at SETI Institute. She is the recipient of numerous awards and residencies, including Porches Chinese Young Artist of the Year 2021, 30 under 30 Asia, X Museum Triennial Award, the Van Lier Fellowship from the Museum of Arts and Design, and Sundance New Frontier Story Lab.\n"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Pussy Riot"
+        },
+        "name": "DRINK MY BLOOD, 2021",
+        "artMedium": "3D sculptures\nCollection of PleasrDAO",
+        "description": "DRINK MY BLOOD reflects on the cruelties of the incarceration system and channels the artist’s experience working in labor camps during her two year imprisonment there. The artwork comprises a tokenized digital certificate, set to an previously unreleased Pussy Riot song called Anthem, as well as two physical components: a vial of Tolokonnikova’s blood, and a freedom certificate stained with her own blood. The freedom certificate must remain in Tolokonnikova’s control, to prove she has served her prison sentence. The full piece is depicted here in the vital Tropical Rainforest biome of Biosphere 2.\n\nTolokonnikova is no stranger to using popular culture, and her body, to draw attention to the brutal Putin regime, still supported and enabled in part by the money pumping through our mediating bodies. Forced to sew police uniforms for seventeen hours a day on the old broken equipment, the artist experienced frequent injury and blood loss. She and the other incarcerated women were often so exhausted they couldn’t understand why they couldn’t remove their hands, which had become sewn to the machines. DRINK MY BLOOD symbolically distributes the artist’s spilled blood on a digital ledger, and physically distributes it to the collector. While Virgin Mary, Please Become A Feminist utilized Tolokonnikova’s prison sentencing documents in its composition, DRINK MY BLOOD closes the chapter with its utilization of her prison release papers.\n\nThe piece is created under the influence of Joseph Kosuth's classic conceptual art work \"One and Three Chairs\" (1965)\n\nNadya Tolokonnikova is a Russian conceptual artist, musician and political activist. She is a founding member of the art collective Pussy Riot, which has become a global symbol of activism for a variety of causes, recently championing women's reproductive rights. In 2012, Nadya was sentenced to 2 years' imprisonment following an anti-Putin performance by Pussy Riot in Moscow's Cathedral of Christ the Saviour. Since her release in 2013, she has worked to raise awareness of conditions within the Russian prison system and established the independent Russian news service Mediazona.\n\nTolokonnikova has spoken before the US Congress, British Parliament, and European Parliament, and has lectured at Harvard, Cambridge, Glastonbury music festival, and many other universities and major events around the world.\n\nTolokonnikova is a Lennon Ono Grant for Peace recipient, and also holds an honorary doctorate from RISD. She has exhibited at venues like Saatchi Gallery, London, MoMA PS1, New York, and the Museum of Contemporary Art, Oslo, collaborated with artists including Judy Chicago and Jenny Holzer, performed at Banksy's Dismaland theme park in 2015, and published Read & Riot: A Pussy Riot Guide to Activism (2018) and How to Start a Revolution (2016)."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Sputniko!"
+        },
+        "name": "Red Silk of Fate, 2016",
+        "artMedium": "HD video with audio, 3D sculpture, digital photograph\nTRT: 4 minutes 37 seconds",
+        "description": "The red silk line that connects two people who are destined to be together appears across many Chinese, Japanese and Korean mythologies. The delicate silk line symbolizes the fragility of love at times. On the other hand, such a thin line represents the passion in love that is powerful and irresistible. \n\nThrough the genetically engineered red silk containing Oxytocin (known as the socially bonding, love hormone) invented by artist Sputniko! (Hiro Ozaki) with Professor Hideki Sezutsu from the University of Tokyo, the Asian mythology of the \"Red Silk of Fate\" is recreated. \n\nThe film “Red Silk of Fate - Tamaki’s Crush” unravels a story around the protagonist Tamaki, an aspiring genetic engineer, who engineers her own “Red Silk of Fate” in the hope of winning the heart of her crush, Sachihiko. She sews the “Red Silk of Fate” intoher favorite scarf to win the love of her dreams, but strange, mythical powers start to inhabit her creation. Red Silk of Fate invites the audience to imagine the future of biotechnologies, where humans could soon be creating living things which we believed to only exist in mythical, magical worlds. \n\nThis piece is set in Biosphere 2’s West Lung, one of two variable-expansion chambers set inside aboveground geodesic domes. This structure also included a biologically based waste-treatment system, employing aerobic and anaerobic microorganisms, and other biological recycling systems, including algal scrubbers in the ocean and a soil-bed reactor.\n\nSputniko! is an artist and filmmaker. Her work has been exhibited at the MoMA, Pompidou Metz, V&A, the Cooper Hewitt, and more. She was awarded Vogue Japan Woman of the Year in 2013.  Her video work and multimedia installations span a wide variety of themes from biotechnology, gender performance to interspecies communication.  Employing science and technology to actively investigate contemporary society and social values, Sputniko!’s work stimulates discussions regarding the cultural, social, and ethical implications of emerging technologies."
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "VisualArtwork",
+        "artist": {
+          "@type": "Person",
+          "name": "Nicole Wilson"
+        },
+        "name": "Ötzi, 2016-2021",
+        "artMedium": "Project documentation, audio\nTRT: 52 seconds",
+        "description": "In December 2016, Nicole Wilson tattooed—to scale and in the same location on her body—images of the world’s oldest natural mummy’s 61 tattoos, using her own blood instead of ink. She then documented the tattoos as they faded over a period of years, and minted the digital files on the blockchain.\n\nHere, Wilson presents video documentation of the tattoos fading on her body, installed in the fecund Mangrove Wetland habitat of Biosphere 2. Through its iterations, Ötzi creates a symbolic link between the body of an ancient human and the local and distributed corpus of the living artist. By minting these files on the blockchain, she creates a flow of information that is simultaneously transparent and obscure.\n\nNicole Wilson is a research-based conceptual artist who makes long, tedious, and process-driven projects that excavate the everyday through a feminist lens. Working interdisciplinarily and in relation to institutional structures, Wilson is interested in a material investigation that documents and articulates absences within our lives. For example, she has sent the Presidents of the United States a letter every day for the past 14 years.\n \nPreviously an Artist-in-Residency at the Bemis Center (Omaha, NE), Wilson’s work can be found in the permanent collections of Thomas J Watson Library, Metropolitan Museum of Art (New York, NY) and Tisch Special Collections (Medford, MA). Alongside recent solo exhibitions of Ötzi, she published an artist book with Small Editions Press (Brooklyn, NY) in 2021. Most recently, she was a recipient of the Artist 360 Grant through Mid-America Art Alliance for her ongoing project called Perfidia, which utilizes two—divergent and parallel—family narratives from farms in rural parts of America as the pretext to build sculptural groupings from inherited objects.\n \nShe is currently an Assistant Professor of Sculpture at the University of Arkansas (Fayetteville, AR) and is represented by Praise Shadows Art Gallery (Boston, MA).\n\n"
+      }
+    ]
+  },
+  "alternateName":"{{ .Asset.CertificateLabel }}",
+  "url":"https://{{ .AssetProperties.ExhibitionWebsite }}",
+  "subjectOf": {
+    "@context": "https://schema.org",
+    "@type": "ExhibitionEvent",
+    "url": "https://{{ .AssetProperties.ExhibitionWebsite }}",
+    "name": "{{ .Asset.Name }}",
+    "startDate": "{{ .AssetProperties.ExhibitionDateStart }}",
+    "endDate": "{{ .AssetProperties.ExhibitionDateEnd}}",
+    "description": "{{ .AssetProperties.DescriptionLong}}"
+  },
+  "offers": {
+    "@type": "Offer",
+    "description": "Through Algorand’s smart contracts, profits can be automatically split between the participating artists and EPOCH.",
+    "url": "https://github.com/uncopied/epoch_{{ lower .Asset.Name }}_nft"
+  }
+}
+

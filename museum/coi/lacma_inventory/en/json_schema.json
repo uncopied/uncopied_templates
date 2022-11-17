@@ -12,22 +12,25 @@
       "description": "Inventory Id",
       "type": "string"
     },
-    "description": {
-      "description": "Description",
+    "artwork_name": {
+      "description": "Artwork Name",
+      "type": "string"
+    },
+    "curator_notes": {
+      "description": "Curator Notes",
       "type": "string"
     },
     "artist_name": {
-      "description": "Artists Name",
+      "description": "Artist Name",
       "type": "string"
     },
     "artist_birth_place": {
       "description": "Artist Birth Place",
       "type": "string"
     },
-    "artist_birth_date": {
-      "description": "Artist Birth Date",
-      "type": "string",
-      "format": "date"
+    "artist_birth_year": {
+      "description": "Artist Birth Year",
+      "type": "string"
     },
     "art_medium": {
       "description": "Art Medium",
@@ -39,6 +42,34 @@
     },
     "artwork_surface": {
       "description": "Artwork Surface",
+      "type": "string"
+    },
+    "copyright_year": {
+      "description": "Copyright Year",
+      "type": "string"
+    },
+    "width": {
+      "description": "Width",
+      "type": "string"
+    },
+    "height": {
+      "description": "Height",
+      "type": "string"
+    },
+    "width_framed": {
+      "description": "Width (Framed)",
+      "type": "string"
+    },
+    "height_framed": {
+      "description": "Height (Framed)",
+      "type": "string"
+    },
+    "provenance": {
+      "description": "Provenance",
+      "type": "string"
+    },
+    "same_as": {
+      "description": "Same As (Collection URL)",
       "type": "string"
     },
     "date_created": {
@@ -63,7 +94,11 @@
   },
   "required": [
     "unit_name",
+    "artwork_name",
     "inventory_id",
+    "copyright_year",
+    "artist_name",
+    "curator_notes",
     "digital_assets"
   ]
 }

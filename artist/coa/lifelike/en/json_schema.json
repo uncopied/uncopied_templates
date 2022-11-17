@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoA limited edition json schema fields description",
+  "description": "CoA limited edition json schema fields. English version",
+  "type": "object",
+  "properties": {
+    "unit_name": {
+      "description": "Unit Name=EPOCH",
+      "type": "string"
+    },
+    "description": {
+      "description": "Description",
+      "type": "string"
+    },
+    "artists": {
+      "description": "Artist Names",
+      "type": "string"
+    },
+    "description_nft": {
+      "description": "NFT Description",
+      "type": "string"
+    },
+    "description_long": {
+      "description": "Long Description",
+      "type": "string"
+    },
+    "art_medium": {
+      "description": "Art Medium",
+      "type": "string"
+    },
+    "media_file_cid": {
+      "description": "Media File CID",
+      "type": "string"
+    },
+    "media_file_name": {
+      "description": "Media File Name",
+      "type": "string"
+    },
+    "media_file_size": {
+      "description": "Media File Size",
+      "type": "string"
+    },
+    "exhibition_website": {
+      "description": "Exhibition Web Site",
+      "type": "string"
+    },
+    "exhibition_date_start": {
+      "description": "Exhibition Date Start",
+      "type": "string",
+      "format": "date"
+    },
+    "exhibition_date_end": {
+      "description": "Exhibition Date End",
+      "type": "string",
+      "format": "date"
+    },
+    "date_created": {
+      "description": "Date Created",
+      "type": "string",
+      "format": "date"
+    },
+    "nft_count": {
+      "description": "NFT edition number (or 0 for APs)",
+      "type": "number"
+    },
+    "nft_edition_name": {
+      "description": "NFT edition name (ex. 1/3,2/3,3/3)",
+      "type": "string"
+    },
+    "digital_assets": {
+      "description": "Digital Assets",
+      "type": "object",
+      "properties": {
+        "primary_image": {
+          "description": "Primary Image",
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [
+        "primary_image"
+      ]
+    }
+  },
+  "required": [
+    "unit_name",
+    "date_created",
+    "digital_assets"
+  ]
+}
