@@ -98,7 +98,6 @@
     "inventory_id",
     "copyright_year",
     "artist_name",
-    "curator_notes",
     "digital_assets"
   ]
 }
