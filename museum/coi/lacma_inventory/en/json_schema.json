@@ -85,6 +85,11 @@
           "description": "Primary Image",
           "type": "string",
           "format": "uuid"
+        },
+        "secondary_image": {
+          "description": "Secondary Image",
+          "type": "string",
+          "format": "uuid"
         }
       },
       "required": [
