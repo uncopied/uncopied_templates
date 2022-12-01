@@ -1,0 +1,64 @@
+{{ template "header.tmpl" .}}
+<body>
+<div>
+<h1>
+    {{ .Asset.CertificateLabel }}
+</h1>
+<h2>Certificate of Inventory</h2>
+
+    <div id="main">
+        <div id="content" class="column" role="main">
+            <a id="main-content"></a>
+            <h1 class="title" id="page-title">{{ .AssetProperties.ArtworkName }}</h1>
+            <div class="ds-2col node node-art-object view-mode-full clearfix">
+                <div class="group-left">
+                    <div class="art-media-container art-media-2293218 id-0 active">
+                        <div class="media-asset-image">
+                            <img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.PrimaryImage.ThumbnailIPFSHash}}"></div>
+                            <div class="field-name-field-copyright-text">“Artwork from the collection of the Los Angeles County Museum of Art.”
+                                                                         “© {{ .AssetProperties.CopyrightYear }} {{ .AssetProperties.ArtistName }}, All Rights Reserved.”
+                            </div>
+                    </div>
+                </div><!-- group left -->
+
+                <div class="group-right">
+				    <div class="field">Edition: Edition {{ .AssetProperties.EditionNumber }} of {{ .AssetProperties.EditionTotal }}</div>
+                    <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even" property="dc:title"><h1>{{ .AssetProperties.ArtworkName }}</h1></div></div></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field"></div><div class="field artist-name"><h2><div>
+                    {{ .AssetProperties.ArtistName }} ({{ .AssetProperties.ArtistBirthPlace }}, born {{ .AssetProperties.ArtistBirthYear }})
+                    </div></h2></div>{{ .AssetProperties.CopyrightYear }}<div class="field">{{ .AssetProperties.ArtForm }}</div>
+					<div class="field">{{ .AssetProperties.ArtMedium }}</div>
+					<div class="field">
+					{{if and .AssetProperties.Width .AssetProperties.Height }}
+						{{ .AssetProperties.Width }} × {{ .AssetProperties.Height }}
+					{{end}}
+					{{if and .AssetProperties.WidthFramed .AssetProperties.HeightFramed }}
+						Framed: {{ .AssetProperties.WidthFramed }} × {{ .AssetProperties.HeightFramed }}
+					{{end}}
+					</div>
+					
+					<div class="field">{{ .AssetProperties.Provenance }}</div>
+                    <div id="art-content-blocks">
+                        <div class="group">
+						{{if .AssetProperties.CuratorNotes }}
+                            <h3 class="title"><span>Curator Notes</span></h3>
+                            <div class="group-content">
+                                <div class="group-expanded">
+                                    {{ .AssetProperties.CuratorNotes }}
+                                </div>
+                            </div>
+                        </div>
+						{{end}}
+                    </div>
+					
+                </div>
+			 {{ if .DigitalAssets.SecondaryImage.ThumbnailIPFSHash }}
+				<div id="photos">
+					<img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.SecondaryImage.ThumbnailIPFSHash}}"/>
+				</div>
+			 {{ end }}
+            </div>
+        </div><!-- /#content -->
+    </div>
+</div>
+</body>
+{{ template "footer.tmpl" .}}

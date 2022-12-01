@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CoI for LACMA",
+  "description": "CoI for LACMA. English version",
+  "type": "object",
+  "properties": {
+    "unit_name": {
+      "description": "Unit Name (max 8 chars)",
+      "type": "string"
+    },
+    "inventory_id": {
+      "description": "Inventory Id",
+      "type": "string"
+    },
+	"edition_total": {
+      "description": "Edition Total",
+      "type": "number"
+    },
+	"edition_number": {
+      "description": "Edition Number",
+      "type": "number"
+    },  
+    "artwork_name": {
+      "description": "Artwork Name",
+      "type": "string"
+    },
+    "curator_notes": {
+      "description": "Curator Notes",
+      "type": "string"
+    },
+    "artist_name": {
+      "description": "Artist Name",
+      "type": "string"
+    },
+    "artist_birth_place": {
+      "description": "Artist Birth Place",
+      "type": "string"
+    },
+    "artist_birth_year": {
+      "description": "Artist Birth Year",
+      "type": "string"
+    },
+    "art_medium": {
+      "description": "Art Medium",
+      "type": "string"
+    },
+    "art_form": {
+      "description": "Art Form",
+      "type": "string"
+    },
+    "artwork_surface": {
+      "description": "Artwork Surface",
+      "type": "string"
+    },
+    "copyright_year": {
+      "description": "Copyright Year",
+      "type": "string"
+    },
+    "width": {
+      "description": "Width",
+      "type": "string"
+    },
+    "height": {
+      "description": "Height",
+      "type": "string"
+    },
+    "width_framed": {
+      "description": "Width (Framed)",
+      "type": "string"
+    },
+    "height_framed": {
+      "description": "Height (Framed)",
+      "type": "string"
+    },
+    "provenance": {
+      "description": "Provenance",
+      "type": "string"
+    },
+    "same_as": {
+      "description": "Same As (Collection URL)",
+      "type": "string"
+    },
+    "date_created": {
+      "description": "Date Created",
+      "type": "string",
+      "format": "date"
+    },
+    "digital_assets": {
+      "description": "Digital Assets",
+      "type": "object",
+      "properties": {
+        "primary_image": {
+          "description": "Primary Image",
+          "type": "string",
+          "format": "uuid"
+        },
+        "secondary_image": {
+          "description": "Secondary Image",
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": [
+        "primary_image"
+      ]
+    }
+  },
+  "required": [
+    "unit_name",
+    "artwork_name",
+    "inventory_id",
+    "copyright_year",
+    "artist_name",
+    "digital_assets"
+  ]
+}

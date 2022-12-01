@@ -1,0 +1,71 @@
+{
+  "@context": "https://schema.org",
+  "@type": "VisualArtwork",
+  "name": "{{ .Asset.Name }}",
+  "dateCreated": "{{ .AssetProperties.DateCreated }}",
+  "datePublished": "{{ .AssetProperties.DateCreated }}",
+  "image": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.SourceIPFSHash }}",
+  "thumbnailUrl": "{{ .ServerAddr }}/digital-asset/ipfs-hash/{{ .DigitalAssets.PrimaryImage.ThumbnailIPFSHash }}",
+  "copyrightNotice": "“Artwork from the collection of the Los Angeles County Museum of Art.”\n“© {{ .AssetProperties.CopyrightYear }} {{ .AssetProperties.ArtistName }}, All Rights Reserved.”",
+  "copyrightYear": "{{ .AssetProperties.CopyrightYear }}",
+  "license": "{{ .ServerAddr }}/asset/legal-document/ipfs-hash/{{ .Asset.IPFSHash }}",
+  "alternateName":"{{ .AssetProperties.ArtworkName }}; {{ .Asset.CertificateLabel }}",
+  "description": "{{ .AssetProperties.CuratorNotes }}",
+  "artist":[
+    {
+      "@type": "Person",
+      "name": "{{ .AssetProperties.ArtistName }}",
+      "birthPlace": "{{ .AssetProperties.ArtistBirthPlace }}",
+      "birthDate": "{{ .AssetProperties.ArtistBirthYear }}-00-00"
+    }
+  ],
+  "creator":[
+    {
+      "@type": "Person",
+      "name": "{{ .AssetProperties.ArtistName }}",
+      "birthPlace": "{{ .AssetProperties.ArtistBirthPlace }}",
+      "birthDate": "{{ .AssetProperties.ArtistBirthYear }}-00-00"
+    }
+  ],
+  "copyrightHolder":[
+    {
+      "@type": "Person",
+      "name": "{{ .AssetProperties.ArtistName }}",
+      "birthPlace": "{{ .AssetProperties.ArtistBirthPlace }}",
+      "birthDate": "{{ .AssetProperties.ArtistBirthYear }}-00-00"
+    }
+  ],
+  "sdPublisher":[
+    {
+      "@type": "Organization",
+      "name": "{{ .Issuer.DisplayName }}",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "AlgorandAddress",
+        "value":  "{{ .Issuer.Address }}"
+      },
+      "owns":[
+        {
+          "@type": "OwnershipInfo",
+          "name": "Provenance of {{ .Asset.Name }}",
+          "description": "{{ .AssetProperties.Provenance }}"
+        }
+      ],
+      "sameAs": "https://algoexplorer.io/address/{{ .Issuer.Address }}"
+    }
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "Inventory Id",
+    "value":  "{{ .AssetProperties.InventoryId }}"
+  },
+  "sameAs": "{{ .AssetProperties.SameAs }}",
+  "url":"{{ .AssetProperties.SameAs }}",
+  "artEdition": "{{ .AssetProperties.EditionTotal }}",
+  "position": "{{ .AssetProperties.EditionNumber }}",  
+  "artMedium": "{{ .AssetProperties.ArtMedium }}",
+  "artForm": "{{ .AssetProperties.ArtForm }}",
+  "artworkSurface": "{{ .AssetProperties.ArtworkSurface }}",
+  "width": "{{ .AssetProperties.Width }}",
+  "height": "{{ .AssetProperties.Height }}"
+}
