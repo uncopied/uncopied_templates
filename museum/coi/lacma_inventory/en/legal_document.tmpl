@@ -48,8 +48,13 @@
                         </div>
 						{{end}}
                     </div>
+					
                 </div>
-
+			 {{ if .DigitalAssets.SecondaryImage.ThumbnailIPFSHash }}
+				<div id="photos">
+					<img src="{{ .ServerAddr }}/digital-asset/ipfs-hash/{{.DigitalAssets.SecondaryImage.ThumbnailIPFSHash}}"/>
+				</div>
+			 {{ end }}
             </div>
         </div><!-- /#content -->
     </div>
