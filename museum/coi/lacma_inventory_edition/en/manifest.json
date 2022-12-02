@@ -1,0 +1,65 @@
+{
+  "id": "3e85f9d1-42ad-4a1a-90a6-7f413ced4d39",
+  "name": "CoI for LACMA (Limited Edition)",
+  "type": "CoI",
+  "description": "Certificate of Inventory for LACMA (Limited Edition).",
+  "author": "UNCOPIED",
+  "version": "1.0",
+  "manifest_version": 1,
+  "source_types": [
+    "png",
+    "jpg"
+  ],
+  "roles": [
+    "museum"
+  ],
+  "countries": [
+    "*"
+  ],
+  "language": "en",
+  "asset_properties": {
+    "unit_name": {
+      "ordering": 1
+    },
+    "inventory_id": {
+      "ordering": 2
+    },
+    "description": {
+      "ordering": 3
+    },
+    "artist_name": {
+      "ordering": 4
+    },
+    "artist_birth_place": {
+      "ordering": 5
+    },
+    "artist_birth_date": {
+      "ordering": 6
+    },
+    "art_medium": {
+      "ordering": 7
+    },
+    "art_form": {
+      "ordering": 8
+    },
+    "artwork_surface": {
+      "ordering": 9
+    },
+    "date_created": {
+      "ordering": 10
+    }
+  },
+  "legal_document_template": "legal_document.tmpl",
+  "certificate_label_template": "cert_label.txt",
+  "asset_label_template": "asset_label.txt",
+  "metadata_templates": {
+    "uncopied": "uncopied.json",
+    "arc3": "arc3.json",
+    "chirograph": "chirograph.json"
+  },
+  "edition_min": 1,
+  "edition_max": 1,
+  "license_terms_url": "someURL",
+  "privacy_terms_url": "someOtherURL",
+  "logo_url" : "https://raw.githubusercontent.com/uncopied/uncopied_templates/dev/artist/coa/nft_arc3/en/uncopied_tampon.svg"
+}

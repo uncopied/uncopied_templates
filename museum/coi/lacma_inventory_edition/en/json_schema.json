@@ -12,6 +12,14 @@
       "description": "Inventory Id",
       "type": "string"
     },
+	"art_edition": {
+      "description": "Art Edition",
+      "type": "number"
+    },
+	"edition_position": {
+      "description": "Edition Position",
+      "type": "number"
+    },  
     "artwork_name": {
       "description": "Artwork Name",
       "type": "string"
